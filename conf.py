@@ -6,9 +6,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "Data Science Platform notes template"
-copyright = "2024, DTU Biosustain, Informatics Platform, DSP"
-author = "Henry Webel"
+project = "DTU Biosustain Data Catalog Resources GitHub pages"
+copyright = "2025, DTU Biosustain, Informatics Platform, RDM"
+author = "Ding He"
 
 
 # -- General configuration ---------------------------------------------------
@@ -19,11 +19,12 @@ extensions = [
     # "sphinx_design", # https://sphinx-design.readthedocs.io/en/sbt-theme/
     # "sphinx_copybutton", # https://sphinx-copybutton.readthedocs.io/
     "sphinx_new_tab_link",
+    "sphinx_wagtail_theme"
 ]
 
 templates_path = ["_templates"]
 # As we can use percent notebooks and markdowns files, we need to exclude some files
-# additinally to the default ones (add to the list if needed)
+# additionally to the default ones (add to the list if needed)
 exclude_patterns = [
     "_build",
     "Thumbs.db",
@@ -34,6 +35,7 @@ exclude_patterns = [
     "**/.ipynb_checkpoints/*",
     "jupyter_execute",
     "conf.py",
+    ".venv" # exclude virtual environment
 ]
 
 
@@ -65,7 +67,20 @@ nb_custom_formats = {
 
 # -- Options for HTML output -------------------------------------------------
 
-# 2. Select a tempalate
+# html_theme = 'agogo'
+# html_theme = "sphinx_book_theme"
+html_theme = "sphinx_wagtail_theme"
+
+html_theme_options = {
+    "project_name": "DTU Biosustain Data Catalog Resources",
+    "github_url": "https://github.com/biosustain/data-catalog-resources",
+    "logo": "img/datacat.svg"
+}
+
+html_title = 'Data Catalog Resources'
+
+
+# 2. Select a template
 # ! you might need additional dependencies in requirements.txt
 # browse available themes: https://sphinx-themes.org/
 
@@ -75,28 +90,28 @@ nb_custom_formats = {
 # See:
 # https://github.com/executablebooks/MyST-NB/blob/master/docs/conf.py
 # html_title = ""
-html_theme = "sphinx_book_theme"
 # html_theme = "sphinx_book_theme" # alternative
 # html_logo = "_static/logo-wide.svg"
 # html_favicon = "_static/logo-square.svg"
-html_theme_options = {
-    "github_url": "https://github.com/enryh/",
-    "repository_url": "https://github.com/enryh/notes_template",
+#html_theme_options = {
+#    "github_url": "https://github.com/biosustain",
+#    "repository_url": "https://github.com/biosustain/data-catalog-resources",
     # "repository_branch": "main",
     # "home_page_in_toc": True,
     # "path_to_docs": "docs",
-    "show_navbar_depth": 1,
-    # "use_edit_page_button": True,
-    "use_repository_button": True,
-    "use_download_button": True,
-    "launch_buttons": {
-        "colab_url": "https://colab.research.google.com"
+#    "show_navbar_depth": 1,
+#    # "use_edit_page_button": True,
+#    "use_repository_button": True,
+#    "use_download_button": True,
+#    "launch_buttons": {
+#        "colab_url": "https://colab.research.google.com"
         #     "binderhub_url": "https://mybinder.org",
         #     "notebook_interface": "jupyterlab",
-    },
-    "navigation_with_keys": False,
-}
+#    },
+#    "navigation_with_keys": False,
+#}
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-# html_static_path = ['_static']
+#html_static_path = ["_static"]
+#html_css_files = ["css/custom.css"]
