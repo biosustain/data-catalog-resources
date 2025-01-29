@@ -72,6 +72,10 @@ The layout of the website is defined in the `index.md` file.
   ```bash
   sphinx-build -n -W --keep-going -b html ./ ./_build/
   ```
+  in case for forcing a full rebuild of the HTML output and ensures that all files, including your custom CSS, are updated, do:
+  ```bash
+   python -m sphinx -n -a -E -W --keep-going -b html ./ ./_build/
+  ```
   in case the command is not found, try:
   ```bash
    python -m sphinx -n -W --keep-going -b html ./ ./_build/

@@ -73,7 +73,7 @@ html_theme = "sphinx_wagtail_theme"
 
 html_theme_options = {
     "project_name": "DTU Biosustain Data Catalog Resources",
-    "github_url": "https://github.com/biosustain/data-catalog-resources",
+    "github_url": "https://github.com/biosustain/data-catalog-resources/blob/main/",
     "logo": "images/datacat.svg"
 }
 

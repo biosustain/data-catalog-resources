@@ -1,6 +1,17 @@
+/* Set the background color for the primary color in the header and footer area*/
 header.bg-primary {
     background-color: #bc3b2f !important;
 }
 footer.bg-primary {
     background-color: #bc3b2f !important;
+}
+
+/* Hide the first-level breadcrumb navigation item in the navbar */
+.breadcrumb-item:first-child {
+    display: none; /* Hides the first-level " ol > li" element which is "Docs" */
+}
+
+/* Hide the separator for the first breadcrumb item */
+.breadcrumb-item:first-child + .breadcrumb-item::before {
+    content: none; /* Removes the separator (e.g., ">") */
 }
