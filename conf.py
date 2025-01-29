@@ -74,7 +74,7 @@ html_theme = "sphinx_wagtail_theme"
 html_theme_options = {
     "project_name": "DTU Biosustain Data Catalog Resources",
     "github_url": "https://github.com/biosustain/data-catalog-resources",
-    "logo": "img/datacat.svg"
+    "logo": "images/datacat.svg"
 }
 
 html_title = 'Data Catalog Resources'
@@ -113,5 +113,5 @@ html_title = 'Data Catalog Resources'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-#html_static_path = ["_static"]
-#html_css_files = ["css/custom.css"]
+html_static_path = ["_static"]
+html_css_files = ["css/custom.css"]
