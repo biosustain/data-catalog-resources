@@ -1,109 +1,148 @@
-# Template for a static website using Sphinx and GitHub Pages
+# Data Catalog Resources at DTU Biosustain
 
-You can find a recording of the [instructions](#instructions) described below on youtube:
-[![Live Demo on using the template repository for a notes website](https://img.youtube.com/vi/XolIezJtSPI/maxresdefault.jpg
-)](https://www.youtube.com/watch?v=XolIezJtSPI)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://biosustain.github.io/data-catalog-resources/)
+[![Build Status](https://github.com/biosustain/data-catalog-resources/workflows/build-and-save-website/badge.svg)](https://github.com/biosustain/data-catalog-resources/actions)
 
-## Instructions
+## 1. Description
 
-### 1. Create new repository based on this template
+This repository builds a static website containing Data Catalog user guides and relevant resources created at DTU Biosustain.
 
-Create a template based on 
-[this repository](https://github.com/enryH/notes_template)
-by clicking on the "Use this template" button,
-see instructions
-[here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
+The website is built using [Sphinx](https://www.sphinx-doc.org/en/master/usage/index.html) with the [Wagtail Theme](https://pypi.org/project/sphinx-wagtail-theme/) and deployed via [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
-- now you are already publish the site which looks identical to the template site
- (see it here)
-- jump to step 5 to do that directly.
+🌐 **Visit the live site**: [https://biosustain.github.io/data-catalog-resources/](https://biosustain.github.io/data-catalog-resources/)
 
-### 2. Open in GitHub Codespaces (or locally)
+## 2. Repository Structure
 
-- go to [github.com/codespaces](https://github.com/codespaces) or use the "Code" button
-  and select "Open with Codespaces"
-- create a new codespace using the newly created repository
+```
+data-catalog-resources/
+├── _static/                    # Static assets (CSS, JS, images, files)
+│   ├── css/custom.css         # Custom styling
+│   ├── js/mobile-toc.js       # Mobile navigation & theme toggle
+│   └── images/                # Image assets
+├── _templates/                 # Custom HTML templates
+├── docs/                      # Main resource content
+│   ├── azure.md              # Azure-related setup guides
+│   └── article_topic.md      # Additional articles
+├── index.md                   # Homepage content
+├── conf.py                    # Sphinx configuration
+├── requirements.txt           # Python dependencies
+└── README.md                  # This file
+```
 
-> If you are done, remember to delete the codespace to not see your free credit or money
-> wasted. Also inactive (stopped) codespaces use storage for the last 30 days. 
-> See [this youtube video](https://youtu.be/gY0usMl2o5I) on how to do it:
+## 3. Contributing
 
-[![Delete you codespaces!](https://img.youtube.com/vi/gY0usMl2o5I/default.jpg
-)](https://www.youtube.com/watch?v=gY0usMl2o5I)
+We welcome contributions! Please:
 
-### 3. Edit files
+1. Follow the branching workflow described below
+2. Write clear commit messages
+3. Test your changes locally before pushing
+4. Request reviews from relevant team members
+5. Use [MyST Markdown](https://myst-parser.readthedocs.io/) syntax for enhanced formatting
 
-You will need to know the Markdown to format your text. See 
-[this overview on GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 
-or [this cheatsheet](https://www.markdownguide.org/cheat-sheet/) to get started.
+## 4. Add or Edit Resources
 
-- update in `conf.py` at least the author, project and copyright information at the top
-  - also update two urls to your repository:
-   ```json
-    "github_url": "https://github.com/enryh/",
-    "repository_url": "https://github.com/enryh/notes_template",
-    ```
-- write something about you in `about.md`
-- write articles in `folder_topic/article_topic.md`
-- update the `index.md` file to include new files
-- use [pandoc](https://pandoc.org/try/) to convert your previous files into markdown or
-  reStructuredText
+### Prerequisites
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-Troubleshooting:
- - don't forget to add new files to the `index.md` file
- - each document should have a title (`# title`) using a main heading and otherwise 
-   nested headlines (subheadings followed by sub-subheadings)
+### 4.1 Create and work on your branch locally
 
-### 4. Build the site locally
+#### Clone and Setup
+```bash
+git clone https://github.com/biosustain/data-catalog-resources.git
+cd data-catalog-resources
+code .  # Opens VS Code
+```
 
-Sphinx uses the configuration file `conf.py` to set up the site. The `requirements.txt` file
-contain extensions and themes that are used additionally to sphinx to build the site.
-The layout of the website is defined in the `index.md` file.
+#### Create New Branch
+**In VS Code Terminal** (`Ctrl/Cmd + Shift + `` ` ``):
+```bash
+git checkout -b your-working-branch
+```
 
-> Have look at `.github/workflows/build_website.yaml` to see how the site is built
-> if you are interested.
+**Or using VS Code Git Interface**:
+1. Click **Source Control** icon (`Ctrl/Cmd + Shift + G`)
+2. Click branch name at bottom-left → **Create new branch from...** → **main**
+3. Enter your branch name
 
-- Open a terminal (GitHub Codespaces)
-- install required packages from [`requirements.txt`](requirements.txt):
-  ```bash
-  pip install -r requirements.txt
-  ```
-- build the site (you could set an alias if you want):
-  ```bash
-  sphinx-build -n -W --keep-going -b html ./ ./_build/
-  ```
-  in case for forcing a full rebuild of the HTML output and ensures that all files, including your custom CSS, are updated, do:
-  ```bash
-   python -m sphinx -n -a -E -W --keep-going -b html ./ ./_build/
-  ```
-  in case the command is not found, try:
-  ```bash
-   python -m sphinx -n -W --keep-going -b html ./ ./_build/
-  ```
-- open the site in a browser:
-  - install ["Live Preview" extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) in Visual Studio Code
-  - open the `_build/index.html` file in the browser (right-click, "Show Preview")
+#### Edit Content
+- **Navigate files**: Explorer panel (`Ctrl/Cmd + Shift + E`)
+- **Edit content**: Click on any `.md` file to open
+- **Save changes**: `Ctrl/Cmd + S`
+- **Preview Markdown**: `Ctrl/Cmd + Shift + V`
 
-### 5. Publish the site
+#### Content Guidelines
+- Add articles in `docs/` folder (markdown format)
+- Update `index.md` for homepage content
+- Add images to `_static/images/` directory
+- Add downloadable files to `_static/files/` directory
 
-Follow 
-[these instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) 
-to publish the website using GitHub Pages.
+### 4.2 Build and Test Locally
 
-- Select the `gh-pages` branch as the source for the GitHub Pages site (currently step 7)
-- add the deployed url to your "About" on the right sight of the repository
+#### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
+#### Build Website
+```bash
+sphinx-build -b html . _build
+```
 
-## Changing the topic
+#### Preview Locally
+```bash
+python -m http.server 8000 --directory _build
+```
+Open http://localhost:8000 in your browser.
 
-If you want to change the topic you can browse templates on the follwing site: [sphinx-themes.org/](https://sphinx-themes.org/)
+### 4.3 Update your branch to GitHub
 
-You will need to change at least these things to switch to the new template:
+#### Stage and Commit Changes
+**Using VS Code Git Interface**:
+1. Open **Source Control** panel (`Ctrl/Cmd + Shift + G`)
+2. Click **+** next to changed files to stage
+3. Enter commit message and click **Commit**
+4. Click **Publish Branch** or **Sync**
 
-- Install it and add it to the `requirements.txt` file (Sphinx templates come as a Python package)
-- Update `conf.py`:
-  - `html_theme` variable to the selected theme
-  - update the `html_theme_options` to the available options of the theme 
+**Using Terminal**:
+```bash
+git add .
+git commit -m "Add new data catalog documentation"
+git push origin your-working-branch
+```
 
-Try for example the the [press theme](https://sphinx-themes.org/sample-sites/sphinx-press-theme/).
-Don't forget to update the `html_theme_options` in `conf.py` to the available options of this theme.
+#### Create Pull Request
+**VS Code Extension** (Recommended):
+1. Install "GitHub Pull Requests and Issues" extension
+2. Click **Create Pull Request** in Source Control panel
+3. Fill in title/description and create
+
+**Web Interface**:
+1. Visit https://github.com/biosustain/data-catalog-resources
+2. Click **"Compare & pull request"** for your branch
+3. Fill in details and click **"Create pull request"**
+
+## 5. Technical Details
+
+- **Built with**: Sphinx 7.4.7+ with MyST-NB extension
+- **Theme**: Sphinx Wagtail Theme v6.4.0+ with custom modifications
+- **Deployment**: GitHub Actions → GitHub Pages
+- **Python**: 3.9+ required
+
+## 6. Support
+
+For questions or issues:
+
+1. Check existing [Issues](https://github.com/biosustain/data-catalog-resources/issues)
+2. Create a new issue with detailed description
+3. Contact the [Research Data Management team](mailto:rdm@biosustain.dtu.dk) or [Ding He](mailto:dinghe@biosustain.dtu.dk) at DTU Biosustain
+
+## 7. License
+
+This project is licensed under the terms specified by DTU Biosustain.
+
+---
+
+**Research Data Management Team**  
+DTU Biosustain  
+Technical University of Denmark
