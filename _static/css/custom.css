@@ -6,6 +6,27 @@ footer.bg-primary {
     background-color: #bc3b2f !important;
 }
 
+/* Hide the active breadcrumb item (current page title) to prevent duplication with H1 */
+.breadcrumb-item.active {
+    display: none !important;
+}
+
+/* Hide the horizontal separator line below the header */
+.row hr.w-100.my-4 {
+    display: none !important;
+}
+
+/* Reduce top spacing for main content area */
+.col-12.col-lg-9.pt-5 {
+    padding-top: 1rem !important;
+}
+
+/* Reduce top spacing for the rst-content area */
+.rst-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
 /* Hide the first-level breadcrumb navigation item in the navbar */
 .breadcrumb-item:first-child {
     display: none; /* Hides the first-level " ol > li" element which is "Docs" */
@@ -14,4 +35,652 @@ footer.bg-primary {
 /* Hide the separator for the first breadcrumb item */
 .breadcrumb-item:first-child + .breadcrumb-item::before {
     content: none; /* Removes the separator (e.g., ">") */
+}
+
+/* Move only the logo image to the right side of the header */
+.navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.logo.navbar-brand .logo-img {
+    order: 2 !important;
+    margin-left: auto !important;
+}
+
+/* Move theme toggle button to header next to page title */
+#wagtail-theme {
+    position: fixed !important;
+    top: 23px !important;
+    z-index: 9999 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 50% !important;
+    padding: 6px !important;
+    font-size: 16px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 32px !important;
+    height: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.logo.navbar-brand {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    position: relative !important;
+}
+
+#wagtail-theme:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: rgba(255, 255, 255, 1) !important;
+    transform: scale(1.1) !important;
+    border-radius: 50% !important;
+}
+
+/* Hide all text content, keep only the icon */
+#wagtail-theme .dark-only,
+#wagtail-theme .light-only {
+    font-size: 0 !important;
+    line-height: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#wagtail-theme .dark-only i,
+#wagtail-theme .light-only i {
+    font-size: 16px !important;
+    line-height: 1 !important;
+    display: block !important;
+    color: inherit !important;
+}
+
+/* Simple icon toggle - REVERSED LOGIC */
+/* Show the opposite icon of current mode (icon shows what you'll get when you click) */
+/* Light mode: show sun icon (dark-only) to indicate "click for dark mode" */
+#wagtail-theme .light-only {
+    display: none !important;
+}
+
+#wagtail-theme .dark-only {
+    display: flex !important;
+}
+
+/* Dark mode: show moon icon (light-only) to indicate "click for light mode" */
+[data-bs-theme="dark"] #wagtail-theme .dark-only,
+html[data-theme="dark"] #wagtail-theme .dark-only,
+body[data-theme="dark"] #wagtail-theme .dark-only,
+.theme-dark #wagtail-theme .dark-only {
+    display: none !important;
+}
+
+[data-bs-theme="dark"] #wagtail-theme .light-only,
+html[data-theme="dark"] #wagtail-theme .light-only,
+body[data-theme="dark"] #wagtail-theme .light-only,
+.theme-dark #wagtail-theme .light-only {
+    display: flex !important;
+}
+
+/* Also try prefers-color-scheme as fallback */
+@media (prefers-color-scheme: dark) {
+    #wagtail-theme .dark-only {
+        display: none !important;
+    }
+    
+    #wagtail-theme .light-only {
+        display: flex !important;
+    }
+}
+
+/* Force the container to stay visible but transparent */
+.col-sm-12.col-lg-auto.mt-3.mt-lg-3 {
+    display: block !important;
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 9998 !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+/* Ensure the hamburger menu stays on the left for mobile */
+.navbar-toggler {
+    order: 1 !important;
+}
+
+/* Mobile Navigation and TOC (similar to benchling-resources) */
+@media (max-width: 991.98px) {
+    /* Hide the original sidebars and hamburger menu on mobile */
+    nav.col-12.col-lg-3.pb-4,
+    aside.col-12.col-lg-3.sidebar-container,
+    .navbar-toggler {
+        display: none !important;
+    }
+    
+    /* Ensure main content takes full width when sidebars are hidden */
+    .col-12.col-lg-9.order-last.order-lg-first.rst-content {
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+    
+    /* Left sidebar toggle button */
+    #show_left_sidebar {
+        display: block !important;
+        position: fixed !important;
+        top: 80px !important;
+        left: 10px !important;
+        background: #e74c3c !important;
+        border-radius: 5px !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+        z-index: 1050 !important;
+    }
+    
+    #show_left_sidebar.hide {
+        display: none !important;
+    }
+    
+    #show_left_sidebar p {
+        margin: 0 !important;
+    }
+    
+    #show_left_sidebar a {
+        display: block !important;
+        padding: 12px 15px !important;
+        color: white !important;
+        text-decoration: none !important;
+        font-weight: bold !important;
+    }
+    
+    #show_left_sidebar .icon {
+        margin-right: 8px !important;
+    }
+    
+    /* Right sidebar toggle button */
+    #show_right_sidebar {
+        display: block !important;
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        background: #e74c3c !important;
+        border-radius: 5px !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+        z-index: 1050 !important;
+    }
+    
+    #show_right_sidebar.hide {
+        display: none !important;
+    }
+    
+    #show_right_sidebar p {
+        margin: 0 !important;
+    }
+    
+    #show_right_sidebar a {
+        display: block !important;
+        padding: 12px 15px !important;
+        color: white !important;
+        text-decoration: none !important;
+        font-weight: bold !important;
+    }
+    
+    #show_right_sidebar .icon {
+        margin-right: 8px !important;
+    }
+    
+    /* Left sidebar */
+    #left_sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        height: 100vh !important;
+        width: 300px !important;
+        background: white !important;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.3) !important;
+        z-index: 1040 !important;
+        overflow-y: auto !important;
+        transform: translateX(-100%) !important;
+        transition: transform 0.3s ease !important;
+    }
+    
+    #left_sidebar.show {
+        transform: translateX(0) !important;
+    }
+    
+    #left_sidebar > p {
+        background: #bc3b2f !important;
+        color: white !important;
+        padding: 15px 20px !important;
+        margin: 0 !important;
+        border-bottom: 1px solid #eee !important;
+    }
+    
+    #left_sidebar > p a {
+        color: white !important;
+        text-decoration: none !important;
+        font-weight: bold !important;
+    }
+    
+    #left_sidebar .icon {
+        margin-right: 8px !important;
+    }
+    
+    #left_sidebar .page_nav {
+        padding: 20px !important;
+    }
+    
+    /* Style the search box and navigation in left sidebar */
+    #left_sidebar .page_nav #mobile-searchbox {
+        margin-bottom: 20px !important;
+        padding: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    #left_sidebar .page_nav #mobile-searchbox .input-group {
+        width: 100% !important;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+    }
+    
+    #left_sidebar .page_nav #mobile-searchbox input[type="search"] {
+        flex: 1 !important;
+        padding: 8px 12px !important;
+        border: 1px solid #ddd !important;
+        border-radius: 0 4px 4px 0 !important;
+        font-size: 14px !important;
+        display: block !important;
+        border-left: none !important;
+        min-width: 0 !important;
+        height: 38px !important;
+        box-sizing: border-box !important;
+        background: white !important;
+        color: #333 !important;
+    }
+    
+    #left_sidebar .page_nav #mobile-searchbox .input-group-text {
+        background: white !important;
+        border: 1px solid #ddd !important;
+        padding: 8px 12px !important;
+        display: flex !important;
+        border-radius: 4px 0 0 4px !important;
+        border-right: none !important;
+        flex-shrink: 0 !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 38px !important;
+        box-sizing: border-box !important;
+        color: #333 !important;
+    }
+    
+    #left_sidebar .page_nav #searchbox {
+        margin-bottom: 20px !important;
+        padding: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    #left_sidebar .page_nav #searchbox .input-group {
+        width: 100% !important;
+        display: flex !important;
+    }
+    
+    #left_sidebar .page_nav input[type="search"] {
+        width: 100% !important;
+        padding: 8px 12px !important;
+        border: 1px solid #ddd !important;
+        border-radius: 4px !important;
+        font-size: 14px !important;
+        display: block !important;
+    }
+    
+    #left_sidebar .page_nav .input-group-text {
+        background: #f8f9fa !important;
+        border: 1px solid #ddd !important;
+        padding: 8px 12px !important;
+        display: flex !important;
+    }
+    
+    /* Force show any collapsed content in mobile sidebar */
+    #left_sidebar .page_nav .collapse {
+        display: block !important;
+    }
+    
+    #left_sidebar .page_nav .site-toc {
+        display: block !important;
+    }
+    
+    #left_sidebar .page_nav ul {
+        margin: 0 !important;
+        padding-left: 0 !important;
+        list-style: none !important;
+    }
+    
+    #left_sidebar .page_nav li {
+        margin: 8px 0 !important;
+    }
+    
+    #left_sidebar .page_nav li ul {
+        padding-left: 20px !important;
+        margin-top: 5px !important;
+    }
+    
+    #left_sidebar .page_nav a {
+        color: #333 !important;
+        text-decoration: none !important;
+        padding: 5px 0 !important;
+        display: block !important;
+        border-radius: 3px !important;
+    }
+    
+    #left_sidebar .page_nav a:hover {
+        color: #bc3b2f !important;
+        background: #f8f9fa !important;
+        padding-left: 10px !important;
+        transition: all 0.2s ease !important;
+    }
+    
+    /* Right sidebar */
+    #right_sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        height: 100vh !important;
+        width: 300px !important;
+        background: white !important;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.3) !important;
+        z-index: 1040 !important;
+        overflow-y: auto !important;
+        transform: translateX(100%) !important;
+        transition: transform 0.3s ease !important;
+    }
+    
+    #right_sidebar.show {
+        transform: translateX(0) !important;
+    }
+    
+    #right_sidebar > p {
+        background: #bc3b2f !important;
+        color: white !important;
+        padding: 15px 20px !important;
+        margin: 0 !important;
+        border-bottom: 1px solid #eee !important;
+    }
+    
+    #right_sidebar > p a {
+        color: white !important;
+        text-decoration: none !important;
+        font-weight: bold !important;
+    }
+    
+    #right_sidebar .icon {
+        margin-right: 8px !important;
+    }
+    
+    #right_sidebar .page_toc {
+        padding: 20px !important;
+    }
+    
+    #right_sidebar .page_toc ul {
+        margin: 0 !important;
+        padding-left: 0 !important;
+        list-style: none !important;
+    }
+    
+    #right_sidebar .page_toc li {
+        margin: 8px 0 !important;
+    }
+    
+    #right_sidebar .page_toc li ul {
+        padding-left: 20px !important;
+        margin-top: 5px !important;
+    }
+    
+    #right_sidebar .page_toc a {
+        color: #333 !important;
+        text-decoration: none !important;
+        padding: 5px 0 !important;
+        display: block !important;
+        border-radius: 3px !important;
+    }
+    
+    #right_sidebar .page_toc a:hover {
+        color: #bc3b2f !important;
+        background: #f8f9fa !important;
+        padding-left: 10px !important;
+        transition: all 0.2s ease !important;
+    }
+}
+
+/* Hide mobile navigation elements on desktop */
+@media (min-width: 992px) {
+    #show_left_sidebar,
+    #left_sidebar,
+    #show_right_sidebar,
+    #right_sidebar {
+        display: none !important;
+    }
+}
+
+/* Dark mode styles for mobile sidebars */
+@media (prefers-color-scheme: dark) {
+    @media (max-width: 991.98px) {
+        /* Left sidebar dark mode */
+        #left_sidebar {
+            background: #1a1a1a !important;
+            color: #e0e0e0 !important;
+        }
+        
+        #left_sidebar > p {
+            background: #2d2d2d !important;
+            color: #e0e0e0 !important;
+            border-bottom: 1px solid #444 !important;
+        }
+        
+        #left_sidebar > p a {
+            color: #e0e0e0 !important;
+        }
+        
+        #left_sidebar .page_nav {
+            background: #1a1a1a !important;
+        }
+        
+        /* Search box dark mode */
+        #left_sidebar .page_nav #mobile-searchbox input[type="search"] {
+            background: #2d2d2d !important;
+            border: 1px solid #555 !important;
+            color: #e0e0e0 !important;
+        }
+        
+        #left_sidebar .page_nav #mobile-searchbox input[type="search"]:focus {
+            background: #333 !important;
+            border-color: #666 !important;
+        }
+        
+        #left_sidebar .page_nav #mobile-searchbox .input-group-text {
+            background: #2d2d2d !important;
+            border: 1px solid #555 !important;
+            color: #e0e0e0 !important;
+        }
+        
+        /* Navigation links dark mode */
+        #left_sidebar .page_nav a {
+            color: #e0e0e0 !important;
+        }
+        
+        #left_sidebar .page_nav a:hover {
+            color: #ff6b6b !important;
+            background: #333 !important;
+        }
+        
+        /* Right sidebar dark mode */
+        #right_sidebar {
+            background: #1a1a1a !important;
+            color: #e0e0e0 !important;
+        }
+        
+        #right_sidebar > p {
+            background: #2d2d2d !important;
+            color: #e0e0e0 !important;
+            border-bottom: 1px solid #444 !important;
+        }
+        
+        #right_sidebar > p a {
+            color: #e0e0e0 !important;
+        }
+        
+        #right_sidebar .page_toc {
+            background: #1a1a1a !important;
+        }
+        
+        #right_sidebar .page_toc a {
+            color: #e0e0e0 !important;
+        }
+        
+        #right_sidebar .page_toc a:hover {
+            color: #ff6b6b !important;
+            background: #333 !important;
+        }
+    }
+}
+
+/* Alternative dark mode detection - body/html classes */
+@media (max-width: 991.98px) {
+    html[data-theme="dark"] #left_sidebar,
+    body.dark-mode #left_sidebar,
+    body.force-dark-mode #left_sidebar,
+    .dark-theme #left_sidebar,
+    #left_sidebar.dark-theme {
+        background: #1a1a1a !important;
+        color: #e0e0e0 !important;
+    }
+
+    html[data-theme="dark"] #left_sidebar > p,
+    body.dark-mode #left_sidebar > p,
+    body.force-dark-mode #left_sidebar > p,
+    .dark-theme #left_sidebar > p,
+    #left_sidebar.dark-theme > p {
+        background: #2d2d2d !important;
+        color: #e0e0e0 !important;
+        border-bottom: 1px solid #444 !important;
+    }
+
+    html[data-theme="dark"] #left_sidebar > p a,
+    body.dark-mode #left_sidebar > p a,
+    body.force-dark-mode #left_sidebar > p a,
+    .dark-theme #left_sidebar > p a,
+    #left_sidebar.dark-theme > p a {
+        color: #e0e0e0 !important;
+    }
+
+    html[data-theme="dark"] #left_sidebar .page_nav,
+    body.dark-mode #left_sidebar .page_nav,
+    body.force-dark-mode #left_sidebar .page_nav,
+    .dark-theme #left_sidebar .page_nav,
+    #left_sidebar.dark-theme .page_nav {
+        background: #1a1a1a !important;
+    }
+
+    html[data-theme="dark"] #left_sidebar .page_nav #mobile-searchbox input[type="search"],
+    body.dark-mode #left_sidebar .page_nav #mobile-searchbox input[type="search"],
+    body.force-dark-mode #left_sidebar .page_nav #mobile-searchbox input[type="search"],
+    .dark-theme #left_sidebar .page_nav #mobile-searchbox input[type="search"],
+    #left_sidebar.dark-theme .page_nav #mobile-searchbox input[type="search"] {
+        background: #2d2d2d !important;
+        border: 1px solid #555 !important;
+        color: #e0e0e0 !important;
+    }
+
+    html[data-theme="dark"] #left_sidebar .page_nav #mobile-searchbox .input-group-text,
+    body.dark-mode #left_sidebar .page_nav #mobile-searchbox .input-group-text,
+    body.force-dark-mode #left_sidebar .page_nav #mobile-searchbox .input-group-text,
+    .dark-theme #left_sidebar .page_nav #mobile-searchbox .input-group-text,
+    #left_sidebar.dark-theme .page_nav #mobile-searchbox .input-group-text {
+        background: #2d2d2d !important;
+        border: 1px solid #555 !important;
+        color: #e0e0e0 !important;
+    }
+
+    html[data-theme="dark"] #left_sidebar .page_nav a,
+    body.dark-mode #left_sidebar .page_nav a,
+    body.force-dark-mode #left_sidebar .page_nav a,
+    .dark-theme #left_sidebar .page_nav a,
+    #left_sidebar.dark-theme .page_nav a {
+        color: #e0e0e0 !important;
+    }
+
+    html[data-theme="dark"] #left_sidebar .page_nav a:hover,
+    body.dark-mode #left_sidebar .page_nav a:hover,
+    body.force-dark-mode #left_sidebar .page_nav a:hover,
+    .dark-theme #left_sidebar .page_nav a:hover,
+    #left_sidebar.dark-theme .page_nav a:hover {
+        color: #ff6b6b !important;
+        background: #333 !important;
+    }
+
+    html[data-theme="dark"] #right_sidebar,
+    body.dark-mode #right_sidebar,
+    body.force-dark-mode #right_sidebar,
+    .dark-theme #right_sidebar,
+    #right_sidebar.dark-theme {
+        background: #1a1a1a !important;
+        color: #e0e0e0 !important;
+    }
+
+    html[data-theme="dark"] #right_sidebar > p,
+    body.dark-mode #right_sidebar > p,
+    body.force-dark-mode #right_sidebar > p,
+    .dark-theme #right_sidebar > p,
+    #right_sidebar.dark-theme > p {
+        background: #2d2d2d !important;
+        color: #e0e0e0 !important;
+        border-bottom: 1px solid #444 !important;
+    }
+
+    html[data-theme="dark"] #right_sidebar > p a,
+    body.dark-mode #right_sidebar > p a,
+    body.force-dark-mode #right_sidebar > p a,
+    .dark-theme #right_sidebar > p a,
+    #right_sidebar.dark-theme > p a {
+        color: #e0e0e0 !important;
+    }
+
+    html[data-theme="dark"] #right_sidebar .page_toc,
+    body.dark-mode #right_sidebar .page_toc,
+    body.force-dark-mode #right_sidebar .page_toc,
+    .dark-theme #right_sidebar .page_toc,
+    #right_sidebar.dark-theme .page_toc {
+        background: #1a1a1a !important;
+    }
+
+    html[data-theme="dark"] #right_sidebar .page_toc a,
+    body.dark-mode #right_sidebar .page_toc a,
+    body.force-dark-mode #right_sidebar .page_toc a,
+    .dark-theme #right_sidebar .page_toc a,
+    #right_sidebar.dark-theme .page_toc a {
+        color: #e0e0e0 !important;
+    }
+
+    html[data-theme="dark"] #right_sidebar .page_toc a:hover,
+    body.dark-mode #right_sidebar .page_toc a:hover,
+    body.force-dark-mode #right_sidebar .page_toc a:hover,
+    .dark-theme #right_sidebar .page_toc a:hover,
+    #right_sidebar.dark-theme .page_toc a:hover {
+        color: #ff6b6b !important;
+        background: #333 !important;
+    }
 }
