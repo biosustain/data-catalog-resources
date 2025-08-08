@@ -33,6 +33,7 @@ exclude_patterns = [
     "**/pandoc_ipynb/inputs/*",
     ".nox/*",
     "README.md",
+    "README_original_template.md",
     "**/.ipynb_checkpoints/*",
     "jupyter_execute",
     "conf.py",
