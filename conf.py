@@ -7,7 +7,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "DTU Biosustain Data Catalog Resources GitHub pages"
-copyright = "2025, DTU Biosustain, Informatics Platform, RDM"
+copyright = "2025, Research Data Management, DTU Biosustain"
 author = "Ding He"
 
 
@@ -19,7 +19,8 @@ extensions = [
     # "sphinx_design", # https://sphinx-design.readthedocs.io/en/sbt-theme/
     # "sphinx_copybutton", # https://sphinx-copybutton.readthedocs.io/
     "sphinx_new_tab_link",
-    "sphinx_wagtail_theme"
+    "sphinx_wagtail_theme",
+    "sphinx.ext.autodoc",  # For search functionality
 ]
 
 templates_path = ["_templates"]
@@ -47,10 +48,14 @@ nb_execution_mode = "auto"
 
 myst_enable_extensions = ["dollarmath", "amsmath"]
 
+# Enable frontmatter parsing for MyST
+myst_title_to_header = False  # Prevent MyST from converting titles to headers
+
 # Plolty support through require javascript library
 # https://myst-nb.readthedocs.io/en/latest/render/interactive.html#plotly
 html_js_files = [
-    "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"
+    "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js",
+    "js/mobile-toc.js"
 ]
 
 # https://myst-nb.readthedocs.io/en/latest/configuration.html
@@ -72,12 +77,25 @@ nb_custom_formats = {
 html_theme = "sphinx_wagtail_theme"
 
 html_theme_options = {
-    "project_name": "DTU Biosustain Data Catalog Resources",
-    "github_url": "https://github.com/biosustain/data-catalog-resources/blob/main/",
-    "logo": "images/datacat.svg"
+    "project_name": "Biosustain Data Catalog Resources",
+    # The github URL if you want to link to the source code on the page
+    # "github_url": "https://github.com/biosustain/data-catalog-resources/blob/main/",
+    "logo": "images/DTU_Logo_Corporate_White_RGB.png",
+    "logo_width": "35",  # Reduced from default size
+    "logo_height": "25",  # Reduced from default size
+    "footer_links": "",  # Empty string to hide footer navigation links
 }
 
 html_title = 'Data Catalog Resources'
+
+# Disable the "View source" button
+html_show_sourcelink = False
+
+# Configure sidebar to show global navigation on all pages
+# Remove this override to use the theme's default sidebar behavior
+# html_sidebars = {
+#     '**': ['globaltoc.html', 'searchbox.html']
+# }
 
 
 # 2. Select a template
