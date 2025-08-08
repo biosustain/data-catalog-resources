@@ -1,7 +1,4 @@
-/* Set the background color for the primary color in the header and footer area*/
-header.bg-primary {
-    background-color: #bc3b2f !important;
-}
+/* Set the background color for the primary color in the footer area*/
 footer.bg-primary {
     background-color: #bc3b2f !important;
 }
@@ -51,7 +48,7 @@ footer.bg-primary {
 
 /* Move theme toggle button to header next to page title */
 #wagtail-theme {
-    position: fixed !important;
+    position: absolute !important;
     top: 23px !important;
     z-index: 9999 !important;
     background: transparent !important;
@@ -69,6 +66,12 @@ footer.bg-primary {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+}
+
+/* Make the header container relative positioned */
+header.bg-primary {
+    background-color: #bc3b2f !important;
+    position: relative !important;
 }
 
 .logo.navbar-brand {

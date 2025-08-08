@@ -7,8 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
     function positionThemeToggle() {
         const themeButton = document.getElementById('wagtail-theme');
         const titleElement = document.querySelector('.logo.navbar-brand');
+        const headerElement = document.querySelector('header.bg-primary');
         
-        if (themeButton && titleElement) {
+        if (themeButton && titleElement && headerElement) {
+            // Move the theme button into the header container if it's not already there
+            if (!headerElement.contains(themeButton)) {
+                console.log('Moving theme button into header container');
+                headerElement.appendChild(themeButton);
+            }
+            
             // Get the title text element (not the logo image)
             const titleText = titleElement.querySelector('span') || titleElement.firstChild;
             
@@ -25,19 +32,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 const textWidth = tempSpan.offsetWidth;
                 document.body.removeChild(tempSpan);
                 
-                // Position the button 15px to the right of the title text
+                // Position the button 15px to the right of the title text, relative to header
                 const titleRect = titleElement.getBoundingClientRect();
-                const leftPosition = titleRect.left + textWidth + 15;
+                const headerRect = headerElement.getBoundingClientRect();
+                const leftPosition = titleRect.left - headerRect.left + textWidth + 15;
                 
                 themeButton.style.left = leftPosition + 'px';
-                console.log('Theme button positioned at:', leftPosition + 'px');
+                console.log('Theme button positioned at:', leftPosition + 'px (relative to header)');
             } else {
-                // Fallback: position based on title container
+                // Fallback: position based on title container, relative to header
                 const titleRect = titleElement.getBoundingClientRect();
-                const leftPosition = titleRect.left + titleElement.offsetWidth + 15;
+                const headerRect = headerElement.getBoundingClientRect();
+                const leftPosition = titleRect.left - headerRect.left + titleElement.offsetWidth + 15;
                 themeButton.style.left = leftPosition + 'px';
-                console.log('Theme button positioned (fallback) at:', leftPosition + 'px');
+                console.log('Theme button positioned (fallback) at:', leftPosition + 'px (relative to header)');
             }
+        } else {
+            console.log('Theme button setup - missing elements:', {
+                themeButton: !!themeButton,
+                titleElement: !!titleElement, 
+                headerElement: !!headerElement
+            });
         }
     }
     
