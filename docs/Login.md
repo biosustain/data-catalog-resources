@@ -7,11 +7,12 @@ Access is through DTU Single Sign-On (SSO). You just have to use your usual DTU 
 ```
 
 ## Step 1: Navigating to the Login page
-👉 Go to the Data Catalog website by visiting: [Data Catalog](https://datacatalog.biosustain.dtu.dk/)
+👉 Go to the Data Catalog website by visiting: [Data Catalog](https://datacatalog.biosustain.dtu.dk/).
 
 
 ## Step 2: Click "Login" 
-Click the `Login` button located in the top-right corner of the page and you'll automatically redirected to the DTU login page
+Click the `Login` button located in the top-right corner of the page. 
+You will be automatically redirected to the DTU Single Sign-On page.
 
 ```{figure} ../_static/images/Login.png
 :alt: The home page of Data Catalog website
@@ -22,8 +23,16 @@ Click the `Login` button located in the top-right corner of the page and you'll 
 ```
 
 ## Step 3: Enter your DTU Credentials
-Use your DTU username and password to sign in.
+Login using your DTU username and password.
+
+```{figure} ../_static/images/dtu_login.png
+:alt: DTU Sinlge Sign-On page
+:width: 60%
+:align: center
+
+*DTU Sinlge Sign-On page*
+```
 
 ## Step 4: Access the Data Catalog's main page
 
-Once you're logged in, you'll return to the Data Catalog and have access.
+Once you're logged in, you'll be redirected back to the Data Catalog and granted access to its features.
