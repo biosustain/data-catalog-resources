@@ -30,6 +30,7 @@ Login using your ***DTU username and password***.
 :alt: DTU Single Sign-On page
 :width: 60%
 :align: center
+:class: img-bordered
 
 *DTU Single Sign-On page*
 ```
