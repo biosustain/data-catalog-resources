@@ -1,44 +1,51 @@
-/* Set the background color for the primary color in the footer area*/
-footer.bg-primary {
+/* ============================================
+   MAIN THEME & LAYOUT CUSTOMIZATIONS
+   ============================================ */
+
+/* Brand colors for header and footer */
+footer.bg-primary,
+header.bg-primary {
     background-color: #bc3b2f !important;
 }
 
-/* Hide the active breadcrumb item (current page title) to prevent duplication with H1 */
-.breadcrumb-item.active {
+header.bg-primary {
+    position: relative !important;
+}
+
+/* Clean layout - hide unnecessary elements */
+.breadcrumb-item.active,
+.row hr.w-100.my-4,
+.breadcrumb-item:first-child {
     display: none !important;
 }
 
-/* Hide the horizontal separator line below the header */
-.row hr.w-100.my-4 {
-    display: none !important;
+.breadcrumb-item:first-child + .breadcrumb-item::before {
+    content: none !important;
 }
 
-/* Reduce top spacing for main content area */
+/* Spacing adjustments */
 .col-12.col-lg-9.pt-5 {
     padding-top: 1rem !important;
 }
 
-/* Reduce top spacing for the rst-content area */
 .rst-content {
     margin-top: 0 !important;
     padding-top: 0 !important;
 }
 
-/* Hide the first-level breadcrumb navigation item in the navbar */
-.breadcrumb-item:first-child {
-    display: none; /* Hides the first-level " ol > li" element which is "Docs" */
-}
-
-/* Hide the separator for the first breadcrumb item */
-.breadcrumb-item:first-child + .breadcrumb-item::before {
-    content: none; /* Removes the separator (e.g., ">") */
-}
-
-/* Move only the logo image to the right side of the header */
+/* Header layout */
 .navbar {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
+}
+
+.logo.navbar-brand {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    position: relative !important;
 }
 
 .logo.navbar-brand .logo-img {
@@ -46,7 +53,14 @@ footer.bg-primary {
     margin-left: auto !important;
 }
 
-/* Move theme toggle button to header next to page title */
+.navbar-toggler {
+    order: 1 !important;
+}
+
+/* ============================================
+   THEME TOGGLE BUTTON
+   ============================================ */
+
 #wagtail-theme {
     position: absolute !important;
     top: 23px !important;
@@ -58,9 +72,6 @@ footer.bg-primary {
     font-size: 16px !important;
     color: rgba(255, 255, 255, 0.9) !important;
     transition: all 0.3s ease !important;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
     width: 32px !important;
     height: 32px !important;
     display: flex !important;
@@ -68,32 +79,16 @@ footer.bg-primary {
     justify-content: center !important;
 }
 
-/* Make the header container relative positioned */
-header.bg-primary {
-    background-color: #bc3b2f !important;
-    position: relative !important;
-}
-
-.logo.navbar-brand {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: 100% !important;
-    position: relative !important;
-}
-
 #wagtail-theme:hover {
     background: rgba(255, 255, 255, 0.15) !important;
     color: rgba(255, 255, 255, 1) !important;
     transform: scale(1.1) !important;
-    border-radius: 50% !important;
 }
 
-/* Hide all text content, keep only the icon */
+/* Icon styling */
 #wagtail-theme .dark-only,
 #wagtail-theme .light-only {
     font-size: 0 !important;
-    line-height: 0 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -104,23 +99,15 @@ header.bg-primary {
 #wagtail-theme .dark-only i,
 #wagtail-theme .light-only i {
     font-size: 16px !important;
-    line-height: 1 !important;
     display: block !important;
     color: inherit !important;
 }
 
-/* Simple icon toggle - REVERSED LOGIC */
-/* Show the opposite icon of current mode (icon shows what you'll get when you click) */
-/* Light mode: show sun icon (dark-only) to indicate "click for dark mode" */
-#wagtail-theme .light-only {
-    display: none !important;
-}
+/* Icon toggle logic - show opposite of current mode */
+#wagtail-theme .light-only { display: none !important; }
+#wagtail-theme .dark-only { display: flex !important; }
 
-#wagtail-theme .dark-only {
-    display: flex !important;
-}
-
-/* Dark mode: show moon icon (light-only) to indicate "click for light mode" */
+/* Dark mode: show moon icon */
 [data-bs-theme="dark"] #wagtail-theme .dark-only,
 html[data-theme="dark"] #wagtail-theme .dark-only,
 body[data-theme="dark"] #wagtail-theme .dark-only,
@@ -135,104 +122,70 @@ body[data-theme="dark"] #wagtail-theme .light-only,
     display: flex !important;
 }
 
-/* Also try prefers-color-scheme as fallback */
 @media (prefers-color-scheme: dark) {
-    #wagtail-theme .dark-only {
-        display: none !important;
-    }
-    
-    #wagtail-theme .light-only {
-        display: flex !important;
-    }
+    #wagtail-theme .dark-only { display: none !important; }
+    #wagtail-theme .light-only { display: flex !important; }
 }
 
-/* Force the container to stay visible but transparent */
+/* Theme container positioning */
 .col-sm-12.col-lg-auto.mt-3.mt-lg-3 {
-    display: block !important;
     position: fixed !important;
     top: 0 !important;
     right: 0 !important;
     background: transparent !important;
-    border: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
     z-index: 9998 !important;
-    width: auto !important;
-    height: auto !important;
 }
 
-/* Ensure the hamburger menu stays on the left for mobile */
-.navbar-toggler {
-    order: 1 !important;
-}
+/* ============================================
+   MOBILE NAVIGATION
+   ============================================ */
 
-/* Mobile Navigation and TOC (similar to benchling-resources) */
 @media (max-width: 991.98px) {
-    /* Hide the original sidebars and hamburger menu on mobile */
+    /* Hide desktop elements */
     nav.col-12.col-lg-3.pb-4,
     aside.col-12.col-lg-3.sidebar-container,
     .navbar-toggler {
         display: none !important;
     }
     
-    /* Ensure main content takes full width when sidebars are hidden */
+    /* Full width content */
     .col-12.col-lg-9.order-last.order-lg-first.rst-content {
         max-width: 100% !important;
         flex: 0 0 100% !important;
     }
     
-    /* Left sidebar toggle button */
-    #show_left_sidebar {
-        display: block !important;
-        position: fixed !important;
-        top: 80px !important;
-        left: 10px !important;
-        background: #e74c3c !important;
-        border-radius: 5px !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
-        z-index: 1050 !important;
-    }
-    
-    #show_left_sidebar.hide {
-        display: none !important;
-    }
-    
-    #show_left_sidebar p {
-        margin: 0 !important;
-    }
-    
-    #show_left_sidebar a {
-        display: block !important;
-        padding: 12px 15px !important;
-        color: white !important;
-        text-decoration: none !important;
-        font-weight: bold !important;
-    }
-    
-    #show_left_sidebar .icon {
-        margin-right: 8px !important;
-    }
-    
-    /* Right sidebar toggle button */
+    /* Sidebar toggle buttons */
+    #show_left_sidebar,
     #show_right_sidebar {
         display: block !important;
         position: fixed !important;
-        bottom: 20px !important;
-        right: 20px !important;
         background: #e74c3c !important;
         border-radius: 5px !important;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
         z-index: 1050 !important;
     }
     
+    #show_left_sidebar {
+        top: 80px !important;
+        left: 10px !important;
+    }
+    
+    #show_right_sidebar {
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+    
+    #show_left_sidebar.hide,
     #show_right_sidebar.hide {
         display: none !important;
     }
     
+    #show_left_sidebar p,
     #show_right_sidebar p {
         margin: 0 !important;
     }
     
+    #show_left_sidebar a,
     #show_right_sidebar a {
         display: block !important;
         padding: 12px 15px !important;
@@ -241,30 +194,47 @@ body[data-theme="dark"] #wagtail-theme .light-only,
         font-weight: bold !important;
     }
     
+    #show_left_sidebar .icon,
     #show_right_sidebar .icon {
         margin-right: 8px !important;
     }
     
-    /* Left sidebar */
-    #left_sidebar {
+    /* Sidebar containers */
+    #left_sidebar,
+    #right_sidebar {
         position: fixed !important;
         top: 0 !important;
-        left: 0 !important;
         height: 100vh !important;
         width: 300px !important;
         background: white !important;
-        box-shadow: 2px 0 10px rgba(0,0,0,0.3) !important;
         z-index: 1040 !important;
         overflow-y: auto !important;
-        transform: translateX(-100%) !important;
         transition: transform 0.3s ease !important;
+    }
+    
+    #left_sidebar {
+        left: 0 !important;
+        transform: translateX(-100%) !important;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.3) !important;
+    }
+    
+    #right_sidebar {
+        right: 0 !important;
+        transform: translateX(100%) !important;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.3) !important;
     }
     
     #left_sidebar.show {
         transform: translateX(0) !important;
     }
     
-    #left_sidebar > p {
+    #right_sidebar.show {
+        transform: translateX(0) !important;
+    }
+    
+    /* Sidebar headers */
+    #left_sidebar > p,
+    #right_sidebar > p {
         background: #bc3b2f !important;
         color: white !important;
         padding: 15px 20px !important;
@@ -272,47 +242,61 @@ body[data-theme="dark"] #wagtail-theme .light-only,
         border-bottom: 1px solid #eee !important;
     }
     
-    #left_sidebar > p a {
+    #left_sidebar > p a,
+    #right_sidebar > p a {
         color: white !important;
         text-decoration: none !important;
         font-weight: bold !important;
     }
     
-    #left_sidebar .icon {
+    #left_sidebar .icon,
+    #right_sidebar .icon {
         margin-right: 8px !important;
     }
     
-    #left_sidebar .page_nav {
+    /* Sidebar content */
+    #left_sidebar .page_nav,
+    #right_sidebar .page_toc {
         padding: 20px !important;
     }
     
-    /* Style the search box and navigation in left sidebar */
-    #left_sidebar .page_nav #mobile-searchbox {
+    /* Search boxes */
+    #left_sidebar .page_nav #mobile-searchbox,
+    #left_sidebar .page_nav #searchbox {
         margin-bottom: 20px !important;
         padding: 0 !important;
         display: block !important;
         visibility: visible !important;
     }
     
-    #left_sidebar .page_nav #mobile-searchbox .input-group {
+    #left_sidebar .page_nav #mobile-searchbox .input-group,
+    #left_sidebar .page_nav #searchbox .input-group {
         width: 100% !important;
         display: flex !important;
-        flex-wrap: nowrap !important;
     }
     
-    #left_sidebar .page_nav #mobile-searchbox input[type="search"] {
-        flex: 1 !important;
+    #left_sidebar .page_nav #mobile-searchbox input[type="search"],
+    #left_sidebar .page_nav input[type="search"] {
         padding: 8px 12px !important;
         border: 1px solid #ddd !important;
-        border-radius: 0 4px 4px 0 !important;
         font-size: 14px !important;
         display: block !important;
-        border-left: none !important;
-        min-width: 0 !important;
         height: 38px !important;
         box-sizing: border-box !important;
         background: white !important;
         color: #333 !important;
+    }
+    
+    #left_sidebar .page_nav #mobile-searchbox input[type="search"] {
+        flex: 1 !important;
+        border-radius: 0 4px 4px 0 !important;
+        border-left: none !important;
+        min-width: 0 !important;
+    }
+    
+    #left_sidebar .page_nav input[type="search"]:not(#mobile-searchbox input[type="search"]) {
+        width: 100% !important;
+        border-radius: 4px !important;
     }
     
     #left_sidebar .page_nav #mobile-searchbox .input-group-text {
@@ -330,129 +314,38 @@ body[data-theme="dark"] #wagtail-theme .light-only,
         color: #333 !important;
     }
     
-    #left_sidebar .page_nav #searchbox {
-        margin-bottom: 20px !important;
-        padding: 0 !important;
-        display: block !important;
-        visibility: visible !important;
-    }
-    
-    #left_sidebar .page_nav #searchbox .input-group {
-        width: 100% !important;
-        display: flex !important;
-    }
-    
-    #left_sidebar .page_nav input[type="search"] {
-        width: 100% !important;
-        padding: 8px 12px !important;
-        border: 1px solid #ddd !important;
-        border-radius: 4px !important;
-        font-size: 14px !important;
-        display: block !important;
-    }
-    
-    #left_sidebar .page_nav .input-group-text {
+    #left_sidebar .page_nav .input-group-text:not(#mobile-searchbox .input-group-text) {
         background: #f8f9fa !important;
         border: 1px solid #ddd !important;
         padding: 8px 12px !important;
         display: flex !important;
     }
     
-    /* Force show any collapsed content in mobile sidebar */
-    #left_sidebar .page_nav .collapse {
-        display: block !important;
-    }
-    
+    /* Navigation structure */
+    #left_sidebar .page_nav .collapse,
     #left_sidebar .page_nav .site-toc {
         display: block !important;
     }
     
-    #left_sidebar .page_nav ul {
-        margin: 0 !important;
-        padding-left: 0 !important;
-        list-style: none !important;
-    }
-    
-    #left_sidebar .page_nav li {
-        margin: 8px 0 !important;
-    }
-    
-    #left_sidebar .page_nav li ul {
-        padding-left: 20px !important;
-        margin-top: 5px !important;
-    }
-    
-    #left_sidebar .page_nav a {
-        color: #333 !important;
-        text-decoration: none !important;
-        padding: 5px 0 !important;
-        display: block !important;
-        border-radius: 3px !important;
-    }
-    
-    #left_sidebar .page_nav a:hover {
-        color: #bc3b2f !important;
-        background: #f8f9fa !important;
-        padding-left: 10px !important;
-        transition: all 0.2s ease !important;
-    }
-    
-    /* Right sidebar */
-    #right_sidebar {
-        position: fixed !important;
-        top: 0 !important;
-        right: 0 !important;
-        height: 100vh !important;
-        width: 300px !important;
-        background: white !important;
-        box-shadow: -2px 0 10px rgba(0,0,0,0.3) !important;
-        z-index: 1040 !important;
-        overflow-y: auto !important;
-        transform: translateX(100%) !important;
-        transition: transform 0.3s ease !important;
-    }
-    
-    #right_sidebar.show {
-        transform: translateX(0) !important;
-    }
-    
-    #right_sidebar > p {
-        background: #bc3b2f !important;
-        color: white !important;
-        padding: 15px 20px !important;
-        margin: 0 !important;
-        border-bottom: 1px solid #eee !important;
-    }
-    
-    #right_sidebar > p a {
-        color: white !important;
-        text-decoration: none !important;
-        font-weight: bold !important;
-    }
-    
-    #right_sidebar .icon {
-        margin-right: 8px !important;
-    }
-    
-    #right_sidebar .page_toc {
-        padding: 20px !important;
-    }
-    
+    #left_sidebar .page_nav ul,
     #right_sidebar .page_toc ul {
         margin: 0 !important;
         padding-left: 0 !important;
         list-style: none !important;
     }
     
+    #left_sidebar .page_nav li,
     #right_sidebar .page_toc li {
         margin: 8px 0 !important;
     }
     
+    #left_sidebar .page_nav li ul,
     #right_sidebar .page_toc li ul {
         padding-left: 20px !important;
         margin-top: 5px !important;
     }
     
+    #left_sidebar .page_nav a,
     #right_sidebar .page_toc a {
         color: #333 !important;
         text-decoration: none !important;
@@ -461,6 +354,7 @@ body[data-theme="dark"] #wagtail-theme .light-only,
         border-radius: 3px !important;
     }
     
+    #left_sidebar .page_nav a:hover,
     #right_sidebar .page_toc a:hover {
         color: #bc3b2f !important;
         background: #f8f9fa !important;
@@ -469,7 +363,7 @@ body[data-theme="dark"] #wagtail-theme .light-only,
     }
 }
 
-/* Hide mobile navigation elements on desktop */
+/* Hide mobile elements on desktop */
 @media (min-width: 992px) {
     #show_left_sidebar,
     #left_sidebar,
@@ -478,6 +372,10 @@ body[data-theme="dark"] #wagtail-theme .light-only,
         display: none !important;
     }
 }
+
+/* ============================================
+   DARK MODE FOR MOBILE SIDEBARS
+   ============================================ */
 
 /* Dark mode styles for mobile sidebars */
 @media (prefers-color-scheme: dark) {
@@ -686,4 +584,147 @@ body[data-theme="dark"] #wagtail-theme .light-only,
         color: #ff6b6b !important;
         background: #333 !important;
     }
+}
+
+/* ============================================
+   ADMONITION STYLING
+   ============================================ */
+
+/* Base styling */
+.admonition {
+    margin: 1.5rem 0 !important;
+    padding: 0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    overflow: hidden !important;
+}
+
+.admonition .admonition-title {
+    font-weight: 600 !important;
+    font-size: 1.1em !important;
+    margin: 0 !important;
+    padding: 12px 16px !important;
+    color: white !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.admonition > *:not(.admonition-title) {
+    padding: 16px !important;
+    margin: 0 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Collapsible functionality */
+.admonition.toggle .admonition-title {
+    cursor: pointer !important;
+    position: relative !important;
+    user-select: none !important;
+    padding-right: 120px !important;
+}
+
+.admonition.toggle button.toggle-button {
+    right: 16px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: transparent !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.admonition.toggle button.toggle-button .tb-icon {
+    display: none !important;
+}
+
+.admonition.toggle button.toggle-button::before {
+    content: attr(data-toggle-hint) !important;
+    font-size: 0.8em !important;
+    color: white !important;
+    opacity: 0.9 !important;
+    white-space: nowrap !important;
+    order: 1 !important;
+}
+
+.admonition.toggle button.toggle-button::after {
+    content: "▼" !important;
+    font-size: 0.9em !important;
+    color: white !important;
+    transition: transform 0.3s ease !important;
+    order: 2 !important;
+}
+
+.admonition.toggle button.toggle-button-hidden::after {
+    transform: rotate(-90deg) !important;
+}
+
+.admonition.toggle .admonition-title:hover {
+    opacity: 0.9 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Color themes */
+.admonition.note .admonition-title { background: linear-gradient(135deg, #3498db, #2980b9) !important; }
+.admonition.note { border-left: 4px solid #3498db !important; }
+
+.admonition.tip .admonition-title { background: linear-gradient(135deg, #27ae60, #229954) !important; }
+.admonition.tip { border-left: 4px solid #27ae60 !important; }
+
+.admonition.warning .admonition-title { background: linear-gradient(135deg, #f39c12, #e67e22) !important; }
+.admonition.warning { border-left: 4px solid #f39c12 !important; }
+
+.admonition.danger .admonition-title,
+.admonition.error .admonition-title { background: linear-gradient(135deg, #e74c3c, #c0392b) !important; }
+.admonition.danger,
+.admonition.error { border-left: 4px solid #e74c3c !important; }
+
+.admonition.important .admonition-title { background: linear-gradient(135deg, #9b59b6, #8e44ad) !important; }
+.admonition.important { border-left: 4px solid #9b59b6 !important; }
+
+/* Generic/custom admonitions */
+.admonition:not(.note):not(.tip):not(.warning):not(.danger):not(.error):not(.important) .admonition-title {
+    background: linear-gradient(135deg, #bc3b2f, #a0332a) !important;
+}
+.admonition:not(.note):not(.tip):not(.warning):not(.danger):not(.error):not(.important) {
+    border-left: 4px solid #bc3b2f !important;
+}
+
+/* Dark mode for admonitions */
+@media (prefers-color-scheme: dark) {
+    .admonition > *:not(.admonition-title) {
+        background: rgba(45, 45, 45, 0.95) !important;
+        color: #e0e0e0 !important;
+    }
+    
+    .admonition {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    }
+}
+
+html[data-theme="dark"] .admonition > *:not(.admonition-title),
+body.dark-mode .admonition > *:not(.admonition-title),
+.dark-theme .admonition > *:not(.admonition-title) {
+    background: rgba(45, 45, 45, 0.95) !important;
+    color: #e0e0e0 !important;
+}
+
+html[data-theme="dark"] .admonition,
+body.dark-mode .admonition,
+.dark-theme .admonition {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Animation for collapsible content */
+.admonition.toggle > *:not(.admonition-title) {
+    transition: all 0.3s ease !important;
+    overflow: hidden !important;
+}
+
+.admonition.toggle.collapsed > *:not(.admonition-title) {
+    max-height: 0 !important;
+    padding: 0 16px !important;
+    opacity: 0 !important;
 }

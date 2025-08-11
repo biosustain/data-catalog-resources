@@ -12,7 +12,8 @@
       <link rel="stylesheet" type="text/css" href="../_static/dist/theme.css?v=310cf088" />
       <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=92cbaae1" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a25c3584" />
             <link rel="index" title="Index" href="../genindex.html" />
             <link rel="search" title="Search" href="../search.html" />
             <link rel="top" title="Data Catalog Resources" href="#" />
@@ -113,10 +114,13 @@
 <blockquote>
 <div><p>Author: Your Name</p>
 </div></blockquote>
+<div class="important toggle admonition">
+<p class="admonition-title">Markdown Syntax Guide</p>
 <p>Write something using markdown syntax. You can use the
 <a class="reference external" href="https://www.markdownguide.org/basic-syntax/" rel="noreferrer" target="_blank">Markdown Guide</a> or
 <a class="reference external" href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax" rel="noreferrer" target="_blank">GitHub Docs Guide</a>
 to learn more about the markup syntax.</p>
+</div>
 </section>
 
 </main>
@@ -163,6 +167,11 @@ to learn more about the markup syntax.</p>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
         <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script src="../_static/js/mobile-toc.js?v=28931289"></script>
         <script type="text/javascript" src="../_static/dist/theme.js"></script>
