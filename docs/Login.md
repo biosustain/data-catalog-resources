@@ -28,7 +28,7 @@ Login using your ***DTU username and password***.
 
 ```{figure} ../_static/images/dtu_login.png
 :alt: DTU Single Sign-On page
-:width: 60%
+:width: 50%
 :align: center
 :class: img-bordered
 
