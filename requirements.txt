@@ -4,3 +4,4 @@ ipywidgets
 sphinx-new-tab-link!=0.2.2
 jupytext
 sphinx-wagtail-theme
+sphinx-togglebutton

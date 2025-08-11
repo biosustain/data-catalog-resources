@@ -21,6 +21,7 @@ extensions = [
     "sphinx_new_tab_link",
     "sphinx_wagtail_theme",
     "sphinx.ext.autodoc",  # For search functionality
+    "sphinx_togglebutton",  # For collapsible content
 ]
 
 templates_path = ["_templates"]
