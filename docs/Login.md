@@ -18,6 +18,7 @@ You will be automatically ***redirected*** to the DTU Single Sign-On page.
 :alt: Homepage of the Data Catalog Website
 :width: 60%
 :align: center
+:class: bordered
 
 *Homepage of the Data Catalog Website*
 ```
