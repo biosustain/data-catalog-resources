@@ -15,3 +15,10 @@ footer.bg-primary {
 .breadcrumb-item:first-child + .breadcrumb-item::before {
     content: none; /* Removes the separator (e.g., ">") */
 }
+
+/* Reusable style for any image you want to frame */
+.img-bordered {
+    border: 2px solid #ccc;
+    padding: 6px;
+    border-radius: 6px;
+}
