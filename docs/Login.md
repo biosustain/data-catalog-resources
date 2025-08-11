@@ -11,8 +11,8 @@ Access is through DTU Single Sign-On (SSO). You just have to use your usual DTU 
 
 
 ## Step 2: Click "Login" ✅
-Click the **`Login`** button located in the ***top-right corner*** of the page. 
-You will be automatically redirected to the DTU Single Sign-On page.
+Click the `Login` button located in the ***top-right corner*** of the page. 
+You will be automatically ***redirected*** to the DTU Single Sign-On page.
 
 ```{figure} ../_static/images/Login.png
 :alt: Homepage of the Data Catalog Website
