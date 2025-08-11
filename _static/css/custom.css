@@ -19,6 +19,6 @@ footer.bg-primary {
 /* Reusable style for any image you want to frame */
 .img-bordered {
     border: 2px solid #ccc;
-    padding: 6px;
+    padding: 2px;
     border-radius: 6px;
 }
