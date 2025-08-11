@@ -1,4 +1,4 @@
-# 🔐 How to Log In to Data Catalog ✅
+# 🔐 How to Log In to Data Catalog 
 
 The following steps will help you access your account on ***Data Catalog***.
 
