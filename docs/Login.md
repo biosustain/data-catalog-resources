@@ -35,7 +35,7 @@ Login using your ***DTU username and password***.
 
 ## Step 4: Access the Data Catalog's main page ✅
 
-Once you're logged in, you'll ***return to the Data Catalog homepage*** and granted access to its features.
+Once you're logged in, you'll ***return to the Data Catalog welcome page*** and granted access to its features.
 
 ```{figure} ../_static/images/Logged_In_View.png
 :alt: Welcome Page of the Data Catalog Website (After Login)
