@@ -2,7 +2,7 @@
 
 🎯 The following steps will help you access your account on ***Data Catalog***.
 
-```{Note}
+```{Note} 
 Access is through DTU Single Sign-On (SSO). You just have to use your usual DTU login.
 ```
 
@@ -15,11 +15,11 @@ Click the `Login` button located in the ***top-right corner*** of the page.
 You will be automatically ***redirected*** to the DTU Single Sign-On page.
 
 ```{figure} ../_static/images/Login.png
-:alt: Homepage of the Data Catalog Website
+:alt: Welcome Page of the Data Catalog Website
 :width: 60%
 :align: center
 
-*Homepage of the Data Catalog Website*
+*Welcome Page of the Data Catalog Website*
 ```
 
 ## Step 3: Enter your DTU Credentials ✅
@@ -36,3 +36,11 @@ Login using your ***DTU username and password***.
 ## Step 4: Access the Data Catalog's main page ✅
 
 Once you're logged in, you'll ***return to the Data Catalog homepage*** and granted access to its features.
+
+```{figure} ../_static/images/Logged_In_View.png
+:alt: Welcome Page of the Data Catalog Website (After Login)
+:width: 60%
+:align: center
+
+*Welcome Page of the Data Catalog Website*
+```
