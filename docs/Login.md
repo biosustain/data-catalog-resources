@@ -2,7 +2,7 @@
 
 🎯 The following steps will help you access your account on ***Data Catalog***.
 
-```{Note} 
+```{note} 
 Access to the platform is provided through DTU Single Sign-On (SSO). Simply use your regular DTU login credentials.
 ```
 
