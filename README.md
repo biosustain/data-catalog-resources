@@ -11,7 +11,7 @@ This branch contains the test deployment infrastructure and documentation for th
 |-------------|--------|-----|---------|
 | **Production** | `main` | https://biosustain.github.io/data-catalog-resources/ | Live website for end users |
 | **Test Staging** | `test-deploy` | https://biosustain.github.io/data-catalog-resources/test/ | Manual testing environment |
-| **PR Previews** | Any PR branch | https://biosustain.github.io/data-catalog-resources/pr-{number}/ | Automatic PR previews |
+| **PR Previews** | Any PR branch | https://biosustain.github.io/data-catalog-resources/pr-#number/ | Automatic PR previews |
 
 ## Automatic PR Preview Deployments
 
