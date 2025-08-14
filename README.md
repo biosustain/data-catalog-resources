@@ -160,7 +160,6 @@ along with this documentation. If not, see <https://www.gnu.org/licenses/>.
 DTU Biosustain  
 Technical University of Denmark
 3. Test functionality, styling, and content
-4. Leave feedback directly on the PR
 
 ## Manual Test Deployment
 
