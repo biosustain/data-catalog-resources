@@ -95,6 +95,8 @@ python -m http.server 8000 --directory _build
 ```
 Open http://localhost:8000 in your browser.
 
+> **Note:** For more complex and thorough tests, follow the instructions in the [test-deploy branch](https://github.com/biosustain/data-catalog-resources/tree/test-deploy).
+
 ### 4.3 Update your branch to GitHub
 
 #### Stage and Commit Changes
@@ -121,6 +123,8 @@ git push origin your-working-branch
 1. Visit https://github.com/biosustain/data-catalog-resources
 2. Click **"Compare & pull request"** for your branch
 3. Fill in details and click **"Create pull request"**
+
+> **Note:** Pull request will trigger GitHub automatic workflow, and a preview page will be generated. See README on the [test-deploy branch](https://github.com/biosustain/data-catalog-resources/tree/test-deploy) for more info.
 
 ## 5. Technical Details
 
