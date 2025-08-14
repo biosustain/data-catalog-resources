@@ -704,6 +704,8 @@ body[data-theme="dark"] #wagtail-theme .light-only,
     }
 }
 
+/* Wagtail theme uses body.theme-dark class */
+body.theme-dark .admonition > *:not(.admonition-title),
 html[data-theme="dark"] .admonition > *:not(.admonition-title),
 body.dark-mode .admonition > *:not(.admonition-title),
 .dark-theme .admonition > *:not(.admonition-title) {
@@ -711,6 +713,7 @@ body.dark-mode .admonition > *:not(.admonition-title),
     color: #e0e0e0 !important;
 }
 
+body.theme-dark .admonition,
 html[data-theme="dark"] .admonition,
 body.dark-mode .admonition,
 .dark-theme .admonition {
