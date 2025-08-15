@@ -6,12 +6,12 @@ Each project also includes user roles with different permissions, so you can con
 
 A project serves as a record of your work, making it easier to: 
 
- -  Understand the ***purpose*** and ***scope*** of the research
- -  Know the ***data*** it contains
- -  Track the ***technologies*** used
- -  Know ***where*** the data is stored
- -  See ***who*** is involved 
- -  Access any relevant ***datasets***, ***documentation*** or ***notes***
+ -  Understand the **purpose** and **scope** of the research
+ -  Know the **data** it contains
+ -  Track the **technologies** used
+ -  Know **where** the data is stored
+ -  See **who** is involved 
+ -  Access any relevant **datasets***, **documentation** or **notes**
 
 
  Project in the Data Catalog make you research **organized**, **searchable**, and **accessible** to collaborators and future users.
