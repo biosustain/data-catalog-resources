@@ -38,13 +38,6 @@ Biosustain Data Catalog, by design, is **only accessible** by personnel official
 
 docs/article_topic
 docs/Login
+docs/Project/index
 docs/azure
-```
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: 'Project'
-
-→ What is Project <docs/What_is_Project.md>
-→ Create Project <docs/Create_Project.md>
 ```
