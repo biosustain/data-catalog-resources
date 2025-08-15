@@ -374,6 +374,21 @@ body[data-theme="dark"] #wagtail-theme .light-only,
 }
 
 /* ============================================
+   GENERAL WORD WRAPPING FOR NAVIGATION
+   ============================================ */
+
+/* Ensure proper word wrapping for all navigation elements */
+nav ul, nav li, nav a,
+.toc ul, .toc li, .toc a,
+.page_toc ul, .page_toc li, .page_toc a,
+.page_nav ul, .page_nav li, .page_nav a,
+aside ul, aside li, aside a {
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+}
+
+/* ============================================
    DARK MODE FOR MOBILE SIDEBARS
    ============================================ */
 
