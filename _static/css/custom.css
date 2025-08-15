@@ -386,7 +386,6 @@ aside ul, aside li, aside a {
     word-break: normal !important;
     overflow-wrap: break-word !important;
     hyphens: auto !important;
-    word-wrap: break-word !important;
 }
 
 /* ============================================
