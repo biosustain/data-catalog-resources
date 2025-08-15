@@ -1,0 +1,56 @@
+name: PR Preview Deployment
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    
+jobs:
+  pr-preview:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.head.repo.full_name == github.repository # Only for PRs from same repo
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Build documentation
+      run: |
+        sphinx-build -b html . _build
+        
+    - name: Add .nojekyll file
+      run: touch _build/.nojekyll
+      
+    - name: Deploy PR Preview
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_build
+        destination_dir: pr-${{ github.event.pull_request.number }}
+        commit_message: 'PR #${{ github.event.pull_request.number }} preview: ${{ github.sha }}'
+        
+    - name: Comment PR with preview link
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const prNumber = context.issue.number;
+          const repoOwner = context.repo.owner;
+          const repoName = context.repo.repo;
+          const previewUrl = `https://${repoOwner}.github.io/${repoName}/pr-${prNumber}/`;
+          
+          github.rest.issues.createComment({
+            issue_number: prNumber,
+            owner: repoOwner,
+            repo: repoName,
+            body: `🚀 **PR Preview deployed!**\n\n📖 Preview your changes: ${previewUrl}\n\n_This preview will be updated automatically when you push new commits._`
+          });
