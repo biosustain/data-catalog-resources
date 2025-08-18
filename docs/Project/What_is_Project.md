@@ -11,7 +11,7 @@ A project serves as a record of your work, making it easier to:
  -  Track the **technologies** used
  -  Know **where** the data is stored
  -  See **who** is involved 
- -  Access any relevant **datasets***, **documentation** or **notes**
+ -  Access any relevant **datasets**, **documentation** or **notes**
 
 
  Project in the Data Catalog make you research **organized**, **searchable**, and **accessible** to collaborators and future users.
