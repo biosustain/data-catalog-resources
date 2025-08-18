@@ -7,7 +7,7 @@ Creating a project is **simple**, but the form includes many fields/questions. T
 Click the `Create new project` located ***under*** the search bar, in the ***welcome page***.
 
 
-```{figure} ../../_static/images/Create_new_project.png
+```{figure} ../../_static/images/create_new_project.png
 :alt: Welcome Page of the Data Catalog Website
 :width: 60%
 :align: center
