@@ -197,7 +197,6 @@ git checkout test-deploy
 
 # Merge the changes you want to test
 git merge feature/your-branch-name
-
 # Push to trigger test deployment
 git push origin test-deploy
 
