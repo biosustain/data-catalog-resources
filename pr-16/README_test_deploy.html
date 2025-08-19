@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-content_root="./">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Test Deployment for Data Catalog Resources 🔐 &mdash; Data Catalog Resources</title>
+    
+    <link rel="stylesheet" type="text/css" href="_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=0c5006f7" />
+            <link rel="index" title="Index" href="genindex.html" />
+            <link rel="search" title="Search" href="search.html" />
+            <link rel="top" title="Data Catalog Resources" href="#" />
+    </head>
+<body>
+    <script type="text/javascript" src="_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        Biosustain Data Catalog Resources
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul>
+<li class="toctree-l1"><a class="reference internal" href="docs/article_topic.html">Headline of the article</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/Login.html">How to Log In to Data Catalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/azure.html">Azure related setup</a></li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="index.html">Docs</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Test Deployment for Data Catalog Resources 🔐</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+
+
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <section class="tex2jax_ignore mathjax_ignore" id="test-deployment-for-data-catalog-resources">
+<h1>Test Deployment for Data Catalog Resources 🔐<a class="headerlink" href="#test-deployment-for-data-catalog-resources" title="Link to this heading">¶</a></h1>
+<p><a class="reference external" href="https://biosustain.github.io/data-catalog-resources/" rel="noreferrer" target="_blank"><img alt="GitHub Pages" src="https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen" /></a>
+<a class="reference external" href="https://github.com/biosustain/data-catalog-resources/actions" rel="noreferrer" target="_blank"><img alt="Build Status" src="https://github.com/biosustain/data-catalog-resources/workflows/build-and-save-website/badge.svg" /></a></p>
+<p>This branch contains the <strong>secure test deployment infrastructure</strong> for the Data Catalog Resources website, with access restricted to authorized contributors only.</p>
+<section id="access-control">
+<h2>🔒 Access Control<a class="headerlink" href="#access-control" title="Link to this heading">¶</a></h2>
+<p><strong>All test deployments are restricted to DTU Biosustain contributors with repository access:</strong></p>
+<ul class="simple">
+<li><p><strong>Repository Permission-Based</strong>: Only collaborators with <code class="docutils literal notranslate"><span class="pre">write</span></code>/<code class="docutils literal notranslate"><span class="pre">maintain</span></code>/<code class="docutils literal notranslate"><span class="pre">admin</span></code> access</p></li>
+<li><p><strong>Automatic Verification</strong>: GitHub Actions checks permissions before deploying</p></li>
+<li><p><strong>Visual Indicators</strong>: All test pages show contributor-only banners</p></li>
+<li><p><strong>Access Denied Handling</strong>: Non-contributors receive helpful explanatory messages</p></li>
+</ul>
+</section>
+<section id="deployment-environments">
+<h2>Deployment Environments<a class="headerlink" href="#deployment-environments" title="Link to this heading">¶</a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Environment</p></th>
+<th class="head"><p>Branch</p></th>
+<th class="head"><p>URL</p></th>
+<th class="head"><p>Access Level</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Production</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">main</span></code></p></td>
+<td><p>https://biosustain.github.io/data-catalog-resources/</p></td>
+<td><p>✅ Public</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Test Staging</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">test-deploy</span></code></p></td>
+<td><p>https://biosustain.github.io/data-catalog-resources/test/</p></td>
+<td><p>🔒 Contributors Only</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PR Previews</strong></p></td>
+<td><p>Any PR branch</p></td>
+<td><p>https://biosustain.github.io/data-catalog-resources/pr-{number}/</p></td>
+<td><p>🔒 Contributors Only</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="automatic-pr-preview-deployments-contributors-only">
+<h2>Automatic PR Preview Deployments (Contributors Only)<a class="headerlink" href="#automatic-pr-preview-deployments-contributors-only" title="Link to this heading">¶</a></h2>
+<p>PR previews are automatically deployed only for authorized contributors:</p>
+<section id="how-it-works">
+<h3>How it Works<a class="headerlink" href="#how-it-works" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Contributor Verification</strong> → GitHub Actions checks if PR author has repository access</p></li>
+<li><p><strong>Auto-deploy</strong> → If authorized, preview is deployed with contributor-only indicators</p></li>
+<li><p><strong>Preview URL</strong> → Bot comments on PR with secure preview link</p></li>
+<li><p><strong>Auto-updates</strong> → New commits update the preview automatically</p></li>
+<li><p><strong>Access Denied</strong> → Non-contributors get informative message instead of deployment</p></li>
+</ol>
+</section>
+<section id="for-contributors">
+<h3>For Contributors<a class="headerlink" href="#for-contributors" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create your feature branch</span>
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/new-documentation
+
+<span class="c1"># Make your changes and push</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature/new-documentation
+
+<span class="c1"># Create PR → Preview is automatically deployed if you&#39;re a contributor</span>
+<span class="c1"># Check the bot comment for your preview URL</span>
+</pre></div>
+</div>
+</section>
+<section id="for-reviewers">
+<h3>For Reviewers<a class="headerlink" href="#for-reviewers" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the preview link in the PR comment</p></li>
+<li><p>Review the changes in the secure test environment</p></li>
+<li><p>Test functionality, styling, and content</p></li>
+<li><p>Leave feedback directly on the PR</p></li>
+</ol>
+</section>
+</section>
+<section id="manual-test-deployment">
+<h2>Manual Test Deployment<a class="headerlink" href="#manual-test-deployment" title="Link to this heading">¶</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">test-deploy</span></code> branch for staging complex changes:</p>
+<section id="deploy-to-test-environment">
+<h3>Deploy to Test Environment<a class="headerlink" href="#deploy-to-test-environment" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Switch to test-deploy branch</span>
+git<span class="w"> </span>checkout<span class="w"> </span>test-deploy
+
+<span class="c1"># Merge the changes you want to test</span>
+git<span class="w"> </span>merge<span class="w"> </span>feature/your-branch-name
+
+<span class="c1"># Push to trigger test deployment</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>test-deploy
+
+<span class="c1"># View at: https://biosustain.github.io/data-catalog-resources/test/</span>
+</pre></div>
+</div>
+</section>
+<section id="use-cases">
+<h3>Use Cases<a class="headerlink" href="#use-cases" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Testing major theme changes</p></li>
+<li><p>Validating multi-page workflows</p></li>
+<li><p>Integration testing with external services</p></li>
+<li><p>Collaborative review sessions</p></li>
+<li><p>Final staging before production deployment</p></li>
+</ul>
+</section>
+</section>
+<section id="github-actions-workflows">
+<h2>GitHub Actions Workflows<a class="headerlink" href="#github-actions-workflows" title="Link to this heading">¶</a></h2>
+<p>Two secure workflows handle restricted deployments:</p>
+<section id="production-deployment-build-website-yaml">
+<h3>Production Deployment (<code class="docutils literal notranslate"><span class="pre">build_website.yaml</span></code>)<a class="headerlink" href="#production-deployment-build-website-yaml" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Trigger</strong>: Push to <code class="docutils literal notranslate"><span class="pre">main</span></code> branch</p></li>
+<li><p><strong>Action</strong>: Build and deploy to production</p></li>
+<li><p><strong>URL</strong>: https://biosustain.github.io/data-catalog-resources/</p></li>
+<li><p><strong>Access</strong>: Public</p></li>
+</ul>
+</section>
+<section id="test-deployment-test-deploy-yml">
+<h3>Test Deployment (<code class="docutils literal notranslate"><span class="pre">test-deploy.yml</span></code>)<a class="headerlink" href="#test-deployment-test-deploy-yml" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Trigger</strong>: Push to <code class="docutils literal notranslate"><span class="pre">test-deploy</span></code> branch</p></li>
+<li><p><strong>Action</strong>: Build and deploy to <code class="docutils literal notranslate"><span class="pre">/test/</span></code> subdirectory with contributor banners</p></li>
+<li><p><strong>URL</strong>: https://biosustain.github.io/data-catalog-resources/test/</p></li>
+<li><p><strong>Access</strong>: Contributors only (visual indicators)</p></li>
+</ul>
+</section>
+<section id="pr-preview-pr-preview-yml">
+<h3>PR Preview (<code class="docutils literal notranslate"><span class="pre">pr-preview.yml</span></code>)<a class="headerlink" href="#pr-preview-pr-preview-yml" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Trigger</strong>: Open/update pull request from contributors</p></li>
+<li><p><strong>Action</strong>: Build and deploy to <code class="docutils literal notranslate"><span class="pre">/pr-{number}/</span></code> subdirectory</p></li>
+<li><p><strong>URL</strong>: https://biosustain.github.io/data-catalog-resources/pr-{number}/</p></li>
+<li><p><strong>Access</strong>: Repository collaborators only</p></li>
+<li><p><strong>Cleanup</strong>: Automatic removal when PR is closed</p></li>
+</ul>
+</section>
+</section>
+<section id="testing-workflow">
+<h2>Testing Workflow<a class="headerlink" href="#testing-workflow" title="Link to this heading">¶</a></h2>
+<section id="option-a-pr-preview-testing">
+<h3>Option A: PR Preview Testing<a class="headerlink" href="#option-a-pr-preview-testing" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Contributor creates PR (must be repository collaborator)</span>
+<span class="c1"># 2. Automatic preview is deployed with security banners</span>
+<span class="c1"># 3. Review changes at secure preview URL</span>
+<span class="c1"># 4. Merge when satisfied</span>
+</pre></div>
+</div>
+</section>
+<section id="option-b-manual-test-branch-deployment">
+<h3>Option B: Manual Test Branch Deployment<a class="headerlink" href="#option-b-manual-test-branch-deployment" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Create test deployment</span>
+git<span class="w"> </span>checkout<span class="w"> </span>test-deploy
+git<span class="w"> </span>merge<span class="w"> </span>origin/contributor-branch
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>test-deploy
+
+<span class="c1"># 2. Test at staging URL with contributor banners</span>
+<span class="c1"># Visit: https://biosustain.github.io/data-catalog-resources/test/</span>
+
+<span class="c1"># 3. Deploy to production when ready</span>
+git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>merge<span class="w"> </span>contributor-branch
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</pre></div>
+</div>
+</section>
+</section>
+<section id="testing-checklist">
+<h2>Testing Checklist<a class="headerlink" href="#testing-checklist" title="Link to this heading">¶</a></h2>
+<p>Before merging to production:</p>
+<section id="content-functionality">
+<h3>Content &amp; Functionality<a class="headerlink" href="#content-functionality" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>[ ] All pages load correctly</p></li>
+<li><p>[ ] Navigation works on desktop and mobile</p></li>
+<li><p>[ ] Links are functional (internal and external)</p></li>
+<li><p>[ ] Images display properly</p></li>
+<li><p>[ ] Dark/light theme toggle works</p></li>
+<li><p>[ ] Mobile navigation overlay functions</p></li>
+<li><p>[ ] Collapsible admonitions work</p></li>
+<li><p>[ ] Search functionality works</p></li>
+</ul>
+</section>
+<section id="security-access">
+<h3>Security &amp; Access<a class="headerlink" href="#security-access" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>[ ] Contributor-only banners display on test deployments</p></li>
+<li><p>[ ] Non-contributors receive access denied messages</p></li>
+<li><p>[ ] Test pages show proper security indicators</p></li>
+<li><p>[ ] No sensitive information exposed in test environments</p></li>
+</ul>
+</section>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+<section id="build-failures">
+<h3>Build Failures<a class="headerlink" href="#build-failures" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check GitHub Actions logs</span>
+<span class="c1"># Visit: https://github.com/biosustain/data-catalog-resources/actions</span>
+
+<span class="c1"># Test build locally</span>
+sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>.<span class="w"> </span>_build
+
+<span class="c1"># Common issues:</span>
+<span class="c1"># - Syntax errors in Markdown files</span>
+<span class="c1"># - Missing dependencies in requirements.txt</span>
+<span class="c1"># - Broken internal links</span>
+<span class="c1"># - Invalid MyST syntax</span>
+</pre></div>
+</div>
+</section>
+<section id="access-issues">
+<h3>Access Issues<a class="headerlink" href="#access-issues" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>No PR preview</strong>: Check if you’re a repository collaborator with write access</p></li>
+<li><p><strong>Preview not updating</strong>: Force refresh browser (Ctrl+F5 / Cmd+Shift+R)</p></li>
+<li><p><strong>Access denied message</strong>: Contact repository maintainers for access</p></li>
+</ul>
+</section>
+</section>
+<section id="support">
+<h2>Support<a class="headerlink" href="#support" title="Link to this heading">¶</a></h2>
+<p>For test deployment issues:</p>
+<ol class="arabic simple">
+<li><p>Check <a class="reference external" href="https://github.com/biosustain/data-catalog-resources/actions" rel="noreferrer" target="_blank">GitHub Actions logs</a></p></li>
+<li><p>Create a <a class="reference external" href="https://github.com/biosustain/data-catalog-resources/issues" rel="noreferrer" target="_blank">new issue</a> with:</p>
+<ul class="simple">
+<li><p>Branch name and commit hash</p></li>
+<li><p>Expected vs. actual behavior</p></li>
+<li><p>Screenshots of any errors</p></li>
+</ul>
+</li>
+<li><p>Contact <a class="reference external" href="mailto:dinghe&#37;&#52;&#48;biosustain&#46;dtu&#46;dk" rel="noreferrer" target="_blank">Ding He</a> at DTU Biosustain</p></li>
+</ol>
+<hr class="docutils" />
+<p><strong>Research Data Management Team</strong><br />
+DTU Biosustain<br />
+Technical University of Denmark
+3. Test functionality, styling, and content
+4. Leave feedback directly on the PR</p>
+</section>
+<section id="id1">
+<h2>Manual Test Deployment<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">test-deploy</span></code> branch for staging complex changes or testing integrations:</p>
+<section id="id2">
+<h3>Deploy to Test Environment<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Switch to test-deploy branch</span>
+git<span class="w"> </span>checkout<span class="w"> </span>test-deploy
+
+<span class="c1"># Merge the changes you want to test</span>
+git<span class="w"> </span>merge<span class="w"> </span>feature/your-branch-name
+<span class="c1"># Push to trigger test deployment</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>test-deploy
+
+<span class="c1"># View at: https://biosustain.github.io/data-catalog-resources/test/</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h3>Use Cases<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Testing major theme changes</p></li>
+<li><p>Validating multi-page workflows</p></li>
+<li><p>Integration testing with external services</p></li>
+<li><p>Collaborative review sessions</p></li>
+<li><p>Final staging before production deployment</p></li>
+</ul>
+</section>
+</section>
+<section id="testing-workflow-for-maintainers">
+<h2>Testing Workflow for Maintainers<a class="headerlink" href="#testing-workflow-for-maintainers" title="Link to this heading">¶</a></h2>
+<section id="option-a-quick-testing-pr-previews">
+<h3>Option A: Quick Testing (PR Previews)<a class="headerlink" href="#option-a-quick-testing-pr-previews" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Contributor creates PR</span>
+<span class="c1"># 2. Automatic preview is deployed</span>
+<span class="c1"># 3. Review changes at preview URL</span>
+<span class="c1"># 4. Merge when satisfied</span>
+</pre></div>
+</div>
+</section>
+<section id="option-b-comprehensive-testing-test-branch">
+<h3>Option B: Comprehensive Testing (Test Branch)<a class="headerlink" href="#option-b-comprehensive-testing-test-branch" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Create test deployment</span>
+git<span class="w"> </span>checkout<span class="w"> </span>test-deploy
+git<span class="w"> </span>merge<span class="w"> </span>origin/contributor-branch
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>test-deploy
+
+<span class="c1"># 2. Test at staging URL</span>
+<span class="c1"># Visit: https://biosustain.github.io/data-catalog-resources/test/</span>
+
+<span class="c1"># 3. Deploy to production</span>
+git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>merge<span class="w"> </span>contributor-branch
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</pre></div>
+</div>
+</section>
+<section id="option-c-complex-integration-testing">
+<h3>Option C: Complex Integration Testing<a class="headerlink" href="#option-c-complex-integration-testing" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Multiple feature branches</span>
+git<span class="w"> </span>checkout<span class="w"> </span>test-deploy
+git<span class="w"> </span>merge<span class="w"> </span>origin/feature-1
+git<span class="w"> </span>merge<span class="w"> </span>origin/feature-2
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>test-deploy
+
+<span class="c1"># 2. Test combined changes</span>
+<span class="c1"># 3. Address conflicts/issues</span>
+<span class="c1"># 4. Deploy features individually or together</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id4">
+<h2>GitHub Actions Workflows<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<p>Three automated workflows handle deployments:</p>
+<section id="production-deployment-build-and-save-website-yml">
+<h3>Production Deployment (<code class="docutils literal notranslate"><span class="pre">build-and-save-website.yml</span></code>)<a class="headerlink" href="#production-deployment-build-and-save-website-yml" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Trigger</strong>: Push to <code class="docutils literal notranslate"><span class="pre">main</span></code> branch</p></li>
+<li><p><strong>Action</strong>: Build and deploy to production</p></li>
+<li><p><strong>URL</strong>: https://biosustain.github.io/data-catalog-resources/</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>Test Deployment (<code class="docutils literal notranslate"><span class="pre">test-deploy.yml</span></code>)<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Trigger</strong>: Push to <code class="docutils literal notranslate"><span class="pre">test-deploy</span></code> branch</p></li>
+<li><p><strong>Action</strong>: Build and deploy to <code class="docutils literal notranslate"><span class="pre">/test/</span></code> subdirectory</p></li>
+<li><p><strong>URL</strong>: https://biosustain.github.io/data-catalog-resources/test/</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>PR Preview (<code class="docutils literal notranslate"><span class="pre">pr-preview.yml</span></code>)<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Trigger</strong>: Open/update pull request</p></li>
+<li><p><strong>Action</strong>: Build and deploy to <code class="docutils literal notranslate"><span class="pre">/pr-{number}/</span></code> subdirectory</p></li>
+<li><p><strong>URL</strong>: https://biosustain.github.io/data-catalog-resources/pr-{number}/</p></li>
+<li><p><strong>Cleanup</strong>: Automatic removal when PR is closed</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h2>Testing Checklist<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<p>Before merging changes to production, ensure:</p>
+<section id="content-testing">
+<h3>Content Testing<a class="headerlink" href="#content-testing" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>[ ] All pages load correctly</p></li>
+<li><p>[ ] Navigation works on desktop and mobile</p></li>
+<li><p>[ ] Links are functional (internal and external)</p></li>
+<li><p>[ ] Images display properly and have appropriate sizing</p></li>
+<li><p>[ ] Search functionality works</p></li>
+</ul>
+</section>
+<section id="functionality-testing">
+<h3>Functionality Testing<a class="headerlink" href="#functionality-testing" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>[ ] Dark/light theme toggle works</p></li>
+<li><p>[ ] Mobile navigation overlay functions correctly</p></li>
+<li><p>[ ] Collapsible admonitions expand/collapse properly</p></li>
+<li><p>[ ] Code syntax highlighting appears correctly</p></li>
+<li><p>[ ] Download links work for files in <code class="docutils literal notranslate"><span class="pre">_static/files/</span></code></p></li>
+</ul>
+</section>
+<section id="cross-browser-testing">
+<h3>Cross-Browser Testing<a class="headerlink" href="#cross-browser-testing" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>[ ] Chrome/Chromium</p></li>
+<li><p>[ ] Firefox</p></li>
+<li><p>[ ] Safari (if on macOS)</p></li>
+<li><p>[ ] Mobile browsers (iOS Safari, Chrome Mobile)</p></li>
+</ul>
+</section>
+<section id="performance-testing">
+<h3>Performance Testing<a class="headerlink" href="#performance-testing" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>[ ] Page load times are reasonable</p></li>
+<li><p>[ ] Images are optimized</p></li>
+<li><p>[ ] No console errors in browser developer tools</p></li>
+</ul>
+</section>
+</section>
+<section id="troubleshooting-test-deployments">
+<h2>Troubleshooting Test Deployments<a class="headerlink" href="#troubleshooting-test-deployments" title="Link to this heading">¶</a></h2>
+<section id="id8">
+<h3>Build Failures<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check GitHub Actions logs</span>
+<span class="c1"># Visit: https://github.com/biosustain/data-catalog-resources/actions</span>
+
+<span class="c1"># Test build locally</span>
+sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>.<span class="w"> </span>_build
+
+<span class="c1"># Common issues:</span>
+<span class="c1"># - Syntax errors in Markdown/RST files</span>
+<span class="c1"># - Missing dependencies in requirements.txt</span>
+<span class="c1"># - Broken internal links</span>
+<span class="c1"># - Invalid MyST syntax</span>
+</pre></div>
+</div>
+</section>
+<section id="deployment-issues">
+<h3>Deployment Issues<a class="headerlink" href="#deployment-issues" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verify GitHub Pages is enabled</span>
+<span class="c1"># Repository Settings → Pages → Source: GitHub Actions</span>
+
+<span class="c1"># Check branch protection rules</span>
+<span class="c1"># Ensure workflows have proper permissions</span>
+
+<span class="c1"># Verify workflow files are correct</span>
+<span class="c1"># Compare with working examples in .github/workflows/</span>
+</pre></div>
+</div>
+</section>
+<section id="preview-not-updating">
+<h3>Preview Not Updating<a class="headerlink" href="#preview-not-updating" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Force refresh browser (Ctrl+F5 or Cmd+Shift+R)</span>
+<span class="c1"># Check if GitHub Actions completed successfully</span>
+<span class="c1"># Verify the correct branch was pushed</span>
+<span class="c1"># Clear browser cache if necessary</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="best-practices">
+<h2>Best Practices<a class="headerlink" href="#best-practices" title="Link to this heading">¶</a></h2>
+<section id="id9">
+<h3>For Contributors<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Always test locally</strong> before creating PR</p></li>
+<li><p><strong>Use descriptive branch names</strong>: <code class="docutils literal notranslate"><span class="pre">feature/login-guide</span></code>, <code class="docutils literal notranslate"><span class="pre">fix/mobile-navigation</span></code></p></li>
+<li><p><strong>Keep PRs focused</strong> on single features or fixes</p></li>
+<li><p><strong>Check preview links</strong> before requesting review</p></li>
+<li><p><strong>Update documentation</strong> for new features</p></li>
+</ol>
+</section>
+<section id="for-maintainers">
+<h3>For Maintainers<a class="headerlink" href="#for-maintainers" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Use test-deploy branch</strong> for complex changes</p></li>
+<li><p><strong>Test mobile responsiveness</strong> on actual devices when possible</p></li>
+<li><p><strong>Verify accessibility</strong> with screen readers or accessibility tools</p></li>
+<li><p><strong>Check SEO implications</strong> for significant content changes</p></li>
+<li><p><strong>Coordinate deployments</strong> during business hours when possible</p></li>
+</ol>
+</section>
+<section id="emergency-rollback">
+<h3>Emergency Rollback<a class="headerlink" href="#emergency-rollback" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># If production has issues, quickly rollback:</span>
+git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>revert<span class="w"> </span>HEAD<span class="w">  </span><span class="c1"># Revert last commit</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+
+<span class="c1"># Or reset to previous known good commit:</span>
+git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>&lt;previous-commit-hash&gt;
+git<span class="w"> </span>push<span class="w"> </span>--force-with-lease<span class="w"> </span>origin<span class="w"> </span>main
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id10">
+<h2>Support<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<p>For test deployment issues:</p>
+<ol class="arabic simple">
+<li><p>Check existing <a class="reference external" href="https://github.com/biosustain/data-catalog-resources/issues" rel="noreferrer" target="_blank">Issues</a></p></li>
+<li><p>Create a new issue with:</p>
+<ul class="simple">
+<li><p>Branch name and commit hash</p></li>
+<li><p>Expected vs. actual behavior</p></li>
+<li><p>Browser and device information</p></li>
+<li><p>Screenshots of any errors</p></li>
+</ul>
+</li>
+<li><p>Contact <a class="reference external" href="mailto:dinghe&#37;&#52;&#48;biosustain&#46;dtu&#46;dk" rel="noreferrer" target="_blank">Ding He</a> at DTU Biosustain</p></li>
+</ol>
+<hr class="docutils" />
+<p><strong>Research Data Management Team</strong><br />
+DTU Biosustain<br />
+Technical University of Denmark</p>
+</section>
+</section>
+
+</main>
+                        
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Test Deployment for Data Catalog Resources 🔐</a><ul>
+<li><a class="reference internal" href="#access-control">🔒 Access Control</a></li>
+<li><a class="reference internal" href="#deployment-environments">Deployment Environments</a></li>
+<li><a class="reference internal" href="#automatic-pr-preview-deployments-contributors-only">Automatic PR Preview Deployments (Contributors Only)</a><ul>
+<li><a class="reference internal" href="#how-it-works">How it Works</a></li>
+<li><a class="reference internal" href="#for-contributors">For Contributors</a></li>
+<li><a class="reference internal" href="#for-reviewers">For Reviewers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#manual-test-deployment">Manual Test Deployment</a><ul>
+<li><a class="reference internal" href="#deploy-to-test-environment">Deploy to Test Environment</a></li>
+<li><a class="reference internal" href="#use-cases">Use Cases</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#github-actions-workflows">GitHub Actions Workflows</a><ul>
+<li><a class="reference internal" href="#production-deployment-build-website-yaml">Production Deployment (<code class="docutils literal notranslate"><span class="pre">build_website.yaml</span></code>)</a></li>
+<li><a class="reference internal" href="#test-deployment-test-deploy-yml">Test Deployment (<code class="docutils literal notranslate"><span class="pre">test-deploy.yml</span></code>)</a></li>
+<li><a class="reference internal" href="#pr-preview-pr-preview-yml">PR Preview (<code class="docutils literal notranslate"><span class="pre">pr-preview.yml</span></code>)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#testing-workflow">Testing Workflow</a><ul>
+<li><a class="reference internal" href="#option-a-pr-preview-testing">Option A: PR Preview Testing</a></li>
+<li><a class="reference internal" href="#option-b-manual-test-branch-deployment">Option B: Manual Test Branch Deployment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#testing-checklist">Testing Checklist</a><ul>
+<li><a class="reference internal" href="#content-functionality">Content &amp; Functionality</a></li>
+<li><a class="reference internal" href="#security-access">Security &amp; Access</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li><a class="reference internal" href="#build-failures">Build Failures</a></li>
+<li><a class="reference internal" href="#access-issues">Access Issues</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#support">Support</a></li>
+<li><a class="reference internal" href="#id1">Manual Test Deployment</a><ul>
+<li><a class="reference internal" href="#id2">Deploy to Test Environment</a></li>
+<li><a class="reference internal" href="#id3">Use Cases</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#testing-workflow-for-maintainers">Testing Workflow for Maintainers</a><ul>
+<li><a class="reference internal" href="#option-a-quick-testing-pr-previews">Option A: Quick Testing (PR Previews)</a></li>
+<li><a class="reference internal" href="#option-b-comprehensive-testing-test-branch">Option B: Comprehensive Testing (Test Branch)</a></li>
+<li><a class="reference internal" href="#option-c-complex-integration-testing">Option C: Complex Integration Testing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4">GitHub Actions Workflows</a><ul>
+<li><a class="reference internal" href="#production-deployment-build-and-save-website-yml">Production Deployment (<code class="docutils literal notranslate"><span class="pre">build-and-save-website.yml</span></code>)</a></li>
+<li><a class="reference internal" href="#id5">Test Deployment (<code class="docutils literal notranslate"><span class="pre">test-deploy.yml</span></code>)</a></li>
+<li><a class="reference internal" href="#id6">PR Preview (<code class="docutils literal notranslate"><span class="pre">pr-preview.yml</span></code>)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id7">Testing Checklist</a><ul>
+<li><a class="reference internal" href="#content-testing">Content Testing</a></li>
+<li><a class="reference internal" href="#functionality-testing">Functionality Testing</a></li>
+<li><a class="reference internal" href="#cross-browser-testing">Cross-Browser Testing</a></li>
+<li><a class="reference internal" href="#performance-testing">Performance Testing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#troubleshooting-test-deployments">Troubleshooting Test Deployments</a><ul>
+<li><a class="reference internal" href="#id8">Build Failures</a></li>
+<li><a class="reference internal" href="#deployment-issues">Deployment Issues</a></li>
+<li><a class="reference internal" href="#preview-not-updating">Preview Not Updating</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#best-practices">Best Practices</a><ul>
+<li><a class="reference internal" href="#id9">For Contributors</a></li>
+<li><a class="reference internal" href="#for-maintainers">For Maintainers</a></li>
+<li><a class="reference internal" href="#emergency-rollback">Emergency Rollback</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id10">Support</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+            <div class="text-center">
+                    &copy; Copyright 2025, Research Data Management, DTU Biosustain
+            </div>
+            <div class="text-center text-white-50 font-italic mt-3">
+                <small>
+                    Created using
+                    <a class="text-white" href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Sphinx Wagtail Theme 6.5.0
+                    </a>
+                    and
+                    <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
+                        Sphinx 7.4.7
+                    </a>
+                </small>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="_static/js/mobile-toc.js?v=28931289"></script>
+        <script type="text/javascript" src="_static/dist/theme.js"></script>
+        <script type="text/javascript" src="_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="_static/searchtools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
