@@ -35,6 +35,7 @@ exclude_patterns = [
     ".nox/*",
     "README.md",
     "README_original_template.md",
+    "README_test_deploy.md",  # exclude test-deploy specific README
     "**/.ipynb_checkpoints/*",
     "jupyter_execute",
     "conf.py",
