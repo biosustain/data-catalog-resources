@@ -1,4 +1,4 @@
-# Delete Project
+# Delete a Project
 Projects can also be **deleted** if no longer needed.
 To delete a project, follow the next steps:
 
