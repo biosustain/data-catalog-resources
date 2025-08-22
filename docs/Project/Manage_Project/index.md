@@ -1,4 +1,4 @@
-# Manage Project  <!-- This is the sidebar title -->
+# Manage Projects  <!-- This is the sidebar title -->
 
 ```{toctree}
 ---
