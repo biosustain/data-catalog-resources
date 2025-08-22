@@ -1,5 +1,5 @@
 # Update a Project
-Once a project has been created, it can be updated if needed.
+Once a project has been created, it can be **updated** if needed.
 This can be done as follows:
 
 ## Step 1: Navigate to the Project Home Page 
@@ -33,15 +33,24 @@ On the Project home page, click `Manage` button located in the ***top-right corn
 ## Step 3: Edit your Project
 Make any necessary changes to the project information fields.
 
-
-## Step 4: Save Changes
-Click `Update Project` located on the ***bottom right corner*** of the page to save your changes.
-
-```{figure} ../../../_static/images/update_button.png
-:alt: Project Home Page
+```{figure} ../../../_static/images/update_project_view.png
+:alt: Manage Project View
 :width: 60%
 :align: center
 
-*Project Home Page*
+*Manage Project View*
+
+```
+
+
+## Step 4: Save Changes
+Click `Update Project` located on the ***bottom-right corner*** of the page to save your changes.
+
+```{figure} ../../../_static/images/update_button.png
+:alt: Manage Project View
+:width: 60%
+:align: center
+
+*Manage Project View*
 
 ```
