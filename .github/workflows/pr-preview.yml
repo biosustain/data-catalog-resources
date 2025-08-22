@@ -24,6 +24,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
+    - name: Generate random URL path
+      id: random-path
+      run: |
+        # Generate a random 16-character string for security
+        RANDOM_PATH=$(openssl rand -hex 8)
+        echo "path=pr-${{ github.event.pull_request.number }}-${RANDOM_PATH}" >> $GITHUB_OUTPUT
+        echo "Generated path: pr-${{ github.event.pull_request.number }}-${RANDOM_PATH}"
+    
     - name: Build documentation
       run: |
         sphinx-build -b html . _build
@@ -36,7 +44,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build
-        destination_dir: pr-${{ github.event.pull_request.number }}
+        destination_dir: ${{ steps.random-path.outputs.path }}
         commit_message: 'PR #${{ github.event.pull_request.number }} preview: ${{ github.sha }}'
         
     - name: Comment PR with preview link
@@ -46,11 +54,12 @@ jobs:
           const prNumber = context.issue.number;
           const repoOwner = context.repo.owner;
           const repoName = context.repo.repo;
-          const previewUrl = `https://${repoOwner}.github.io/${repoName}/pr-${prNumber}/`;
+          const randomPath = '${{ steps.random-path.outputs.path }}';
+          const previewUrl = `https://${repoOwner}.github.io/${repoName}/${randomPath}/`;
           
           github.rest.issues.createComment({
             issue_number: prNumber,
             owner: repoOwner,
             repo: repoName,
-            body: `🚀 **PR Preview deployed!**\n\n📖 Preview your changes: ${previewUrl}\n\n_This preview will be updated automatically when you push new commits._`
+            body: `🚀 **PR Preview deployed!**\n\n📖 Preview your changes: ${previewUrl}\n\n_This preview will be updated automatically when you push new commits._\n\n⚠️ **Note**: This preview URL contains a random path for security and will be different on each deployment.`
           });

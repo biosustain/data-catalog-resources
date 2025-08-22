@@ -14,6 +14,14 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
+    - name: Generate random URL path for test deployment
+      id: random-path
+      run: |
+        # Generate a random 12-character string for test deployment security
+        RANDOM_PATH=$(openssl rand -hex 6)
+        echo "path=test-${RANDOM_PATH}" >> $GITHUB_OUTPUT
+        echo "Generated test path: test-${RANDOM_PATH}"
+    
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -37,5 +45,12 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build
-        destination_dir: test  # Deploy to /test subdirectory
+        destination_dir: ${{ steps.random-path.outputs.path }}  # Use random path instead of static 'test'
         commit_message: 'Test deployment: ${{ github.sha }}'
+        
+    - name: Output test deployment URL
+      if: github.ref == 'refs/heads/test-deploy'
+      run: |
+        echo "🚀 Test deployment completed!"
+        echo "📖 Test URL: https://biosustain.github.io/data-catalog-resources/${{ steps.random-path.outputs.path }}/"
+        echo "⚠️ Note: This URL contains a random path and changes on each deployment"
