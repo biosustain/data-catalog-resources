@@ -101,7 +101,7 @@ These categories are for ***guidance only***. The actual form is a ***single pag
 
 
 ## Final Step: Save
-Click `Save` located in the ***bottom right corner*** of the page to submit your project. 
+Click `Save` located in the ***bottom-right corner*** of the page to submit your project. 
 
 
 ```{figure} ../../_static/images/project_save_button.png
