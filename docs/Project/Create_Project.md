@@ -22,7 +22,7 @@ Click the `Create new project` located ***under*** the search bar, in the ***wel
 Use the ***categories*** below to guide you through the questions.
 
 ```{tip} 
-These categories are for ***guidance only***. The actual form is a ***single page***, so use the screenshots to locate each section visually.
+These categories are for **guidance only**. The actual form is a **single page**, so use the screenshots to locate each section visually.
 ```
 
 ### a."Basic" Information:
