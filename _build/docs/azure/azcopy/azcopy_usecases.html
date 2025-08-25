@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-content_root="../../../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Transferring Data from O Drive to Azure Storage &mdash; Data Catalog Resources</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=0c5006f7" />
+            <link rel="index" title="Index" href="../../../genindex.html" />
+            <link rel="search" title="Search" href="../../../search.html" />
+            <link rel="top" title="Data Catalog Resources" href="#" />
+            <link rel="up" title="Azure related setup" href="index.html" />
+            <link rel="next" title="Copy data from the Data Lake" href="use_dl_data_on_vm.html" />
+            <link rel="prev" title="Azure related setup" href="index.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../../../_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="../../../index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        Biosustain Data Catalog Resources
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Azure</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Azure related setup</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Transferring Data from O Drive to Azure Storage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="use_dl_data_on_vm.html">Copy data from the Data Lake</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_catalog/index.html">Data Catalog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../data_catalog/Login.html">How to Log In to Data Catalog</a></li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../../index.html">Docs</a></li>
+            <li class="breadcrumb-item"><a href="../index.html">Azure</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Azure related setup</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Transferring Data from O Drive to Azure Storage</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+
+
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <section class="tex2jax_ignore mathjax_ignore" id="transferring-data-from-o-drive-to-azure-storage">
+<h1>Transferring Data from O Drive to Azure Storage<a class="headerlink" href="#transferring-data-from-o-drive-to-azure-storage" title="Link to this heading">¶</a></h1>
+<p>Most researchers in CFB store their compressed data on the O Drive. To
+use Azure services for data analysis, the uncompressed data needs to be
+stored in an Azure storage account. This process involves four main
+phases:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#transfer-the-compressed-file-from-o-drive-to-azure-storage-account"><span class="xref myst">Transfer Compressed File from O Drive to Azure Storage
+Account</span></a>,</p></li>
+<li><p><a class="reference internal" href="#download-.tar-files-from-azure-storage-to-a-vm"><span class="xref myst">Download .tar File from Azure Storage to a
+VM</span></a>,</p></li>
+<li><p><a class="reference internal" href="#extract-the-.tar-file-to-a-specific-folder"><span class="xref myst">Extract .tar File on the
+VM</span></a>,</p></li>
+<li><p><a class="reference internal" href="#upload-untarred-files-from-the-vm-to-azure-storage"><span class="xref myst">Upload Untarred Files Back to Azure
+Storage</span></a>.</p></li>
+</ul>
+<section id="transfer-the-compressed-file-from-o-drive-to-azure-storage-account">
+<h2>Transfer the Compressed File from O Drive to Azure Storage Account<a class="headerlink" href="#transfer-the-compressed-file-from-o-drive-to-azure-storage-account" title="Link to this heading">¶</a></h2>
+<p>For transferring data from the O Drive to an Azure storage account,
+AzCopy can be used. AzCopy is a command-line tool to copy files to or
+from Azure storage. Follow the following steps to transfer your files:</p>
+<section id="download-azcopy">
+<h3>1. Download AzCopy:<a class="headerlink" href="#download-azcopy" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Go to <a class="reference external" href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10" rel="noopener noreferrer" target="_blank">this
+link</a>
+to download AzCopy.</p></li>
+<li><p>AzCopy V10 is an executable file, so no installation is needed.</p></li>
+</ul>
+</section>
+<section id="extract-the-downloaded-folder">
+<h3>2. Extract the Downloaded Folder:<a class="headerlink" href="#extract-the-downloaded-folder" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Right-click on the downloaded folder.</p></li>
+<li><p>Select “Extract All…”</p></li>
+</ul>
+</section>
+<section id="open-command-prompt">
+<h3>3. Open Command Prompt:<a class="headerlink" href="#open-command-prompt" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Press Win + R, type cmd, and press Enter.</p></li>
+<li><p>Navigate to the path where the extracted folder and the .exe file are
+located.</p></li>
+</ul>
+</section>
+<section id="log-in-to-azure">
+<h3>4. Log in to Azure:<a class="headerlink" href="#log-in-to-azure" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Run the command: <code class="docutils literal notranslate"><span class="pre">azcopy</span> <span class="pre">login</span></code></p></li>
+</ul>
+</section>
+<section id="copy-your-files">
+<h3>5. Copy Your Files:<a class="headerlink" href="#copy-your-files" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Run the command: <code class="docutils literal notranslate"><span class="pre">azcopy</span> <span class="pre">copy</span> <span class="pre">&lt;source</span> <span class="pre">path&gt;</span> <span class="pre">&lt;destination</span> <span class="pre">link&gt;</span></code></p></li>
+</ul>
+</section>
+<section id="example">
+<h3>Example:<a class="headerlink" href="#example" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>azcopy<span class="w"> </span>copy<span class="w"> </span><span class="s2">&quot;/Path/to/Source/file/myfile.tar&quot;</span><span class="w"> </span>https://mystorageaccount.blob.core.windows.net/container/subfolder/myfile.tar
+</pre></div>
+</div>
+<p>By following these steps, you can efficiently transfer your files from
+the O Drive to your Azure storage account.</p>
+</section>
+</section>
+<section id="download-tar-files-from-azure-storage-to-a-vm">
+<h2>Download .tar Files from Azure Storage to a VM<a class="headerlink" href="#download-tar-files-from-azure-storage-to-a-vm" title="Link to this heading">¶</a></h2>
+<p>To uncompress files, you’ll need a virtual machine of appropriate size.
+Before uncompressing, you must first download the compressed file from
+Azure Storage to the VM. Follow the steps below to do this:</p>
+<section id="set-up-your-storage-account">
+<h3>1. Set Up Your Storage Account:<a class="headerlink" href="#set-up-your-storage-account" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Add the VNet of your VM to your storage account networking.</p></li>
+</ul>
+</section>
+<section id="install-azure-cli-on-the-vm">
+<h3>2. Install Azure CLI on the VM:<a class="headerlink" href="#install-azure-cli-on-the-vm" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Follow the instructions here: <a class="reference external" href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt" rel="noopener noreferrer" target="_blank">Install Azure
+CLI</a>.</p></li>
+</ul>
+</section>
+<section id="log-in-to-azure-from-the-vm">
+<h3>3. Log In to Azure from the VM:<a class="headerlink" href="#log-in-to-azure-from-the-vm" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Open the terminal and run: az login</p></li>
+<li><p>Follow the on-screen instructions to log in.</p></li>
+</ul>
+</section>
+<section id="download-the-tar-file">
+<h3>4. Download the .tar File:<a class="headerlink" href="#download-the-tar-file" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Run the command:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>az<span class="w"> </span>storage<span class="w"> </span>blob<span class="w"> </span>download
+<span class="w"> </span>--container-name<span class="w"> </span>&lt;container-name&gt;
+<span class="w"> </span>--name<span class="w"> </span>&lt;subfolders/filename&gt;
+<span class="w"> </span>--file<span class="w"> </span>&lt;destination-path/filename&gt;
+<span class="w"> </span>--account-name<span class="w"> </span>&lt;storage-account-name&gt;
+<span class="w"> </span>--account-key<span class="w"> </span>&lt;access-key&gt;
+</pre></div>
+</div>
+</section>
+<section id="id1">
+<h3>Example:<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>az<span class="w"> </span>storage<span class="w"> </span>blob<span class="w"> </span>download<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--container-name<span class="w"> </span>mycontainer<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>data/myfile.tar<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--file<span class="w"> </span>~/X204SC23121938-Z01-F001_02.tar<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--account-name<span class="w"> </span>mystorageaccount<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--account-key<span class="w"> </span>RLymfxHdHUo7hq2oHbIvlkdx5YBiV2TLuf14J2gNESrSraX4vT1FycO9IApw67ja1wsE4LpidC4WX9d+AStH2zd2A<span class="o">==</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="extract-the-tar-file-to-a-specific-folder">
+<h2>Extract the .tar File to a Specific Folder:<a class="headerlink" href="#extract-the-tar-file-to-a-specific-folder" title="Link to this heading">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>az<span class="w"> </span>storage<span class="w"> </span>blob<span class="w"> </span>download<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--container-name<span class="w"> </span>mycontainer
+<span class="w">  </span>--name<span class="w"> </span>data/myfile.tar<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--file<span class="w"> </span>~/X204SC23121938-Z01-F001_02.tar
+<span class="w">  </span>--account-name<span class="w"> </span>mystorageaccount
+<span class="w">  </span>--account-key<span class="w"> </span>RLymfxHdHUo7hq2oHbIvlkdx5YBiV2TLuf14J2gNESrSraX4vT1FycO9IApw67ja1wsE4LpidC4WX9d+AStH2zd2A<span class="o">==</span>
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>Extract the .tar File to a Specific Folder:<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<p>Once the compressed file is on the VM, you can proceed to uncompress it.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>az<span class="w"> </span>storage<span class="w"> </span>blob<span class="w"> </span>download<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--container-name<span class="w"> </span>mycontainer<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>data/myfile.tar<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--file<span class="w"> </span>~/X204SC23121938-Z01-F001_02.tar<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--account-name<span class="w"> </span>mystorageaccount<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--account-key<span class="w"> </span>RLymfxHdHUo7hq2oHbIvlkdx5YBiV2TLuf14J2gNESrSraX4vT1FycO9IApw67ja1wsE4LpidC4WX9d+AStH2zd2A<span class="o">==</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>Extract the .tar File to a Specific Folder:<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<p>Once the compressed file is on the VM, you can proceed to uncompress it.</p>
+<ul class="simple">
+<li><p>Run the command:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar<span class="w"> </span>-xvf<span class="w"> </span>yourfile.tar<span class="w"> </span>-C<span class="w"> </span>/path/to/destination/folder
+</pre></div>
+</div>
+<p>You can check directory size and number of files by the following
+commands:</p>
+<ul class="simple">
+<li><p>To check the size of a directory:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>du<span class="w"> </span>-sh<span class="w"> </span>/path/to/directory
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>To count the number of files in a directory:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find<span class="w"> </span>/path/to/directory<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+</pre></div>
+</div>
+</section>
+<section id="upload-untarred-files-from-the-vm-to-azure-storage">
+<h2>Upload Untarred Files from the VM to Azure Storage:<a class="headerlink" href="#upload-untarred-files-from-the-vm-to-azure-storage" title="Link to this heading">¶</a></h2>
+<p>Once the files are uncompressed on the VM, you can upload them back to
+the storage account.</p>
+<ul class="simple">
+<li><p>Run the command:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>az<span class="w"> </span>storage<span class="w"> </span>blob<span class="w"> </span>upload-batch<span class="w"> </span>--account-name<span class="w"> </span><span class="se">\&lt;</span>storage-account-name<span class="se">\&gt;</span>
+--account-key<span class="w"> </span><span class="se">\&lt;</span>access-key<span class="se">\&gt;</span><span class="w"> </span>--source<span class="w"> </span><span class="se">\&lt;</span>path-to-source-of-files<span class="se">\&gt;</span>
+--destination<span class="w"> </span><span class="se">\&lt;</span>container-name<span class="se">\&gt;</span><span class="w"> </span>--destination-path<span class="w"> </span><span class="se">\&lt;</span>folder-name<span class="se">\&gt;</span>
+</pre></div>
+</div>
+<section id="id4">
+<h3>Example:<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">az</span> <span class="n">storage</span> <span class="n">blob</span> <span class="n">upload</span><span class="o">-</span><span class="n">batch</span> <span class="o">--</span><span class="n">account</span><span class="o">-</span><span class="n">name</span> <span class="n">mystorageaccount</span>
+<span class="o">--</span><span class="n">account</span><span class="o">-</span><span class="n">key</span>
+<span class="n">RLymfxHdHUo7hq2oytHbIvx5YBiV2TLuf14J2gNESrSraX4vT1FycO9IApw67ja1wsE4LpidC4WX9d</span><span class="o">+</span><span class="n">AStH2zd2A</span><span class="o">==</span>
+<span class="o">--</span><span class="n">source</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">azureuser</span><span class="o">/</span><span class="n">newfolder</span> <span class="o">--</span><span class="n">destination</span> <span class="n">mycontainer</span>
+<span class="o">--</span><span class="n">destination</span><span class="o">-</span><span class="n">path</span> <span class="n">data</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="index.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Azure related setup
+    </a>
+    <a class="float-right" href="use_dl_data_on_vm.html" title="Next">
+        Copy data from the Data Lake <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Transferring Data from O Drive to Azure Storage</a><ul>
+<li><a class="reference internal" href="#transfer-the-compressed-file-from-o-drive-to-azure-storage-account">Transfer the Compressed File from O Drive to Azure Storage Account</a><ul>
+<li><a class="reference internal" href="#download-azcopy">1. Download AzCopy:</a></li>
+<li><a class="reference internal" href="#extract-the-downloaded-folder">2. Extract the Downloaded Folder:</a></li>
+<li><a class="reference internal" href="#open-command-prompt">3. Open Command Prompt:</a></li>
+<li><a class="reference internal" href="#log-in-to-azure">4. Log in to Azure:</a></li>
+<li><a class="reference internal" href="#copy-your-files">5. Copy Your Files:</a></li>
+<li><a class="reference internal" href="#example">Example:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#download-tar-files-from-azure-storage-to-a-vm">Download .tar Files from Azure Storage to a VM</a><ul>
+<li><a class="reference internal" href="#set-up-your-storage-account">1. Set Up Your Storage Account:</a></li>
+<li><a class="reference internal" href="#install-azure-cli-on-the-vm">2. Install Azure CLI on the VM:</a></li>
+<li><a class="reference internal" href="#log-in-to-azure-from-the-vm">3. Log In to Azure from the VM:</a></li>
+<li><a class="reference internal" href="#download-the-tar-file">4. Download the .tar File:</a></li>
+<li><a class="reference internal" href="#id1">Example:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#extract-the-tar-file-to-a-specific-folder">Extract the .tar File to a Specific Folder:</a></li>
+<li><a class="reference internal" href="#id2">Extract the .tar File to a Specific Folder:</a></li>
+<li><a class="reference internal" href="#id3">Extract the .tar File to a Specific Folder:</a></li>
+<li><a class="reference internal" href="#upload-untarred-files-from-the-vm-to-azure-storage">Upload Untarred Files from the VM to Azure Storage:</a><ul>
+<li><a class="reference internal" href="#id4">Example:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+            <div class="text-center">
+                    &copy; Copyright 2025, Research Data Management, DTU Biosustain
+            </div>
+            <div class="text-center text-white-50 font-italic mt-3">
+                <small>
+                    Created using
+                    <a href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Sphinx Wagtail Theme 6.4.0
+                    </a>
+                    and
+                    <a href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
+                        Sphinx 7.4.7
+                    </a>
+                </small>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../../../_static/js/mobile-toc.js?v=28931289"></script>
+        <script type="text/javascript" src="../../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>

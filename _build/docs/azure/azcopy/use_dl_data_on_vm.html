@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-content_root="../../../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Copy data from the Data Lake &mdash; Data Catalog Resources</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=0c5006f7" />
+            <link rel="index" title="Index" href="../../../genindex.html" />
+            <link rel="search" title="Search" href="../../../search.html" />
+            <link rel="top" title="Data Catalog Resources" href="#" />
+            <link rel="up" title="Azure related setup" href="index.html" />
+            <link rel="next" title="Data Catalog" href="../../data_catalog/index.html" />
+            <link rel="prev" title="Transferring Data from O Drive to Azure Storage" href="azcopy_usecases.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../../../_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="../../../index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        Biosustain Data Catalog Resources
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Azure</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Azure related setup</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="azcopy_usecases.html">Transferring Data from O Drive to Azure Storage</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Copy data from the Data Lake</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_catalog/index.html">Data Catalog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../data_catalog/Login.html">How to Log In to Data Catalog</a></li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../../index.html">Docs</a></li>
+            <li class="breadcrumb-item"><a href="../index.html">Azure</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Azure related setup</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Copy data from the Data Lake</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+
+
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <section class="tex2jax_ignore mathjax_ignore" id="copy-data-from-the-data-lake">
+<h1>Copy data from the Data Lake<a class="headerlink" href="#copy-data-from-the-data-lake" title="Link to this heading">¶</a></h1>
+<p>Scenario: A user wants to use her data on a virtual machine (VM) and needs to copy it
+from the Data Lake storage account (<code class="docutils literal notranslate"><span class="pre">biosustaindls</span></code>) to the VM.</p>
+<section id="pre-requisites">
+<h2>Pre-requisites<a class="headerlink" href="#pre-requisites" title="Link to this heading">¶</a></h2>
+<section id="roles-in-biosustaindls-storage-account">
+<h3>Roles in biosustaindls storage account<a class="headerlink" href="#roles-in-biosustaindls-storage-account" title="Link to this heading">¶</a></h3>
+<p>Each user is assigned a role <code class="docutils literal notranslate"><span class="pre">Reader</span></code> through the group called <code class="docutils literal notranslate"><span class="pre">nnfcb-datalake-users</span></code>
+to allow them to see the <code class="docutils literal notranslate"><span class="pre">biosustaindls</span></code> storage account in the Azure portal.
+However, on the container level the ACL entries restrict access to the project folders
+the user is a contributor or owner of - effectively giving <code class="docutils literal notranslate"><span class="pre">read</span></code> permissions.</p>
+<blockquote>
+<div><p>[!NOTE]<br />
+User cannot see their project folders in the containers with this role.</p>
+</div></blockquote>
+<p><img alt="biosustaindls roles" src="../../../_images/biosustaindls_user_roles.png" /></p>
+</section>
+<section id="networking-access">
+<h3>Networking access<a class="headerlink" href="#networking-access" title="Link to this heading">¶</a></h3>
+<p>Add <code class="docutils literal notranslate"><span class="pre">vnet</span></code> associated to your virtual machine to the <code class="docutils literal notranslate"><span class="pre">biosustaindls</span></code> storage account
+<code class="docutils literal notranslate"><span class="pre">Networking</span></code> settings. This allows the VM to reach the storage account.</p>
+<p><img alt="Networking settings in data lake storage account" src="../../../_images/biosustaindls_networking.png" /></p>
+<p>Which <code class="docutils literal notranslate"><span class="pre">vnet</span></code> your VM uses can be seen on the Overview page of the VM in the Azure portal, where you also see the VMs operating system, which is needed in the next
+step to install <code class="docutils literal notranslate"><span class="pre">azcopy</span></code>:</p>
+<p><img alt="VM overview" src="../../../_images/user_vm_overview.png" /></p>
+</section>
+</section>
+<section id="install-azcopy">
+<h2>Install <code class="docutils literal notranslate"><span class="pre">azcopy</span></code><a class="headerlink" href="#install-azcopy" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">biosustaindls</span></code> is the storage account for the Data Lake. Instruction to install <code class="docutils literal notranslate"><span class="pre">azcopy</span></code>
+can be found in the
+<a class="reference external" href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?tabs=apt" rel="noopener noreferrer" target="_blank">official documentation</a>.</p>
+<p>To find out your Linux distribution, you can run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the release of your Linux distribution</span>
+lsb_release<span class="w"> </span>-a
+</pre></div>
+</div>
+<p>An example ouput is the following where you would use <code class="docutils literal notranslate"><span class="pre">ubuntu</span></code> and <code class="docutils literal notranslate"><span class="pre">24.04</span></code> as of the
+current instructions (up for change):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>No<span class="w"> </span>LSB<span class="w"> </span>modules<span class="w"> </span>are<span class="w"> </span>available.
+Distributor<span class="w"> </span>ID:<span class="w"> </span>Ubuntu
+Description:<span class="w">    </span>Ubuntu<span class="w"> </span><span class="m">24</span>.04.1<span class="w"> </span>LTS
+Release:<span class="w">        </span><span class="m">24</span>.04
+Codename:<span class="w">       </span>noble
+</pre></div>
+</div>
+</section>
+<section id="login-to-azcopy">
+<h2>login to azcopy<a class="headerlink" href="#login-to-azcopy" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">azcopy</span> <span class="n">login</span>
+</pre></div>
+</div>
+</section>
+<section id="copy-data">
+<h2>copy data<a class="headerlink" href="#copy-data" title="Link to this heading">¶</a></h2>
+<p>Copy a project folder on the Data Lake (<code class="docutils literal notranslate"><span class="pre">biosustaindls</span></code>) to a local folder called <code class="docutils literal notranslate"><span class="pre">data</span></code>.
+Here the <code class="docutils literal notranslate"><span class="pre">&lt;container&gt;</span></code> is <code class="docutils literal notranslate"><span class="pre">raw</span></code> and the <code class="docutils literal notranslate"><span class="pre">&lt;project-id&gt;</span></code> is <code class="docutils literal notranslate"><span class="pre">P29_327448795...f</span></code> (abbreviated),
+which is the folder name in the main directory of that container. All data from that project
+would be copied to the <code class="docutils literal notranslate"><span class="pre">data</span></code> folder.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>azcopy<span class="w"> </span>copy<span class="w"> </span><span class="s1">&#39;https://biosustaindls.dfs.core.windows.net/&lt;container&gt;/&lt;project-id&gt;&#39;</span><span class="w"> </span><span class="s1">&#39;data&#39;</span><span class="w"> </span>--recursive
+azcopy<span class="w"> </span>copy<span class="w"> </span><span class="s1">&#39;https://biosustaindls.blob.core.windows.net/&lt;container&gt;/&lt;project-id&gt;&#39;</span><span class="w"> </span><span class="s1">&#39;data&#39;</span><span class="w"> </span>--recursive
+</pre></div>
+</div>
+</section>
+</section>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="azcopy_usecases.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Transferring Data from O Drive to Azure Storage
+    </a>
+    <a class="float-right" href="../../data_catalog/index.html" title="Next">
+        Data Catalog <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Copy data from the Data Lake</a><ul>
+<li><a class="reference internal" href="#pre-requisites">Pre-requisites</a><ul>
+<li><a class="reference internal" href="#roles-in-biosustaindls-storage-account">Roles in biosustaindls storage account</a></li>
+<li><a class="reference internal" href="#networking-access">Networking access</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#install-azcopy">Install <code class="docutils literal notranslate"><span class="pre">azcopy</span></code></a></li>
+<li><a class="reference internal" href="#login-to-azcopy">login to azcopy</a></li>
+<li><a class="reference internal" href="#copy-data">copy data</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+            <div class="text-center">
+                    &copy; Copyright 2025, Research Data Management, DTU Biosustain
+            </div>
+            <div class="text-center text-white-50 font-italic mt-3">
+                <small>
+                    Created using
+                    <a href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Sphinx Wagtail Theme 6.4.0
+                    </a>
+                    and
+                    <a href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
+                        Sphinx 7.4.7
+                    </a>
+                </small>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../../../_static/js/mobile-toc.js?v=28931289"></script>
+        <script type="text/javascript" src="../../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
