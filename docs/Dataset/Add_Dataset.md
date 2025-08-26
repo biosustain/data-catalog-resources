@@ -93,7 +93,7 @@ You can use the "Datasets" tab at the top of any page.
 ```
 
 ### Step 2: Click "Add Dataset" 
-On the Datasets overview page, click `Add Dataset` button located right ***above the search box***.
+On the Datasets overview page, click `Add Dataset` button located right ***above the Search datasets box***.
 
 
 ```{figure} ../../_static/images/Add_Dataset_button2.png
@@ -116,20 +116,30 @@ Complete all the required fields marked with `*`:
 * Dataset type
 * Dataset creator email
 
+
+```{figure} ../../_static/images/dataset_creation_page2.png
+:alt: Dataset Creation Page
+:width: 60%
+:align: center
+
+*Dataset Creation Page*
+
+```
+
 ```{note} 
 You should manually type the **Project title**, even though this field is not marked as required. Make sure to enter the correct title to ensure the dataset is properly linked to the right project.
 ```
 
-```{figure} ../../_static/images/dataset_creation_page2.png
-:alt: Dataset Overview Page
-:width: 60%
-:align: center
-
-*Dataset Overview Page*
-
-```
-
-
 
 ### Step 4: Save
 Click `Save` located in the ***bottom-right corner*** of the page to submit your dataset.
+
+
+```{figure} ../../_static/images/dataset_creation_save_button.png
+:alt: Dataset Creation Page
+:width: 60%
+:align: center
+
+*Dataset Creation Page*
+
+```
