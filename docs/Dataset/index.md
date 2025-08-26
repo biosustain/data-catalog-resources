@@ -4,4 +4,5 @@
 :maxdepth: 1
 
 Add_Datasets/index
+Manage_Datasets/index
 ```
