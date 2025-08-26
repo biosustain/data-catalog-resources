@@ -36,7 +36,5 @@ Biosustain Data Catalog, by design, is **only accessible** by personnel official
 :maxdepth: 2
 :titlesonly:
 
-docs/article_topic
 docs/Login
-docs/azure
 ```
