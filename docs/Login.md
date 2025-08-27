@@ -17,11 +17,11 @@ You will be automatically ***redirected*** to the DTU Single Sign-On page.
 
 
 ```{figure} ../_static/images/Login.png
-:alt: Welcome Page of the Data Catalog Website
+:alt: Data Catalog Welcome Page
 :width: 60%
 :align: center
 
-*Welcome Page of the Data Catalog Website*
+*Data Catalog Welcome Page*
 ```
 
 ## Step 3: Enter your DTU Credentials 

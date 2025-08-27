@@ -38,4 +38,5 @@ Biosustain Data Catalog, by design, is **only accessible** by personnel official
 
 docs/Login
 docs/Project/index
+docs/Dataset/index
 ```

@@ -56,4 +56,5 @@ Click the `Delete` button located on the ***bottom-left corner*** of the page.
 ```
 
 
-
+## Step 4: Confirm Action
+To complete the deletion of the project, select `Confirm` in the dialog box that appears.
