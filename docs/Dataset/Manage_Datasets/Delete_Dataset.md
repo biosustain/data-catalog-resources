@@ -58,7 +58,11 @@ Make any necessary changes to the dataset information fields.
 
 ```
 
-## Step 4: Save Changes
+```{note}
+When you **delete** a dataset, it is **not permanently removed**. It will be hidden, and it will no longer appear in any search results. If you need the dataset to be **completely deleted**, please contact the **Data Catalog Administrator**.
+```
+
+## Step 4: Delete Dataset
 Click `Delete` located on the ***bottom-right corner*** of the page to save your changes.
 
 ```{figure} ../../../_static/images/delete_dataset_button.png
