@@ -13,9 +13,9 @@ Specific goals include:
 - Ensure governance on all systems and data.
 - Establish a strong research data management support function.
 
-## Platform Technology - CKAN
+## CKAN
 
-[**CKAN**](https://ckan.org/) is one of the most popular open source data management system used by governments and organizations such as [Open Data DK](https://www.opendata.dk/) and [US government Open Data](https://data.gov/). CKAN also has a powerful API (Application Programming Interface), which makes it possible and relatively easy to develop extensions and integrate with our informatics platform at Biosustain.
+We currently use [**CKAN**](https://ckan.org/) as our system backend framework.
 
 ## Key Features
 
@@ -36,9 +36,7 @@ Biosustain Data Catalog, by design, is **only accessible** by personnel official
 :maxdepth: 2
 :titlesonly:
 
-docs/article_topic
 docs/Login
 docs/Project/index
 docs/Dataset/index
-docs/azure
 ```
