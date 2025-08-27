@@ -2,6 +2,15 @@
 Once a project has been created, it can be **updated** if needed.
 This can be done as follows:
 
+
+```{admonition} Search Options
+:class: toggle
+:collapsible:
+
+There are several ways to search for a project in the Data Catalog. You can use the **View all projects** on the Welcome Page, the **Projects** tab, or the **Search field** in the top navigation bar. However, in this guide, we focus on **one method** to keep things simple.
+```
+
+
 ## Step 1: Navigate to the Project Home Page 
 Use the search bar on the Data Catalog welcome page to find your project.
 

@@ -8,11 +8,11 @@ Click the `Create new project` located ***under*** the search bar, in the ***wel
 
 
 ```{figure} ../../_static/images/create_new_project.png
-:alt: Welcome Page of the Data Catalog Website
+:alt: Data Catalog Welcome Page
 :width: 60%
 :align: center
 
-*Welcome Page of the Data Catalog Website*
+*Data Catalog Welcome Page*
 
 ```
 
