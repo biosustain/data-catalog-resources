@@ -1,5 +1,5 @@
 # Add a Dataset
-There are **two** ways to add/create a dataset. Both follow the same basic steps, but differ in where you start:
+There are **two** ways to add/create a new dataset to the Data Catalog. Both follow the same basic steps, but differ in where you start:
 
 ```{toctree}
 :maxdepth: 1
@@ -7,4 +7,4 @@ There are **two** ways to add/create a dataset. Both follow the same basic steps
 From_Project_Home_Page
 From_Navigation_bar
 ```
-
+Click on either method to view the detailed steps.

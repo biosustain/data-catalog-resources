@@ -1,8 +1,9 @@
-# B: From the Top Navigation Bar
+# **Method B**: From the Top Navigation Bar
+Alternatively, follow these steps to add a new datset using the top navigation bar:
 
 
-## Step 1: Click "Datasets" 
-You can use the "Datasets" tab at the top of any page.
+## Step 1: Navigate to the Datasets Overview Page 
+Click on the "Datasets" tab located at the top of any page.
 
 
 ```{figure} ../../../_static/images/dataset_tab_2.png
@@ -15,7 +16,7 @@ You can use the "Datasets" tab at the top of any page.
 ```
 
 ## Step 2: Click "Add Dataset" 
-On the Datasets overview page, click `Add Dataset` button located right ***above the Search datasets box***.
+On the Datasets overview page, click `Add Dataset` button located right above ***the Search datasets box***.
 
 
 ```{figure} ../../../_static/images/Add_Dataset_button2.png
@@ -40,7 +41,7 @@ Complete all the required fields marked with `*`:
 
 
 ```{note} 
-You should manually type the **Project title**, even though this field is not marked as required. Make sure to enter the correct title to ensure the dataset is properly linked to the right project.
+You should also include the **Project title**, even though this field is not marked as required. Make sure to enter the **correct title** to ensure the dataset is properly linked to the right project.
 ```
 
 

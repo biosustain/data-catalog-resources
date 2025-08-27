@@ -1,4 +1,5 @@
-# A: From the Project Home Page
+# **Method A**: From the Project Home Page
+To add a new dataset from the project home page, follow these steps:
 
 ## Step 1: Navigate to the Project Home Page 
 Use the search bar on the Data Catalog welcome page to find the project that your new dataset should belong.
