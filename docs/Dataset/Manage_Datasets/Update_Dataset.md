@@ -1,12 +1,18 @@
 # Update a Dataset
 Once a dataset is created, it can be **edited/upadted** if needed as follows:
 
+
+```{admonition} Search Options
+:class: toggle
+:collapsible:
+
+There are several ways to search for a dataset in the Data Catalog. You can use the **Search bar** on the Welcome Page, the **Datasets** tab, or the **Search field** in the top navigation bar. However, in this guide, we focus on **one method** to keep things simple.
+```
+
+
 ## Step 1: Navigate to the Datasets Overview Page
 Click the `View all datasets` located ***under*** the search bar, in the ***welcome page***.
 
-```{note} 
-Keep it mind that there are different ways to search your dataset. In the first step provide only one of them
-```
 
 ```{figure} ../../../_static/images/homepage_view_all_datasets.png
 :alt: Data Catalog Welcome Page
@@ -18,7 +24,20 @@ Keep it mind that there are different ways to search your dataset. In the first 
 ```
 
 
-## Step 2: Click "Manage" 
+## Step 2: Find your Dataset 
+Use the ***search bar*** under the "Add dataset" button to find and open your dataset.
+
+
+```{figure} ../../../_static/images/search_datasets.png
+:alt: Datasets Overview Page
+:width: 60%
+:align: center
+
+*Datasets Overview Page*
+
+```
+
+## Step 3: Click "Manage" 
 On the Dataset home page, click `Manage` button located in the ***top-right corner***.
 
 
