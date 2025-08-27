@@ -2,7 +2,7 @@
 To delete a dataset, follow the next steps:
 
  ```{tip} 
- The first steps for **Deleting** a dataset are the **same** as those used for **Updating** a dataset.
+ Step 1 to 3 for **Deleting** a dataset are the **same** as those used for **Updating** a dataset.
 ```
 
 ## Step 1: Navigate to the Datasets Overview Page
