@@ -46,18 +46,6 @@ On the Dataset home page, click `Manage` button located in the ***top-right corn
 ```
 
 
-## Step 3: Edit your Dataset
-Make any necessary changes to the dataset information fields.
-
-```{figure} ../../../_static/images/manage_dataset_view.png
-:alt: Manage Dataset View
-:width: 60%
-:align: center
-
-*Manage Dataset View*
-
-```
-
 ```{note}
 When you **delete** a dataset, it is **not permanently removed**. It will be hidden, and it will no longer appear in any search results. If you need the dataset to be **completely deleted**, please contact the **Data Catalog Administrator**.
 ```
