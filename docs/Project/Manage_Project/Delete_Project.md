@@ -11,11 +11,11 @@ Use the search bar on the Data Catalog welcome page to find your project.
 
 
 ```{figure} ../../../_static/images/search_project.png
-:alt: Welcome Page of the Data Catalog
+:alt: Data Catalog Welcome Page
 :width: 60%
 :align: center
 
-*Welcome Page of the Data Catalog*
+*Data Catalog Welcome Page*
 
 ```
 
