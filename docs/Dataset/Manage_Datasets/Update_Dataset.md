@@ -9,7 +9,7 @@ Once a dataset is created, it can be **edited/upadted** if needed as follows:
 There are several ways to search for a dataset in the Data Catalog. You can use the **Search bar** on the Welcome Page, the **Datasets** tab, or the **Search field** in the top navigation bar. However, in this guide, we focus on **one method** to keep things simple.
 ```
 
-
+(this_is_the_reference_point)=
 ## Step 1: Navigate to the Datasets Overview Page
 Click the `View all datasets` located ***under*** the search bar, in the ***welcome page***.
 
