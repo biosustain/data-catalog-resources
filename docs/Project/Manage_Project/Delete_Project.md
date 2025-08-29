@@ -3,7 +3,7 @@ Projects can also be **deleted** if no longer needed.
 To delete a project, follow the next steps:
 
  ```{tip} 
- The first steps for **Deleting** a project are the **same** as those used for **Updating** a project.
+ The first two steps for **Deleting** a project are the **same** as those used for **Updating** a project.
 ```
 
 ## Step 1: Navigate to the Project Home Page 
@@ -11,11 +11,11 @@ Use the search bar on the Data Catalog welcome page to find your project.
 
 
 ```{figure} ../../../_static/images/search_project.png
-:alt: Welcome Page of the Data Catalog
+:alt: Data Catalog Welcome Page
 :width: 60%
 :align: center
 
-*Welcome Page of the Data Catalog*
+*Data Catalog Welcome Page*
 
 ```
 

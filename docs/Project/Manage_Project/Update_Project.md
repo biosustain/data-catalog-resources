@@ -7,7 +7,7 @@ This can be done as follows:
 :class: toggle
 :collapsible:
 
-There are several ways to search for a project in the Data Catalog. You can use the **View all projects** on the Welcome Page, the **Projects** tab, or the **Search field** in the top navigation bar. However, in this guide, we focus on **one method** to keep things simple.
+There are several ways to search for a project in the Data Catalog. You can use the **View your projects** on the Welcome Page, the **Projects** tab, or the **Search field** in the top navigation bar. However, in this guide, we focus on **one method** to keep things simple.
 ```
 
 
@@ -16,11 +16,11 @@ Use the search bar on the Data Catalog welcome page to find your project.
 
 
 ```{figure} ../../../_static/images/search_project.png
-:alt: Welcome Page of the Data Catalog
+:alt: Data Catalog Welcome Page
 :width: 60%
 :align: center
 
-*Welcome Page of the Data Catalog*
+*Data Catalog Welcome Page*
 
 ```
 
