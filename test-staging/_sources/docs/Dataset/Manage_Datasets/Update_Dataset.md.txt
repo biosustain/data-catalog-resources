@@ -11,7 +11,7 @@ There are several ways to search for a dataset in the Data Catalog. You can use 
 
 
 ## Step 1: Navigate to the Datasets Overview Page
-Click the `View all datasets` located ***under*** the search bar, in the ***welcome page***.
+Click the `View your datasets` located ***under*** the search bar, in the ***welcome page***.
 
 
 ```{figure} ../../../_static/images/homepage_view_all_datasets.png
