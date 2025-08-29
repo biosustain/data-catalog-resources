@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-content_root="../../../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Delete a Project &mdash; Data Catalog Resources</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=0c5006f7" />
+            <link rel="index" title="Index" href="../../../genindex.html" />
+            <link rel="search" title="Search" href="../../../search.html" />
+            <link rel="top" title="Data Catalog Resources" href="#" />
+            <link rel="up" title="Manage Projects" href="index.html" />
+            <link rel="next" title="Dataset" href="../../Dataset/index.html" />
+            <link rel="prev" title="Update a Project" href="Update_Project.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../../../_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="../../../index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        Biosustain Data Catalog Resources
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Login.html">Login</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Project  <!-- This is the sidebar title --></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../What_is_Project.html">What is a Project?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Create_Project.html">Create a New Project</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Manage Projects  <!-- This is the sidebar title --></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Update_Project.html">Update a Project</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Delete a Project</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dataset/index.html">Dataset  <!-- This is the sidebar title --></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Dataset/Add_Datasets/index.html">Add a Dataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Dataset/Add_Datasets/From_Project_Home_Page.html"><strong>Method A</strong>: From the Project Home Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Dataset/Add_Datasets/From_Navigation_bar.html"><strong>Method B</strong>: From the Top Navigation Bar</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Dataset/Manage_Datasets/index.html">Manage Datasets <!-- This is the sidebar title --></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Dataset/Manage_Datasets/Update_Dataset.html">Update a Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Dataset/Manage_Datasets/Delete_Dataset.html">Delete a Dataset</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../../index.html">Docs</a></li>
+            <li class="breadcrumb-item"><a href="../index.html">Project  <!-- This is the sidebar title --></a></li>
+            <li class="breadcrumb-item"><a href="index.html">Manage Projects  <!-- This is the sidebar title --></a></li>
+        <li class="breadcrumb-item active" aria-current="page">Delete a Project</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+
+
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <section class="tex2jax_ignore mathjax_ignore" id="delete-a-project">
+<h1>Delete a Project<a class="headerlink" href="#delete-a-project" title="Link to this heading">¶</a></h1>
+<p>Projects can also be <strong>deleted</strong> if no longer needed.
+To delete a project, follow the next steps:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The first two steps for <strong>Deleting</strong> a project are the <strong>same</strong> as those used for <strong>Updating</strong> a project.</p>
+</div>
+<section id="step-1-navigate-to-the-project-home-page">
+<h2>Step 1: Navigate to the Project Home Page<a class="headerlink" href="#step-1-navigate-to-the-project-home-page" title="Link to this heading">¶</a></h2>
+<p>Use the search bar on the Data Catalog welcome page to find your project.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../../_images/search_project.png"><img alt="Data Catalog Welcome Page" src="../../../_images/search_project.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Data Catalog Welcome Page</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="step-2-click-manage">
+<h2>Step 2: Click “Manage”<a class="headerlink" href="#step-2-click-manage" title="Link to this heading">¶</a></h2>
+<p>On the Project home page, click <code class="docutils literal notranslate"><span class="pre">Manage</span></code> button located in the <em><strong>top-right corner</strong></em>.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../../_images/manage_button.png"><img alt="Project Home Page" src="../../../_images/manage_button.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Project Home Page</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you <strong>delete</strong> a project, it is <strong>not permanently removed</strong>. It will be hidden, and it will no longer appear in any search results. If you need the project to be <strong>completely deleted</strong>, please contact the <strong>Data Catalog Administrator</strong>.</p>
+</div>
+</section>
+<section id="step-3-delete-project">
+<h2>Step 3: Delete Project<a class="headerlink" href="#step-3-delete-project" title="Link to this heading">¶</a></h2>
+<p>Click the <code class="docutils literal notranslate"><span class="pre">Delete</span></code> button located on the <em><strong>bottom-left corner</strong></em> of the page.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../../_images/delete_project.png"><img alt="Manage Project View" src="../../../_images/delete_project.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Manage Project View</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="step-4-confirm-action">
+<h2>Step 4: Confirm Action<a class="headerlink" href="#step-4-confirm-action" title="Link to this heading">¶</a></h2>
+<p>To complete the deletion of the project, select <code class="docutils literal notranslate"><span class="pre">Confirm</span></code> in the dialog box that appears.</p>
+</section>
+</section>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="Update_Project.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Update a Project
+    </a>
+    <a class="float-right" href="../../Dataset/index.html" title="Next">
+        Dataset  <!-- This is the sidebar title --> <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Delete a Project</a><ul>
+<li><a class="reference internal" href="#step-1-navigate-to-the-project-home-page">Step 1: Navigate to the Project Home Page</a></li>
+<li><a class="reference internal" href="#step-2-click-manage">Step 2: Click “Manage”</a></li>
+<li><a class="reference internal" href="#step-3-delete-project">Step 3: Delete Project</a></li>
+<li><a class="reference internal" href="#step-4-confirm-action">Step 4: Confirm Action</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+            <div class="text-center">
+                    &copy; Copyright 2025, Research Data Management, DTU Biosustain
+            </div>
+            <div class="text-center text-white-50 font-italic mt-3">
+                <small>
+                    Created using
+                    <a class="text-white" href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Sphinx Wagtail Theme 6.5.0
+                    </a>
+                    and
+                    <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
+                        Sphinx 7.4.7
+                    </a>
+                </small>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../../../_static/js/mobile-toc.js?v=28931289"></script>
+        <script type="text/javascript" src="../../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
