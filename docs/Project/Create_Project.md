@@ -1,6 +1,6 @@
 #  Create a New Project
 
-🎯 This guide walks you through the essential steps for creating a project in the Data Catalog. 
+This guide walks you through the essential steps for creating a project in the Data Catalog. 
 Creating a project is **simple**, but the form includes many fields/questions. To help you navigating easily, we've grouped the questions into five categories. These **do not appear as a section on the Data Catalog page**, but are here to help you understand and locate the information more easily.
 
 ## Step 1: Navigate to the Project Creation Page
