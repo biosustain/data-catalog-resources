@@ -3,7 +3,7 @@ Projects can also be **deleted** if no longer needed.
 To delete a project, follow the next steps:
 
  ```{tip} 
- The first steps for **Deleting** a project are the **same** as those used for **Updating** a project.
+ The first two steps for **Deleting** a project are the **same** as those used for **Updating** a project.
 ```
 
 ## Step 1: Navigate to the Project Home Page 
