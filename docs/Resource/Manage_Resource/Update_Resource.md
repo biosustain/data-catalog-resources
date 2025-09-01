@@ -1,3 +1,66 @@
 # Update Resources
-Once one of more resources have been created, they can be **updated** if needed.
+Once one or more resources have been created, they can be **updated** if needed.
 This can be done as follows:
+
+## Step 1: Navigate to the Resources Overview Page
+Start by ***finding your dataset*** and opening the ***Manage Dataset*** page. Then click the `Resources` button.
+For detailed instructions on how to this, see **Steps 1-3** in the [**Update Dataset**](this_is_the_reference_point) guide.
+
+
+```{figure} ../../../_static/images/resource_overview_page.png
+:alt: Resources Overview Page
+:width: 60%
+:align: center
+
+*Resources Overview Page*
+
+```
+
+```{admonition} Alternatively way to Access the Resource
+:class: toggle
+:collapsible:
+
+From the **Dataset Home Page**, click the <img src="../../../_static/images/open_icon.png" alt="open_icon" style="height:1em; vertical-align:0.05em;"> icon to open the resource.  
+(For detailed instructions on how to find the dataset home page, see **Steps 1 & 2** in the [**Update Dataset**](this_is_the_reference_point) guide).
+
+From there, click the `Manage` button located in the top-right corner.
+ 
+This will open the **Update Resource Page**, where you can edit the resource information as described in the next steps.
+
+```{figure} ../../../_static/images/resource_home_page_manage.png
+:alt: Resource Home Page
+:width: 60%
+:align: center
+
+*Resource Home Page*
+
+
+```
+
+
+
+## Step 2: Edit your Resource
+Click on any of the listed resources and update the relevant information fields.
+
+```{figure} ../../../_static/images/update_resource_page.png
+:alt: Update Resource Page
+:width: 60%
+:align: center
+
+*Update Resource Page*
+
+```
+
+
+## Step 3: Save Changes
+Click `Update Resource` located on the ***bottom-right corner*** of the page to save your changes.
+
+```{figure} ../../../_static/images/update_resource_button.png
+:alt: Update Resource Page
+:width: 60%
+:align: center
+
+*Update Resource Page*
+
+```
+
