@@ -3,7 +3,7 @@ To add one or more Resources to the a dataset, follow the next steps:
 
 ## Step 1: Find your Dataset
 Click on the `View your datasets` button located under the search bar on the Data Catalog welcome page to find the dataset you want to add a resource to.
-If you need help, follow **Step 1 & Step 2** in the [**Dataset**](this_is_the_reference_point) guide.
+For detailed instructions, see **Step 1 & Step 2** in the [**Update Dataset**](this_is_the_reference_point) guide.
 
 
 ## Step 2: Click Manage
@@ -20,14 +20,14 @@ On the Dataset home page, click `Manage` button located in the ***top-right corn
 ```
 
 ## Step 3: Navigate to the Resources Overview Page
-On the ***Manage Dataset*** view page click the `Resources` button.
+On the ***Manage Dataset*** page click the `Resources` button.
 
 ```{figure} ../../_static/images/resource_button.png
-:alt: Resources Overview Page
+:alt: Manage Dataset Page
 :width: 60%
 :align: center
 
-*Resources Overview Page*
+*Manage Dataset Page*
 
 ```
 
@@ -73,7 +73,9 @@ Even if you're unsure about some details, you can always **include what you know
 :class: toggle
 :collapsible:
 
-You can add **more** resource **files** before saving. After uploading the first file, click the `Add more files` button to include additional files in the same form. These files are treated as a **single** resource with **multilple attachments**.
+You can add **more** resource **files** before saving. After uploading the first file, click the `Add more files` button to include additional files in the same form. 
+
+These files are treated as a **single** resource with **multilple attachments**.
 
 This is useful when you have several related files (e.g. different sheets or formats) that belong together.
 
@@ -105,7 +107,9 @@ After saving, you’ll be redirected to the dataset’s home page, where all add
 :class: toggle
 :collapsible:
 
-Click the `Save & Add another` button at the buttom of the page to save the current resource and immediately open a new resource form. This allows you to **continue adding resources** (files or links) **without leaving the resource creation page**.
+Click the `Save & Add another` button at the buttom of the page to save the current resource and immediately open a new resource form. 
+
+This allows you to **continue adding resources** (files or links) **without leaving the resource creation page**.
 
 Each resource added this way is **independent**.
 
@@ -115,5 +119,19 @@ Each resource added this way is **independent**.
 :align: center
 
 *Resource Creation Page*
+
+```
+
+
+## After Adding a Resource
+Once you saved your resource(s), you'll be redirected to the dataset's home page, where all added resources will be listed under the ***Dataset and Resources*** section.
+
+
+```{figure} ../../_static/images/data_and_resources.png
+:alt: Dataset Home Page
+:width: 60%
+:align: center
+
+*Dataset Home Page*
 
 ```
