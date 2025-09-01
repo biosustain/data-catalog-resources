@@ -55,11 +55,11 @@ On the Dataset home page, click `Manage` button located in the ***top-right corn
 Make any necessary changes to the dataset information fields.
 
 ```{figure} ../../../_static/images/manage_dataset_view.png
-:alt: Manage Dataset View
+:alt: Manage Dataset Page
 :width: 60%
 :align: center
 
-*Manage Dataset View*
+*Manage Dataset Page*
 
 ```
 
@@ -68,10 +68,10 @@ Make any necessary changes to the dataset information fields.
 Click `Update Dataset` located on the ***bottom-right corner*** of the page to save your changes.
 
 ```{figure} ../../../_static/images/update_dataset_button.png
-:alt: Manage Dataset View
+:alt: Manage Dataset Page
 :width: 60%
 :align: center
 
-*Manage Dataset View*
+*Manage Dataset Page*
 
 ```
