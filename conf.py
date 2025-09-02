@@ -9,7 +9,7 @@ import subprocess
 
 # -- Project information -----------------------------------------------------
 
-project = "DTU Biosustain Data Catalog Resources GitHub pages"
+project = "Data Catalog User Guide"
 copyright = "2025, Research Data Management, DTU Biosustain"
 author = "Ding He"
 
@@ -19,8 +19,10 @@ author = "Ding He"
 def get_version():
     # Try to get version from environment variable first (for releases)
     env_version = os.environ.get('DOCS_VERSION')
-    if env_version:
-        return env_version
+    if env_version and env_version != "latest":
+        # Clean version string (remove 'v' prefix if present)
+        version_clean = env_version.lstrip('v')
+        return f"v{version_clean}"
     
     # Try to get version from git
     try:
@@ -28,12 +30,15 @@ def get_version():
         result = subprocess.run(['git', 'describe', '--exact-match', '--tags', 'HEAD'], 
                               capture_output=True, text=True, timeout=10)
         if result.returncode == 0:
-            return result.stdout.strip()
+            tag = result.stdout.strip()
+            # Clean version string (remove 'v' prefix if present, then re-add)
+            version_clean = tag.lstrip('v')
+            return f"v{version_clean}"
     except:
         pass
     
-    # Default to "latest" for main branch or unknown
-    return "latest"
+    # Default to v0.0.0 for development/unreleased versions
+    return "v0.0.0"
 
 # Set version and release
 version = get_version()
@@ -109,7 +114,7 @@ nb_custom_formats = {
 html_theme = "sphinx_wagtail_theme"
 
 html_theme_options = {
-    "project_name": f"Biosustain Data Catalog Resources (v{version})",
+    "project_name": f"Data Catalog User Guide ({version})",
     # The github URL if you want to link to the source code on the page
     # "github_url": "https://github.com/biosustain/data-catalog-resources/blob/main/",
     "logo": "images/DTU_Logo_Corporate_White_RGB.png",
@@ -118,7 +123,7 @@ html_theme_options = {
     "footer_links": "",  # Empty string to hide footer navigation links
 }
 
-html_title = 'Data Catalog Resources'
+html_title = 'Data Catalog User Guide'
 
 # Disable the "View source" button
 html_show_sourcelink = False

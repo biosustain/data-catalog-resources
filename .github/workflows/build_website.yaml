@@ -23,7 +23,7 @@ jobs:
 
       - name: Build the site
         env:
-          DOCS_VERSION: "latest"
+          DOCS_VERSION: "v0.0.0"
         run: |
           sphinx-build -nW --keep-going -b html .  _build
 
