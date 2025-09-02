@@ -1,5 +1,5 @@
 # Add a Resource
-To add one or more Resources to the a dataset, follow the next steps:
+To add one or more Resources to the dataset, follow the next steps:
 
 ## Step 1: Find your Dataset
 Click on the `View your datasets` button located under the search bar on the Data Catalog welcome page to find the dataset you want to add a resource to.
