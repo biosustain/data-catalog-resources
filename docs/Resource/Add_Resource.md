@@ -21,7 +21,7 @@ On the Dataset home page, click `Manage` button located in the ***top-right corn
 ```
 
 ## Step 3: Navigate to the Resources Overview Page
-On the ***Manage Dataset*** page click the `Resources` button.
+On the Manage Dataset page click the `Resources` button.
 
 ```{figure} ../../_static/images/resource_button.png
 :alt: Manage Dataset Page
@@ -33,7 +33,7 @@ On the ***Manage Dataset*** page click the `Resources` button.
 ```
 
 ## Step 4: Add a New Resource
-On the ***Resources Overview*** page, click the `Add new resource` button to open the resource form. 
+On the Resources Overview page, click the `Add new resource` button to open the resource form. 
 
 ```{figure} ../../_static/images/add_new_resource_button.png
 :alt: Resources Overview Page
