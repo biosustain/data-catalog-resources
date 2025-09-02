@@ -4,7 +4,7 @@ This can be done as follows:
 
 ## Step 1: Navigate to the Resources Overview Page
 Start by ***finding your dataset*** and opening the ***Manage Dataset*** page. Then click the `Resources` button.
-For detailed instructions on how to this, see **Steps 1-3** in the [**Update Dataset**](this_is_the_reference_point) guide.
+For detailed instructions on how to do this, see **Steps 1-3** in the [**Update Dataset**](this_is_the_reference_point) guide.
 
 
 ```{figure} ../../../_static/images/resource_overview_page.png
@@ -16,16 +16,27 @@ For detailed instructions on how to this, see **Steps 1-3** in the [**Update Dat
 
 ```
 
-```{admonition} Alternatively way to Access the Resource
+
+```{admonition} Alternatively Way to Access the Resource(s)
 :class: toggle
 :collapsible:
 
-From the **Dataset Home Page**, click the <img src="../../../_static/images/open_icon.png" alt="open_icon" style="height:1em; vertical-align:0.05em;"> icon to open the resource.  
+From the **Dataset Home Page**, click the <img src="../../../_static/images/open_icon.png" alt="open_icon" style="height:1em; vertical-align:0.05em;"> icon to open the resource.
 (For detailed instructions on how to find the dataset home page, see **Steps 1 & 2** in the [**Update Dataset**](this_is_the_reference_point) guide).
 
 From there, click the `Manage` button located in the top-right corner.
- 
+
 This will open the **Update Resource Page**, where you can edit the resource information as described in the next steps.
+
+
+```{figure} ../../../_static/images/open_data_and_resources.png
+:alt: Dataset Home Page
+:width: 60%
+:align: center
+
+*Dataset Home Page*
+
+
 
 ```{figure} ../../../_static/images/resource_home_page_manage.png
 :alt: Resource Home Page
@@ -34,8 +45,10 @@ This will open the **Update Resource Page**, where you can edit the resource inf
 
 *Resource Home Page*
 
-
 ```
+
+
+
 
 
 
