@@ -3,7 +3,7 @@ Resources can also be **deleted** if no longer needed.
 To delete a resource, follow the next steps:
 
  ```{tip} 
- The first step for **Deleting** a resource is the **same** as the one used for **Updating** a resource.
+ The Step 1 & 2 for **Deleting** a resource is the **same** as the one used for **Updating** a resource.
 ```
 
 ## Step 1: Navigate to the Resources Overview Page
