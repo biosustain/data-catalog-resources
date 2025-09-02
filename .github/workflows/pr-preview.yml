@@ -47,6 +47,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build
         destination_dir: ${{ steps.random-path.outputs.path }}
+        keep_files: true  # Keep other files (versions, stable, latest)
         commit_message: 'PR #${{ github.event.pull_request.number }} preview: ${{ github.sha }}'
         
     - name: Comment PR with preview link

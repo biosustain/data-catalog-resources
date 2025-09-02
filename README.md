@@ -11,6 +11,14 @@ The website is built using [Sphinx](https://www.sphinx-doc.org/en/master/usage/i
 
 🌐 **Visit the live site**: [https://biosustain.github.io/data-catalog-resources/](https://biosustain.github.io/data-catalog-resources/)
 
+## Documentation Versions
+
+- **[Latest](https://biosustain.github.io/data-catalog-resources/latest/)** - Documentation from main branch
+- **[Stable](https://biosustain.github.io/data-catalog-resources/stable/)** - Latest release documentation
+- Specific versions available at `/v{version}/` (e.g., `/v1.0.0/`)
+
+The website automatically generates versioned documentation for each GitHub release.
+
 ## 2. Repository Structure
 
 ```

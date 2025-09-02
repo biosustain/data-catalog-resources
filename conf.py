@@ -4,11 +4,40 @@
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import os
+import subprocess
+
 # -- Project information -----------------------------------------------------
 
 project = "DTU Biosustain Data Catalog Resources GitHub pages"
 copyright = "2025, Research Data Management, DTU Biosustain"
 author = "Ding He"
+
+# -- Version information -----------------------------------------------------
+
+# Get version from environment variable (set by GitHub Actions) or git
+def get_version():
+    # Try to get version from environment variable first (for releases)
+    env_version = os.environ.get('DOCS_VERSION')
+    if env_version:
+        return env_version
+    
+    # Try to get version from git
+    try:
+        # Check if we're on a tag
+        result = subprocess.run(['git', 'describe', '--exact-match', '--tags', 'HEAD'], 
+                              capture_output=True, text=True, timeout=10)
+        if result.returncode == 0:
+            return result.stdout.strip()
+    except:
+        pass
+    
+    # Default to "latest" for main branch or unknown
+    return "latest"
+
+# Set version and release
+version = get_version()
+release = version
 
 
 # -- General configuration ---------------------------------------------------
@@ -80,7 +109,7 @@ nb_custom_formats = {
 html_theme = "sphinx_wagtail_theme"
 
 html_theme_options = {
-    "project_name": "Biosustain Data Catalog Resources",
+    "project_name": f"Biosustain Data Catalog Resources (v{version})",
     # The github URL if you want to link to the source code on the page
     # "github_url": "https://github.com/biosustain/data-catalog-resources/blob/main/",
     "logo": "images/DTU_Logo_Corporate_White_RGB.png",

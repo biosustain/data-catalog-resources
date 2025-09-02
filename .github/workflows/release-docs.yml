@@ -1,0 +1,80 @@
+# Build versioned documentation for releases
+name: Release Documentation
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for all branches and tags
+      
+      - uses: actions/setup-python@v5
+      
+      - name: Get release version
+        id: get_version
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/}
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "Release version: ${VERSION}"
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Build the site for release
+        env:
+          DOCS_VERSION: ${{ steps.get_version.outputs.version }}
+        run: |
+          sphinx-build -nW --keep-going -b html .  _build
+          
+      - name: Add .nojekyll file
+        run: touch _build/.nojekyll
+      
+      - name: Checkout existing gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-content
+          
+      - name: Deploy release documentation
+        run: |
+          VERSION="${{ steps.get_version.outputs.version }}"
+          
+          # Create version directory and copy docs
+          mkdir -p "gh-pages-content/${VERSION}"
+          cp -r _build/* "gh-pages-content/${VERSION}/"
+          
+          # Update stable to point to latest release
+          rm -rf gh-pages-content/stable
+          cp -r "gh-pages-content/${VERSION}" gh-pages-content/stable
+          
+          # Create index redirect to stable
+          cat > gh-pages-content/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <title>Redirecting to stable documentation</title>
+            <meta http-equiv="refresh" content="0; URL=./stable/">
+            <link rel="canonical" href="./stable/">
+          </head>
+          <body>
+            <p>If you are not redirected automatically, follow this <a href="./stable/">link to stable documentation</a>.</p>
+          </body>
+          </html>
+          EOF
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gh-pages-content
+          keep_files: true
+          commit_message: 'Release documentation for ${{ steps.get_version.outputs.version }}'
