@@ -52,7 +52,7 @@ On the Dataset home page, click `Manage` button located in the ***top-right corn
 
 
 ## Step 4: Edit your Dataset
-On the Manage Dataset page, update the dataset information fieldd as needed.
+On the Manage Dataset page, update the dataset information fields as needed.
 
 ```{figure} ../../../_static/images/manage_dataset_view.png
 :alt: Manage Dataset Page
