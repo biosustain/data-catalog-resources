@@ -17,6 +17,9 @@ _For detailed instructions on how to do this, follow **Steps 1-3** in the [**Upd
 
 ```
 
+## Step 2: Select Resource
+On the Resource Overview page, click on any of the listed resources you wish to update.
+
 
 ```{admonition} Alternatively Way to Access the Resource(s)
 :class: toggle
@@ -48,9 +51,6 @@ This will open the **Update Resource Page**, where you can edit the resource inf
 
 ```
 
-
-## Step 2: Select Resource
-On the Resource Overview page, click on any of the listed resources you wish to update.
 
 
 
