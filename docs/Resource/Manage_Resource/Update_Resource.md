@@ -55,7 +55,7 @@ This will open the **Update Resource Page**, where you can edit the resource inf
 
 
 ## Step 3: Edit your Resource
-Click on any of the listed resources and update the relevant information fields.
+Update any relevant resource information fields as needed.
 
 ```{figure} ../../../_static/images/update_resource_page.png
 :alt: Update Resource Page
