@@ -49,11 +49,12 @@ This will open the **Update Resource Page**, where you can edit the resource inf
 ```
 
 
+## Step 2: Select Resource
+On the Resource Overview page, click on any of the listed resources you wish to update.
 
 
 
-
-## Step 2: Edit your Resource
+## Step 3: Edit your Resource
 Click on any of the listed resources and update the relevant information fields.
 
 ```{figure} ../../../_static/images/update_resource_page.png
@@ -66,7 +67,7 @@ Click on any of the listed resources and update the relevant information fields.
 ```
 
 
-## Step 3: Save Changes
+## Step 4: Save Changes
 Click `Update Resource` located on the ***bottom-right corner*** of the page to save your changes.
 
 ```{figure} ../../../_static/images/update_resource_button.png
