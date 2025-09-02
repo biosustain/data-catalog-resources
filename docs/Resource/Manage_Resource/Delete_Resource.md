@@ -22,8 +22,12 @@ _For detailed instructions on how to do this, follow **Steps 1-3** in the [**Upd
 ```
 
 
-## Step 2: Delete Resource
-Select any of the listed resources, then click the `Delete` button located on the ***bottom-left corner*** of the page.
+## Step 2: Select Resource
+On the Resource Overview page, click on any of the listed resources you wish to delete.
+
+
+## Step 3: Delete Resource
+On the Update Resource page, click the `Delete` button located in the ***bottom-left corner*** of the page.
 
 
 ```{figure} ../../../_static/images/delete_resource_button.png
@@ -41,7 +45,7 @@ Select any of the listed resources, then click the `Delete` button located on th
 ```
 
 
-## Step 3: Confirm Action
+## Step 4: Confirm Action
 To complete the deletion of the resource, select `Confirm` in the dialog box that appears.
 
 ```{figure} ../../../_static/images/delete_resource_dialog_box.png
