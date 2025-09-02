@@ -3,8 +3,9 @@ Once one or more resources have been created, they can be **updated** if needed.
 This can be done as follows:
 
 ## Step 1: Navigate to the Resources Overview Page
-Start by ***finding your dataset*** and opening the ***Manage Dataset*** page. Then click the `Resources` button.
-For detailed instructions on how to do this, see **Steps 1-3** in the [**Update Dataset**](this_is_the_reference_point) guide.
+Start by ***finding your dataset*** and opening the ***Manage Dataset Page***. Then click the `Resources` button.
+
+_For detailed instructions on how to do this, follow **Steps 1-3** in the [**Update Dataset**](this_is_the_reference_point) guide._
 
 
 ```{figure} ../../../_static/images/resource_overview_page.png
