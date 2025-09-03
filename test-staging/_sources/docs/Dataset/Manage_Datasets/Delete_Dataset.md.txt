@@ -2,7 +2,7 @@
 To delete a dataset, follow the next steps:
 
  ```{tip} 
- Step 1 to 3 for **Deleting** a dataset are the **same** as those used for **Updating** a dataset.
+ Steps 1 to 3 for **Deleting** a dataset are the **same** as those used for **Updating** a dataset.
 ```
 
 ## Step 1: Navigate to the Datasets Overview Page
@@ -54,11 +54,11 @@ When you **delete** a dataset, it is **not permanently removed**. It will be hid
 Click `Delete` located on the ***bottom-right corner*** of the page to save your changes.
 
 ```{figure} ../../../_static/images/delete_dataset_button.png
-:alt: Manage Dataset View
+:alt: Manage Dataset Page
 :width: 60%
 :align: center
 
-*Manage Dataset View*
+*Manage Dataset Page*
 
 ```
 

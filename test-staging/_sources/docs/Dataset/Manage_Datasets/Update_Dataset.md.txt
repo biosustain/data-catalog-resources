@@ -9,7 +9,7 @@ Once a dataset is created, it can be **edited/upadted** if needed as follows:
 There are several ways to search for a dataset in the Data Catalog. You can use the **Search bar** on the Welcome Page, the **Datasets** tab, or the **Search field** in the top navigation bar. However, in this guide, we focus on **one method** to keep things simple.
 ```
 
-
+(this_is_the_reference_point)=
 ## Step 1: Navigate to the Datasets Overview Page
 Click the `View your datasets` located ***under*** the search bar, in the ***welcome page***.
 
@@ -52,14 +52,14 @@ On the Dataset home page, click `Manage` button located in the ***top-right corn
 
 
 ## Step 4: Edit your Dataset
-Make any necessary changes to the dataset information fields.
+On the Manage Dataset page, update the dataset information fields as needed.
 
 ```{figure} ../../../_static/images/manage_dataset_view.png
-:alt: Manage Dataset View
+:alt: Manage Dataset Page
 :width: 60%
 :align: center
 
-*Manage Dataset View*
+*Manage Dataset Page*
 
 ```
 
@@ -68,10 +68,10 @@ Make any necessary changes to the dataset information fields.
 Click `Update Dataset` located on the ***bottom-right corner*** of the page to save your changes.
 
 ```{figure} ../../../_static/images/update_dataset_button.png
-:alt: Manage Dataset View
+:alt: Manage Dataset Page
 :width: 60%
 :align: center
 
-*Manage Dataset View*
+*Manage Dataset Page*
 
 ```
