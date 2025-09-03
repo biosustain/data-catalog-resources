@@ -2,17 +2,27 @@ name: PR Preview Deployment
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, closed]
     
 jobs:
   pr-preview:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.head.repo.full_name == github.repository # Only for PRs from same repo
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.event.action != 'closed' # Only for PRs from same repo, not closed
     
     steps:
     - uses: actions/checkout@v4
       with:
         ref: ${{ github.event.pull_request.head.sha }}
+    
+    - name: Generate random URL path for PR preview security
+      id: random-path
+      run: |
+        # Generate a random 16-character string for PR preview security
+        RANDOM_COMPONENT=$(openssl rand -hex 8)
+        echo "path=pr-${{ github.event.pull_request.number }}-${RANDOM_COMPONENT}" >> $GITHUB_OUTPUT
+        echo "random_component=${RANDOM_COMPONENT}" >> $GITHUB_OUTPUT
+        echo "Generated PR preview path: pr-${{ github.event.pull_request.number }}-${RANDOM_COMPONENT}"
+        echo "::notice title=PR Preview Path::pr-${{ github.event.pull_request.number }}-${RANDOM_COMPONENT}"
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -23,14 +33,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    
-    - name: Generate random URL path
-      id: random-path
-      run: |
-        # Generate a random 16-character string for security
-        RANDOM_PATH=$(openssl rand -hex 8)
-        echo "path=pr-${{ github.event.pull_request.number }}-${RANDOM_PATH}" >> $GITHUB_OUTPUT
-        echo "Generated path: pr-${{ github.event.pull_request.number }}-${RANDOM_PATH}"
     
     - name: Build documentation
       run: |
@@ -45,6 +47,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build
         destination_dir: ${{ steps.random-path.outputs.path }}
+        keep_files: true  # Keep other files (versions, stable, latest)
         commit_message: 'PR #${{ github.event.pull_request.number }} preview: ${{ github.sha }}'
         
     - name: Comment PR with preview link
@@ -61,5 +64,59 @@ jobs:
             issue_number: prNumber,
             owner: repoOwner,
             repo: repoName,
-            body: `🚀 **PR Preview deployed!**\n\n📖 Preview your changes: ${previewUrl}\n\n_This preview will be updated automatically when you push new commits._\n\n⚠️ **Note**: This preview URL contains a random path for security and will be different on each deployment.`
+            body: `🚀 **PR Preview deployed!**\n\n📖 Preview your changes: ${previewUrl}\n\n🔒 **Security Note:** This URL contains a random component for security\n\n_This preview will be updated automatically when you push new commits._`
+          });
+
+  pr-cleanup:
+    runs-on: ubuntu-latest
+    if: github.event.action == 'closed' && github.event.pull_request.head.repo.full_name == github.repository
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Find and remove PR preview directory
+      run: |
+        PR_NUMBER="${{ github.event.pull_request.number }}"
+        echo "🧹 Looking for PR preview directories for PR #${PR_NUMBER}..."
+        
+        # Find directories that start with pr-{PR_NUMBER}- (with random suffix)
+        DIRS_TO_DELETE=$(find . -maxdepth 1 -type d -name "pr-${PR_NUMBER}-*" | head -10)
+        
+        if [ -n "$DIRS_TO_DELETE" ]; then
+          echo "Found directories to delete:"
+          echo "$DIRS_TO_DELETE"
+          
+          # Remove the directories
+          echo "$DIRS_TO_DELETE" | xargs rm -rf
+          
+          # Commit and push the changes
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "cleanup: remove PR #${PR_NUMBER} preview directories - automatically removed after PR closure"
+            git push origin gh-pages
+            echo "✅ Successfully removed PR #${PR_NUMBER} preview directories"
+          fi
+        else
+          echo "No PR preview directories found for PR #${PR_NUMBER}"
+        fi
+        
+    - name: Comment on PR about cleanup
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const prNumber = context.issue.number;
+          
+          github.rest.issues.createComment({
+            issue_number: prNumber,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: `🧹 **PR Preview Cleanup**\n\nPreview directories for this PR have been automatically removed from the deployment.\n\n_This helps keep the repository clean by removing old preview deployments._`
           });
