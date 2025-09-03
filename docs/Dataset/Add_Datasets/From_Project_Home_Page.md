@@ -19,11 +19,11 @@ On the Project home page, click `Add Dataset` button located in the ***top-left 
 
 
 ```{figure} ../../../_static/images/add_dataset_button.png
-:alt: Project Creation Page
+:alt: Project Home Page
 :width: 60%
 :align: center
 
-*Project Creation Page*
+*Project Home Page*
 
 ```
 
