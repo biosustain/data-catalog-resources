@@ -1,5 +1,5 @@
 # Update a Dataset
-Once a dataset is created, it can be **edited/upadted** if needed as follows:
+Once a dataset is created, it can be **edited/updated** if needed as follows:
 
 
 ```{admonition} Search Options
