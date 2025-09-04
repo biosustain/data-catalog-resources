@@ -70,13 +70,13 @@ Even if you're unsure about some details, you can always **include what you know
 ```
 
 
-```{admonition} Add Multible File Attachments
+```{admonition} Add Multiple File Attachments
 :class: toggle
 :collapsible:
 
 You can add **more** resource **files** before saving. After uploading the first file, click the `Add more files` button to include additional files in the same form. 
 
-These files are treated as a **single** resource with **multilple attachments**.
+These files are treated as a **single** resource with **multiple attachments**.
 
 This is useful when you have several related files (e.g. different sheets or formats) that belong together.
 
