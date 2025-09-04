@@ -108,7 +108,7 @@ After saving, you’ll be redirected to the dataset’s home page, where all add
 :class: toggle
 :collapsible:
 
-Click the `Save & Add another` button at the buttom of the page to save the current resource and immediately open a new resource form. 
+Click the `Save & Add another` button at the bottom of the page to save the current resource and immediately open a new resource form. 
 
 This allows you to **continue adding resources** (files or links) **without leaving the resource creation page**.
 
