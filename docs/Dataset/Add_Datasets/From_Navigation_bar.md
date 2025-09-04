@@ -1,5 +1,5 @@
 # **Method B**: From the Top Navigation Bar
-Alternatively, follow these steps to add a new datset using the top navigation bar:
+Alternatively, follow these steps to add a new dataset using the top navigation bar:
 
 
 ## Step 1: Navigate to the Datasets Overview Page 
