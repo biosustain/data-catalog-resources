@@ -42,7 +42,7 @@ These categories are for **guidance only**. The actual form is a **single page**
 ```
 
 
-### b. Project Scructure & Contributors:
+### b. Project Structure & Contributors:
 * Person responsible for long-term data preservation and deletion
 * Scientific Documents to be generated
 * Access During & After Completion
