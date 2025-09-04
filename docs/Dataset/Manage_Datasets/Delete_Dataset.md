@@ -6,7 +6,7 @@ To delete a dataset, follow the next steps:
 ```
 
 ## Step 1: Navigate to the Datasets Overview Page
-Click the `View all datasets` located ***under*** the search bar, in the ***welcome page***.
+Click the `View your datasets` located ***under*** the search bar, in the ***welcome page***.
 
 
 ```{figure} ../../../_static/images/homepage_view_all_datasets.png
