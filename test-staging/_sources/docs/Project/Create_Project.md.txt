@@ -96,8 +96,8 @@ These categories are for **guidance only**. The actual form is a **single page**
 ```
 
 ### e. Final Details
-* Funding Information (otpional)
-* Award Information   (otpional)
+* Funding Information (optional)
+* Award Information   (optional)
 
 
 ## Final Step: Save
