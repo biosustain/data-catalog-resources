@@ -5,4 +5,5 @@
 
 Add_Datasets/index
 Manage_Datasets/index
+Exploring_Datasets
 ```
