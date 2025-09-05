@@ -40,5 +40,5 @@ docs/Login
 docs/Project/index
 docs/Dataset/index
 docs/Resource/index
-
+docs/Search
 ```
