@@ -3,7 +3,7 @@ Data Catalog offers several ways to search for datasets and projects.
 
 ## &#10147; Using the Search Bar on the Welcome Page
 Use the `Search bar` on the welcome page to look for projects or datasets.
-Simply type in keywords, such as the name of a project, dataset, or relevant tags, data format, etc. Then Data Catalog will display matching results. 
+Simply type in keywords, such as the name of a project, dataset, etc. Then Data Catalog will display the matching results. 
 
 
 
@@ -66,7 +66,7 @@ This will open the ***Project home page***, where you can use the search bar on 
 
 
 
-## Advanced Search for Datasets
+## Filtering Dataset Search
 Once you've searched for a dataset in the Data Catalog, you can **narrow down** the results using the **filters** on the sidebar. These filters make it easier to find exactly what you're looking for.
 
 These may include:
@@ -77,7 +77,7 @@ These may include:
 * **Combining** multiple filters can help you quickly find the most relevant datasets.
 
 ```{note} 
-Results are ranked by relevance by default, so the most likely matches appear first. However you can change the sorting order using the `Order by` dropdown located below the search bar. For example you can also sort by name ascending or descending and last modified.
+Results are ranked by **relevance** by default, so the most likely matches appear first. However you can change the sorting order using the `Order by` dropdown located below the search bar. For example you can also sort by name ascending or descending and last modified.
 ```
 
 
@@ -88,3 +88,22 @@ Results are ranked by relevance by default, so the most likely matches appear fi
 
 *Filters*
 ```
+
+
+## Advanced Search Tips
+If the search query includes a colon (:), then it will be considered as fielded seearch. This means that you can use **advanced operators** to narrow down your results for both datasets and projects.
+
+* **The asterisk (*)**: It is used as a wildcard to match zero or more characters.
+* **The OR Operator (||)**: It allows you to search for either of multiple terms.
+
+You can also combine these with title-specific queries to narrow down your results for both projects and datasets. 
+This is especially useful when you know part of the dataset or project name and want more targeted results.
+
+<u>Examples:</u>
+
+1. **title:gene** &rarr; This will return datasets and projects that include the word “gene” in their title, helping you avoid unrelated results from descriptions or tags. 
+
+2. **title:te*** &rarr; Will look for all projects or datasets containing in its title a word that starts with "te" like "test" and "testing".
+
+3. **title:genomics || title:proteomics** &rarr; Will look for datasets or projects containing "genomics" or "proteomics" in its title.
+
