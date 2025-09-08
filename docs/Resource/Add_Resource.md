@@ -53,11 +53,17 @@ Provide details about your resource by completing any of the available fields, s
 * Creator Email
 
 
+```{note}
+Please note that the maximum file size allowed for uploads is **1 GB**.
+```
+
+
 
 ```{tip}
 While none of the fields are required to create a resource, it is a **good practice** to fill out any of the above fields, based on any relevant information you may have.
 Even if you're unsure about some details, you can always **include what you know** and **update the info later** if needed.
 ```
+
 
 
 ```{figure} ../../_static/images/resource_info.png
