@@ -5,7 +5,7 @@ Once a dataset has been created, Data Catalog will display the dataset home page
 which includes:
 
 * The **Name** & **Description**: A summary of what the dataset is about.
-* **Resources**: These are the actual files or links that contain the data.
+* **Resources**: These are the actual files or links that contain the data, which can be added after creating the dataset.
 * **Metadata**: Information like the creator, visibility, project title, dataset type, etc. 
 
 In the Dataset Home page you can also find:
@@ -16,7 +16,7 @@ In the Dataset Home page you can also find:
 
 
 ```{note} 
-If you are interested in a dataset, you can choose to follow it by clicking the `Follow`  button located in the ***top-left sidebar*** on the dataset home page. This allows you to receive notifications about any updates or changes.
+Similar to projects, if you are interested in a dataset, you can choose to follow it by clicking the `Follow`  button located in the ***top-left sidebar*** on the dataset's home page. This allows you to receive notifications about any updates or changes.
 ```
 
 
