@@ -5,7 +5,7 @@ Each dataset belongs to a single Project, and the project controls who can view,
 ## Public vs. Private Datasets
 Each dataset can be either **Public** or **Private**, depending on how you want to share it:
 
-* **Public datasets:** are visible to everyone, including users who are not logged in.
+* **Public datasets:** are visible to Biosustain employees.
 * **Private datasets:** are only accessible to users who are members of the Project the dataset belongs to.
 
 
