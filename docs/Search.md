@@ -66,7 +66,7 @@ This will open the ***Project home page***, where you can use the search bar on 
 
 
 
-## Filtering Dataset Search
+## Filtering Dataset Results
 Once you've searched for a dataset in the Data Catalog, you can **narrow down** the results using the **filters** on the sidebar. These filters make it easier to find exactly what you're looking for.
 
 These may include:
@@ -91,7 +91,7 @@ Results are ranked by **relevance** by default, so the most likely matches appea
 
 
 ## Advanced Search Tips
-If the search query includes a colon (:), then it will be considered as fielded seearch. This means that you can use **advanced operators** to narrow down your results for both datasets and projects.
+If the search query includes a colon (:), then it will be considered as fielded search. This means that you can use **advanced operators** to narrow down your results for both datasets and projects.
 
 * **The asterisk (*)**: It is used as a wildcard to match zero or more characters.
 * **The OR Operator (||)**: It allows you to search for either of multiple terms.
