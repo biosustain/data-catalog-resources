@@ -14,7 +14,7 @@ Click on the "Datasets" tab located at the top of any page.
 *Navigation bar*
 
 ```
-
+(this_is_the_add_datasets_reference_point)=
 ## Step 2: Click "Add Dataset" 
 On the Datasets overview page, click `Add Dataset` button located right above ***the Search datasets box***.
 
