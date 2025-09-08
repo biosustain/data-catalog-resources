@@ -17,6 +17,11 @@ Specific goals include:
 
 We currently use [**CKAN**](https://ckan.org/) as our system backend framework.
 
+
+```{note}
+This user guide is based on the  [CKAN Documentation](https://docs.ckan.org/en/2.9/user-guide.html), with adjustemnts to match the structure and terminology of our Data Catalog.
+```
+
 ## Key Features
 
 ### Dataset and Resources
@@ -41,4 +46,5 @@ docs/Project/index
 docs/Dataset/index
 docs/Resource/index
 docs/Search
+docs/Roles&Permissions/index
 ```
