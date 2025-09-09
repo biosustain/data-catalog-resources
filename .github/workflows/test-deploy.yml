@@ -14,6 +14,17 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
+    - name: Generate random URL path for test deployment
+      id: random-path
+      run: |
+        # Use a fixed directory name for test deployments to avoid accumulation
+        # Add random component to URL for security while reusing same directory
+        RANDOM_COMPONENT=$(openssl rand -hex 6)
+        echo "path=test-staging" >> $GITHUB_OUTPUT
+        echo "random_component=${RANDOM_COMPONENT}" >> $GITHUB_OUTPUT
+        echo "Generated test path: test-staging (with random component: ${RANDOM_COMPONENT})"
+        echo "::notice title=Test Deployment Path::test-staging (random: ${RANDOM_COMPONENT})"
+    
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -37,5 +48,27 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build
-        destination_dir: test  # Deploy to /test subdirectory
+        destination_dir: ${{ steps.random-path.outputs.path }}  # Use random path instead of static 'test'
         commit_message: 'Test deployment: ${{ github.sha }}'
+        
+    - name: Output test deployment URL
+      if: github.ref == 'refs/heads/test-deploy'
+      run: |
+        echo "🚀 Test deployment completed!"
+        echo "📖 Test URL: https://biosustain.github.io/data-catalog-resources/${{ steps.random-path.outputs.path }}/?v=${{ steps.random-path.outputs.random_component }}"
+        echo "⚠️ Note: URL includes random parameter for security. Previous test deployment was overwritten."
+        echo "🔍 Debug: Directory: ${{ steps.random-path.outputs.path }}, Random: ${{ steps.random-path.outputs.random_component }}"
+        echo ""
+        echo "===== IMPORTANT ====="
+        echo "Your test site is available at:"
+        echo "https://biosustain.github.io/data-catalog-resources/${{ steps.random-path.outputs.path }}/?v=${{ steps.random-path.outputs.random_component }}"
+        echo "=================="
+        
+        # Also add to job summary for better visibility
+        echo "## 🚀 Test Deployment Completed" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**📖 Test URL:** https://biosustain.github.io/data-catalog-resources/${{ steps.random-path.outputs.path }}/?v=${{ steps.random-path.outputs.random_component }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "⚠️ **Note:** URL includes random parameter for security. Previous test deployment was overwritten." >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**🔍 Details:** Directory: \`${{ steps.random-path.outputs.path }}\`, Random: \`${{ steps.random-path.outputs.random_component }}\`" >> $GITHUB_STEP_SUMMARY

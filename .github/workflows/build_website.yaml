@@ -22,14 +22,21 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build the site
+        env:
+          DOCS_VERSION: "v0.0.0"
         run: |
           sphinx-build -nW --keep-going -b html .  _build
 
-      # If we've pushed to main, push the book's HTML to github-pages
+      - name: Add .nojekyll file
+        run: touch _build/.nojekyll
+
+      # If we've pushed to main, push the book's HTML to github-pages latest directory
       - if: ${{ github.ref == 'refs/heads/main' }}
-        name: Save to gh-pages
+        name: Save to gh-pages (latest)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_build
+          destination_dir: latest
+          keep_files: true
           # cname: website.com
