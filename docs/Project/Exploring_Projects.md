@@ -1,12 +1,12 @@
 # Exploring projects
 
-## Project Home Page
+## &#10147; Project Home Page
 The project home page includes:
 
 * **Datasets**: A place where you describe your data before adding the actual files or links.
 * **Metadata**: Information like the creator, visibility, project title, dataset type, etc. 
 
-In the Project Home page you can also find:
+In the Project Home page, you can also find:
 
 * **Add Dataset button:** Located just above the search field. Use this to add new datasets to the project. (_For more details, see [**Add a Dataset** (Method A)](this_is_the_add_datasets_reference_point)_)
 * **Manage button:** Located in the top-right corner of the page. From here, you can **update** or **delete** a project. (_See also [**Manage Projects**](this_is_the_manage_projects_reference_point)_)

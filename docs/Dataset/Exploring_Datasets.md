@@ -1,6 +1,6 @@
 # Exploring dataset
 
-## Dataset Home Page
+## &#10147; Dataset Home Page
 Once a dataset has been created, Data Catalog will display the dataset home page,
 which includes:
 
@@ -8,7 +8,7 @@ which includes:
 * **Resources**: These are the actual files or links that contain the data, which can be added after creating the dataset.
 * **Metadata**: Information like the creator, visibility, project title, dataset type, etc. 
 
-In the Dataset Home page you can also find:
+In the Dataset Home page, you can also find:
 
 * **Manage button:** Located on the top-right corner of the page. From here, you can **update** or **delete** a dataset.
 
