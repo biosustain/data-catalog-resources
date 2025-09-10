@@ -3,6 +3,18 @@ name: PR Preview Deployment
 on:
   pull_request:
     types: [opened, synchronize, reopened, closed]
+  workflow_dispatch:
+    inputs:
+      max_age_days:
+        description: 'Maximum age in days for PR directories to keep (older will be cleaned up)'
+        required: false
+        default: '30'
+        type: string
+      dry_run:
+        description: 'Dry run - only show what would be deleted without actually deleting'
+        required: false
+        default: false
+        type: boolean
     
 jobs:
   pr-preview:
@@ -76,36 +88,74 @@ jobs:
       with:
         ref: gh-pages
         token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
         
     - name: Find and remove PR preview directory
       run: |
+        set -e  # Exit on any error
+        
         PR_NUMBER="${{ github.event.pull_request.number }}"
         echo "🧹 Looking for PR preview directories for PR #${PR_NUMBER}..."
         
-        # Find directories that start with pr-{PR_NUMBER}- (with random suffix)
-        DIRS_TO_DELETE=$(find . -maxdepth 1 -type d -name "pr-${PR_NUMBER}-*" | head -10)
+        # Ensure we're on the gh-pages branch and pull latest changes
+        git checkout gh-pages
+        git pull origin gh-pages || echo "⚠️ Warning: Could not pull latest changes from gh-pages"
         
-        if [ -n "$DIRS_TO_DELETE" ]; then
+        # Find directories that start with pr-{PR_NUMBER}- (with random suffix)
+        echo "Searching for directories matching pattern: pr-${PR_NUMBER}-*"
+        DIRS_TO_DELETE=$(find . -maxdepth 1 -type d -name "pr-${PR_NUMBER}-*" 2>/dev/null | head -20 || true)
+        
+        if [ -n "$DIRS_TO_DELETE" ] && [ "$DIRS_TO_DELETE" != "" ]; then
           echo "Found directories to delete:"
           echo "$DIRS_TO_DELETE"
           
-          # Remove the directories
-          echo "$DIRS_TO_DELETE" | xargs rm -rf
+          # Count directories
+          DIR_COUNT=$(echo "$DIRS_TO_DELETE" | wc -l)
+          echo "Number of directories to delete: $DIR_COUNT"
           
-          # Commit and push the changes
+          # Remove the directories one by one with error checking
+          echo "$DIRS_TO_DELETE" | while IFS= read -r dir; do
+            if [ -d "$dir" ]; then
+              echo "Removing directory: $dir"
+              rm -rf "$dir"
+              echo "✅ Successfully removed: $dir"
+            else
+              echo "⚠️ Directory not found (already removed?): $dir"
+            fi
+          done
+          
+          # Configure git
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
+          # Add all changes and commit
           git add -A
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "ℹ️ No changes to commit - directories may have been already removed"
           else
-            git commit -m "cleanup: remove PR #${PR_NUMBER} preview directories - automatically removed after PR closure"
-            git push origin gh-pages
+            git commit -m "cleanup: remove PR #${PR_NUMBER} preview directories - automatically removed after PR closure (removed $DIR_COUNT directories)"
+            
+            # Push with retry logic
+            for i in 1 2 3; do
+              if git push origin gh-pages; then
+                echo "✅ Successfully pushed cleanup changes to gh-pages (attempt $i)"
+                break
+              else
+                echo "⚠️ Push failed (attempt $i), retrying..."
+                sleep 2
+                git pull origin gh-pages --rebase || true
+              fi
+              
+              if [ $i -eq 3 ]; then
+                echo "❌ Failed to push after 3 attempts"
+                exit 1
+              fi
+            done
+            
             echo "✅ Successfully removed PR #${PR_NUMBER} preview directories"
           fi
         else
-          echo "No PR preview directories found for PR #${PR_NUMBER}"
+          echo "ℹ️ No PR preview directories found for PR #${PR_NUMBER}"
         fi
         
     - name: Comment on PR about cleanup
@@ -120,3 +170,88 @@ jobs:
             repo: context.repo.repo,
             body: `🧹 **PR Preview Cleanup**\n\nPreview directories for this PR have been automatically removed from the deployment.\n\n_This helps keep the repository clean by removing old preview deployments._`
           });
+
+  # Manual cleanup job for orphaned PR directories (can be triggered manually)
+  manual-cleanup:
+    runs-on: ubuntu-latest
+    # This job only runs on manual workflow dispatch
+    if: github.event_name == 'workflow_dispatch'
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+        
+    - name: Clean up orphaned PR preview directories
+      run: |
+        set -e
+        
+        MAX_AGE_DAYS="${{ github.event.inputs.max_age_days || '30' }}"
+        DRY_RUN="${{ github.event.inputs.dry_run || 'false' }}"
+        
+        echo "🧹 Starting cleanup of orphaned PR preview directories..."
+        echo "Max age: ${MAX_AGE_DAYS} days"
+        echo "Dry run: ${DRY_RUN}"
+        
+        # Ensure we're on the gh-pages branch
+        git checkout gh-pages
+        git pull origin gh-pages || echo "⚠️ Warning: Could not pull latest changes"
+        
+        # Find all PR directories
+        PR_DIRS=$(find . -maxdepth 1 -type d -name "pr-*-*" 2>/dev/null || true)
+        
+        if [ -n "$PR_DIRS" ] && [ "$PR_DIRS" != "" ]; then
+          echo "Found PR directories:"
+          echo "$PR_DIRS"
+          
+          DIRS_TO_DELETE=""
+          CUTOFF_DATE=$(date -d "${MAX_AGE_DAYS} days ago" +%s 2>/dev/null || date -v-${MAX_AGE_DAYS}d +%s)
+          
+          echo "$PR_DIRS" | while IFS= read -r dir; do
+            if [ -d "$dir" ]; then
+              # Get directory creation/modification time
+              if [[ "$OSTYPE" == "darwin"* ]]; then
+                # macOS
+                DIR_TIME=$(stat -f %m "$dir" 2>/dev/null || echo "0")
+              else
+                # Linux
+                DIR_TIME=$(stat -c %Y "$dir" 2>/dev/null || echo "0")
+              fi
+              
+              if [ "$DIR_TIME" -lt "$CUTOFF_DATE" ]; then
+                echo "Directory $dir is older than ${MAX_AGE_DAYS} days"
+                if [ "$DRY_RUN" = "true" ]; then
+                  echo "🔍 DRY RUN: Would delete $dir"
+                else
+                  echo "🗑️ Deleting $dir"
+                  rm -rf "$dir"
+                  DIRS_TO_DELETE="${DIRS_TO_DELETE}$dir\n"
+                fi
+              else
+                echo "Directory $dir is newer than ${MAX_AGE_DAYS} days, keeping"
+              fi
+            fi
+          done
+          
+          if [ "$DRY_RUN" = "false" ] && [ -n "$DIRS_TO_DELETE" ]; then
+            # Configure git
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            
+            # Add all changes and commit
+            git add -A
+            if ! git diff --cached --quiet; then
+              git commit -m "cleanup: remove old PR preview directories (older than ${MAX_AGE_DAYS} days) - manual cleanup"
+              git push origin gh-pages
+              echo "✅ Successfully removed old PR preview directories"
+            else
+              echo "ℹ️ No changes to commit"
+            fi
+          elif [ "$DRY_RUN" = "true" ]; then
+            echo "✅ Dry run completed - no directories were actually deleted"
+          fi
+        else
+          echo "ℹ️ No PR preview directories found to clean up"
+        fi

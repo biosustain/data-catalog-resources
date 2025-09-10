@@ -11,7 +11,7 @@ import subprocess
 
 project = "Data Catalog User Guide"
 copyright = "2025, Research Data Management, DTU Biosustain"
-author = "Ding He"
+author = "Ding He, Vasileia Vagena"
 
 # -- Version information -----------------------------------------------------
 
