@@ -3,6 +3,18 @@ name: PR Preview Deployment
 on:
   pull_request:
     types: [opened, synchronize, reopened, closed]
+  workflow_dispatch:
+    inputs:
+      max_age_days:
+        description: 'Maximum age in days for PR directories to keep (older will be cleaned up)'
+        required: false
+        default: '30'
+        type: string
+      dry_run:
+        description: 'Dry run - only show what would be deleted without actually deleting'
+        required: false
+        default: false
+        type: boolean
     
 jobs:
   pr-preview:
@@ -163,7 +175,7 @@ jobs:
   manual-cleanup:
     runs-on: ubuntu-latest
     # This job only runs on manual workflow dispatch
-    if: false  # Disabled by default, can be enabled manually
+    if: github.event_name == 'workflow_dispatch'
     
     steps:
     - uses: actions/checkout@v4
@@ -176,7 +188,12 @@ jobs:
       run: |
         set -e
         
+        MAX_AGE_DAYS="${{ github.event.inputs.max_age_days || '30' }}"
+        DRY_RUN="${{ github.event.inputs.dry_run || 'false' }}"
+        
         echo "🧹 Starting cleanup of orphaned PR preview directories..."
+        echo "Max age: ${MAX_AGE_DAYS} days"
+        echo "Dry run: ${DRY_RUN}"
         
         # Ensure we're on the gh-pages branch
         git checkout gh-pages
@@ -189,20 +206,52 @@ jobs:
           echo "Found PR directories:"
           echo "$PR_DIRS"
           
-          # This is a manual process - for safety, just list what would be cleaned
-          echo ""
-          echo "⚠️ Manual cleanup required. Found the following PR directories:"
+          DIRS_TO_DELETE=""
+          CUTOFF_DATE=$(date -d "${MAX_AGE_DAYS} days ago" +%s 2>/dev/null || date -v-${MAX_AGE_DAYS}d +%s)
+          
           echo "$PR_DIRS" | while IFS= read -r dir; do
             if [ -d "$dir" ]; then
-              echo "Directory: $dir"
+              # Get directory creation/modification time
+              if [[ "$OSTYPE" == "darwin"* ]]; then
+                # macOS
+                DIR_TIME=$(stat -f %m "$dir" 2>/dev/null || echo "0")
+              else
+                # Linux
+                DIR_TIME=$(stat -c %Y "$dir" 2>/dev/null || echo "0")
+              fi
+              
+              if [ "$DIR_TIME" -lt "$CUTOFF_DATE" ]; then
+                echo "Directory $dir is older than ${MAX_AGE_DAYS} days"
+                if [ "$DRY_RUN" = "true" ]; then
+                  echo "🔍 DRY RUN: Would delete $dir"
+                else
+                  echo "🗑️ Deleting $dir"
+                  rm -rf "$dir"
+                  DIRS_TO_DELETE="${DIRS_TO_DELETE}$dir\n"
+                fi
+              else
+                echo "Directory $dir is newer than ${MAX_AGE_DAYS} days, keeping"
+              fi
             fi
           done
           
-          echo ""
-          echo "To clean these up, you can:"
-          echo "1. Check which PRs are actually closed/merged on GitHub"
-          echo "2. Manually remove the directories for closed PRs"
-          echo "3. Or modify this workflow to automatically clean up directories older than X days"
+          if [ "$DRY_RUN" = "false" ] && [ -n "$DIRS_TO_DELETE" ]; then
+            # Configure git
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            
+            # Add all changes and commit
+            git add -A
+            if ! git diff --cached --quiet; then
+              git commit -m "cleanup: remove old PR preview directories (older than ${MAX_AGE_DAYS} days) - manual cleanup"
+              git push origin gh-pages
+              echo "✅ Successfully removed old PR preview directories"
+            else
+              echo "ℹ️ No changes to commit"
+            fi
+          elif [ "$DRY_RUN" = "true" ]; then
+            echo "✅ Dry run completed - no directories were actually deleted"
+          fi
         else
           echo "ℹ️ No PR preview directories found to clean up"
         fi
