@@ -142,7 +142,7 @@ A workflow is provided for manual cleanup  of old PR preview directories that ac
 
 1. Go to [GitHub Actions](https://github.com/biosustain/data-catalog-resources/actions)
 2. Select **"Cleanup PR Previews"** workflow
-3. Click **"Run workflow"** branch
+3. Click the **"Run workflow"** button and select the desired branch, if needed
 4. Configure options:
    - **max_age_days**: How old directories should be to get deleted (default: 30 days)
    - **dry_run**: Set to `true` to preview what would be deleted without actually deleting
