@@ -1,0 +1,115 @@
+name: Cleanup PR Previews
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_age_days:
+        description: 'Maximum age in days for PR directories to keep (older will be cleaned up)'
+        required: false
+        default: '30'
+        type: string
+      dry_run:
+        description: 'Dry run - only show what would be deleted without actually deleting'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+        
+    - name: Clean up old PR preview directories
+      run: |
+        set -e
+        
+        MAX_AGE_DAYS="${{ github.event.inputs.max_age_days || '30' }}"
+        DRY_RUN="${{ github.event.inputs.dry_run || 'false' }}"
+        
+        echo "🧹 Starting cleanup of old PR preview directories..."
+        echo "Max age: ${MAX_AGE_DAYS} days"
+        echo "Dry run: ${DRY_RUN}"
+        echo "Current time: $(date)"
+        
+        # Ensure we're on the gh-pages branch
+        git checkout gh-pages
+        git pull origin gh-pages || echo "⚠️ Warning: Could not pull latest changes"
+        
+        # Find all PR directories
+        echo "Looking for PR directories..."
+        PR_DIRS=$(find . -maxdepth 1 -type d -name "pr-*-*" 2>/dev/null | sort || true)
+        
+        if [ -n "$PR_DIRS" ] && [ "$PR_DIRS" != "" ]; then
+          echo "Found PR directories:"
+          echo "$PR_DIRS"
+          echo ""
+          
+          DELETED_COUNT=0
+          CUTOFF_TIMESTAMP=$(date -d "${MAX_AGE_DAYS} days ago" +%s 2>/dev/null || date -v-${MAX_AGE_DAYS}d +%s)
+          echo "Cutoff date: $(date -d @${CUTOFF_TIMESTAMP} 2>/dev/null || date -r ${CUTOFF_TIMESTAMP})"
+          echo ""
+          
+          echo "$PR_DIRS" | while IFS= read -r dir; do
+            if [ -d "$dir" ]; then
+              # Get directory modification time
+              if [[ "$OSTYPE" == "darwin"* ]]; then
+                # macOS
+                DIR_TIMESTAMP=$(stat -f %m "$dir" 2>/dev/null || echo "0")
+              else
+                # Linux
+                DIR_TIMESTAMP=$(stat -c %Y "$dir" 2>/dev/null || echo "0")
+              fi
+              
+              DIR_DATE=$(date -d @${DIR_TIMESTAMP} 2>/dev/null || date -r ${DIR_TIMESTAMP} 2>/dev/null || echo "unknown")
+              
+              echo "Checking: $dir (modified: $DIR_DATE)"
+              
+              if [ "$DIR_TIMESTAMP" -lt "$CUTOFF_TIMESTAMP" ]; then
+                echo "  ➜ Directory is older than ${MAX_AGE_DAYS} days"
+                if [ "$DRY_RUN" = "true" ]; then
+                  echo "  🔍 DRY RUN: Would delete $dir"
+                else
+                  echo "  🗑️ Deleting $dir"
+                  rm -rf "$dir"
+                  DELETED_COUNT=$((DELETED_COUNT + 1))
+                fi
+              else
+                echo "  ➜ Directory is newer than ${MAX_AGE_DAYS} days, keeping"
+              fi
+              echo ""
+            fi
+          done
+          
+          if [ "$DRY_RUN" = "false" ] && [ "$DELETED_COUNT" -gt 0 ]; then
+            echo "Deleted $DELETED_COUNT directories"
+            
+            # Configure git
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            
+            # Add all changes and commit
+            git add -A
+            if ! git diff --cached --quiet; then
+              git commit -m "cleanup: remove ${DELETED_COUNT} old PR preview directories (older than ${MAX_AGE_DAYS} days)"
+              git push origin gh-pages
+              echo "✅ Successfully removed ${DELETED_COUNT} old PR preview directories"
+            else
+              echo "ℹ️ No changes to commit"
+            fi
+          elif [ "$DRY_RUN" = "true" ]; then
+            echo "✅ Dry run completed - no directories were actually deleted"
+          else
+            echo "ℹ️ No directories were old enough to delete"
+          fi
+        else
+          echo "ℹ️ No PR preview directories found to clean up"
+        fi
+        
+        echo ""
+        echo "🎉 Cleanup completed!"
