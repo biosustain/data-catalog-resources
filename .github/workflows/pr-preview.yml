@@ -76,36 +76,74 @@ jobs:
       with:
         ref: gh-pages
         token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
         
     - name: Find and remove PR preview directory
       run: |
+        set -e  # Exit on any error
+        
         PR_NUMBER="${{ github.event.pull_request.number }}"
         echo "🧹 Looking for PR preview directories for PR #${PR_NUMBER}..."
         
-        # Find directories that start with pr-{PR_NUMBER}- (with random suffix)
-        DIRS_TO_DELETE=$(find . -maxdepth 1 -type d -name "pr-${PR_NUMBER}-*" | head -10)
+        # Ensure we're on the gh-pages branch and pull latest changes
+        git checkout gh-pages
+        git pull origin gh-pages || echo "⚠️ Warning: Could not pull latest changes from gh-pages"
         
-        if [ -n "$DIRS_TO_DELETE" ]; then
+        # Find directories that start with pr-{PR_NUMBER}- (with random suffix)
+        echo "Searching for directories matching pattern: pr-${PR_NUMBER}-*"
+        DIRS_TO_DELETE=$(find . -maxdepth 1 -type d -name "pr-${PR_NUMBER}-*" 2>/dev/null | head -20 || true)
+        
+        if [ -n "$DIRS_TO_DELETE" ] && [ "$DIRS_TO_DELETE" != "" ]; then
           echo "Found directories to delete:"
           echo "$DIRS_TO_DELETE"
           
-          # Remove the directories
-          echo "$DIRS_TO_DELETE" | xargs rm -rf
+          # Count directories
+          DIR_COUNT=$(echo "$DIRS_TO_DELETE" | wc -l)
+          echo "Number of directories to delete: $DIR_COUNT"
           
-          # Commit and push the changes
+          # Remove the directories one by one with error checking
+          echo "$DIRS_TO_DELETE" | while IFS= read -r dir; do
+            if [ -d "$dir" ]; then
+              echo "Removing directory: $dir"
+              rm -rf "$dir"
+              echo "✅ Successfully removed: $dir"
+            else
+              echo "⚠️ Directory not found (already removed?): $dir"
+            fi
+          done
+          
+          # Configure git
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
+          # Add all changes and commit
           git add -A
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "ℹ️ No changes to commit - directories may have been already removed"
           else
-            git commit -m "cleanup: remove PR #${PR_NUMBER} preview directories - automatically removed after PR closure"
-            git push origin gh-pages
+            git commit -m "cleanup: remove PR #${PR_NUMBER} preview directories - automatically removed after PR closure (removed $DIR_COUNT directories)"
+            
+            # Push with retry logic
+            for i in 1 2 3; do
+              if git push origin gh-pages; then
+                echo "✅ Successfully pushed cleanup changes to gh-pages (attempt $i)"
+                break
+              else
+                echo "⚠️ Push failed (attempt $i), retrying..."
+                sleep 2
+                git pull origin gh-pages --rebase || true
+              fi
+              
+              if [ $i -eq 3 ]; then
+                echo "❌ Failed to push after 3 attempts"
+                exit 1
+              fi
+            done
+            
             echo "✅ Successfully removed PR #${PR_NUMBER} preview directories"
           fi
         else
-          echo "No PR preview directories found for PR #${PR_NUMBER}"
+          echo "ℹ️ No PR preview directories found for PR #${PR_NUMBER}"
         fi
         
     - name: Comment on PR about cleanup
@@ -120,3 +158,51 @@ jobs:
             repo: context.repo.repo,
             body: `🧹 **PR Preview Cleanup**\n\nPreview directories for this PR have been automatically removed from the deployment.\n\n_This helps keep the repository clean by removing old preview deployments._`
           });
+
+  # Manual cleanup job for orphaned PR directories (can be triggered manually)
+  manual-cleanup:
+    runs-on: ubuntu-latest
+    # This job only runs on manual workflow dispatch
+    if: false  # Disabled by default, can be enabled manually
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+        
+    - name: Clean up orphaned PR preview directories
+      run: |
+        set -e
+        
+        echo "🧹 Starting cleanup of orphaned PR preview directories..."
+        
+        # Ensure we're on the gh-pages branch
+        git checkout gh-pages
+        git pull origin gh-pages || echo "⚠️ Warning: Could not pull latest changes"
+        
+        # Find all PR directories
+        PR_DIRS=$(find . -maxdepth 1 -type d -name "pr-*-*" 2>/dev/null || true)
+        
+        if [ -n "$PR_DIRS" ] && [ "$PR_DIRS" != "" ]; then
+          echo "Found PR directories:"
+          echo "$PR_DIRS"
+          
+          # This is a manual process - for safety, just list what would be cleaned
+          echo ""
+          echo "⚠️ Manual cleanup required. Found the following PR directories:"
+          echo "$PR_DIRS" | while IFS= read -r dir; do
+            if [ -d "$dir" ]; then
+              echo "Directory: $dir"
+            fi
+          done
+          
+          echo ""
+          echo "To clean these up, you can:"
+          echo "1. Check which PRs are actually closed/merged on GitHub"
+          echo "2. Manually remove the directories for closed PRs"
+          echo "3. Or modify this workflow to automatically clean up directories older than X days"
+        else
+          echo "ℹ️ No PR preview directories found to clean up"
+        fi
