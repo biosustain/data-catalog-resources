@@ -51,40 +51,107 @@ jobs:
           echo ""
           
           DELETED_COUNT=0
-          CUTOFF_TIMESTAMP=$(date -d "${MAX_AGE_DAYS} days ago" +%s 2>/dev/null || date -v-${MAX_AGE_DAYS}d +%s)
-          echo "Cutoff date: $(date -d @${CUTOFF_TIMESTAMP} 2>/dev/null || date -r ${CUTOFF_TIMESTAMP})"
+          TEMP_LIST_FILE="/tmp/dirs_to_delete.txt"
+          
+          # Create a temporary file to track what we're deleting
+          > "$TEMP_LIST_FILE"
+          
+          # Calculate cutoff timestamp - use different methods for compatibility
+          echo "Calculating cutoff date for ${MAX_AGE_DAYS} days ago..."
+          
+          # Try Linux date command first (GitHub Actions uses Linux)
+          if CUTOFF_TIMESTAMP=$(date -d "${MAX_AGE_DAYS} days ago" +%s 2>/dev/null); then
+            echo "Using Linux date command"
+          elif CUTOFF_TIMESTAMP=$(date -v-${MAX_AGE_DAYS}d +%s 2>/dev/null); then
+            echo "Using macOS date command"
+          else
+            # Fallback: approximate calculation (86400 seconds per day)
+            CURRENT_TIMESTAMP=$(date +%s)
+            SECONDS_IN_DAY=86400
+            CUTOFF_TIMESTAMP=$((CURRENT_TIMESTAMP - (MAX_AGE_DAYS * SECONDS_IN_DAY)))
+            echo "Using fallback calculation"
+          fi
+          
+          CUTOFF_DATE=$(date -d @${CUTOFF_TIMESTAMP} 2>/dev/null || date -r ${CUTOFF_TIMESTAMP} 2>/dev/null || echo "unknown")
+          echo "Cutoff timestamp: ${CUTOFF_TIMESTAMP}"
+          echo "Cutoff date: ${CUTOFF_DATE}"
+          echo "Current timestamp: $(date +%s)"
+          echo "Current date: $(date)"
           echo ""
           
-          echo "$PR_DIRS" | while IFS= read -r dir; do
+          # Process each directory
+          for dir in $PR_DIRS; do
             if [ -d "$dir" ]; then
-              # Get directory modification time
-              if [[ "$OSTYPE" == "darwin"* ]]; then
-                # macOS
-                DIR_TIMESTAMP=$(stat -f %m "$dir" 2>/dev/null || echo "0")
-              else
-                # Linux
-                DIR_TIMESTAMP=$(stat -c %Y "$dir" 2>/dev/null || echo "0")
-              fi
+              echo "=== Checking directory: $dir ==="
               
-              DIR_DATE=$(date -d @${DIR_TIMESTAMP} 2>/dev/null || date -r ${DIR_TIMESTAMP} 2>/dev/null || echo "unknown")
+              # Use Git history to find when this directory was last modified
+              # This is more reliable than filesystem timestamps
+              DIR_NAME=$(basename "$dir")
               
-              echo "Checking: $dir (modified: $DIR_DATE)"
+              # Get the timestamp of the last commit that modified this directory
+              LAST_COMMIT_TIMESTAMP=$(git log -1 --format="%ct" --follow -- "$dir" 2>/dev/null || echo "0")
               
-              if [ "$DIR_TIMESTAMP" -lt "$CUTOFF_TIMESTAMP" ]; then
-                echo "  ➜ Directory is older than ${MAX_AGE_DAYS} days"
-                if [ "$DRY_RUN" = "true" ]; then
-                  echo "  🔍 DRY RUN: Would delete $dir"
+              if [ "$LAST_COMMIT_TIMESTAMP" != "0" ] && [ -n "$LAST_COMMIT_TIMESTAMP" ]; then
+                LAST_COMMIT_DATE=$(date -d @${LAST_COMMIT_TIMESTAMP} 2>/dev/null || date -r ${LAST_COMMIT_TIMESTAMP} 2>/dev/null || echo "unknown")
+                echo "Last Git commit for this directory: ${LAST_COMMIT_DATE}"
+                echo "Last commit timestamp: ${LAST_COMMIT_TIMESTAMP}"
+                
+                # Compare with cutoff
+                echo "Comparing: ${LAST_COMMIT_TIMESTAMP} < ${CUTOFF_TIMESTAMP}"
+                if [ "$LAST_COMMIT_TIMESTAMP" -lt "$CUTOFF_TIMESTAMP" ]; then
+                  echo "  ➜ Directory IS older than ${MAX_AGE_DAYS} days (by Git history) ✓"
+                  if [ "$DRY_RUN" = "true" ]; then
+                    echo "  🔍 DRY RUN: Would delete $dir"
+                    echo "$dir" >> "$TEMP_LIST_FILE"
+                  else
+                    echo "  🗑️ Deleting $dir"
+                    rm -rf "$dir"
+                    echo "$dir" >> "$TEMP_LIST_FILE"
+                    DELETED_COUNT=$((DELETED_COUNT + 1))
+                  fi
                 else
-                  echo "  🗑️ Deleting $dir"
-                  rm -rf "$dir"
-                  DELETED_COUNT=$((DELETED_COUNT + 1))
+                  echo "  ➜ Directory is newer than ${MAX_AGE_DAYS} days (by Git history), keeping"
                 fi
               else
-                echo "  ➜ Directory is newer than ${MAX_AGE_DAYS} days, keeping"
+                echo "  ⚠️ Could not find Git history for directory, using fallback method..."
+                
+                # Fallback: Check if we can extract date from directory name or use creation time
+                # PR directories have format pr-NUMBER-RANDOMHEX, let's check when that specific PR was created
+                if [[ "$DIR_NAME" =~ ^pr-([0-9]+)- ]]; then
+                  PR_NUM="${BASH_REMATCH[1]}"
+                  echo "  Directory is for PR #${PR_NUM}"
+                  
+                  # As a last resort, assume directories older than current session are old
+                  # This is not ideal but better than keeping everything
+                  echo "  ⚠️ Using conservative approach: assuming this is old content"
+                  if [ "$DRY_RUN" = "true" ]; then
+                    echo "  🔍 DRY RUN: Would delete $dir (no reliable timestamp)"
+                    echo "$dir" >> "$TEMP_LIST_FILE"
+                  else
+                    echo "  🗑️ Deleting $dir (no reliable timestamp)"
+                    rm -rf "$dir"
+                    echo "$dir" >> "$TEMP_LIST_FILE"
+                    DELETED_COUNT=$((DELETED_COUNT + 1))
+                  fi
+                else
+                  echo "  ⚠️ Could not determine directory age, skipping for safety"
+                fi
               fi
               echo ""
             fi
           done
+          
+          # Count what was actually processed
+          if [ -f "$TEMP_LIST_FILE" ]; then
+            PROCESSED_COUNT=$(wc -l < "$TEMP_LIST_FILE" 2>/dev/null || echo "0")
+            if [ "$PROCESSED_COUNT" -gt 0 ]; then
+              echo "📋 Directories processed:"
+              cat "$TEMP_LIST_FILE"
+              echo ""
+            fi
+          else
+            PROCESSED_COUNT=0
+          fi
           
           if [ "$DRY_RUN" = "false" ] && [ "$DELETED_COUNT" -gt 0 ]; then
             echo "Deleted $DELETED_COUNT directories"
@@ -100,13 +167,18 @@ jobs:
               git push origin gh-pages
               echo "✅ Successfully removed ${DELETED_COUNT} old PR preview directories"
             else
-              echo "ℹ️ No changes to commit"
+              echo "ℹ️ No changes to commit - directories may have been already removed"
             fi
-          elif [ "$DRY_RUN" = "true" ]; then
-            echo "✅ Dry run completed - no directories were actually deleted"
-          else
+          elif [ "$DRY_RUN" = "true" ] && [ "$PROCESSED_COUNT" -gt 0 ]; then
+            echo "✅ Dry run completed - found ${PROCESSED_COUNT} directories that would be deleted"
+          elif [ "$PROCESSED_COUNT" -eq 0 ]; then
             echo "ℹ️ No directories were old enough to delete"
+          else
+            echo "ℹ️ No directories were processed"
           fi
+          
+          # Clean up temp file
+          rm -f "$TEMP_LIST_FILE"
         else
           echo "ℹ️ No PR preview directories found to clean up"
         fi
