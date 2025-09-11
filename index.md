@@ -46,5 +46,4 @@ docs/Project/index
 docs/Dataset/index
 docs/Resource/index
 docs/Search
-docs/Roles&Permissions/index
 ```
