@@ -26,7 +26,7 @@ Simply type in keywords, such as the name of a project, dataset, etc. Then Data 
 
 ---------------------------------
 
-
+(this_is_the_Navigation_bar_Search_reference_point)=
 ## &#10147; Using the top Navigation Bar
 You can also use the `Projects` or `Datasets` tabs in the ***top navigation bar***.
 These tabs will take you to the respective overview pages, where you will find a list of all available projects or datasets. 
