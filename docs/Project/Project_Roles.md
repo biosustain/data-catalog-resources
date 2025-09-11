@@ -43,15 +43,15 @@ In the Manage Project page, click the `Collaborators` tab.
 
 
 ## Step 4: Add a Collaborator
-In the Collaborators Overview page, click the `Add Collaborators` button.
+In the Project Collaborators Overview page, click the `Add Collaborators` button.
 
 
 ```{figure} ../../_static/images/project_collaborators_view.png
-:alt: Project Collaborators View
+:alt: Project Collaborators Overview
 :width: 60%
 :align: center
 
-*Project Collaborators View*
+*Project Collaborators Overview*
 
 ```
 
