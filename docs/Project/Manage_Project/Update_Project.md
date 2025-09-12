@@ -7,7 +7,11 @@ This can be done as follows:
 :class: toggle
 :collapsible:
 
-There are several ways to search for a project in the Data Catalog. You can use the **View your projects** on the Welcome Page, the **Projects** tab, or the **Search field** in the top navigation bar. However, in this guide, we focus on **one method** to keep things simple.
+
+There are several ways to search for projects in the Data Catalog. 
+(_For more information, see the [**Search**](this_is_the_Search_reference_point) section_.)
+However, in this guide, we focus on **one method** to keep things simple.
+
 ```
 
 
