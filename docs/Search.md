@@ -1,9 +1,9 @@
 # Search
-Data Catalog offers several ways to search for datasets and projects.
+Data Catalog offers several ways to search for datasets and projects, whether you are starting from the welcome page or navigating within a project or dataset.
 
 ## &#10147; Using the Search Bar on the Welcome Page
 Use the `Search bar` on the welcome page to look for projects or datasets.
-Simply type in keywords, such as the name of a project, dataset, etc. Then Data Catalog will display the matching results. 
+Simply type keywords such as a project or dataset name, and the Data Catalog will display matching results. 
 
 
 
@@ -15,13 +15,10 @@ Simply type in keywords, such as the name of a project, dataset, etc. Then Data 
 *Data Catalog Welcome Page*
 ```
 
-
-
-
- ```{note} 
- If you're already inside a project or dataset and want to search for something else, you can use the `Search bar` at the ***top of any page***.
- ```
-
+```{note} 
+Results are ranked by **relevance** by default, so the most likely matches appear first. 
+You can change the sorting order using the `Order by` dropdown located below the search bar. For example, sort by ***name*** (ascending or descending) or by ***last modified***.
+```
 
 
 ---------------------------------
@@ -30,6 +27,7 @@ Simply type in keywords, such as the name of a project, dataset, etc. Then Data 
 ## &#10147; Using the top Navigation Bar
 You can also use the `Projects` or `Datasets` tabs in the ***top navigation bar***.
 These tabs will take you to the respective overview pages, where you will find a list of all available projects or datasets. 
+
 To search within a section, use the `search bar` located just below the ***Add Project*** or ***Add Dataset*** button. 
 
 
@@ -42,6 +40,9 @@ To search within a section, use the `search bar` located just below the ***Add P
 ```
 
 
+ ```{note} 
+ If you're already within a project or dataset and want to search for something else, you can use the `Search` bar located at the ***top-right corner*** of any page.
+ ```
 
 
 --------------------------------------
@@ -66,22 +67,30 @@ This will open the ***Project home page***, where you can use the search bar on 
 
 
 
-## Filtering Dataset Results
-Once you've searched for a dataset in the Data Catalog, you can **narrow down** the results using the **filters** on the sidebar. These filters make it easier to find exactly what you're looking for.
+## Filtering Results
+You can use filters to narrow down your search results and find what you need more easily.
 
-These may include:
+Filtering is available in different places, depending on where you are searching from:
 
-* **Tags**: Select specific keywords associated with datasets.
-* **Projects**: Filter by the project to which the data belongs.
-* **Formats**: Choose data formats like CSV, JSON, XML, etc.
-* **Combining** multiple filters can help you quickly find the most relevant datasets.
+* ***Welcome page:*** If your search shows both projects and datasets with similar keywords, you can use the filters on the left sidebar to narrow down the results by type, format, or tags.
+* ***Within Projects or Datasets overview page:*** If you search within a specific section, the results are already limited to the section. In this case, filters will still be available, but they will only apply the content of that section.
 
-```{note} 
-Results are ranked by **relevance** by default, so the most likely matches appear first. However you can change the sorting order using the `Order by` dropdown located below the search bar. For example you can also sort by name ascending or descending and last modified.
+These filters help you quickly find the most relevant results.
+
+Available filters include:
+
+* **Tags:** Select specific keywords associated with datasets.
+* **Type:** Filter by projects or datasets.
+* **Projects:** Filter by the project to which the data belongs.
+* **Formats:** Choose data formats like CSV, JSON, XML, etc.
+
+
+```{tip} 
+To make your search more precise, try combining **multiple filters** at once.
 ```
 
 
-```{figure} ../_static/images/filters_.png
+```{figure} ../_static/images/filters_comb.2.png
 :alt: Filters
 :width: 60%
 :align: center
@@ -91,7 +100,7 @@ Results are ranked by **relevance** by default, so the most likely matches appea
 
 
 ## Advanced Search Tips
-If the search query includes a colon (:), then it will be considered as fielded search. This means that you can use **advanced operators** to narrow down your results for both datasets and projects.
+If your search query includes a colon (:), it will be treated as fielded search. This means that you can use **advanced operators** to narrow down your results for both datasets and projects.
 
 * **The asterisk (*)**: It is used as a wildcard to match zero or more characters.
 * **The OR Operator (||)**: It allows you to search for either of multiple terms.
@@ -103,7 +112,7 @@ This is especially useful when you know part of the dataset or project name and 
 
 1. **title:gene** &rarr; This will return datasets and projects that include the word “gene” in their title, helping you avoid unrelated results from descriptions or tags. 
 
-2. **title:te*** &rarr; Will look for all projects or datasets containing in its title a word that starts with "te" like "test" and "testing".
+2. **title:te*** &rarr; Will search for projects or datasets with titles containing words that starts with "te", such as "test" and "testing".
 
 3. **title:genomics || title:proteomics** &rarr; Will look for datasets or projects containing "genomics" or "proteomics" in its title.
 
