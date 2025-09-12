@@ -1,4 +1,4 @@
-# Add & Assign Roles
+# Add Project Members
 
 Projects in Data Catalog help organize datasets and manage access. Each dataset belongs to a single project, and as a creator of a project, you can add members and assign roles that control who can view, edit, or manage those datasets.
 
