@@ -1,3 +1,4 @@
+(this_is_the_Search_reference_point)=
 # Search
 Data Catalog offers several ways to search for datasets and projects, whether you are starting from the welcome page or navigating within a project or dataset.
 
