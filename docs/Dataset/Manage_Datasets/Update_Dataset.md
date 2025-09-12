@@ -6,26 +6,29 @@ Once a dataset is created, it can be **edited/upadted** if needed as follows:
 :class: toggle
 :collapsible:
 
-There are several ways to search for a dataset in the Data Catalog. You can use the **Search bar** on the Welcome Page, the **Datasets** tab, or the **Search field** in the top navigation bar. However, in this guide, we focus on **one method** to keep things simple.
+Similar to projects, there are several ways to search for datasets in the Data Catalog. 
+However, in this guide, we focus on **one method** to keep things simple.
+
+_For more information, see the [**Search**](this_is_the_Search_reference_point) section_.
 ```
 
 (this_is_the_reference_point)=
-## Step 1: Navigate to the Datasets Overview Page
-Click the `View your datasets` located ***under*** the search bar, in the ***welcome page***.
+## Step 1: Navigate to the Datasets Overview Page 
+Click on the `Datasets` tab located at the top of any page.
 
 
-```{figure} ../../../_static/images/homepage_view_all_datasets.png
-:alt: Data Catalog Welcome Page
+```{figure} ../../../_static/images/dataset_tab_2.png
+:alt: Navigation bar
 :width: 60%
 :align: center
 
-*Data Catalog Welcome Page*
+*Navigation bar*
 
 ```
 
 
 ## Step 2: Find your Dataset 
-Use the ***search bar*** under the "Add dataset" button to find and open your dataset.
+Use the ***search bar*** under the `Add Dataset` button to find and open your dataset.
 
 
 ```{figure} ../../../_static/images/search_datasets.png

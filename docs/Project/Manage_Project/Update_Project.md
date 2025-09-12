@@ -9,8 +9,9 @@ This can be done as follows:
 
 
 There are several ways to search for projects in the Data Catalog. 
-(_For more information, see the [**Search**](this_is_the_Search_reference_point) section_.)
 However, in this guide, we focus on **one method** to keep things simple.
+
+_For more information, see the [**Search**](this_is_the_Search_reference_point) section_.
 
 ```
 
