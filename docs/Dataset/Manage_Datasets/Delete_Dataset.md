@@ -5,16 +5,16 @@ To delete a dataset, follow the next steps:
  Steps 1 to 3 for **Deleting** a dataset are the **same** as those used for **Updating** a dataset.
 ```
 
-## Step 1: Navigate to the Datasets Overview Page
-Click the `View all datasets` located ***under*** the search bar, in the ***welcome page***.
+## Step 1: Navigate to the Datasets Overview Page 
+Click on the `Datasets` tab located at the top of any page.
 
 
-```{figure} ../../../_static/images/homepage_view_all_datasets.png
-:alt: Data Catalog Welcome Page
+```{figure} ../../../_static/images/dataset_tab_2.png
+:alt: Navigation bar
 :width: 60%
 :align: center
 
-*Data Catalog Welcome Page*
+*Navigation bar*
 
 ```
 
