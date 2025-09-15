@@ -1,10 +1,10 @@
 # Add a Resource
 To add one or more Resources to the dataset, follow the next steps:
 
-## Step 1: Find your Dataset
-Click on the `View your datasets` button located under the search bar on the Data Catalog welcome page to find the dataset you want to add a resource to.
+## Step 1: Find & Open your Dataset
+Click on the `Datasets` tab in the top navigation bar, then use the search bar to find and select the dataset you want to add a resource to.
 
-_For detailed instructions, see **Step 1 & Step 2** in the [**Update Dataset**](this_is_the_reference_point) guide._
+(_For detailed instructions, see **Step 1 & Step 2** in the [**Update Dataset**](this_is_the_reference_point) guide_).
 
 
 ## Step 2: Click Manage
