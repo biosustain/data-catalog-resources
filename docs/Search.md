@@ -2,7 +2,7 @@
 # Search
 Data Catalog offers several ways to search for datasets and projects, whether you are starting from the welcome page or navigating within a project or dataset.
 
-## &#10147; Using the Search Bar on the Welcome Page
+## ➤  Using the Search Bar on the Welcome Page
 Use the `Search bar` on the welcome page to look for projects or datasets.
 Simply type keywords such as a project or dataset name, and the Data Catalog will display matching results. 
 
@@ -22,10 +22,11 @@ You can change the sorting order using the `Order by` dropdown located below the
 ```
 
 
+
 ---------------------------------
 
 (this_is_the_Navigation_bar_Search_reference_point)=
-## &#10147; Using the top Navigation Bar
+## ➤  Using the top Navigation Bar
 You can also use the `Projects` or `Datasets` tabs in the ***top navigation bar***.
 These tabs will take you to the respective overview pages, where you will find a list of all available projects or datasets. 
 
@@ -49,7 +50,7 @@ To search within a section, use the `search bar` located just below the ***Add P
 --------------------------------------
 
 
-## &#10147; Searching Dataset within a Project
+## ➤  Searching Dataset within a Project
 If you are looking for data owned by a particular project, you can search within that project from its home page in Data Catalog. You can do that as follows:
 
 ### Step 1: Find the project
@@ -92,11 +93,11 @@ To make your search more precise, try combining **multiple filters** at once.
 
 
 ```{figure} ../_static/images/filters_comb.2.png
-:alt: Filters
+:alt: Filters on Project/Dataset overview pages
 :width: 60%
 :align: center
 
-*Filters*
+*Filters on Project/Dataset overview pages*
 ```
 
 
