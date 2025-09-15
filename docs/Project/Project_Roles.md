@@ -5,7 +5,7 @@ Projects in Data Catalog help organize datasets and manage access. Each dataset 
 The following steps show you how to add members and assign roles within a project.
 
 ## Step 1: Find & Open your Project
-Click the `Projects` tab in the top navigation bar and select the project you want to add members to.
+Click the `Projects` tab in the top navigation bar, then use the search bar to find and select the project you want to add members to.
 
 _For detailed instructions on how to do this, see the [**Search** (Using the top Navigation Bar)](this_is_the_Navigation_bar_Search_reference_point) guide._
 
@@ -82,7 +82,7 @@ After adding members to a project, you can either **edit** their role or **remov
 To edit a project member, go to the **Project Collaborators View page**, where all the project members are listed. Click the <img src="../../_static/images/tool.png" alt="tool" style="height:1em; vertical-align:0.002em;"> icon to open the edit page and update a member's role or delete them.
 
 
-```{figure} ../../_static/images/Project_collaborators_view_after1.png
+```{figure} ../../_static/images/Project_collaborators_view_after1_comb.png
 :alt: Edit Collaborators
 :width: 60%
 :align: center
