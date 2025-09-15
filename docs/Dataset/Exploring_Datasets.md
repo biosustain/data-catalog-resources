@@ -1,15 +1,15 @@
 # Exploring Dataset
-This section provides an overview of the Datasets home page.
+This section provides an overview of the Dataset home page.
 
-## &#10147; Dataset Home Page
-After creating a dataset, Data Catalog displays the Datasets home page,
+## ➤ Dataset Home Page
+After creating a dataset, Data Catalog displays the Dataset home page,
 which includes:
 
 * The **Name** & **Description**: A summary of what the dataset is about.
 * **Resources**: These are the actual files or links that contain the data, which can be added after creating the dataset.
 * **Metadata**: Includes information like the creator, visibility, project title, dataset type, etc. 
 
-The Datasets home page also includes:
+The Dataset home page also includes:
 
 * `Manage` button: Located on the top-right corner of the page. From here, you can **update** or **delete** a dataset.
 
@@ -17,7 +17,7 @@ The Datasets home page also includes:
 
 
 ```{note} 
-Similar to projects, you can follow a dataset. Click on the `Follow` button on the ***top-left sidebar*** of the Datasets home page to receive notifications about updates or changes made to the dataset.
+Similar to projects, you can follow a dataset. Click on the `Follow` button on the ***top-left sidebar*** of the Dataset home page to receive notifications about updates or changes made to the dataset.
 ```
 
 
