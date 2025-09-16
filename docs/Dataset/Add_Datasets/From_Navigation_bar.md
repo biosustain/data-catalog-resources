@@ -3,7 +3,7 @@ Alternatively, follow these steps to add a new dataset using the top navigation 
 
 
 ## Step 1: Navigate to the Datasets Overview Page 
-Click on the "Datasets" tab located at the top of any page.
+Click on the `Datasets` tab located at the top of any page.
 
 
 ```{figure} ../../../_static/images/dataset_tab_2.png
@@ -14,9 +14,9 @@ Click on the "Datasets" tab located at the top of any page.
 *Navigation bar*
 
 ```
-
-## Step 2: Click "Add Dataset" 
-On the Datasets overview page, click `Add Dataset` button located right above ***the Search datasets box***.
+(this_is_the_add_datasets_reference_point)=
+## Step 2: Add a new Dataset 
+On the Datasets overview page, click `Add Dataset` button located right above the ***Search datasets*** box.
 
 
 ```{figure} ../../../_static/images/Add_Dataset_button2.png
