@@ -32,7 +32,7 @@ From the Project home page, click `Manage` in the ***top-right corner***, then s
 In the Project Collaborators Overview page, click the `Add Collaborators` button.
 
 
-```{figure} ../../_static/images/project_collaborators_view.png
+```{figure} ../../_static/images/Project_Collaborators_view.png
 :alt: Project Collaborators Overview
 :width: 60%
 :align: center
