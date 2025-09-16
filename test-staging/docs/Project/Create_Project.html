@@ -19,7 +19,7 @@
             <link rel="top" title="Data Catalog User Guide" href="#" />
             <link rel="up" title="Project" href="index.html" />
             <link rel="next" title="Manage Projects" href="Manage_Project/index.html" />
-            <link rel="prev" title="What is a Project?" href="What_is_Project.html" />
+            <link rel="prev" title="Project" href="index.html" />
     </head>
 <body>
     <script type="text/javascript" src="../../_static/dist/blocking.js"></script>
@@ -65,13 +65,14 @@
         <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Login.html">Login</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Project  <!-- This is the sidebar title --></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="What_is_Project.html">What is a Project?</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Create a New Project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Manage_Project/index.html">Manage Projects  <!-- This is the sidebar title --></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Manage_Project/Update_Project.html">Update a Project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Manage_Project/Delete_Project.html">Delete a Project</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Project_Roles.html">Add Project Members</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Dataset/index.html">Dataset  <!-- This is the sidebar title --></a><ul>
@@ -85,6 +86,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Dataset/Manage_Datasets/Delete_Dataset.html">Delete a Dataset</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Resource/index.html">Resource</a><ul>
@@ -96,6 +98,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../Search.html">Search</a></li>
 </ul>
 
     </nav>
@@ -146,19 +149,30 @@
 <h1>Create a New Project<a class="headerlink" href="#create-a-new-project" title="Link to this heading">¶</a></h1>
 <p>This guide walks you through the essential steps for creating a project in the Data Catalog.
 Creating a project is <strong>simple</strong>, but the form includes many fields/questions. To help you navigating easily, we’ve grouped the questions into five categories. These <strong>do not appear as a section on the Data Catalog page</strong>, but are here to help you understand and locate the information more easily.</p>
-<section id="step-1-navigate-to-the-project-creation-page">
-<h2>Step 1: Navigate to the Project Creation Page<a class="headerlink" href="#step-1-navigate-to-the-project-creation-page" title="Link to this heading">¶</a></h2>
-<p>Click the <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">new</span> <span class="pre">project</span></code> located <em><strong>under</strong></em> the search bar, in the <em><strong>welcome page</strong></em>.</p>
+<section id="step-1-navigate-to-the-projects-overview-page">
+<h2>Step 1: Navigate to the Projects Overview Page<a class="headerlink" href="#step-1-navigate-to-the-projects-overview-page" title="Link to this heading">¶</a></h2>
+<p>Click on the <code class="docutils literal notranslate"><span class="pre">Projects</span></code> tab located at the top of any page.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../_images/create_new_project.png"><img alt="Data Catalog Welcome Page" src="../../_images/create_new_project.png" style="width: 60%;" />
+<a class="reference internal image-reference" href="../../_images/projects_tab.png"><img alt="Data Catalog Welcome Page" src="../../_images/projects_tab.png" style="width: 60%;" />
 </a>
 <figcaption>
 <p><span class="caption-text"><em>Data Catalog Welcome Page</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="step-2-fill-out-project-info">
-<h2>Step 2: Fill out Project Info<a class="headerlink" href="#step-2-fill-out-project-info" title="Link to this heading">¶</a></h2>
+<section id="step-2-add-a-new-project">
+<h2>Step 2: Add a new Project<a class="headerlink" href="#step-2-add-a-new-project" title="Link to this heading">¶</a></h2>
+<p>On the Projects overview page, click <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Project</span></code> button located right above the <em><strong>Search projects</strong></em> box.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/add_project_button.png"><img alt="Projects Overview Page" src="../../_images/add_project_button.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Projects Overview Page</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="step-3-fill-out-project-info">
+<h2>Step 3: Fill out Project Info<a class="headerlink" href="#step-3-fill-out-project-info" title="Link to this heading">¶</a></h2>
 <p>Use the <em><strong>categories</strong></em> below to guide you through the questions.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -172,11 +186,11 @@ Creating a project is <strong>simple</strong>, but the form includes many fields
 <li><p>Data types</p></li>
 <li><p>Storage location</p></li>
 </ul>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/basic_project_info_view.png"><img alt="Project Creation Page" src="../../_images/basic_project_info_view.png" style="width: 60%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><em>Project Creation Page</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+<p><span class="caption-text"><em>Project Creation Page</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -189,11 +203,11 @@ Creating a project is <strong>simple</strong>, but the form includes many fields
 <li><p>Collaborators: name, role, email, ORCID</p></li>
 <li><p>Benchling Project Link (if applicable)</p></li>
 </ul>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../_images/project_structure_ques.png"><img alt="Project Creation Page" src="../../_images/project_structure_ques.png" style="width: 60%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><em>Project Creation Page</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+<p><span class="caption-text"><em>Project Creation Page</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -207,11 +221,11 @@ Creating a project is <strong>simple</strong>, but the form includes many fields
 <li><p>Nanoscale particles</p></li>
 <li><p>Personal data (e.g., DNA, biometrics)</p></li>
 </ul>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../_images/project_compliance_ques.png"><img alt="Project Creation Page" src="../../_images/project_compliance_ques.png" style="width: 60%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><em>Project Creation Page</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+<p><span class="caption-text"><em>Project Creation Page</em></span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -223,11 +237,11 @@ Creating a project is <strong>simple</strong>, but the form includes many fields
 <li><p>Principal Investigator (PI): name and email</p></li>
 <li><p>Project Creator</p></li>
 </ul>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../_images/project_ownership_ques.png"><img alt="Project Creation Page" src="../../_images/project_ownership_ques.png" style="width: 60%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><em>Project Creation Page</em></span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+<p><span class="caption-text"><em>Project Creation Page</em></span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -242,11 +256,11 @@ Creating a project is <strong>simple</strong>, but the form includes many fields
 <section id="final-step-save">
 <h2>Final Step: Save<a class="headerlink" href="#final-step-save" title="Link to this heading">¶</a></h2>
 <p>Click <code class="docutils literal notranslate"><span class="pre">Save</span></code> located in the <em><strong>bottom-right corner</strong></em> of the page to submit your project.</p>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../_images/project_save_button.png"><img alt="Project Creation Page" src="../../_images/project_save_button.png" style="width: 60%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><em>Project Creation Page</em></span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+<p><span class="caption-text"><em>Project Creation Page</em></span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -254,8 +268,8 @@ Creating a project is <strong>simple</strong>, but the form includes many fields
 
 </main>
                         <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
-    <a class="float-left" href="What_is_Project.html" title="Previous">
-        <span aria-hidden="true">←&nbsp;</span>What is a Project?
+    <a class="float-left" href="index.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Project  <!-- This is the sidebar title -->
     </a>
     <a class="float-right" href="Manage_Project/index.html" title="Next">
         Manage Projects  <!-- This is the sidebar title --> <span aria-hidden="true">&nbsp;→</span>
@@ -268,8 +282,9 @@ Creating a project is <strong>simple</strong>, but the form includes many fields
                             <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
                             <ul>
 <li><a class="reference internal" href="#">Create a New Project</a><ul>
-<li><a class="reference internal" href="#step-1-navigate-to-the-project-creation-page">Step 1: Navigate to the Project Creation Page</a></li>
-<li><a class="reference internal" href="#step-2-fill-out-project-info">Step 2: Fill out Project Info</a><ul>
+<li><a class="reference internal" href="#step-1-navigate-to-the-projects-overview-page">Step 1: Navigate to the Projects Overview Page</a></li>
+<li><a class="reference internal" href="#step-2-add-a-new-project">Step 2: Add a new Project</a></li>
+<li><a class="reference internal" href="#step-3-fill-out-project-info">Step 3: Fill out Project Info</a><ul>
 <li><a class="reference internal" href="#a-basic-information">a.”Basic” Information:</a></li>
 <li><a class="reference internal" href="#b-project-structure-contributors">b. Project Structure &amp; Contributors:</a></li>
 <li><a class="reference internal" href="#c-compliance">c. Compliance:</a></li>

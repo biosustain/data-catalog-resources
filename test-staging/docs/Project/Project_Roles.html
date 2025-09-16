@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-        <title>What is a Project? &mdash; Data Catalog User Guide</title>
+        <title>Add Project Members &mdash; Data Catalog User Guide</title>
     
     <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
       <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css?v=310cf088" />
@@ -18,8 +18,8 @@
             <link rel="search" title="Search" href="../../search.html" />
             <link rel="top" title="Data Catalog User Guide" href="#" />
             <link rel="up" title="Project" href="index.html" />
-            <link rel="next" title="Create a New Project" href="Create_Project.html" />
-            <link rel="prev" title="Project" href="index.html" />
+            <link rel="next" title="Dataset" href="../Dataset/index.html" />
+            <link rel="prev" title="Exploring Projects" href="Exploring_Projects.html" />
     </head>
 <body>
     <script type="text/javascript" src="../../_static/dist/blocking.js"></script>
@@ -65,13 +65,14 @@
         <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Login.html">Login</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Project  <!-- This is the sidebar title --></a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">What is a Project?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Create_Project.html">Create a New Project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Manage_Project/index.html">Manage Projects  <!-- This is the sidebar title --></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Manage_Project/Update_Project.html">Update a Project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Manage_Project/Delete_Project.html">Delete a Project</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Add Project Members</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Dataset/index.html">Dataset  <!-- This is the sidebar title --></a><ul>
@@ -85,6 +86,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Dataset/Manage_Datasets/Delete_Dataset.html">Delete a Dataset</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Resource/index.html">Resource</a><ul>
@@ -96,6 +98,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../Search.html">Search</a></li>
 </ul>
 
     </nav>
@@ -117,7 +120,7 @@
     <ol class="breadcrumb m-0 p-0 bg-transparent">
         <li class="breadcrumb-item"><a href="../../index.html">Docs</a></li>
             <li class="breadcrumb-item"><a href="index.html">Project  <!-- This is the sidebar title --></a></li>
-        <li class="breadcrumb-item active" aria-current="page">What is a Project?</li>
+        <li class="breadcrumb-item active" aria-current="page">Add Project Members</li>
     </ol>
 </nav>
                     </div>
@@ -142,32 +145,120 @@
                 <div class="row">
                     <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
                         <main role="main" id="main">
-    <section class="tex2jax_ignore mathjax_ignore" id="what-is-a-project">
-<h1>What is a Project?<a class="headerlink" href="#what-is-a-project" title="Link to this heading">¶</a></h1>
-<p>In the <strong>DTU Biosustain Data Catalog</strong>, a project is a structured space, where you can <strong>organize</strong>, <strong>manage</strong>, and <strong>document</strong> your research activities in one place.</p>
-<p>Each project also includes user roles with different permissions, so you can control who can <em><strong>view</strong></em>, <em><strong>edit</strong></em>, or <em><strong>create</strong></em> new datasets. For example, some users may be able to edit datasets but not create new ones, while others may have view-only access.</p>
-<p>A project serves as a record of your work, making it easier to:</p>
-<ul class="simple">
-<li><p>Understand the <strong>purpose</strong> and <strong>scope</strong> of the research</p></li>
-<li><p>Know the <strong>data</strong> it contains</p></li>
-<li><p>Track the <strong>technologies</strong> used</p></li>
-<li><p>Know <strong>where</strong> the data is stored</p></li>
-<li><p>See <strong>who</strong> is involved</p></li>
-<li><p>Access any relevant <strong>datasets</strong>, <strong>documentation</strong> or <strong>notes</strong></p></li>
-</ul>
-<p>Projects in the Data Catalog make your research <strong>organized</strong>, <strong>searchable</strong>, and <strong>accessible</strong> to collaborators and future users.</p>
+    <section class="tex2jax_ignore mathjax_ignore" id="add-project-members">
+<h1>Add Project Members<a class="headerlink" href="#add-project-members" title="Link to this heading">¶</a></h1>
+<p>Projects in Data Catalog help organize datasets and manage access. Each dataset belongs to a single project, and as a creator of a project, you can add members and assign roles that control who can view, edit, or manage those datasets.</p>
+<p>The following steps show you how to add members and assign roles within a project.</p>
+<section id="step-1-find-open-your-project">
+<h2>Step 1: Find &amp; Open your Project<a class="headerlink" href="#step-1-find-open-your-project" title="Link to this heading">¶</a></h2>
+<p>Click the <code class="docutils literal notranslate"><span class="pre">Projects</span></code> tab in the top navigation bar, then use the search bar to find and select the project you want to add members to.</p>
+<p><em>For detailed instructions on how to do this, see the <a class="reference internal" href="../Search.html#this-is-the-navigation-bar-search-reference-point"><span class="std std-ref"><strong>Search</strong> (Using the top Navigation Bar)</span></a> guide.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you create a new project, you automatically become its <strong>Admin</strong>. This means you have full control over the project, including its datasets and members.</p>
+</div>
+</section>
+<section id="step-2-open-the-collaborators-tab">
+<h2>Step 2: Open the Collaborators Tab<a class="headerlink" href="#step-2-open-the-collaborators-tab" title="Link to this heading">¶</a></h2>
+<p>From the Project home page, click <code class="docutils literal notranslate"><span class="pre">Manage</span></code> in the <em><strong>top-right corner</strong></em>, then select the <code class="docutils literal notranslate"><span class="pre">Collaborators</span></code> tab .</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/project_collaborators_comb.png"><img alt="Project Home &amp; Manage Project view" src="../../_images/project_collaborators_comb.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Project Home &amp; Manage Project view</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="step-3-add-a-collaborator">
+<h2>Step 3: Add a Collaborator<a class="headerlink" href="#step-3-add-a-collaborator" title="Link to this heading">¶</a></h2>
+<p>In the Project Collaborators Overview page, click the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Collaborators</span></code> button.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/Project_Collaborators_view.png"><img alt="Project Collaborators Overview" src="../../_images/Project_Collaborators_view.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Project Collaborators Overview</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<div class="toggle admonition">
+<p class="admonition-title">Roles &amp; Permissions</p>
+<p>Each user in a Project has a role that determines their access level:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Role name</p></th>
+<th class="head"><p>Permissions (in a Project where user belongs)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Member</strong></p></td>
+<td><p><br>• Can <strong>view</strong> private datasets</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Editor</strong></p></td>
+<td><p>Can do everything a Member can, plus:<br>•  <strong>Add</strong> new datasets to the Project<br>•  <strong>Edit</strong> or <strong>delete</strong> any dataset in the Project<br>•  <strong>Change</strong> a dataset’s <strong>visibility</strong> (public or private)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Admin</strong></p></td>
+<td><p>• Can do everything an Editor can, plus:<br>•  <strong>Add</strong> or <strong>remove</strong> users from the Project<br>•  <strong>Assign</strong> or <strong>change</strong> user roles (Member, Editor, Admin)<br>•  <strong>Edit</strong> Project details (title, description, etc.)<br>•  <strong>Delete</strong> the Project (if needed)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="step-4-fill-out-collaborator-info">
+<h2>Step 4: Fill out Collaborator Info<a class="headerlink" href="#step-4-fill-out-collaborator-info" title="Link to this heading">¶</a></h2>
+<p>Search for the user by username, select their role, and click <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Collaborator</span></code> to save them.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/project_add_collaborators_view.png"><img alt="Adding Collaborators Info" src="../../_images/project_add_collaborators_view.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Adding Collaborators Info</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="update-or-delete-project-members">
+<h2>Update or Delete Project Members<a class="headerlink" href="#update-or-delete-project-members" title="Link to this heading">¶</a></h2>
+<p>After adding members to a project, you can either <strong>edit</strong> their role or <strong>remove/delete</strong> them if they no longer need access to the project and its dataset.</p>
+<p>To edit a project member, go to the <strong>Project Collaborators View page</strong>, where all the project members are listed. Click the <img src="../../_static/images/tool.png" alt="tool" style="height:1em; vertical-align:0.002em;"> icon to open the edit page and update a member’s role or delete them.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/Project_collaborators_view_after1_comb.png"><img alt="Edit Collaborators" src="../../_images/Project_collaborators_view_after1_comb.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Edit Collaborators</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To quickly delete a project member, click the <img src="../../_static/images/x_button.png" alt="tool" style="height:1em; vertical-align:0.002em;"> icon.</p>
+</div>
+</section>
 </section>
 
 </main>
                         <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
-    <a class="float-left" href="index.html" title="Previous">
-        <span aria-hidden="true">←&nbsp;</span>Project  <!-- This is the sidebar title -->
+    <a class="float-left" href="Exploring_Projects.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Exploring Projects
     </a>
-    <a class="float-right" href="Create_Project.html" title="Next">
-        Create a New Project <span aria-hidden="true">&nbsp;→</span>
+    <a class="float-right" href="../Dataset/index.html" title="Next">
+        Dataset  <!-- This is the sidebar title --> <span aria-hidden="true">&nbsp;→</span>
     </a>
 </nav>
                     </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Add Project Members</a><ul>
+<li><a class="reference internal" href="#step-1-find-open-your-project">Step 1: Find &amp; Open your Project</a></li>
+<li><a class="reference internal" href="#step-2-open-the-collaborators-tab">Step 2: Open the Collaborators Tab</a></li>
+<li><a class="reference internal" href="#step-3-add-a-collaborator">Step 3: Add a Collaborator</a></li>
+<li><a class="reference internal" href="#step-4-fill-out-collaborator-info">Step 4: Fill out Collaborator Info</a></li>
+<li><a class="reference internal" href="#update-or-delete-project-members">Update or Delete Project Members</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
                     
                 </div>
             </div>
