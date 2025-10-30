@@ -8,7 +8,7 @@ If you experience issues accessing the platform, please contact the **Research D
 
 
 ```{note} 
-This login process is usually only required the first time you access the platform. After that, if you are already signed into your DTU account, clicking `Log in` will usually grant access automatically.
+This login process is usually only required the first time you access the platform. After that, if you are already signed into your DTU account, clicking **`Log in`** will usually grant access automatically.
 ```
 
 ## Log in
@@ -20,7 +20,7 @@ Open your preferred browser (e.g., Edge, Chrome, Firefox) on your computer.
 Go to [**Data Catalog**](https://datacatalog.biosustain.dtu.dk/).
 
 ### Step 3: Click "Log in"
-To login in, click the `Log in` button located in the top right corner of the page.
+To login in, click the **`Log in`** button located in the top right corner of the page.
 Then, sign in using your ***DTU email and password***.
 
 ```{figure} ../_static/images/Microsoft_account.png

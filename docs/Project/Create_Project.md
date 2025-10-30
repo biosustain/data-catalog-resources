@@ -8,21 +8,21 @@ Keep in mind that you can always update the project metadata at any time.
 ```
 
 ## Step 1: Navigate to the Projects Overview Page 
-* Click the `Projects` button on the Data Catalog welcome page <br/>
+* Click the **`Projects`** button on the Data Catalog welcome page <br/>
     **or** <br/>
-* Use the `Projects` tab located at the top of any page.
+* Use the **`Projects`** tab located at the top of any page.
 
 This will take you to the Projects overview page, where you can browse, or create a new project.
 
 
 
 ## Step 2: Add a New Project
-On the Projects overview page, click the `Add a new project` button located right below the ***Search*** bar.
+On the Projects overview page, click the **`Add a new project`** button located right below the ***Search*** bar.
 
 
 
 ## Step 3: Fill in Project Metadata
-Complete all the required fields marked with `*`.
+Complete all the required fields marked with **`*`**.
 
 * Project Title
 * Project Description
