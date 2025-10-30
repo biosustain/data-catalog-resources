@@ -22,7 +22,7 @@ A project serves as a record of your work, making it easier to:
 :maxdepth: 1
 
 Create_Project
-Manage_Project/index
+Manage_Projects
 Exploring_Projects
 Project_Roles
 ```
