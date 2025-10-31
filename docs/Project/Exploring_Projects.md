@@ -42,5 +42,5 @@ Just below the description, several key features are displayed:
 ```{note}
 You can edit the project details directly in the **Metadata** section. Just click the **`Edit metadata`** button located at the ***top*** of that section.<br/>
 
-If the project is no longer needed, you can archive it by clicking the **`Archive`** button, located on the ***right-hand side*** of the project home page.
+If the project is no longer needed, you can archive it by clicking the **`Archive`** button, located on the ***tiop-right corner*** of the project home page.
 ```

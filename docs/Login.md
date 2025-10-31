@@ -3,7 +3,7 @@
 This guide explains how to access the **Data Catalog** and log in for the first time using your DTU credentials.
 
 ➤ All DTU Biosustain employees have immediate access to Data Catalog. No prior approval is required.
-If you experience issues accessing the platform, please contact the **Research Data Managment** team.
+If you experience issues accessing the platform, please contact the **Research Data Management** team.
 <br/>
 
 
@@ -20,7 +20,7 @@ Open your preferred browser (e.g., Edge, Chrome, Firefox) on your computer.
 Go to [**Data Catalog**](https://datacatalog.biosustain.dtu.dk/).
 
 ### Step 3: Click "Log in"
-To login in, click the **`Log in`** button located in the top right corner of the page.
+To log in, click the **`Log in`** button located in the top-right corner of the page.
 Then, sign in using your ***DTU email and password***.
 
 ```{figure} ../_static/images/Microsoft_account.png
