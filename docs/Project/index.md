@@ -24,5 +24,4 @@ A project serves as a record of your work, making it easier to:
 Create_Project
 Manage_Projects
 Exploring_Projects
-Project_Roles
 ```

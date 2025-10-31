@@ -6,7 +6,7 @@ This guide shows you how to manage Data Catalog Projects to keep research data s
 ➤ *Follow the steps below based on the action you want to perform.*
 
 
-## Step 1: Find the project
+## Step 1: Find the Project
 Use the search bar in the ***top navigation*** to find your project.
 
 
@@ -15,7 +15,7 @@ On the Project home page, you will find two action buttons:
 
 * Click **`Edit`**, located ***right above*** the list of project metadata, to update project details <br>
     **or**<br/>        
-* Click **`Archive`**, located on the ***top-right corner** of the page, to archive the project
+* Click **`Archive`**, located on the ***top-right corner*** of the page, to archive the project
 
 
 
@@ -27,7 +27,7 @@ After making the necessary updates, click:
    * **`Cancel`** to discard them<br/>
 
 ➤ If you choose to **`Archive`**:  <br/>
-A confirmation box appears, asking you to confirm your action.  <br/>
+A confirmation box will appear asking you to confirm the action.  <br/>
 <br/>
 
  
