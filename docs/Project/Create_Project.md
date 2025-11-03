@@ -22,7 +22,7 @@ On the Projects overview page, click the **`Add a new project`** button located 
 
 
 ## Step 3: Fill in Project Metadata
-Complete all the required fields marked with **`*`**.
+Complete all the required fields marked with **`*`**:
 
 * Project Title
 * Project Description
