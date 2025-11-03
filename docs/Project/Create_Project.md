@@ -12,7 +12,7 @@ Keep in mind that you can update the project metadata at **any time**.
     **or** <br/>
 * Use the **`Projects`** tab located at the top of any page.
 
-This will take you to the Projects overview page, where you can browse, or create a new project.
+Both options will take you to the Projects overview page, where you can browse, or create a new project.
 
 
 
