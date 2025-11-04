@@ -30,8 +30,21 @@ Complete all the required fields marked with **`*`**:
 
 
 
+
+```{tip}
+While only a few fields are required to create a project, we **strongly recommend** filling in additional fields, based on any relevant information you may have.
+
+Providing more context helps ensure your project is easier to **understand**, **discover**, and **reuse**, both for yourself and others.
+
+Even if you're unsure about some details, you can always **include what you know** and **update the project info later** if needed.
+```
+
+
+
 ## Final Step: Submit your Project
 Click `Create project` at the ***bottom*** of the page to submit your project.
+
+
 
 
 ```{note}
