@@ -42,7 +42,7 @@ Even if you're unsure about some details, you can always **include what you know
 
 
 ## Final Step: Submit your Project
-Click `Create project` at the ***bottom*** of the page to submit your project.
+Click **`Create project`** at the ***bottom*** of the page to submit your project.
 
 
 
