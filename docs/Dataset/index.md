@@ -8,6 +8,5 @@ To help you get started and make the most out of your datasets, explore the foll
 
 Add_Dataset
 Manage_Datasets
-Manage_Datasets/index
 Exploring_Datasets
 ```
