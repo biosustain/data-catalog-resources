@@ -43,6 +43,7 @@ Complete all the required fields marked with **`*`**:
     * Results
 
 
+
 ## Final Step: Submit your Dataset
 Click `Create dataset` at the ***bottom*** of the page to submit your dataset.
 <br/>
@@ -55,6 +56,12 @@ Providing more context helps ensure your dataset is easier to **understand**, **
 
 Even if you're unsure about some details, you can always **include what you know** and **update the dataset info later** if needed.
 ```
+
+<br/>
+
+➤ Once your dataset is created, you can start uploading files and directories.
+
+To learn how to upload files, see Add Files to Dataset.
 
 
 
