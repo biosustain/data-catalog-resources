@@ -6,6 +6,6 @@ To help you get started and make the most out of your files, explore the followi
 ```{toctree}
 :maxdepth: 1
 
-Add_files
+Add_file
 Manage_Resource/index
 ```
