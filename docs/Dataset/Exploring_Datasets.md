@@ -22,7 +22,7 @@ From the Datasets Overview Page, you can:
 
 
 ```{note}
-The **Search** bar ia available throughout the platform, so you can easily find datasets and projects from different views.
+The **Search** bar is available throughout the platform, so you can easily find datasets and projects from different views.
 ```
 
 
@@ -34,7 +34,8 @@ The **Dataset Home Page** in Data Catalog is the central place to view and manag
    * Metadata
    * Projects
    * Collaborators
-   * History <br/>
+   * History
+   * Files <br/>
 
 for a specific dataset, into one organized interface.
 
@@ -59,14 +60,16 @@ Just below the description, several key features are displayed:
     * This section includes the list of all the dataset details (metadata) entered during dataset creation<br/>
 * **Projects**: 
     * Here are listed all projects the dataset is linked to
-    * You can view projects details <br/>
+    * You can view project details <br/>
 * **Collaborators**:
-    * This section shows all users who have access to the 
-    * Here project creators can manage (add/remove) members and assign roles <br/>
+    * This section shows all users who have access to the dataset
+    * Here dataset creators can manage (add/remove) collaborators and assign roles <br/>
 * **History**:
-    * Shows a log of changes made to the project
+    * Shows a log of changes made to the dataset
     * Useful for tracking updates
-
+* **Files**:
+    * Here are listed all files or entire directories related to this dataset
+    * You can upload new files or directories, view their details, download to see their content, or delete if no longer needed
 
 
 ```{note}

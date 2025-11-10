@@ -23,7 +23,7 @@ From the Projects Overview Page, you can:
 
 
 ```{note}
-The **Search** bar ia available throughout the platform, so you can easily find projects and datasets from different views.
+The **Search** bar is available throughout the platform, so you can easily find projects and datasets from different views.
 ```
 
 
