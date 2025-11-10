@@ -22,9 +22,9 @@ On the Project home page, you will find two action buttons:
 ## Step 3: Confirm
 ➤ If you choose to **`Edit`**: <br/>
 After making the necessary updates, click:
-   * `Save` to apply your changes <br/>
+   * <span style="color:#00C48C">Save</span> to apply your changes <br/>
         **or**<br/> 
-   * `Cancel` to discard them<br/>
+   * <span style="color:#FF4D4F">Cancel</span> to discard them<br/>
 
 ➤ If you choose to **`Archive`**:  <br/>
 A confirmation box will appear asking you to confirm the action.  <br/>
