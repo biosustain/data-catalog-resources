@@ -7,8 +7,10 @@ This guide walks you through the steps for creating a new dataset in the Data Ca
 
 
 ## Step 1: Navigate to the Datasets Overview Page 
-* Click the **`Datasets`** button on the Data Catalog welcome page <br/>
-    **or** <br/>
+* Click the **`Datasets`** button on the Data Catalog welcome page 
+
+    **or** 
+
 * Use the **`Datasets`** tab located at the top of any page.
 
 Both options will take you to the Datasets overview page, where you can browse, or create a new datasets.
@@ -46,7 +48,6 @@ Complete all the required fields marked with **`*`**:
 
 ## Final Step: Submit your Dataset
 Click `Create dataset` at the ***bottom*** of the page to submit your dataset.
-<br/>
 
 
 ```{tip}
@@ -57,11 +58,28 @@ Providing more context helps ensure your dataset is easier to **understand**, **
 Even if you're unsure about some details, you can always **include what you know** and **update the dataset info later** if needed.
 ```
 
-<br/>
 
-➤ Once your dataset is created, you can start uploading files and directories.
 
-To learn how to upload files, see Add Files to Dataset.
+--------------------------------------------------------------------------------------
+## Uploading Files
+
+Once your dataset has been successfully created in Data Catalog, you can start adding files or directories directly from the dataset's home page. The upload section is located on the right side of the page and it supports multiple upload options for flexibility.
+
+
+There are three options available:
+* **`Drag & Drop`** files from your computer into the upload area
+* Click **`Choose files`** to select individual files from your local storage
+    or
+* Click **`Choose directory`** to upload an entire folder (ideal for keeping related files together)
+
+```{tip}
+When uploading a directory, the folder structure is preserved for better organization.
+```
+
+
+➤ Once uploaded, files will appear in the list with details such as **name**, and **upload date**, making it easy to keep track of its content.
+
+
 
 
 
