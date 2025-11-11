@@ -79,6 +79,5 @@ The Data Catalog is currently **only accessible** by personnel officially employ
 docs/Login
 docs/Project/index
 docs/Dataset/index
-docs/Files/index
 docs/Search
 ```
