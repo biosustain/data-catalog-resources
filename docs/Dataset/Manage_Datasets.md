@@ -12,22 +12,30 @@ Use the search bar in the ***top navigation*** or browse the Dataset overview pa
 ## Step 2: Choose an Action
 On the Dataset home page, click on the Metadata tab, where you will find two action buttons:
 
-* Click **`Edit metadata`**, located ***on the top*** of the metadata section, to update dataset details <br>
-    **or**<br/>        
+* Click **`Edit metadata`**, located ***on the top*** of the metadata section, to update dataset details 
+
+    **or**
+
 * Click **`Archive`**, always located on the ***top-right corner*** of the page, to archive the dataset
 
 
 
 ## Step 3: Confirm
-➤ If you choose to **`Edit metadata`**: <br/>
-After making the necessary updates, click:
-   * <span style="color:#00C48C">Save</span> to apply your changes <br/>
-        **or**<br/> 
-   * <span style="color:#FF4D4F">Cancel</span> to discard them<br/>
+➤ If you choose to **`Edit metadata`**: 
 
-➤ If you choose to **`Archive`**:  <br/>
-A confirmation box will appear asking you to confirm the action.  <br/>
-<br/> 
+After making the necessary updates, click:
+   * <span style="color:#00C48C">Save</span> to apply your changes 
+
+       **or**
+
+   * <span style="color:#FF4D4F">Cancel</span> to discard them
+
+
+➤ If you choose to **`Archive`**: 
+
+A confirmation box will appear asking you to confirm the action. 
+
+
 
  
 ```{admonition} Archived Datasets

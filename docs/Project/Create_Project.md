@@ -8,8 +8,10 @@ Keep in mind that you can update the project metadata at **any time**.
 ```
 
 ## Step 1: Navigate to the Projects Overview Page 
-* Click the **`Projects`** button on the Data Catalog welcome page <br/>
-    **or** <br/>
+* Click the **`Projects`** button on the Data Catalog welcome page 
+
+    **or** 
+    
 * Use the **`Projects`** tab located at the top of any page.
 
 Both options will take you to the Projects overview page, where you can browse, or create a new project.

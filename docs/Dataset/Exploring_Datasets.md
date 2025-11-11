@@ -21,7 +21,7 @@ From the Datasets Overview Page, you can:
     * Use the tabs at the top of the page to organize your view<br/>
 
 
-```{note}
+```{tip}
 The **Search** bar is available throughout the platform, so you can easily find datasets and projects from different views.
 ```
 
@@ -35,7 +35,8 @@ The **Dataset Home Page** in Data Catalog is the central place to view and manag
    * Projects
    * Collaborators
    * History
-   * Files <br/>
+   * Files 
+
 
 for a specific dataset, into one organized interface.
 
@@ -57,23 +58,28 @@ Just below the description, several key features are displayed:
 
 
 * **Metadata**: 
-    * This section includes the list of all the dataset details (metadata) entered during dataset creation<br/>
+    * This section includes the list of all the dataset details (metadata) entered during dataset creation
+
 * **Projects**: 
     * Here are listed all projects the dataset is linked to
-    * You can view project details <br/>
+    * You can view project details 
+
 * **Collaborators**:
     * This section shows all users who have access to the dataset
-    * Here dataset creators can manage (add/remove) collaborators and assign roles <br/>
+    * Here dataset creators can manage (add/remove) collaborators and assign roles 
+
 * **History**:
     * Shows a log of changes made to the dataset
     * Useful for tracking updates
+
 * **Files**:
     * Here are listed all files or entire directories related to this dataset
     * You can upload new files or directories, view their details, download to see their content, or delete if no longer needed
 
 
 ```{note}
-You can edit the dataset details directly in the **Metadata** section. Just click the **`Edit metadata`** button located at the ***top*** of that section.<br/>
+You can edit the dataset details directly in the **Metadata** section. Just click the **`Edit metadata`** button located at the ***top*** of that section.
+
 
 If the dataset is no longer needed, you can archive it by clicking the **`Archive`** button, located on the ***top-right corner*** of the dataset home page.
 ```
