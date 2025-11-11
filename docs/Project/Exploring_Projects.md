@@ -44,8 +44,8 @@ The **Project Home Page** in Data Catalog is the central place to view and manag
 
    * Metadata
    * Datasets
-   * Members
-   * History 
+   * <span style="color:#999999">Members (coming soon)</span>
+   * <span style="color:#999999">History (coming soon)</span>
 
 for a specific project, into one organized interface.
 
@@ -74,13 +74,13 @@ Just below the description, several key features are displayed:
     * Here are listed all datasets linked to the project
     * You can view dataset details, add new ones, and upload data files directly from this section 
 
-* **Members**:
-    * This section shows all users who have access to the project
-    * Here project creators can manage (add/remove) members and assign roles 
+* <span style="color:#999999">**Members**:</span>
+    * <span style="color:#999999">This section shows all users who have access to the project  </span>
+    * <span style="color:#999999">Here project creators can manage (add/remove) members and assign roles</span>
 
-* **History**:
-    * Shows a log of changes made to the project
-    * Useful for tracking updates
+*   <span style="color:#999999">**History**:</span>
+    * <span style="color:#999999">Shows a log of changes made to the project</span>
+    * <span style="color:#999999">Useful for tracking updates</span>
 
 
 

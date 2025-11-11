@@ -2,7 +2,8 @@
 
 The **Datasets** section in the Data Catalog can help you organize and manage research data efficiently. Its structure is similar to the Projects section, so if you’ve explored projects before, you’ll find the navigation familiar. 
 
-Like projects, datasets have two main views:<br/>
+Like projects, datasets have two main views:
+
 * **Datasets Overview Page** where you can search, and create new dataset
 * **Dataset Home Page** where you manage the details of a specific dataset and upload files or directories
 
@@ -15,10 +16,13 @@ This is the starting point for navigating to all datasets in the Data Catalog.
 ### ➣ Key Features of the Datasets Overview Page
 From the Datasets Overview Page, you can:
 
-* **Search** <br/>
+* **Search** 
+
     * Use the search bar to find specific datasets
-* **View Active & Archived datasets**<br/>
-    * Use the tabs at the top of the page to organize your view<br/>
+
+* **View Active & Archived datasets**
+
+    * Use the tabs at the top of the page to organize your view
 
 
 ```{tip}
@@ -30,11 +34,12 @@ The **Search** bar is available throughout the platform, so you can easily find 
 
 ## ➤ Dataset Home Page
 
-The **Dataset Home Page** in Data Catalog is the central place to view and manage everything related to a specific dataset. It brings together all the essential components such as:<br/>
+The **Dataset Home Page** in Data Catalog is the central place to view and manage everything related to a specific dataset. It brings together all the essential components such as:
+
    * Metadata
    * Projects
-   * Collaborators
-   * History
+   * <span style="color:#999999">Collaborators (coming soon)</span>
+   * <span style="color:#999999">History (coming soon)</span>
    * Files 
 
 
@@ -64,13 +69,15 @@ Just below the description, several key features are displayed:
     * Here are listed all projects the dataset is linked to
     * You can view project details 
 
-* **Collaborators**:
-    * This section shows all users who have access to the dataset
-    * Here dataset creators can manage (add/remove) collaborators and assign roles 
+* <span style="color:#999999">**Collaborators**:</span>
+    * <span style="color:#999999">This section shows all users who have access to the dataset</span>
+    * <span style="color:#999999">Here dataset creators can manage (add/remove) collaborators and assign roles </span>
+   
 
-* **History**:
-    * Shows a log of changes made to the dataset
-    * Useful for tracking updates
+* <span style="color:#999999">**History**:</span>
+    * <span style="color:#999999">Shows a log of changes made to the dataset</span>
+    * <span style="color:#999999">Useful for tracking updates</span>
+  
 
 * **Files**:
     * Here are listed all files or entire directories related to this dataset
