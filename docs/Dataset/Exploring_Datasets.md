@@ -40,13 +40,14 @@ The **Dataset Home Page** in Data Catalog is the central place to view and manag
    * Projects
    * <span style="color:#999999">Collaborators (coming soon)</span>
    * <span style="color:#999999">History (coming soon)</span>
+   * <span style="color:#999999">Lineage (coming soon)</span>
    * Files 
 
 
 for a specific dataset, into one organized interface.
 
 ```{note}
-The **Collaborators** and **History** features are currently visible but not active. They will be available soon, allowing you to manage dataset collaborators and view dataset activity.
+The **Collaborators**, **History** and **Lineage** features are currently visible but not active. They will be available soon, allowing you to manage dataset collaborators, view dataset activity and track relationships between datasets.
 ```
 
 
@@ -77,6 +78,11 @@ Just below the description, several key features are displayed:
 * <span style="color:#999999">**History**:</span>
     * <span style="color:#999999">Shows a log of changes made to the dataset</span>
     * <span style="color:#999999">Useful for tracking updates</span>
+
+
+* <span style="color:#999999">**Lineage**:</span>
+    * <span style="color:#999999">This section displays the relationships between datasets across different stages (e.g., raw → processed → results) </span>
+    * <span style="color:#999999">Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility</span>
   
 
 * **Files**:
@@ -90,8 +96,6 @@ You can edit the dataset details directly in the **Metadata** section. Just clic
 
 If the dataset is no longer needed, you can archive it by clicking the **`Archive`** button, located on the ***top-right corner*** of the dataset home page.
 ```
-
-
 
 
 

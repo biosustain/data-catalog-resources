@@ -47,8 +47,8 @@ Complete all the required fields marked with **`*`**:
 
 
 
-## Final Step: Submit your Dataset
-Click `Create dataset` at the ***bottom*** of the page to submit your dataset.
+## Final Step: Complete your Dataset
+Click `Create dataset` at the ***bottom*** of the page to complete the process.
 
 
 ```{tip}
