@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-        <title>Create a New Project &mdash; Data Catalog User Guide</title>
+        <title>Create a New Dataset &mdash; Data Catalog User Guide</title>
     
     <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
       <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css?v=310cf088" />
@@ -17,9 +17,9 @@
             <link rel="index" title="Index" href="../../genindex.html" />
             <link rel="search" title="Search" href="../../search.html" />
             <link rel="top" title="Data Catalog User Guide" href="#" />
-            <link rel="up" title="Project" href="index.html" />
-            <link rel="next" title="Manage Projects" href="Manage_Projects.html" />
-            <link rel="prev" title="Project" href="index.html" />
+            <link rel="up" title="Dataset" href="index.html" />
+            <link rel="next" title="Manage Datasets" href="Manage_Datasets.html" />
+            <link rel="prev" title="Dataset" href="index.html" />
     </head>
 <body>
     <script type="text/javascript" src="../../_static/dist/blocking.js"></script>
@@ -64,16 +64,16 @@
     <nav class="toc mt-3" aria-label="Main menu">
         <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Login.html">Data Catalog Access</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Project  <!-- This is the sidebar title --></a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Create a New Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Manage_Projects.html">Manage Projects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Project/index.html">Project  <!-- This is the sidebar title --></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Project/Create_Project.html">Create a New Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Project/Manage_Projects.html">Manage Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Project/Exploring_Projects.html">Exploring Projects</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../Dataset/index.html">Dataset  <!-- This is the sidebar title --></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Dataset/Add_Dataset.html">Create a New Dataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Dataset/Manage_Datasets.html">Manage Datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Dataset  <!-- This is the sidebar title --></a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Create a New Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Manage_Datasets.html">Manage Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exploring_Datasets.html">Exploring Dataset</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Search.html">Search</a></li>
@@ -97,8 +97,8 @@
                         <nav aria-label="breadcrumb">
     <ol class="breadcrumb m-0 p-0 bg-transparent">
         <li class="breadcrumb-item"><a href="../../index.html">Docs</a></li>
-            <li class="breadcrumb-item"><a href="index.html">Project  <!-- This is the sidebar title --></a></li>
-        <li class="breadcrumb-item active" aria-current="page">Create a New Project</li>
+            <li class="breadcrumb-item"><a href="index.html">Dataset  <!-- This is the sidebar title --></a></li>
+        <li class="breadcrumb-item active" aria-current="page">Create a New Dataset</li>
     </ol>
 </nav>
                     </div>
@@ -123,60 +123,91 @@
                 <div class="row">
                     <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
                         <main role="main" id="main">
-    <section class="tex2jax_ignore mathjax_ignore" id="create-a-new-project">
-<h1>Create a New Project<a class="headerlink" href="#create-a-new-project" title="Link to this heading">¶</a></h1>
-<p>This guide walks you through the essential steps to create a project in the Data Catalog.
-Creating a project is <strong>simple</strong> and <strong>flexible</strong>, all users can create projects, and you can always update the project metadata later if needed.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Keep in mind that you can update the project metadata at <strong>any time</strong>.</p>
-</div>
-<section id="step-1-navigate-to-the-projects-overview-page">
-<h2>Step 1: Navigate to the Projects Overview Page<a class="headerlink" href="#step-1-navigate-to-the-projects-overview-page" title="Link to this heading">¶</a></h2>
+    <section class="tex2jax_ignore mathjax_ignore" id="create-a-new-dataset">
+<h1>Create a New Dataset<a class="headerlink" href="#create-a-new-dataset" title="Link to this heading">¶</a></h1>
+<p>This guide walks you through the steps for creating a new dataset in the Data Catalog, including:</p>
+<ul class="simple">
+<li><p>Link with the correct Parent Project</p></li>
+<li><p>How to fill in the metadata</p></li>
+<li><p>Submit it correctly</p></li>
+<li><p>Upload files &amp; directories, once successfully submitted</p></li>
+</ul>
+<section id="step-1-navigate-to-the-datasets-overview-page">
+<h2>Step 1: Navigate to the Datasets Overview Page<a class="headerlink" href="#step-1-navigate-to-the-datasets-overview-page" title="Link to this heading">¶</a></h2>
 <ul>
-<li><p>Click the <strong><code class="docutils literal notranslate"><span class="pre">Projects</span></code></strong> button on the Data Catalog welcome page</p>
+<li><p>Click the <strong><code class="docutils literal notranslate"><span class="pre">Datasets</span></code></strong> button on the Data Catalog welcome page</p>
 <p><strong>or</strong></p>
 </li>
-<li><p>Use the <strong><code class="docutils literal notranslate"><span class="pre">Projects</span></code></strong> tab located at the top of any page.</p></li>
+<li><p>Use the <strong><code class="docutils literal notranslate"><span class="pre">Datasets</span></code></strong> tab located at the top of any page.</p></li>
 </ul>
-<p>Both options will take you to the Projects overview page, where you can browse, or create a new project.</p>
+<p>Both options will take you to the Datasets overview page, where you can browse, or create a new datasets.</p>
 </section>
-<section id="step-2-add-a-new-project">
-<h2>Step 2: Add a New Project<a class="headerlink" href="#step-2-add-a-new-project" title="Link to this heading">¶</a></h2>
-<p>On the Projects overview page, click the <strong><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">project</span></code></strong> button located right below the <em><strong>Search</strong></em> bar.</p>
+<section id="step-2-add-a-new-dataset">
+<h2>Step 2: Add a New Dataset<a class="headerlink" href="#step-2-add-a-new-dataset" title="Link to this heading">¶</a></h2>
+<p>On the Datasets overview page, click the <strong><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">dataset</span></code></strong> button located right below the <em><strong>Search</strong></em> bar.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are fields on the dataset creation page that are automatically generated by the platform, such as <strong>Dataset Identifier</strong>, <strong>Dataset Creator</strong> and <strong>Access Rights</strong>. These fields cannot be changed.</p>
+</div>
 </section>
-<section id="step-3-fill-in-project-metadata">
-<h2>Step 3: Fill in Project Metadata<a class="headerlink" href="#step-3-fill-in-project-metadata" title="Link to this heading">¶</a></h2>
+<section id="step-3-choose-a-parent-project">
+<h2>Step 3: Choose a Parent Project<a class="headerlink" href="#step-3-choose-a-parent-project" title="Link to this heading">¶</a></h2>
+<p>Select a project from the list to link your dataset. If needed, you can unlink the dataset at any time.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Choosing a Parent Project <em><strong>links</strong></em> your dataset to the project it belongs to. This ensures your data stays organized, easy to find and correctly associated.</p>
+</div>
+</section>
+<section id="step-4-fill-in-dataset-metadata">
+<h2>Step 4: Fill in Dataset Metadata<a class="headerlink" href="#step-4-fill-in-dataset-metadata" title="Link to this heading">¶</a></h2>
 <p>Complete all the required fields marked with <strong><code class="docutils literal notranslate"><span class="pre">*</span></code></strong>:</p>
 <ul class="simple">
-<li><p>Project Title</p></li>
-<li><p>Project Description</p></li>
-<li><p>Principal Investigator (PI)</p></li>
+<li><p>Dataset Title</p></li>
+<li><p>Dataset Type:</p>
+<ul>
+<li><p>Raw</p></li>
+<li><p>Processed</p></li>
+<li><p>Results</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="final-step-complete-your-dataset">
+<h2>Final Step: Complete your Dataset<a class="headerlink" href="#final-step-complete-your-dataset" title="Link to this heading">¶</a></h2>
+<p>Click <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">dataset</span></code> at the <em><strong>bottom</strong></em> of the page to complete the process.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>While only a few fields are required to create a dataset, we <strong>strongly recommend</strong> filling in additional fields, based on any relevant information you may have.</p>
+<p>Providing more context helps ensure your dataset is easier to <strong>understand</strong>, <strong>discover</strong>, and <strong>reuse</strong>, both for yourself and others.</p>
+<p>Even if you’re unsure about some details, you can always <strong>include what you know</strong> and <strong>update the dataset info later</strong> if needed.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="uploading-files">
+<h2>Uploading Files<a class="headerlink" href="#uploading-files" title="Link to this heading">¶</a></h2>
+<p>Once your dataset has been successfully created in Data Catalog, you can start adding files or directories directly from the dataset’s home page. The upload section is located on the right side of the page and it supports multiple upload options for flexibility.</p>
+<p>There are three options available:</p>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Drag</span> <span class="pre">&amp;</span> <span class="pre">Drop</span></code></strong> files from your computer into the upload area</p></li>
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Choose</span> <span class="pre">files</span></code></strong> to select individual files from your local storage
+or</p></li>
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Choose</span> <span class="pre">directory</span></code></strong> to upload an entire folder (ideal for keeping related files together)</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>While only a few fields are required to create a project, we <strong>strongly recommend</strong> filling in additional fields, based on any relevant information you may have.</p>
-<p>Providing more context helps ensure your project is easier to <strong>understand</strong>, <strong>discover</strong>, and <strong>reuse</strong>, both for yourself and others.</p>
-<p>Even if you’re unsure about some details, you can always <strong>include what you know</strong> and <strong>update the project info later</strong> if needed.</p>
+<p>When uploading a directory, the folder structure is preserved for better organization.</p>
 </div>
-</section>
-<section id="final-step-complete-project-creation">
-<h2>Final Step: Complete Project Creation<a class="headerlink" href="#final-step-complete-project-creation" title="Link to this heading">¶</a></h2>
-<p>Click <strong><code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">project</span></code></strong> at the <em><strong>bottom</strong></em> of the page to complete the process.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Some fields on the project creation page are automatically generated by the system, such as <strong>Project Identifier</strong>, <strong>Date Created</strong>, <strong>Project Creator</strong>, <strong>Project Status</strong>, and <strong>Access Rights</strong>. These fields are system-defined and cannot be edited.</p>
-</div>
+<p>➤ Once uploaded, files will appear in the list with details such as <strong>name</strong>, and <strong>upload date</strong>, making it easy to keep track of its content.</p>
 </section>
 </section>
 
 </main>
                         <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
     <a class="float-left" href="index.html" title="Previous">
-        <span aria-hidden="true">←&nbsp;</span>Project  <!-- This is the sidebar title -->
+        <span aria-hidden="true">←&nbsp;</span>Dataset  <!-- This is the sidebar title -->
     </a>
-    <a class="float-right" href="Manage_Projects.html" title="Next">
-        Manage Projects <span aria-hidden="true">&nbsp;→</span>
+    <a class="float-right" href="Manage_Datasets.html" title="Next">
+        Manage Datasets <span aria-hidden="true">&nbsp;→</span>
     </a>
 </nav>
                     </div>
@@ -185,11 +216,13 @@ Creating a project is <strong>simple</strong> and <strong>flexible</strong>, all
                         <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
                             <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
                             <ul>
-<li><a class="reference internal" href="#">Create a New Project</a><ul>
-<li><a class="reference internal" href="#step-1-navigate-to-the-projects-overview-page">Step 1: Navigate to the Projects Overview Page</a></li>
-<li><a class="reference internal" href="#step-2-add-a-new-project">Step 2: Add a New Project</a></li>
-<li><a class="reference internal" href="#step-3-fill-in-project-metadata">Step 3: Fill in Project Metadata</a></li>
-<li><a class="reference internal" href="#final-step-complete-project-creation">Final Step: Complete Project Creation</a></li>
+<li><a class="reference internal" href="#">Create a New Dataset</a><ul>
+<li><a class="reference internal" href="#step-1-navigate-to-the-datasets-overview-page">Step 1: Navigate to the Datasets Overview Page</a></li>
+<li><a class="reference internal" href="#step-2-add-a-new-dataset">Step 2: Add a New Dataset</a></li>
+<li><a class="reference internal" href="#step-3-choose-a-parent-project">Step 3: Choose a Parent Project</a></li>
+<li><a class="reference internal" href="#step-4-fill-in-dataset-metadata">Step 4: Fill in Dataset Metadata</a></li>
+<li><a class="reference internal" href="#final-step-complete-your-dataset">Final Step: Complete your Dataset</a></li>
+<li><a class="reference internal" href="#uploading-files">Uploading Files</a></li>
 </ul>
 </li>
 </ul>
