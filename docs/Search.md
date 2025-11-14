@@ -10,6 +10,8 @@ At the top of the page, you will find the **`Search bar`**. Simply type any rele
 ```{note} 
 Results are ranked by **relevance** by default, so the most likely matches appear first. 
 You can change the sorting order using the **`Order by`** dropdown located on the top right corner of that section. For example, sort by ***name*** (ascending or descending) or by ***last modified***.
+
+**This feature is still under development and might not work as expected yet!*
 ```
 
 ## ➤  Advanced Search
