@@ -46,6 +46,7 @@ The **Project Home Page** in Data Catalog is the central place to view and manag
    * Datasets
    * <span style="color:#999999">Members (coming soon)</span>
    * <span style="color:#999999">History (coming soon)</span>
+   * Data Management Plan (DMP)
 
 for a specific project, into one organized interface.
 
@@ -81,6 +82,10 @@ Just below the description, several key features are displayed:
 *   <span style="color:#999999">**History**:</span>
     * <span style="color:#999999">Shows a log of changes made to the project</span>
     * <span style="color:#999999">Useful for tracking updates</span>
+
+* **Data Management Plan (DMP)**:
+    * Provides an overview of how data will be handled throughout the project lifecycle
+    * Allows you to document policies for data storage, sharing, and preservation
 
 
 
