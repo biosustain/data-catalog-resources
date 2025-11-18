@@ -61,24 +61,6 @@ Even if you're unsure about some details, you can always **include what you know
 
 
 
---------------------------------------------------------------------------------------
-## Uploading Files
-
-Once your dataset has been successfully created in Data Catalog, you can start adding files or directories directly from the dataset's home page. The upload section is located on the right side of the page and it supports multiple upload options for flexibility.
-
-
-There are three options available:
-* **`Drag & Drop`** files from your computer into the upload area
-* Click **`Choose files`** to select individual files from your local storage
-    or
-* Click **`Choose directory`** to upload an entire folder (ideal for keeping related files together)
-
-```{tip}
-When uploading a directory, the folder structure is preserved for better organization.
-```
-
-
-➤ Once uploaded, files will appear in the list with details such as **name**, and **upload date**, making it easy to keep track of its content.
 
 
 

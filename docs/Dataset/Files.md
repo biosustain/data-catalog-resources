@@ -10,13 +10,16 @@ Once your dataset has been successfully created in Data Catalog, you can start a
 
 There are three options available:
 
-1.  **`Drag & Drop`** files from your computer into the upload area
-2.  Click **`Choose files`** to select individual files from your local storage
-    or
-3.  Click **`Choose directory`** to upload an entire folder (ideal for keeping related files together)
+* **`Drag & Drop`** files from your computer into the upload area
+
+* Click **`Choose files`** to select individual files from your local storage
+
+    **or**
+
+* Click **`Choose directory`** to upload an entire folder (ideal for keeping related files together)
 
 ```{tip}
-When uploading a directory, the folder structure is preserved for better organization.
+When uploading a **directory**, the folder structure is preserved for better organization.
 ```
 
 
@@ -25,10 +28,18 @@ When uploading a directory, the folder structure is preserved for better organiz
 
 ## Manage Files
 
-After uploading, you can **download** files to view details or **delete** files if they are no longer needed by using the respective icons.
+You can perform basic actions on the files ordirectories uploaded to the Data Catalog:
+
+* **Download**: Click the <img src="../../_static/images/download.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to save a file locally and view its details
+
+* **Delete**: Click the <img src="../../_static/images/delete.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to remove files that are no longer needed
+
+**Please review files before deleting to avoid accidental data loss.*
 
 
 
 ```{note}
-**Deleting** a file does not permanently remove it. The file is **soft deleted**, meaning it is hidden and no longer appears in the Data Catalog or search results. If you need to **recover** or **fully delete** a file, please contact the RDM team.
+Currently, deleting a file permanently removes it from the Data Catalog. However, files can still be **restored within 7 days** of deletion through the storage account. If you need to restore a file, please contact **[Pasquale Domenico Colaianni](pasdom@biosustain.dtu.dk)** or **[Research Data Management](rdm@biosustain.dtu.dk)** team. 
+
+**Keep in mind that this behavior may change in future releases.*
 ```
