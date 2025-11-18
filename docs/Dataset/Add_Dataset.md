@@ -39,13 +39,20 @@ Choosing a Parent Project ***links*** your dataset to the project it belongs to.
 ## Step 4: Fill in Dataset Metadata
 Complete all the required fields marked with **`*`**:
 
-* Dataset Title
-* Dataset Type:
+* Dataset Title (`*`)
+* Dataset Description
+* Dataset Type (`*`):
     * Raw
     * Processed
     * Results
+* Resource Type
+* Instrument
 
+```{note}
+→ **Resource Type**: The type of experiment or analytical approach that produced the data (e.g., DNA sequencing, RNA sequencing, Proteomics (DIA)).<br/>
 
+→ **Instrument**: The equipment used to generate the data (e.g., MiSeq (Illumina), NextSeq (Illumina), GridION (Nanopore)).
+```
 
 ## Final Step: Complete your Dataset
 Click `Create dataset` at the ***bottom*** of the page to complete the process.
@@ -54,9 +61,9 @@ Click `Create dataset` at the ***bottom*** of the page to complete the process.
 ```{tip}
 While only a few fields are required to create a dataset, we **strongly recommend** filling in additional fields, based on any relevant information you may have.
 
-Providing more context helps ensure your dataset is easier to **understand**, **discover**, and **reuse**, both for yourself and others.
+Providing more context makes your dataset easier to **understand**, **discover**, and **reuse**, both for you and others.
 
-Even if you're unsure about some details, you can always **include what you know** and **update the dataset info later** if needed.
+If you are unsure about some details, you can always **include what you know** and **update the dataset info later** if needed.
 ```
 
 
