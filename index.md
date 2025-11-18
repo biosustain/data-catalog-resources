@@ -80,4 +80,5 @@ docs/Login
 docs/Project/index
 docs/Dataset/index
 docs/Search
+docs/Contact
 ```
