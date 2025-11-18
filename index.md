@@ -65,7 +65,7 @@ Each File has:
 
 ### Authorization
 
-The Data Catalog is currently **only accessible** by personnel officially employed or associated with DTU Bright. Each dataset can belong to one or more projects and project metadata is visible to all Bright employees with read-only access.
+The Data Catalog is currently **only accessible** by personnel officially employed or associated with DTU BRIGHT. Each dataset can belong to one or more projects and project metadata is visible to all BRIGHT employees with read-only access.
 <br/>
 
 
