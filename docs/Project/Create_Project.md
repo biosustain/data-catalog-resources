@@ -37,7 +37,22 @@ Complete all the required fields marked with **`*`**:
 ## Final Step: Complete Project Creation
 Click **`Create project`** at the ***bottom*** of the page to complete the process.
 
+<br/>
 
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/CREATE-PROJECT.gif
+:alt: Create Project
+:width: 98%
+:align: center
+
+*Create Project*
+```
+----------------------------
+
+<br/>
 
 
 ```{note}
