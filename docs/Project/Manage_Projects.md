@@ -7,13 +7,13 @@ This guide shows you how to manage Data Catalog Projects to keep research data s
 
 
 ## Step 1: Find the Project
-Use the search bar in the ***top navigation*** to find your project.
+Use the search bar in the ***top navigation*** to find your project. Just type the project name and, if needed, add filters to narrow things down.
 
 
 ## Step 2: Choose an Action
 On the Project home page, you will find two action buttons:
 
-* Click **`Edit`**, located ***right above*** the list of project metadata, to update project details
+* Click **`Edit metadata`**, located ***right above*** the list of project metadata, to update project details
 
     **or**
 
@@ -36,9 +36,28 @@ After making the necessary updates, click:
 
 A confirmation box will appear asking you to confirm the action. 
 
+<br/>
 
+-------------------------------
 
- 
+<br/>
+
+```{figure} ../../_static/images/MANAGE-PRO4.gif
+:alt: Manage Projects
+:width: 98%
+:align: center
+
+*Manage Projects*
+```
+----------------------------
+
+<br/>
+
 ```{note} 
 Archived projects remain visible under the **Archived** section on the Projects Overview page. You can open and view them, but they cannot be edited unless you first click the **`Restore`** button on the project home page.
 ```
+
+
+
+
+
