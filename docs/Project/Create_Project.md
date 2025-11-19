@@ -1,7 +1,7 @@
 #  Create a New Project
 
 This guide walks you through the essential steps to create a project in the Data Catalog. 
-Creating a project is **simple** and **flexible**, all users can create projects, and you can always update the project metadata later if needed.
+Creating a project is **simple** and **flexible** and all users can create projects.
 
 ```{tip}
 Keep in mind that you can update the project metadata at **any time**.
@@ -18,6 +18,8 @@ Both options will take you to the Projects overview page, where you can browse, 
 
 
 
+
+
 ## Step 2: Add a New Project
 On the Projects overview page, click the **`Add a new project`** button located right below the ***Search*** bar.
 
@@ -26,20 +28,9 @@ On the Projects overview page, click the **`Add a new project`** button located 
 ## Step 3: Fill in Project Metadata
 Complete all the required fields marked with **`*`**:
 
-* Project Title
-* Project Description
-* Principal Investigator (PI)
-
-
-
-
-```{tip}
-While only a few fields are required to create a project, we **strongly recommend** filling in additional fields, based on any relevant information you may have.
-
-Providing more context helps ensure your project is easier to **understand**, **discover**, and **reuse**, both for yourself and others.
-
-Even if you're unsure about some details, you can always **include what you know** and **update the project info later** if needed.
-```
+* Project Title (**`*`**)
+* Project Description (**`*`**)
+* Principal Investigator (PI) (**`*`**)
 
 
 
