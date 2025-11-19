@@ -8,7 +8,7 @@ If you experience issues accessing the platform, please contact [**Pasquale Dome
 
 
 ```{note} 
-After the first time log in, you may be remained logged in for a period of time if you are already signed into your DTU account (i.e. clicking **`Log in`** will usually grant access automatically).
+Once you have logged in for the first time, you may stay logged in as long as you are signed into your DTU account. In most cases, clicking  **`Log in`** will grant access automatically.
 ```
 
 ## Log in
