@@ -6,7 +6,7 @@ Managing Datasets in the Data Catalog is similar to managing Projects: you can *
 
 
 ## Step 1: Locate your Dataset
-Use the search bar in the ***top navigation*** or browse the Dataset overview page to find your project.
+Use the search bar in the ***top navigation*** to find your project.
 
 
 ## Step 2: Choose an Action
@@ -34,6 +34,24 @@ After making the necessary updates, click:
 ➤ If you choose to **`Archive`**: 
 
 A confirmation box will appear asking you to confirm the action. 
+
+
+<br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/manage-dataset-4.gif
+:alt: Dataset Creation
+:width: 98%
+:align: center
+
+*Dataset Creation*
+```
+----------------------------
+
+<br/>
 
 
 
