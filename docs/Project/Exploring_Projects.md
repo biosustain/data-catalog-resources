@@ -2,8 +2,8 @@
 
 The **Projects** section in the Data Catalog is designed to help you manage research projects efficiently. It includes two main views:
 
-* **Projects Overview Page** where you can browse, search, create new projects.
-* **Project Home Page** where you manage the details of a specific project.
+* **Projects Overview Page**, where you can search, and create new projects.
+* **Project Home Page**, where you manage the details of a specific project, including metadata, linked datasets, and the Data Management Plan (DMP).
 
 
 
@@ -104,7 +104,7 @@ Just below the description, several key features are displayed:
 
 
 ```{note}
-You can edit the project details directly in the **Metadata** section. Just click the **`Edit metadata`** button located at the ***top*** of that section.
+→ You can edit the project details directly in the **Metadata** section. Just click the **`Edit metadata`** button located at the ***top*** of that section.
 
 → If the project is no longer needed, you can archive it by clicking the **`Archive`** button, located on the ***top-right corner*** of the project home page.
 ```
