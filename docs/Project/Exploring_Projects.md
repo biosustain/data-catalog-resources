@@ -87,7 +87,7 @@ Just below the description, several key features are displayed:
 
 * **Datasets**: 
     * Here are listed all datasets linked to the project.
-    * You can view dataset details, add new ones, and upload data files directly from this section. 
+    * You can view dataset details, add new ones, or link to existing datasets.
 
 * <span style="color:#999999">**Members**:</span>
     * <span style="color:#999999">This section shows all users who have access to the project.  </span>

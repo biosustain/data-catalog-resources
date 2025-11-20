@@ -11,7 +11,7 @@ Use the search bar in the ***top navigation*** to find your project. Just type t
 
 
 ## Step 2: Choose an Action
-On the Project home page, you will find two action buttons:
+On the Project home page, click on the Metadata tab, where you will find two action buttons:
 
 * Click **`Edit metadata`**, located ***right above*** the list of project metadata, to update project details
 
@@ -22,7 +22,7 @@ On the Project home page, you will find two action buttons:
 
 
 ## Step 3: Confirm
-➤ If you choose to **`Edit`**: 
+➤ If you choose to **`Edit metadata`**: 
 
 After making the necessary updates, click:
    * <span style="color:#00C48C">Save</span> to apply your changes
