@@ -51,11 +51,10 @@ This section covers what data you collect and how it is generated:
 
    * **Dataset Created Date**
 
-   * **Access Rights**: Define who can access the dataset
+   * **Access Rights**: Define who can access the dataset → *(For more details see [**Access Controlled**](this_is_the_reference_point).)*
 
         * Restricted
         * BRIGHT-visible 
-
 
    * **Dataset Type**: Specify the type of the data:
 
@@ -77,15 +76,15 @@ This section covers what data you collect and how it is generated:
 
 ### 3. Data Storage & Backup
 
-*(All fields in this section require your input)*
+*(All fields in this section require your input!)*
 
-This section covers questions about how and where your data will be stored and backed up during and after the project:
+This section covers questions about how and where your data will be stored and backed up during and after the project is finished:
 
-   * **Main & Other Data storage**: Specify the main storage and any secondary location
+   * **Main & Other Data storage**: Specify the main storage and any secondary location.
 
-   * **Physical data location**: Indicate where physical copies (if any) are stored
+   * **Physical data location**: Indicate where physical copies (if any) are stored.
 
-   * **Backup solutions**: Describe any other backup solution (e.g., *Additional backups on my personal laptop are stored on an external hard drive.*)
+   * **Backup solutions**: Describe any other backup solution (e.g., *Additional backups on my personal laptop are stored on an external hard drive*).
 
 
 ```{note}
@@ -95,9 +94,9 @@ Be aware that if you store data in **DTU M-drive** or **DTU personal OneDrive**,
 
 ### 4. Documentation 
 
-*(The field in this section require your input)*
+*(The field in this section require your input!)*
 
-Provide details about project documentation
+Provide details about project documentation:
 
 * **Documentation**: List documentation formats
 
@@ -105,7 +104,7 @@ Provide details about project documentation
 
 ### 5. Data Sharing, Access & Compliance
 
-*(All fields in this section require your input)*
+*(All fields in this section require your input!)*
 
 This section includes questions about compliance and data sharing:
 
@@ -125,6 +124,7 @@ This section includes questions about compliance and data sharing:
 :class: toggle
 :collapsible:
 
+(this_is_the_reference_point)=
 → **Restricted**: Access for all project, dataset metadata and files in Microsoft Azure Storage account is restricted to project members and collaborators.
 
 → **BRIGHT-visible**: READ-ONLY access for project and dataset metadata is granted to all BRIGHT employees. Access to files in Microsoft Azure Storage account remains restricted to project members and collaborators.
