@@ -1,11 +1,11 @@
 # Exploring Dataset
 
-The **Datasets** section in the Data Catalog can help you organize and manage research data efficiently. Its structure is similar to the Projects section, so if you’ve explored projects before, you’ll find the navigation familiar. 
+The **Datasets** section in the Data Catalog can help you organize and manage research data efficiently. Its structure is similar to the Projects section, so if you have explored projects before, you will find the navigation familiar. 
 
 Like projects, datasets have two main views:
 
-* **Datasets Overview Page** where you can search, and create new dataset
-* **Dataset Home Page** where you manage the details of a specific dataset and upload files or directories
+* **Datasets Overview Page**, where you can search, and create new dataset.
+* **Dataset Home Page**, where you manage the details of a specific dataset, including metadata, linked projects, and files.
 
 
 
@@ -23,6 +23,23 @@ From the Datasets Overview Page, you can:
 * **View Active & Archived datasets**
 
     * Use the tabs at the top of the page to organize your view
+
+ <br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/dataset-overview.gif
+:alt: Dataset Overview Page
+:width: 98%
+:align: center
+
+*Dataset Overview Page*
+```
+----------------------------
+
+<br/>
 
 
 ```{tip}
@@ -64,37 +81,37 @@ Just below the description, several key features are displayed:
 
 
 * **Metadata**: 
-    * This section includes the list of all the dataset details (metadata) entered during dataset creation
+    * This section includes the list of all the dataset details (metadata) entered during dataset creation.
 
 * **Projects**: 
-    * Here are listed all projects the dataset is linked to
-    * You can view project details 
+    * Here are listed all projects the dataset is linked to.
+    * You can view project details.
 
 * <span style="color:#999999">**Collaborators**:</span>
-    * <span style="color:#999999">This section shows all users who have access to the dataset</span>
-    * <span style="color:#999999">Here dataset creators can manage (add/remove) collaborators and assign roles </span>
+    * <span style="color:#999999">This section shows all users who have access to the dataset.</span>
+    * <span style="color:#999999">Here dataset creators can manage (add/remove) collaborators and assign roles.</span>
    
 
 * <span style="color:#999999">**History**:</span>
-    * <span style="color:#999999">Shows a log of changes made to the dataset</span>
-    * <span style="color:#999999">Useful for tracking updates</span>
+    * <span style="color:#999999">Shows a log of changes made to the dataset.</span>
+    * <span style="color:#999999">Useful for tracking updates.</span>
 
 
 * <span style="color:#999999">**Lineage**:</span>
-    * <span style="color:#999999">This section displays the relationships between datasets across different stages (e.g., raw → processed → results) </span>
-    * <span style="color:#999999">Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility</span>
+    * <span style="color:#999999">This section displays the relationships between datasets across different stages (e.g., raw → processed → results). </span>
+    * <span style="color:#999999">Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility.</span>
   
 
 * **Files**:
-    * Here are listed all files or entire directories related to this dataset
-    * You can upload new files or directories, view their details, download to see their content, or delete if no longer needed
+    * Here are listed all files or entire directories related to this dataset.
+    * You can upload new files or directories, view their details, download to see their content, or delete if no longer needed.
 
 
 ```{note}
-You can edit the dataset details directly in the **Metadata** section. Just click the **`Edit metadata`** button located at the ***top*** of that section.
+→ You can edit the dataset details directly in the **Metadata** section. Just click the **`Edit metadata`** button located at the ***top*** of that section.
 
 
-If the dataset is no longer needed, you can archive it by clicking the **`Archive`** button, located on the ***top-right corner*** of the dataset home page.
+→ If the dataset is no longer needed, you can archive it by clicking the **`Archive`** button, located on the ***top-right corner*** of the dataset home page.
 ```
 
 
