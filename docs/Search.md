@@ -1,11 +1,11 @@
 # Search
 
-The Data Catalog makes it easy to find projects and datasets quickly using keywords and filters. The matching results This guide explains the available search options.
+The Data Catalog makes it easy to find projects and datasets quickly using keywords and filters. This guide explains the search options available.
 
 ## ➤  Basic Search
 At the top of the page, you will find the **`Search bar`**. Simply type any relevant keyword such as the project or dataset name, and the Data Catalog will display matching results.
 
-
+→ The **search** is designed to handle typos and partial matches. Even if you enter an incorrect or incomplete term, the Data Catalog will still try to return the **most relevant results** based on what you intended to search for.
 
 ```{note} 
 Results are ranked by **relevance** by default, so the most likely matches appear first. 
