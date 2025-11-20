@@ -2,8 +2,8 @@
 
 The **Projects** section in the Data Catalog is designed to help you manage research projects efficiently. It includes two main views:
 
-* **Projects Overview Page** where you can browse, search, create new projects
-* **Project Home Page** where you manage the details of a specific project 
+* **Projects Overview Page** where you can browse, search, create new projects.
+* **Project Home Page** where you manage the details of a specific project.
 
 
 
@@ -16,19 +16,33 @@ From the Projects Overview Page, you can:
 
 * **Search** 
 
-    * Use the search bar to find specific projects
-
-* **Browse Projects**
-
-    * Here you view a list of all active and archived projects
+    * Use the search bar to find specific projects.
 
 * **Create new Project**
 
-    * Click the `Add a new project` button to start creating a new research project
+    * Click the `Add a new project` button to start creating a new research project.
 
 * **View Active & Archived Projects**
 
     * Use the tabs at the top of the page to switch between active and archived projects, for better organization and visibility.
+
+    <br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/project-overview-2.gif
+:alt: Project Overview Page
+:width: 98%
+:align: center
+
+*Project Overview Page*
+```
+----------------------------
+
+<br/>
+
 
 
 ```{tip}
@@ -69,23 +83,23 @@ Just below the description, several key features are displayed:
 
 
 * **Metadata**: 
-    * This section includes the list of all the project details (metadata) entered during project creation
+    * This section includes the list of all the project details (metadata) entered during project creation.
 
 * **Datasets**: 
-    * Here are listed all datasets linked to the project
-    * You can view dataset details, add new ones, and upload data files directly from this section 
+    * Here are listed all datasets linked to the project.
+    * You can view dataset details, add new ones, and upload data files directly from this section. 
 
 * <span style="color:#999999">**Members**:</span>
-    * <span style="color:#999999">This section shows all users who have access to the project  </span>
-    * <span style="color:#999999">Here project creators can manage (add/remove) members and assign roles</span>
+    * <span style="color:#999999">This section shows all users who have access to the project.  </span>
+    * <span style="color:#999999">Here project creators can manage (add/remove) members and assign roles.</span>
 
 *   <span style="color:#999999">**History**:</span>
-    * <span style="color:#999999">Shows a log of changes made to the project</span>
-    * <span style="color:#999999">Useful for tracking updates</span>
+    * <span style="color:#999999">Shows a log of changes made to the project.</span>
+    * <span style="color:#999999">Useful for tracking updates.</span>
 
 * **Data Management Plan (DMP)**:
-    * Provides an overview of how data will be handled throughout the project lifecycle
-    * Allows you to document policies for data storage, sharing, and preservation
+    * Provides an overview of how data will be handled throughout the project lifecycle.
+    * Allows you to document policies for data storage, sharing, and preservation.
 
 
 
