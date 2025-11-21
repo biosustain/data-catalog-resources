@@ -17,7 +17,7 @@ Specific goals include:
 - Ensure governance on all systems and data.
 - Establish a strong research data management support function.
 
-## Key Features
+## Key Data Assets
 
 ### Projects
 
