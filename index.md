@@ -8,7 +8,7 @@ It serves as the metadata management layer and gateway to the underlying researc
 
 ## The Purpose of Data Catalog
 
-The Data Catalog provides a secure and structured environment for managing active data, making it as open **as possible and as close as necessary** within DTU BRIGHT. 
+The Data Catalog provides a secure and structured environment for managing active data, making it **as open as possible and as close as necessary** within DTU BRIGHT. 
 
 Specific goals include:
 - Provide a centralized data portal to enhance FAIR data principles throughout the data lifecycle.
