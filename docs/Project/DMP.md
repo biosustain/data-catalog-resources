@@ -123,7 +123,6 @@ This section includes questions about compliance and data sharing:
 ```{admonition} Access Controlled
 :class: toggle
 :collapsible:
-:open:
 
 (this_is_the_reference_point)=
 → **Restricted**: Access for all project, dataset metadata and files in Microsoft Azure Storage account is restricted to project members and collaborators.
