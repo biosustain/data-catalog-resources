@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-content_root="../../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Data Management Plan &mdash; Data Catalog User Guide</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=0c5006f7" />
+            <link rel="index" title="Index" href="../../genindex.html" />
+            <link rel="search" title="Search" href="../../search.html" />
+            <link rel="top" title="Data Catalog User Guide" href="#" />
+            <link rel="up" title="Project" href="index.html" />
+            <link rel="next" title="Dataset" href="../Dataset/index.html" />
+            <link rel="prev" title="Exploring Projects" href="Exploring_Projects.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../../_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="../../index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        Data Catalog User Guide (v0.0.0)
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Login.html">Data Catalog Access</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Project  <!-- This is the sidebar title --></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Create_Project.html">Create a New Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Manage_Projects.html">Manage Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Data Management Plan</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Dataset/index.html">Dataset  <!-- This is the sidebar title --></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Add_Dataset.html">Create a New Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Manage_Datasets.html">Manage Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Files.html">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Search.html">Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Contact.html">Contact</a></li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../index.html">Docs</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Project  <!-- This is the sidebar title --></a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data Management Plan</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+
+
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <section class="tex2jax_ignore mathjax_ignore" id="data-management-plan">
+<h1>Data Management Plan<a class="headerlink" href="#data-management-plan" title="Link to this heading">¶</a></h1>
+<p>The <strong>Data Management Plan (DMP)</strong> helps you describe how your project’s data will be handled during the project and after it is completed. It ensures compliance and supports good research practices.</p>
+<p>You can access the DMP from your project’s home page under the <strong>DMP tab</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Most fields here are automatically filled and extracted from the information you provided during project or dataset creation. You only need to review and add any missing details.</p>
+</div>
+<section id="how-to-complete-the-dmp">
+<h2>How to complete the DMP<a class="headerlink" href="#how-to-complete-the-dmp" title="Link to this heading">¶</a></h2>
+<p>The DMP is divided into several section(s). Each group contains fields that either:</p>
+<ul>
+<li><p><strong>Require your input</strong>: Information such as funding details and storage location</p>
+<p>or</p>
+</li>
+<li><p><strong>Auto-filled by the system</strong>: Based on the information provided during project and dataset creation (e.g., project name, description, ID)</p></li>
+</ul>
+<p>Let’s look at each group in detail:</p>
+<section id="project-details">
+<h3>1. Project Details<a class="headerlink" href="#project-details" title="Link to this heading">¶</a></h3>
+<p>This section provides general information about the project:</p>
+<ul class="simple">
+<li><p><strong>Project Identifier</strong>: A unique ID for your project generated by the system</p></li>
+<li><p><strong>Project Title &amp; Description</strong></p></li>
+<li><p><strong>Contact Persons</strong>: Project Creator, PI, Collaborator</p></li>
+<li><p><strong>Project creation &amp; end date</strong></p></li>
+<li><p><strong>Funding information</strong>: Funding source and grant details</p></li>
+<li><p><strong>LIMS (Benchling) project</strong>: Indicate if there is a Benchling project to link</p></li>
+</ul>
+</section>
+<section id="data-collection">
+<h3>2. Data Collection<a class="headerlink" href="#data-collection" title="Link to this heading">¶</a></h3>
+<p>This section covers what data you collect and how it is generated:</p>
+<ul class="simple">
+<li><p><strong>Existing Data</strong>: State if you use pre-existing datasets</p></li>
+<li><p><strong>Dataset Identifier</strong>: A unique ID for your dataset generated by the system</p></li>
+<li><p><strong>Dataset Title &amp; Description</strong></p></li>
+<li><p><strong>Dataset Creator</strong></p></li>
+<li><p><strong>Dataset Created Date</strong></p></li>
+<li><p><strong>Access Rights</strong>: Define who can access the dataset → <em>(For more details see <a class="reference internal" href="#this-is-the-reference-point"><span class="std std-ref"><strong>Access Controlled</strong></span></a>.)</em></p>
+<ul>
+<li><p>Restricted</p></li>
+<li><p>BRIGHT-visible</p></li>
+</ul>
+</li>
+<li><p><strong>Dataset Type</strong>: Specify the type of the data:</p>
+<ul>
+<li><p>Raw</p></li>
+<li><p>Processed</p></li>
+<li><p>Results</p></li>
+</ul>
+</li>
+<li><p><strong>Resource Type</strong>: The type of experiment or analytical approach that produced the data, such as:</p>
+<ul>
+<li><p>DNA sequencing</p></li>
+<li><p>RNA sequencing</p></li>
+<li><p>Proteomics (DIA)</p></li>
+</ul>
+</li>
+<li><p><strong>Instrument</strong>: List the instrument or equipment used to generate the data such as:</p>
+<ul>
+<li><p>MiSeq (illumina)</p></li>
+<li><p>NextSeq (illumina)</p></li>
+<li><p>GridION (Nanopore)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="data-storage-backup">
+<h3>3. Data Storage &amp; Backup<a class="headerlink" href="#data-storage-backup" title="Link to this heading">¶</a></h3>
+<p><em>(All fields in this section require your input!)</em></p>
+<p>This section covers questions about how and where your data will be stored and backed up during and after the project is finished:</p>
+<ul class="simple">
+<li><p><strong>Main &amp; Other Data storage</strong>: Specify the main storage and any secondary location.</p></li>
+<li><p><strong>Physical data location</strong>: Indicate where physical copies (if any) are stored.</p></li>
+<li><p><strong>Backup solutions</strong>: Describe any other backup solution (e.g., <em>Additional backups on my personal laptop are stored on an external hard drive</em>).</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Be aware that if you store data in <strong>DTU M-drive</strong> or <strong>DTU personal OneDrive</strong>, your data <strong>WILL BE DELETED</strong> after your employment ends.</p>
+</div>
+</section>
+<section id="documentation">
+<h3>4. Documentation<a class="headerlink" href="#documentation" title="Link to this heading">¶</a></h3>
+<p><em>(The field in this section require your input!)</em></p>
+<p>Provide details about project documentation:</p>
+<ul class="simple">
+<li><p><strong>Documentation</strong>: List documentation formats</p></li>
+</ul>
+<p><strong>Example</strong>: All electronic lab notebooks (ELNs) will be stored in Benchling project folder ‘Microbial_soil_community’. Whenever applicable, a README file will be created for each dataset, detailing the data collection methods, processing steps, and any relevant metadata.</p>
+</section>
+<section id="data-sharing-access-compliance">
+<h3>5. Data Sharing, Access &amp; Compliance<a class="headerlink" href="#data-sharing-access-compliance" title="Link to this heading">¶</a></h3>
+<p><em>(All fields in this section require your input, except for the last one!)</em></p>
+<p>This section includes questions about compliance and data sharing:</p>
+<ul class="simple">
+<li><p><strong>Biological Material / Hazardous Substances:</strong>: State if your project involves these</p></li>
+<li><p><strong>Personal Data (GDPR)</strong>: State if personal or sensitive data is involved</p></li>
+<li><p><strong>Access Controlled in Data Catalog</strong>: Choose who can view your data:</p>
+<ul>
+<li><p>Restricted</p></li>
+<li><p>BRIGHT-visible</p></li>
+</ul>
+</li>
+<li><p><strong>Sharing After Project Ends</strong>: Specify if data will be made public after completion</p></li>
+</ul>
+<div class="toggle admonition">
+<p class="admonition-title">Access Controlled</p>
+<p id="this-is-the-reference-point">→ <strong>Restricted</strong>: Access for all project, dataset metadata and files in Microsoft Azure Storage account is restricted to project members and collaborators.</p>
+<p>→ <strong>BRIGHT-visible</strong>: READ-ONLY access for project and dataset metadata is granted to all BRIGHT employees. Access to files in Microsoft Azure Storage account remains restricted to project members and collaborators.</p>
+</div>
+</section>
+</section>
+</section>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="Exploring_Projects.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Exploring Projects
+    </a>
+    <a class="float-right" href="../Dataset/index.html" title="Next">
+        Dataset  <!-- This is the sidebar title --> <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Data Management Plan</a><ul>
+<li><a class="reference internal" href="#how-to-complete-the-dmp">How to complete the DMP</a><ul>
+<li><a class="reference internal" href="#project-details">1. Project Details</a></li>
+<li><a class="reference internal" href="#data-collection">2. Data Collection</a></li>
+<li><a class="reference internal" href="#data-storage-backup">3. Data Storage &amp; Backup</a></li>
+<li><a class="reference internal" href="#documentation">4. Documentation</a></li>
+<li><a class="reference internal" href="#data-sharing-access-compliance">5. Data Sharing, Access &amp; Compliance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+            <div class="text-center">
+                    &copy; Copyright 2025, Research Data Management, DTU BRIGHT
+            </div>
+            <div class="text-center text-white-50 font-italic mt-3">
+                <small>
+                    Created using
+                    <a class="text-white" href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Sphinx Wagtail Theme 6.5.0
+                    </a>
+                    and
+                    <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
+                        Sphinx 7.4.7
+                    </a>
+                </small>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script src="../../_static/documentation_options.js?v=8b92e751"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../../_static/js/mobile-toc.js?v=28931289"></script>
+        <script type="text/javascript" src="../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
