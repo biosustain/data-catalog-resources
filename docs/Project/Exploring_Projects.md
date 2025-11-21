@@ -54,7 +54,7 @@ The **Search** bar is available throughout the platform, so you can easily find 
 
 ## ➤ Project Home Page
 
-The **Project Home Page** in Data Catalog is the central place to view and manage everything related to a specific research project. It brings together all the essential components such as:
+The **Project Home Page** in Data Catalog is the central place to view and manage everything related to a specific research project. It brings together all the essential information such as:
 
    * Metadata
    * Datasets
@@ -106,5 +106,7 @@ Just below the description, several key features are displayed:
 ```{note}
 → You can edit the project details directly in the **Metadata** section. Just click the **`Edit metadata`** button located at the ***top*** of that section.
 
-→ If the project is no longer needed, you can archive it by clicking the **`Archive`** button, located on the ***top-right corner*** of the project home page.
+→ If the project is finished or terminated, you can archive it by clicking the **`Archive`** button, located on the ***top-right corner*** of the project home page.
+
+→ You can always restore an archived project at anytime.
 ```

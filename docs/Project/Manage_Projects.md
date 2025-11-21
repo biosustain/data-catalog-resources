@@ -7,7 +7,7 @@ This guide shows you how to manage Data Catalog Projects to keep research data s
 
 
 ## Step 1: Find the Project
-Use the search bar in the ***top navigation*** to find your project. Just type the project name and, if needed, add filters to narrow things down.
+Use the search bar in the ***top navigation*** to find your project. Just type the project name and, if needed, add filters to refine your search results.
 
 
 ## Step 2: Choose an Action

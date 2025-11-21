@@ -5,12 +5,12 @@ The **Data Management Plan (DMP)** helps you describe how your project’s data 
 You can access the DMP from your project's home page under the **DMP tab**.
 
 ```{tip}
-Most fields here are auto-filled, you only need to review and add missing details.
+Most fields here are automatically filled and extracted from the information you provided during project or dataset creation. You only need to review and add any missing details.
 ```
 
 ## How to complete the DMP
 
-The DMP is divided into several groups. Each group contains fields that either:
+The DMP is divided into several section(s). Each group contains fields that either:
 
 * **Require your input**: Information such as funding details and storage location
 
@@ -104,7 +104,7 @@ Provide details about project documentation:
 
 ### 5. Data Sharing, Access & Compliance
 
-*(All fields in this section require your input!)*
+*(All fields in this section require your input, except for the last one!)*
 
 This section includes questions about compliance and data sharing:
 
@@ -123,6 +123,7 @@ This section includes questions about compliance and data sharing:
 ```{admonition} Access Controlled
 :class: toggle
 :collapsible:
+:open:
 
 (this_is_the_reference_point)=
 → **Restricted**: Access for all project, dataset metadata and files in Microsoft Azure Storage account is restricted to project members and collaborators.

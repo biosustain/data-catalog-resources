@@ -9,8 +9,8 @@ Include:
 
 We are always open to feedback and ideas!
 
-## Report Issues
-If something is not working as expected, please report it on [GitHub](https://github.com/biosustain/data-catalog-resources/issues).
+## Report Issues/Request Features
+If something is not working as expected or you would like to request new features, please report it on [GitHub](https://github.com/biosustain/data-catalog-resources/issues).
 
 Include:
 * A short description of the issue
