@@ -30,7 +30,7 @@ From the Datasets Overview Page, you can:
 
 <br/>
 
-```{figure} ../../_static/images/dataset-overview.gif
+```{figure}
 :alt: Dataset Overview Page
 :width: 98%
 :align: center

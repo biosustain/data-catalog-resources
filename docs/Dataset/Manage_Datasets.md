@@ -69,10 +69,6 @@ A confirmation box will appear asking you to confirm the action.
 ```
 
 
----------------
-
-<br/>
-
 ---------------------
 
 
