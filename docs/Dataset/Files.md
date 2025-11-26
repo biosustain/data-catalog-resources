@@ -5,7 +5,7 @@
 
 ## Upload Files
 
-Once your dataset has been successfully created in Data Catalog, you can start adding files or directories directly from the dataset's home page. The upload section is located on the right side of the page and it supports multiple upload options for flexibility.
+Once your dataset has been successfully created in Data Catalog, you can start adding files or directories directly from the dataset's home page. The upload section is located on the **Files** tab and it supports multiple upload options for flexibility.
 
 
 There are three options available:
