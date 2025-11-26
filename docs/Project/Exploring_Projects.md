@@ -32,9 +32,9 @@ From the Projects Overview Page, you can:
 
 <br/>
 
-```{figure} ../../_static/images/project-overview-2.gif
+```{figure} ../../_static/images/project_overview_page.gif
 :alt: Project Overview Page
-:width: 98%
+:width: 93%
 :align: center
 
 *Project Overview Page*
