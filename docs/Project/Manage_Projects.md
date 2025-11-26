@@ -42,9 +42,9 @@ A confirmation box will appear asking you to confirm the action.
 
 <br/>
 
-```{figure} ../../_static/images/MANAGE-PRO4.gif
+```{figure} ../../_static/images/manage_project_2.gif
 :alt: Manage Projects
-:width: 98%
+:width: 93%
 :align: center
 
 *Manage Projects*
@@ -80,11 +80,26 @@ The tab displays a table view with:
 
 ### Adding or Removing Users
 
-* To **add a new user**, click **`Add user policy`**, enter their details (first name and last name), select the permissions you want to grant, and click **`Save Policy`**.
-* To **remove a user**, click **`Remove Policy`** in the action column.
+* To **add a new user**, click **`Add user policy`**, enter their details (first name and last name), select the permissions you want to grant, and click the <img src="../../_static/images/save_icon.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to save your user policy.
+* To **remove a user policy**, click the <img src="../../_static/images/delete.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon in the action column.
 
 
+<br/>
 
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/project_user_permissions.gif
+:alt: Project Permissions
+:width: 93%
+:align: center
+
+*Project Permissions*
+```
+----------------------------
+
+<br/>
 
 
 
