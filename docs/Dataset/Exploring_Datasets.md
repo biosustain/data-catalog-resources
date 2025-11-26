@@ -55,7 +55,7 @@ The **Dataset Home Page** in Data Catalog is the central place to view and manag
 
    * Metadata
    * Projects
-   * <span style="color:#999999">Collaborators (coming soon)</span>
+   * <span style="color:#999999">Permissions (coming soon)</span>
    * <span style="color:#999999">History (coming soon)</span>
    * <span style="color:#999999">Lineage (coming soon)</span>
    * Files 
@@ -64,7 +64,7 @@ The **Dataset Home Page** in Data Catalog is the central place to view and manag
 for a specific dataset, into one organized interface.
 
 ```{note}
-The **Collaborators**, **History** and **Lineage** features are currently visible but not active. They will be available soon, allowing you to manage dataset collaborators, view dataset activity and track relationships between datasets.
+The **Permissions**, **History** and **Lineage** features are currently visible but not active. They will be available soon, allowing you to manage dataset users, view dataset activity and track relationships between datasets.
 ```
 
 
@@ -87,9 +87,14 @@ Just below the description, several key features are displayed:
     * Here are listed all projects the dataset is linked to.
     * You can view project details.
 
-* <span style="color:#999999">**Collaborators**:</span>
+* <span style="color:#999999">**Permissions**:</span>
     * <span style="color:#999999">This section shows all users who have access to the dataset.</span>
-    * <span style="color:#999999">Here dataset creators can manage (add/remove) collaborators and assign roles.</span>
+    * <span style="color:#999999">Here dataset creators can manage (add/remove) users and assign permissions:</span>
+        * <span style="color:#999999">Can Edit: Update dataset medatada</span>
+        * <span style="color:#999999">Can Edit Files</span>
+        * <span style="color:#999999">Can List Files</span>
+        * <span style="color:#999999">Can Download Files</span>
+        * <span style="color:#999999">Can Run Pipelines</span>
    
 
 * <span style="color:#999999">**History**:</span>
