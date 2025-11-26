@@ -58,9 +58,9 @@ Click `Create dataset` at the ***bottom*** of the page to complete the process.
 
 <br/>
 
-```{figure} ../../_static/images/create-dataset.gif
+```{figure} ../../_static/images/dataset_creation.gif
 :alt: Dataset Creation
-:width: 98%
+:width: 93%
 :align: center
 
 *Dataset Creation*
