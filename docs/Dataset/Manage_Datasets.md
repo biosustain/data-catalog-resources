@@ -66,5 +66,39 @@ A confirmation box will appear asking you to confirm the action.
 
 → If you unlink the archived dataset from the project, it will only appear on the Datasets Overview page.
 
-
 ```
+
+
+---------------
+
+<br/>
+
+---------------------
+
+
+## Manage Dataset User Permissions
+
+Managing dataset user permissions works similarly to managing project user permissions, but with additional options specific to files and pipelines. You can add users and assign permissions through the **Permissions** tab on the dataset page.
+
+### How the Permissions Tab Works
+The tab displays a table view with:
+
+* **User column:** Lists all users who have access to the dataset
+* **Permissions columns:** Show the available permissions:
+    * **Can Edit Files:** Allows editing files within the dataset
+    * **Can List Files:** Allows listing all files in the dataset
+    * **Can Download Files:** Allows downloading files
+    * **Can Run Pipelines:** Allows running analysis pipelines on the dataset's files
+* **Actions column:** Includes:
+    * **Remove Policy:** Revokes a user's access to the dataset
+
+### Adding or Removing Users
+
+* To **add a new user**, click **`Add user policy`**, enter their details (first name and last name), select the permissions you want to grant, and click `Save Policy`.
+
+* To **remove a user**, click **`Remove Policy`** in the Actions column.
+
+
+
+
+
