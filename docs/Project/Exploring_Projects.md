@@ -58,14 +58,14 @@ The **Project Home Page** in Data Catalog is the central place to view and manag
 
    * Metadata
    * Datasets
-   * <span style="color:#999999">Members (coming soon)</span>
+   * <span style="color:#999999">Permissions (coming soon)</span>
    * <span style="color:#999999">History (coming soon)</span>
    * Data Management Plan (DMP)
 
 for a specific project, into one organized interface.
 
 ```{note}
-The **Members** and **History** features are currently visible but not active. They will be available soon, allowing you to manage project members and view project activity.
+The **Permissions** and **History** features are currently visible but not active. They will be available soon, allowing you to manage project users and view project activity.
 ```
 
 
@@ -89,9 +89,11 @@ Just below the description, several key features are displayed:
     * Here are listed all datasets linked to the project.
     * You can view dataset details, add new ones, or link to existing datasets.
 
-* <span style="color:#999999">**Members**:</span>
+* <span style="color:#999999">**Permissions**:</span>
     * <span style="color:#999999">This section shows all users who have access to the project.  </span>
-    * <span style="color:#999999">Here project creators can manage (add/remove) members and assign roles.</span>
+    * <span style="color:#999999">Here project creators can manage (add/remove) users and assign permissions:</span>
+        * <span style="color:#999999">Can Edit: Update project medatada</span>
+        * <span style="color:#999999">Can Add Datasets: Add datasets to that project</span>
 
 *   <span style="color:#999999">**History**:</span>
     * <span style="color:#999999">Shows a log of changes made to the project.</span>
