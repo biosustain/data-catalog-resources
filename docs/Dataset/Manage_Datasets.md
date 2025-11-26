@@ -42,9 +42,9 @@ A confirmation box will appear asking you to confirm the action.
 
 <br/>
 
-```{figure} ../../_static/images/manage-dataset-4.gif
+```{figure} ../../_static/images/manage_dataset.gif
 :alt: Manage Datasets
-:width: 98%
+:width: 93%
 :align: center
 
 *Manage Datasets*
