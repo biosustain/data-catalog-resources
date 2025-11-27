@@ -24,15 +24,17 @@ From the Datasets Overview Page, you can:
 
     * Use the tabs at the top of the page to organize your view
 
+
+
  <br/>
 
 -------------------------------
 
 <br/>
 
-```{figure}
+```{figure} ../../_static/images/dataset_overview_page.gif
 :alt: Dataset Overview Page
-:width: 98%
+:width: 93%
 :align: center
 
 *Dataset Overview Page*
@@ -110,6 +112,25 @@ Just below the description, several key features are displayed:
 * **Files**:
     * Here are listed all files or entire directories related to this dataset.
     * You can upload new files or directories, view their details, download to see their content, or delete if no longer needed.
+
+
+
+ <br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/dataset_home_page.gif
+:alt: Dataset Home Page
+:width: 93%
+:align: center
+
+*Dataset Home Page*
+```
+----------------------------
+
+<br/>
 
 
 ```{note}
