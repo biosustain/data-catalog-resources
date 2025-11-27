@@ -6,7 +6,7 @@ Managing Datasets in the Data Catalog is similar to managing Projects: you can *
 
 
 ## Step 1: Locate your Dataset
-Use the search bar in the ***top navigation*** or browse the Dataset overview page to find your project.
+Use the search bar in the ***top navigation*** to find your project.
 
 
 ## Step 2: Choose an Action
@@ -36,11 +36,27 @@ After making the necessary updates, click:
 A confirmation box will appear asking you to confirm the action. 
 
 
+<br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/manage_dataset.gif
+:alt: Manage Datasets
+:width: 93%
+:align: center
+
+*Manage Datasets*
+```
+----------------------------
+
+<br/>
+
+
 
  
-```{admonition} Archived Datasets
-:class: toggle
-:collapsible:
+```{note} 
 
 → Archived datasets remain visible under the **Archived** section on the Datasets Overview page. You can open and view them, but they cannot be edited unless you first click the **`Restore`** button on the dataset home page.
 
@@ -48,5 +64,35 @@ A confirmation box will appear asking you to confirm the action.
 
 → If you unlink the archived dataset from the project, it will only appear on the Datasets Overview page.
 
-
 ```
+
+
+---------------------
+
+
+## Manage Dataset User Permissions
+
+Managing dataset user permissions works similarly to managing project user permissions, but with additional options specific to files and pipelines. You can add users and assign permissions through the **Permissions** tab on the dataset page.
+
+### How the Permissions Tab Works
+The tab displays a table view with:
+
+* **User column:** Lists all users who have access to the dataset
+* **Permissions columns:** Show the available permissions:
+    * **Can Edit Files:** Allows editing files within the dataset
+    * **Can List Files:** Allows listing all files in the dataset
+    * **Can Download Files:** Allows downloading files
+    * **Can Run Pipelines:** Allows running analysis pipelines on the dataset's files
+* **Actions column:** Includes:
+    * **Remove Policy:** Revokes a user's access to the dataset
+
+### Adding or Removing Users
+
+* To **add a new user**, click **`Add user policy`**, enter their details (first name and last name), select the permissions you want to grant, and click `Save Policy`.
+
+* To **remove a user**, click **`Remove Policy`** in the Actions column.
+
+
+
+
+

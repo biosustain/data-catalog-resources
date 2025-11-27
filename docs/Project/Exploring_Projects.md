@@ -2,8 +2,8 @@
 
 The **Projects** section in the Data Catalog is designed to help you manage research projects efficiently. It includes two main views:
 
-* **Projects Overview Page** where you can browse, search, create new projects
-* **Project Home Page** where you manage the details of a specific project 
+* **Projects Overview Page**, where you can search, and create new projects.
+* **Project Home Page**, where you manage the details of a specific project, including metadata, linked datasets, and the Data Management Plan (DMP).
 
 
 
@@ -16,19 +16,33 @@ From the Projects Overview Page, you can:
 
 * **Search** 
 
-    * Use the search bar to find specific projects
-
-* **Browse Projects**
-
-    * Here you view a list of all active and archived projects
+    * Use the search bar to find specific projects.
 
 * **Create new Project**
 
-    * Click the `Add a new project` button to start creating a new research project
+    * Click the `Add a new project` button to start creating a new research project.
 
 * **View Active & Archived Projects**
 
     * Use the tabs at the top of the page to switch between active and archived projects, for better organization and visibility.
+
+    <br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/project_overview_page.gif
+:alt: Project Overview Page
+:width: 93%
+:align: center
+
+*Project Overview Page*
+```
+----------------------------
+
+<br/>
+
 
 
 ```{tip}
@@ -40,17 +54,18 @@ The **Search** bar is available throughout the platform, so you can easily find 
 
 ## ➤ Project Home Page
 
-The **Project Home Page** in Data Catalog is the central place to view and manage everything related to a specific research project. It brings together all the essential components such as:
+The **Project Home Page** in Data Catalog is the central place to view and manage everything related to a specific research project. It brings together all the essential information such as:
 
    * Metadata
    * Datasets
-   * <span style="color:#999999">Members (coming soon)</span>
+   * <span style="color:#999999">Permissions (coming soon)</span>
    * <span style="color:#999999">History (coming soon)</span>
+   * Data Management Plan (DMP)
 
 for a specific project, into one organized interface.
 
 ```{note}
-The **Members** and **History** features are currently visible but not active. They will be available soon, allowing you to manage project members and view project activity.
+The **Permissions** and **History** features are currently visible but not active. They will be available soon, allowing you to manage project users and view project activity.
 ```
 
 
@@ -68,24 +83,32 @@ Just below the description, several key features are displayed:
 
 
 * **Metadata**: 
-    * This section includes the list of all the project details (metadata) entered during project creation
+    * This section includes the list of all the project details (metadata) entered during project creation.
 
 * **Datasets**: 
-    * Here are listed all datasets linked to the project
-    * You can view dataset details, add new ones, and upload data files directly from this section 
+    * Here are listed all datasets linked to the project.
+    * You can view dataset details, add new ones, or link to existing datasets.
 
-* <span style="color:#999999">**Members**:</span>
-    * <span style="color:#999999">This section shows all users who have access to the project  </span>
-    * <span style="color:#999999">Here project creators can manage (add/remove) members and assign roles</span>
+* <span style="color:#999999">**Permissions**:</span>
+    * <span style="color:#999999">This section shows all users who have access to the project.  </span>
+    * <span style="color:#999999">Here project creators can manage (add/remove) users and assign permissions:</span>
+        * <span style="color:#999999">Can Edit: Update project medatada</span>
+        * <span style="color:#999999">Can Add Datasets: Add datasets to that project</span>
 
 *   <span style="color:#999999">**History**:</span>
-    * <span style="color:#999999">Shows a log of changes made to the project</span>
-    * <span style="color:#999999">Useful for tracking updates</span>
+    * <span style="color:#999999">Shows a log of changes made to the project.</span>
+    * <span style="color:#999999">Useful for tracking updates.</span>
+
+* **Data Management Plan (DMP)**:
+    * Provides an overview of how data will be handled throughout the project lifecycle.
+    * Allows you to document policies for data storage, sharing, and preservation.
 
 
 
 ```{note}
-You can edit the project details directly in the **Metadata** section. Just click the **`Edit metadata`** button located at the ***top*** of that section.
+→ You can edit the project details directly in the **Metadata** section. Just click the **`Edit metadata`** button located at the ***top*** of that section.
 
-→ If the project is no longer needed, you can archive it by clicking the **`Archive`** button, located on the ***top-right corner*** of the project home page.
+→ If the project is finished or terminated, you can archive it by clicking the **`Archive`** button, located on the ***top-right corner*** of the project home page.
+
+→ You can always restore an archived project at anytime.
 ```

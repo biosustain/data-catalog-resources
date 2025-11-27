@@ -10,7 +10,7 @@ import subprocess
 # -- Project information -----------------------------------------------------
 
 project = "Data Catalog User Guide"
-copyright = "2025, Research Data Management, DTU Biosustain"
+copyright = "2025, Research Data Management, DTU BRIGHT"
 author = "Ding He"
 
 # -- Version information -----------------------------------------------------
