@@ -40,6 +40,23 @@ You can perform basic actions on files or directories uploaded to the Data Catal
 **Please review files before deleting to avoid accidental data loss.*
 
 
+<br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/add_files.gif
+:alt: Uploading files
+:width: 93%
+:align: center
+
+*Uploading files*
+```
+----------------------------
+
+<br/>
+
 
 
 ```{warning}
@@ -47,3 +64,4 @@ Currently, deleting a file permanently removes it from the Data Catalog. However
 
 **Keep in mind that this behavior may change in future releases.*
 ```
+
