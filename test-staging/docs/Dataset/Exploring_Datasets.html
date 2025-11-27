@@ -19,7 +19,7 @@
             <link rel="top" title="Data Catalog User Guide" href="#" />
             <link rel="up" title="Dataset" href="index.html" />
             <link rel="next" title="Search" href="../Search.html" />
-            <link rel="prev" title="Manage Datasets" href="Manage_Datasets.html" />
+            <link rel="prev" title="Files" href="Files.html" />
     </head>
 <body>
     <script type="text/javascript" src="../../_static/dist/blocking.js"></script>
@@ -68,15 +68,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../Project/Create_Project.html">Create a New Project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Project/Manage_Projects.html">Manage Projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Project/Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Project/DMP.html">Data Management Plan</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Dataset  <!-- This is the sidebar title --></a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Add_Dataset.html">Create a New Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Manage_Datasets.html">Manage Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Files.html">Files</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Exploring Dataset</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Search.html">Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Contact.html">Contact</a></li>
 </ul>
 
     </nav>
@@ -125,11 +128,11 @@
                         <main role="main" id="main">
     <section class="tex2jax_ignore mathjax_ignore" id="exploring-dataset">
 <h1>Exploring Dataset<a class="headerlink" href="#exploring-dataset" title="Link to this heading">¶</a></h1>
-<p>The <strong>Datasets</strong> section in the Data Catalog can help you organize and manage research data efficiently. Its structure is similar to the Projects section, so if you’ve explored projects before, you’ll find the navigation familiar.</p>
+<p>The <strong>Datasets</strong> section in the Data Catalog can help you organize and manage research data efficiently. Its structure is similar to the Projects section, so if you have explored projects before, you will find the navigation familiar.</p>
 <p>Like projects, datasets have two main views:</p>
 <ul class="simple">
-<li><p><strong>Datasets Overview Page</strong> where you can search, and create new dataset</p></li>
-<li><p><strong>Dataset Home Page</strong> where you manage the details of a specific dataset and upload files or directories</p></li>
+<li><p><strong>Datasets Overview Page</strong>, where you can search, and create new dataset.</p></li>
+<li><p><strong>Dataset Home Page</strong>, where you manage the details of a specific dataset, including metadata, linked projects, and files.</p></li>
 </ul>
 <section id="dataset-overview-page">
 <h2>➤ Dataset Overview Page<a class="headerlink" href="#dataset-overview-page" title="Link to this heading">¶</a></h2>
@@ -149,6 +152,18 @@
 </ul>
 </li>
 </ul>
+ <br/>
+<hr class="docutils" />
+<br/>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/dataset_overview_page.gif"><img alt="Dataset Overview Page" src="../../_images/dataset_overview_page.gif" style="width: 93%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Dataset Overview Page</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<br/>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The <strong>Search</strong> bar is available throughout the platform, so you can easily find datasets and projects from different views.</p>
@@ -162,7 +177,7 @@
 <ul class="simple">
 <li><p>Metadata</p></li>
 <li><p>Projects</p></li>
-<li><p><span style="color:#999999">Collaborators (coming soon)</span></p></li>
+<li><p><span style="color:#999999">Permissions (coming soon)</span></p></li>
 <li><p><span style="color:#999999">History (coming soon)</span></p></li>
 <li><p><span style="color:#999999">Lineage (coming soon)</span></p></li>
 <li><p>Files</p></li>
@@ -170,7 +185,7 @@
 <p>for a specific dataset, into one organized interface.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <strong>Collaborators</strong>, <strong>History</strong> and <strong>Lineage</strong> features are currently visible but not active. They will be available soon, allowing you to manage dataset collaborators, view dataset activity and track relationships between datasets.</p>
+<p>The <strong>Permissions</strong>, <strong>History</strong> and <strong>Lineage</strong> features are currently visible but not active. They will be available soon, allowing you to manage dataset users, view dataset activity and track relationships between datasets.</p>
 </div>
 <section id="inside-the-dataset-home-page">
 <h3>Inside the Dataset Home Page<a class="headerlink" href="#inside-the-dataset-home-page" title="Link to this heading">¶</a></h3>
@@ -185,44 +200,64 @@
 <ul class="simple">
 <li><p><strong>Metadata</strong>:</p>
 <ul>
-<li><p>This section includes the list of all the dataset details (metadata) entered during dataset creation</p></li>
+<li><p>This section includes the list of all the dataset details (metadata) entered during dataset creation.</p></li>
 </ul>
 </li>
 <li><p><strong>Projects</strong>:</p>
 <ul>
-<li><p>Here are listed all projects the dataset is linked to</p></li>
-<li><p>You can view project details</p></li>
+<li><p>Here are listed all projects the dataset is linked to.</p></li>
+<li><p>You can view project details.</p></li>
 </ul>
 </li>
-<li><p><span style="color:#999999"><strong>Collaborators</strong>:</span></p>
+<li><p><span style="color:#999999"><strong>Permissions</strong>:</span></p>
 <ul>
-<li><p><span style="color:#999999">This section shows all users who have access to the dataset</span></p></li>
-<li><p><span style="color:#999999">Here dataset creators can manage (add/remove) collaborators and assign roles </span></p></li>
+<li><p><span style="color:#999999">This section shows all users who have access to the dataset.</span></p></li>
+<li><p><span style="color:#999999">Here dataset creators can manage (add/remove) users and assign permissions:</span></p>
+<ul>
+<li><p><span style="color:#999999">Can Edit: Update dataset medatada</span></p></li>
+<li><p><span style="color:#999999">Can Edit Files</span></p></li>
+<li><p><span style="color:#999999">Can List Files</span></p></li>
+<li><p><span style="color:#999999">Can Download Files</span></p></li>
+<li><p><span style="color:#999999">Can Run Pipelines</span></p></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p><span style="color:#999999"><strong>History</strong>:</span></p>
 <ul>
-<li><p><span style="color:#999999">Shows a log of changes made to the dataset</span></p></li>
-<li><p><span style="color:#999999">Useful for tracking updates</span></p></li>
+<li><p><span style="color:#999999">Shows a log of changes made to the dataset.</span></p></li>
+<li><p><span style="color:#999999">Useful for tracking updates.</span></p></li>
 </ul>
 </li>
 <li><p><span style="color:#999999"><strong>Lineage</strong>:</span></p>
 <ul>
-<li><p><span style="color:#999999">This section displays the relationships between datasets across different stages (e.g., raw → processed → results) </span></p></li>
-<li><p><span style="color:#999999">Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility</span></p></li>
+<li><p><span style="color:#999999">This section displays the relationships between datasets across different stages (e.g., raw → processed → results). </span></p></li>
+<li><p><span style="color:#999999">Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility.</span></p></li>
 </ul>
 </li>
 <li><p><strong>Files</strong>:</p>
 <ul>
-<li><p>Here are listed all files or entire directories related to this dataset</p></li>
-<li><p>You can upload new files or directories, view their details, download to see their content, or delete if no longer needed</p></li>
+<li><p>Here are listed all files or entire directories related to this dataset.</p></li>
+<li><p>You can upload new files or directories, view their details, download to see their content, or delete if no longer needed.</p></li>
 </ul>
 </li>
 </ul>
+ <br/>
+<hr class="docutils" />
+<br/>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/dataset_home_page.gif"><img alt="Dataset Home Page" src="../../_images/dataset_home_page.gif" style="width: 93%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Dataset Home Page</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<br/>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can edit the dataset details directly in the <strong>Metadata</strong> section. Just click the <strong><code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">metadata</span></code></strong> button located at the <em><strong>top</strong></em> of that section.</p>
-<p>If the dataset is no longer needed, you can archive it by clicking the <strong><code class="docutils literal notranslate"><span class="pre">Archive</span></code></strong> button, located on the <em><strong>top-right corner</strong></em> of the dataset home page.</p>
+<p>→ You can edit the dataset details directly in the <strong>Metadata</strong> section. Just click the <strong><code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">metadata</span></code></strong> button located at the <em><strong>top</strong></em> of that section.</p>
+<p>→ If the dataset is no longer needed, you can archive it by clicking the <strong><code class="docutils literal notranslate"><span class="pre">Archive</span></code></strong> button, located on the <em><strong>top-right corner</strong></em> of the dataset home page.</p>
 </div>
 </section>
 </section>
@@ -231,8 +266,8 @@
 
 </main>
                         <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
-    <a class="float-left" href="Manage_Datasets.html" title="Previous">
-        <span aria-hidden="true">←&nbsp;</span>Manage Datasets
+    <a class="float-left" href="Files.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Files
     </a>
     <a class="float-right" href="../Search.html" title="Next">
         Search <span aria-hidden="true">&nbsp;→</span>
@@ -274,7 +309,7 @@
         <div class="col p-4">
             
             <div class="text-center">
-                    &copy; Copyright 2025, Research Data Management, DTU Biosustain
+                    &copy; Copyright 2025, Research Data Management, DTU BRIGHT
             </div>
             <div class="text-center text-white-50 font-italic mt-3">
                 <small>

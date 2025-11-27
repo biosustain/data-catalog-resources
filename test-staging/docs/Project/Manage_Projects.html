@@ -68,15 +68,18 @@
 <li class="toctree-l2"><a class="reference internal" href="Create_Project.html">Create a New Project</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Manage Projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DMP.html">Data Management Plan</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Dataset/index.html">Dataset  <!-- This is the sidebar title --></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Dataset/Add_Dataset.html">Create a New Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Dataset/Manage_Datasets.html">Manage Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Files.html">Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Search.html">Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Contact.html">Contact</a></li>
 </ul>
 
     </nav>
@@ -125,17 +128,17 @@
                         <main role="main" id="main">
     <section class="tex2jax_ignore mathjax_ignore" id="manage-projects">
 <h1>Manage Projects<a class="headerlink" href="#manage-projects" title="Link to this heading">¶</a></h1>
-<p>This guide shows you how to manage Data Catalog Projects to keep research data structured and accessible. After a project is created, you can either <strong>edit</strong> its details or <strong>archive</strong> it.</p>
+<p>This guide shows you how to manage Data Catalog Projects to keep research data structured and accessible. After a project is created, you can either <strong>edit</strong> its details, <strong>archive</strong> it, or <strong>manage user permissions</strong> to control access and collaboration.</p>
 <p>➤ <em>Follow the steps below based on the action you want to perform.</em></p>
 <section id="step-1-find-the-project">
 <h2>Step 1: Find the Project<a class="headerlink" href="#step-1-find-the-project" title="Link to this heading">¶</a></h2>
-<p>Use the search bar in the <em><strong>top navigation</strong></em> to find your project.</p>
+<p>Use the search bar in the <em><strong>top navigation</strong></em> to find your project. Just type the project name and, if needed, add filters to refine your search results.</p>
 </section>
 <section id="step-2-choose-an-action">
 <h2>Step 2: Choose an Action<a class="headerlink" href="#step-2-choose-an-action" title="Link to this heading">¶</a></h2>
-<p>On the Project home page, you will find two action buttons:</p>
+<p>On the Project home page, click on the Metadata tab, where you will find two action buttons:</p>
 <ul>
-<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Edit</span></code></strong>, located <em><strong>right above</strong></em> the list of project metadata, to update project details</p>
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">metadata</span></code></strong>, located <em><strong>right above</strong></em> the list of project metadata, to update project details</p>
 <p><strong>or</strong></p>
 </li>
 <li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Archive</span></code></strong>, located on the <em><strong>top-right corner</strong></em> of the page, to archive the project</p></li>
@@ -143,7 +146,7 @@
 </section>
 <section id="step-3-confirm">
 <h2>Step 3: Confirm<a class="headerlink" href="#step-3-confirm" title="Link to this heading">¶</a></h2>
-<p>➤ If you choose to <strong><code class="docutils literal notranslate"><span class="pre">Edit</span></code></strong>:</p>
+<p>➤ If you choose to <strong><code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">metadata</span></code></strong>:</p>
 <p>After making the necessary updates, click:</p>
 <ul>
 <li><p><span style="color:#00C48C">Save</span> to apply your changes</p>
@@ -153,10 +156,66 @@
 </ul>
 <p>➤ If you choose to <strong><code class="docutils literal notranslate"><span class="pre">Archive</span></code></strong>:</p>
 <p>A confirmation box will appear asking you to confirm the action.</p>
+<br/>
+<hr class="docutils" />
+<br/>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/manage_project_2.gif"><img alt="Manage Projects" src="../../_images/manage_project_2.gif" style="width: 93%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Manage Projects</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<br/>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Archived projects remain visible under the <strong>Archived</strong> section on the Projects Overview page. You can open and view them, but they cannot be edited unless you first click the <strong><code class="docutils literal notranslate"><span class="pre">Restore</span></code></strong> button on the project home page.</p>
 </div>
+<br/>
+</section>
+<hr class="docutils" />
+<section id="manage-user-permissions">
+<h2>Manage User Permissions<a class="headerlink" href="#manage-user-permissions" title="Link to this heading">¶</a></h2>
+<p>As the project creator, you have full control over the project, including its datasets and user access. You can add users and assign permissions through the <strong>Permissions</strong> tab on the project home page.</p>
+<section id="how-the-permissions-tab-works">
+<h3>How the permissions Tab Works<a class="headerlink" href="#how-the-permissions-tab-works" title="Link to this heading">¶</a></h3>
+<p>The tab displays a table view with:</p>
+<ul class="simple">
+<li><p><strong>User column:</strong> Lists all users. Your name appears at the top, followed by any additional users you add.</p></li>
+<li><p><strong>Permissions columns:</strong> Show the available permissions:</p>
+<ul>
+<li><p><strong>Can Edit:</strong> Allows editing project details</p></li>
+<li><p><strong>Can Add Datasets:</strong> Allows adding datasets to the project</p></li>
+</ul>
+</li>
+<li><p><strong>Action column:</strong> Includes the available actions:</p>
+<ul>
+<li><p><strong>Save Policy:</strong> Saves chnages when adding a new users</p></li>
+<li><p><strong>Remove Policy:</strong> Revokes a user’s access</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="adding-or-removing-users">
+<h3>Adding or Removing Users<a class="headerlink" href="#adding-or-removing-users" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>To <strong>add a new user</strong>, click <strong><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">user</span> <span class="pre">policy</span></code></strong>, enter their details (first name and last name), select the permissions you want to grant, and click the <img src="../../_static/images/save_icon.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to save your user policy.</p></li>
+<li><p>To <strong>remove a user policy</strong>, click the <img src="../../_static/images/delete.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon in the action column.</p></li>
+</ul>
+<br/>
+<hr class="docutils" />
+<br/>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/project_user_permissions.gif"><img alt="Project Permissions" src="../../_images/project_user_permissions.gif" style="width: 93%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Project Permissions</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<br/>
+</section>
 </section>
 </section>
 
@@ -179,6 +238,11 @@
 <li><a class="reference internal" href="#step-1-find-the-project">Step 1: Find the Project</a></li>
 <li><a class="reference internal" href="#step-2-choose-an-action">Step 2: Choose an Action</a></li>
 <li><a class="reference internal" href="#step-3-confirm">Step 3: Confirm</a></li>
+<li><a class="reference internal" href="#manage-user-permissions">Manage User Permissions</a><ul>
+<li><a class="reference internal" href="#how-the-permissions-tab-works">How the permissions Tab Works</a></li>
+<li><a class="reference internal" href="#adding-or-removing-users">Adding or Removing Users</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -196,7 +260,7 @@
         <div class="col p-4">
             
             <div class="text-center">
-                    &copy; Copyright 2025, Research Data Management, DTU Biosustain
+                    &copy; Copyright 2025, Research Data Management, DTU BRIGHT
             </div>
             <div class="text-center text-white-50 font-italic mt-3">
                 <small>
