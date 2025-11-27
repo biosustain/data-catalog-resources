@@ -51,7 +51,7 @@ This section covers what data you collect and how it is generated:
 
    * **Dataset Created Date**
 
-   * **Access Rights**: Define who can access the dataset → *(For more details see [**Access Controlled**](this_is_the_reference_point).)*
+   * **Access Rights**: Define who can access the dataset → *(For more details see [Note](this_is_the_reference_point).)*
 
         * Restricted
         * BRIGHT-visible 
@@ -122,8 +122,6 @@ This section includes questions about compliance and data sharing:
 
 ```{note}
 (this_is_the_reference_point)=
-**Access Controlled**
-
 → **Restricted**: Access for all project, dataset metadata and files in Microsoft Azure Storage account is restricted to project members and collaborators.
 
 → **BRIGHT-visible**: READ-ONLY access for project and dataset metadata is granted to all BRIGHT employees. Access to files in Microsoft Azure Storage account remains restricted to project members and collaborators.
