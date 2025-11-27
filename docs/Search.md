@@ -31,3 +31,19 @@ To make your search more precise, try combining **multiple filters** at once.
 ```
 
 
+<br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../_static/images/search.gif
+:alt: Search
+:width: 93%
+:align: center
+
+*Search*
+```
+----------------------------
+
+<br/>
