@@ -56,10 +56,8 @@ A confirmation box will appear asking you to confirm the action.
 
 
  
-```{admonition} Archived Datasets
-:class: toggle
-:collapsible: open
-
+```{note} 
+**Archived Datasets**
 
 → Archived datasets remain visible under the **Archived** section on the Datasets Overview page. You can open and view them, but they cannot be edited unless you first click the **`Restore`** button on the dataset home page.
 
