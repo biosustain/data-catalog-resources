@@ -69,6 +69,23 @@ A confirmation box will appear asking you to confirm the action.
 ```
 
 
+
+
+<details open>
+<summary><strong>Archived Datasets</strong></summary>
+
+<br/>
+
+→ Archived datasets remain visible under the **Archived** section on the Datasets Overview page. You can open and view them, but they cannot be edited unless you first click the **`Restore`** button on the dataset home page.
+
+→ They also appear under the **Datasets** tab on the project home page it is linked to. This is indicated by this <img src="../../_static/images/archived_icon.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon displayed next to the dataset name. If you hover over the icon, a note appears explaining that the dataset is archived.<br/>
+
+→ If you unlink the archived dataset from the project, it will only appear on the Datasets Overview page.
+
+
+</details>
+
+
 ---------------------
 
 
