@@ -120,25 +120,15 @@ This section includes questions about compliance and data sharing:
 * **Sharing After Project Ends**: Specify if data will be made public after completion
 
 
-```{admonition} Access Controlled
-:class: toggle
-:collapsible:
-
+```{note}
 (this_is_the_reference_point)=
+**Access Controlled**
+
 → **Restricted**: Access for all project, dataset metadata and files in Microsoft Azure Storage account is restricted to project members and collaborators.
 
 → **BRIGHT-visible**: READ-ONLY access for project and dataset metadata is granted to all BRIGHT employees. Access to files in Microsoft Azure Storage account remains restricted to project members and collaborators.
 ```
 
 
-<details open>
-<summary><strong>Access Controlled</strong></summary>
 
-<br/>
-
-→ **Restricted**: Access for all project, dataset metadata and files in Microsoft Azure Storage account is restricted to project members and collaborators.
-
-→ **BRIGHT-visible**: READ-ONLY access for project and dataset metadata is granted to all BRIGHT employees. Access to files in Microsoft Azure Storage account remains restricted to project members and collaborators.
-
-</details>
 
