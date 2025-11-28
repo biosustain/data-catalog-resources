@@ -1,36 +1,76 @@
 # Welcome
 
-This user guide covers using Data Catalog's web interface to organize, publish and find data within DTU Biosustain. All the data and metadata stored in this Data Catalog are only made available to Biosustain employees and guests.
+This user guide introduces the **Data Catalog**, a central interface designed to **organize**, **register**, and **discover** research data within DTU BRIGHT.<br/>
+
+It serves as the metadata management layer and gateway to the underlying research data infrastructure, ensuring that all data assets (Projects, Datasets, and Files) are **findable**, **accessible**, **interoperable**, and **reusable** (FAIR).
+<br/>
+
 
 ## The Purpose of Data Catalog
 
-The Data Catalog aims to store and manage active data, making it as open as possible and as close as necessary within DTU Biosustain. 
+The Data Catalog provides a secure and structured environment for managing active data, making it **as open as possible and as close as necessary** within DTU BRIGHT. 
 
 Specific goals include:
-- Provide a centralized data portal to enhance FAIR data principals throughout the data life cycle.
+- Provide a centralized data portal to enhance FAIR data principles throughout the data lifecycle.
 - Enable data/metadata capture, data enrichment, efficient and standardized automated workflows.
 - Provide visibility and overview of accessible data.
 - Ensure governance on all systems and data.
 - Establish a strong research data management support function.
 
-## CKAN
+## Key Data Assets
 
-We currently use [**CKAN**](https://ckan.org/) as our system backend framework.
+### Projects
 
-## Key Features
+A **Project** is the top-level organizational entity in the Data Catalog. It represents a **research or analytical unit** that includes all the data and metadata associated with a specific study.
 
-### Dataset and Resources
+Projects can represent:
 
-In the data catalog powered by CKAN, data is published in units called **"datasets"**. A dataset is a parcel of data - for example, it could be the DNA sequencing reads of an experiment bacterial strain, the growth profile of cells for a fermentation experiment, or statistical analyses of gene expressions. When you search for data, the search results you see will be individual datasets.
+* An individual experiment
+* A collaborative research effort
+* A data reuse study
 
-A dataset contains two things:
-- Information or **“metadata”** about the datasets. For example, common metadata such as the title and creator, date-of-creation, format, etc. Also some dataset type specifics such as **raw data**, **results**, or  it is available in, what license it is released under, etc.
-- A number of **“resources”**, which hold the data (file) itself. A resource can be a CSV or Excel spreadsheet, XML file, PDF document, image file, sequencing fastq, metabolic model file, an url (linking to files), etc. A dataset can contain any number of resources. For example, different resources might contain the data for different experiments, or they might contain the same data in different formats.
+Each Project includes:
 
-### Members, Projects and Authorization
+* Description, contributors, objectives, and methods
+* One or more Datasets, which may include internally generated, externally acquired, or publicly sourced data
+* Access control and data provenance
 
-Biosustain Data Catalog, by design, is **only accessible** by personnel officially employed or associated with DTU Biosustain. Each dataset is owned by a project. Project administrators can add individual members to it, with different roles depending on the level of authorization needed. A member in a project can create a dataset owned by that project. This dataset can be set **private** which is visible only to other members in the same project, or **public** which is visible to all members in Biosustain Data Catalog. 
 
+### Datasets
+
+A **Dataset** is a logically grouped **collection of related data** files within a Project, representing a structured set of information generated under consistent experimental, computational, or analytical conditions.
+
+Each Dataset includes:
+
+* Metadata describing its origin/type, purpose, methods, instruments and parameters and relationships to other datasets
+* A defined data stage (Raw, Processed, Results)
+* Versioning and provenance tracking for traceability
+
+
+
+### Files
+
+A **File** is the lowest-level data entity managed by the system. It is stored within a Dataset and represents a **single unit of data** content (e.g., sequence files, image, table, or model output) in a specific format.
+
+Each File has:
+
+* A unique identifier within the system
+* A defined file format (e.g., .fastq, .csv, .tiff, .h5)
+* Metadata describing its content, origin and checksum for data integrity
+
+```{note}
+***Checksum*** is a unique fingerprint used to verify that the file has not been altered or corrupted.
+```
+
+
+### Authorization
+
+The Data Catalog is currently **only accessible** by personnel officially employed or associated with DTU BRIGHT. Each dataset can belong to one or more projects and project metadata is visible to all BRIGHT employees with read-only access.
+<br/>
+
+
+
+## Start Exploring
 
 ```{toctree}
 :maxdepth: 2
@@ -39,6 +79,6 @@ Biosustain Data Catalog, by design, is **only accessible** by personnel official
 docs/Login
 docs/Project/index
 docs/Dataset/index
-docs/Resource/index
-
+docs/Search
+docs/Contact
 ```

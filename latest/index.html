@@ -17,7 +17,7 @@
             <link rel="index" title="Index" href="genindex.html" />
             <link rel="search" title="Search" href="search.html" />
             <link rel="top" title="Data Catalog User Guide" href="#" />
-            <link rel="next" title="Login" href="docs/Login.html" />
+            <link rel="next" title="Data Catalog Access" href="docs/Login.html" />
     </head>
 <body>
     <script type="text/javascript" src="_static/dist/blocking.js"></script>
@@ -61,39 +61,23 @@
 </div><div class="site-toc">
     <nav class="toc mt-3" aria-label="Main menu">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="docs/Login.html">Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/Login.html">Data Catalog Access</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/Project/index.html">Project  <!-- This is the sidebar title --></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/Project/What_is_Project.html">What is a Project?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs/Project/Create_Project.html">Create a New Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/Project/Manage_Project/index.html">Manage Projects  <!-- This is the sidebar title --></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/Project/Manage_Project/Update_Project.html">Update a Project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/Project/Manage_Project/Delete_Project.html">Delete a Project</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Project/Manage_Projects.html">Manage Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Project/Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Project/DMP.html">Data Management Plan</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="docs/Dataset/index.html">Dataset  <!-- This is the sidebar title --></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Add_Datasets/index.html">Add a Dataset</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/Dataset/Add_Datasets/From_Project_Home_Page.html"><strong>Method A</strong>: From the Project Home Page</a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/Dataset/Add_Datasets/From_Navigation_bar.html"><strong>Method B</strong>: From the Top Navigation Bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Add_Dataset.html">Create a New Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Manage_Datasets.html">Manage Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Files.html">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Manage_Datasets/index.html">Manage Datasets <!-- This is the sidebar title --></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/Dataset/Manage_Datasets/Update_Dataset.html">Update a Dataset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/Dataset/Manage_Datasets/Delete_Dataset.html">Delete a Dataset</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="docs/Resource/index.html">Resource</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/Resource/Add_Resource.html">Add a Resource</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/Resource/Manage_Resource/index.html">Manage Resources <!-- This is the sidebar title --></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/Resource/Manage_Resource/Update_Resource.html">Update Resources</a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/Resource/Manage_Resource/Delete_Resource.html">Delete Resources</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="docs/Search.html">Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/Contact.html">Contact</a></li>
 </ul>
 
     </nav>
@@ -141,66 +125,99 @@
                         <main role="main" id="main">
     <section class="tex2jax_ignore mathjax_ignore" id="welcome">
 <h1>Welcome<a class="headerlink" href="#welcome" title="Link to this heading">¶</a></h1>
-<p>This user guide covers using Data Catalog’s web interface to organize, publish and find data within DTU Biosustain. All the data and metadata stored in this Data Catalog are only made available to Biosustain employees and guests.</p>
+<p>This user guide introduces the <strong>Data Catalog</strong>, a central interface designed to <strong>organize</strong>, <strong>register</strong>, and <strong>discover</strong> research data within DTU BRIGHT.<br/></p>
+<p>It serves as the metadata management layer and gateway to the underlying research data infrastructure, ensuring that all data assets (Projects, Datasets, and Files) are <strong>findable</strong>, <strong>accessible</strong>, <strong>interoperable</strong>, and <strong>reusable</strong> (FAIR).
+<br/></p>
 <section id="the-purpose-of-data-catalog">
 <h2>The Purpose of Data Catalog<a class="headerlink" href="#the-purpose-of-data-catalog" title="Link to this heading">¶</a></h2>
-<p>The Data Catalog aims to store and manage active data, making it as open as possible and as close as necessary within DTU Biosustain.</p>
+<p>The Data Catalog provides a secure and structured environment for managing active data, making it <strong>as open as possible and as close as necessary</strong> within DTU BRIGHT.</p>
 <p>Specific goals include:</p>
 <ul class="simple">
-<li><p>Provide a centralized data portal to enhance FAIR data principals throughout the data life cycle.</p></li>
+<li><p>Provide a centralized data portal to enhance FAIR data principles throughout the data lifecycle.</p></li>
 <li><p>Enable data/metadata capture, data enrichment, efficient and standardized automated workflows.</p></li>
 <li><p>Provide visibility and overview of accessible data.</p></li>
 <li><p>Ensure governance on all systems and data.</p></li>
 <li><p>Establish a strong research data management support function.</p></li>
 </ul>
 </section>
-<section id="ckan">
-<h2>CKAN<a class="headerlink" href="#ckan" title="Link to this heading">¶</a></h2>
-<p>We currently use <a class="reference external" href="https://ckan.org/" rel="noreferrer" target="_blank"><strong>CKAN</strong></a> as our system backend framework.</p>
-</section>
-<section id="key-features">
-<h2>Key Features<a class="headerlink" href="#key-features" title="Link to this heading">¶</a></h2>
-<section id="dataset-and-resources">
-<h3>Dataset and Resources<a class="headerlink" href="#dataset-and-resources" title="Link to this heading">¶</a></h3>
-<p>In the data catalog powered by CKAN, data is published in units called <strong>“datasets”</strong>. A dataset is a parcel of data - for example, it could be the DNA sequencing reads of an experiment bacterial strain, the growth profile of cells for a fermentation experiment, or statistical analyses of gene expressions. When you search for data, the search results you see will be individual datasets.</p>
-<p>A dataset contains two things:</p>
+<section id="key-data-assets">
+<h2>Key Data Assets<a class="headerlink" href="#key-data-assets" title="Link to this heading">¶</a></h2>
+<section id="projects">
+<h3>Projects<a class="headerlink" href="#projects" title="Link to this heading">¶</a></h3>
+<p>A <strong>Project</strong> is the top-level organizational entity in the Data Catalog. It represents a <strong>research or analytical unit</strong> that includes all the data and metadata associated with a specific study.</p>
+<p>Projects can represent:</p>
 <ul class="simple">
-<li><p>Information or <strong>“metadata”</strong> about the datasets. For example, common metadata such as the title and creator, date-of-creation, format, etc. Also some dataset type specifics such as <strong>raw data</strong>, <strong>results</strong>, or  it is available in, what license it is released under, etc.</p></li>
-<li><p>A number of <strong>“resources”</strong>, which hold the data (file) itself. A resource can be a CSV or Excel spreadsheet, XML file, PDF document, image file, sequencing fastq, metabolic model file, an url (linking to files), etc. A dataset can contain any number of resources. For example, different resources might contain the data for different experiments, or they might contain the same data in different formats.</p></li>
+<li><p>An individual experiment</p></li>
+<li><p>A collaborative research effort</p></li>
+<li><p>A data reuse study</p></li>
+</ul>
+<p>Each Project includes:</p>
+<ul class="simple">
+<li><p>Description, contributors, objectives, and methods</p></li>
+<li><p>One or more Datasets, which may include internally generated, externally acquired, or publicly sourced data</p></li>
+<li><p>Access control and data provenance</p></li>
 </ul>
 </section>
-<section id="members-projects-and-authorization">
-<h3>Members, Projects and Authorization<a class="headerlink" href="#members-projects-and-authorization" title="Link to this heading">¶</a></h3>
-<p>Biosustain Data Catalog, by design, is <strong>only accessible</strong> by personnel officially employed or associated with DTU Biosustain. Each dataset is owned by a project. Project administrators can add individual members to it, with different roles depending on the level of authorization needed. A member in a project can create a dataset owned by that project. This dataset can be set <strong>private</strong> which is visible only to other members in the same project, or <strong>public</strong> which is visible to all members in Biosustain Data Catalog.</p>
+<section id="datasets">
+<h3>Datasets<a class="headerlink" href="#datasets" title="Link to this heading">¶</a></h3>
+<p>A <strong>Dataset</strong> is a logically grouped <strong>collection of related data</strong> files within a Project, representing a structured set of information generated under consistent experimental, computational, or analytical conditions.</p>
+<p>Each Dataset includes:</p>
+<ul class="simple">
+<li><p>Metadata describing its origin/type, purpose, methods, instruments and parameters and relationships to other datasets</p></li>
+<li><p>A defined data stage (Raw, Processed, Results)</p></li>
+<li><p>Versioning and provenance tracking for traceability</p></li>
+</ul>
+</section>
+<section id="files">
+<h3>Files<a class="headerlink" href="#files" title="Link to this heading">¶</a></h3>
+<p>A <strong>File</strong> is the lowest-level data entity managed by the system. It is stored within a Dataset and represents a <strong>single unit of data</strong> content (e.g., sequence files, image, table, or model output) in a specific format.</p>
+<p>Each File has:</p>
+<ul class="simple">
+<li><p>A unique identifier within the system</p></li>
+<li><p>A defined file format (e.g., .fastq, .csv, .tiff, .h5)</p></li>
+<li><p>Metadata describing its content, origin and checksum for data integrity</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em><strong>Checksum</strong></em> is a unique fingerprint used to verify that the file has not been altered or corrupted.</p>
+</div>
+</section>
+<section id="authorization">
+<h3>Authorization<a class="headerlink" href="#authorization" title="Link to this heading">¶</a></h3>
+<p>The Data Catalog is currently <strong>only accessible</strong> by personnel officially employed or associated with DTU BRIGHT. Each dataset can belong to one or more projects and project metadata is visible to all BRIGHT employees with read-only access.
+<br/></p>
+</section>
+</section>
+<section id="start-exploring">
+<h2>Start Exploring<a class="headerlink" href="#start-exploring" title="Link to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="docs/Login.html">Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/Login.html">Data Catalog Access</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/Project/index.html">Project  <!-- This is the sidebar title --></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/Project/What_is_Project.html">What is a Project?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs/Project/Create_Project.html">Create a New Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/Project/Manage_Project/index.html">Manage Projects  <!-- This is the sidebar title --></a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Project/Manage_Projects.html">Manage Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Project/Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Project/DMP.html">Data Management Plan</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="docs/Dataset/index.html">Dataset  <!-- This is the sidebar title --></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Add_Datasets/index.html">Add a Dataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Manage_Datasets/index.html">Manage Datasets <!-- This is the sidebar title --></a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Add_Dataset.html">Create a New Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Manage_Datasets.html">Manage Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Files.html">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="docs/Resource/index.html">Resource</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/Resource/Add_Resource.html">Add a Resource</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/Resource/Manage_Resource/index.html">Manage Resources <!-- This is the sidebar title --></a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="docs/Search.html">Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/Contact.html">Contact</a></li>
 </ul>
 </div>
-</section>
 </section>
 </section>
 
 </main>
                         <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
     <a class="float-right" href="docs/Login.html" title="Next">
-        Login <span aria-hidden="true">&nbsp;→</span>
+        Data Catalog Access <span aria-hidden="true">&nbsp;→</span>
     </a>
 </nav>
                     </div>
@@ -211,12 +228,14 @@
                             <ul>
 <li><a class="reference internal" href="#">Welcome</a><ul>
 <li><a class="reference internal" href="#the-purpose-of-data-catalog">The Purpose of Data Catalog</a></li>
-<li><a class="reference internal" href="#ckan">CKAN</a></li>
-<li><a class="reference internal" href="#key-features">Key Features</a><ul>
-<li><a class="reference internal" href="#dataset-and-resources">Dataset and Resources</a></li>
-<li><a class="reference internal" href="#members-projects-and-authorization">Members, Projects and Authorization</a></li>
+<li><a class="reference internal" href="#key-data-assets">Key Data Assets</a><ul>
+<li><a class="reference internal" href="#projects">Projects</a></li>
+<li><a class="reference internal" href="#datasets">Datasets</a></li>
+<li><a class="reference internal" href="#files">Files</a></li>
+<li><a class="reference internal" href="#authorization">Authorization</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#start-exploring">Start Exploring</a></li>
 </ul>
 </li>
 </ul>
@@ -234,7 +253,7 @@
         <div class="col p-4">
             
             <div class="text-center">
-                    &copy; Copyright 2025, Research Data Management, DTU Biosustain
+                    &copy; Copyright 2025, Research Data Management, DTU BRIGHT
             </div>
             <div class="text-center text-white-50 font-italic mt-3">
                 <small>
