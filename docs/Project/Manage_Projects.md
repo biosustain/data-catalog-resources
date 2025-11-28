@@ -73,7 +73,7 @@ The tab displays a table view with:
 * **Permissions columns:** Show the available permissions:
     * **Can Edit:** Allows editing project details
     * **Can Add Datasets:** Allows adding datasets to the project
-* **Action column:** Includes the available actions:  
+* **Actions column:** Includes the available actions:  
     * **Save Policy:** Saves changes when adding a new user
     * **Remove Policy:** Revokes a user's access
 
