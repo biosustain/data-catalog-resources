@@ -24,7 +24,7 @@ There are three options available:
 
 
 ```{tip}
-When uploading a **directory**, the folder structure is preserved for better organization.
+When uploading a **directory**, the folder structure is preserved for better organization (coming soon).
 ```
 
 ----------------------------------
