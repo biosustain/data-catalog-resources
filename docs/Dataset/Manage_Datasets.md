@@ -89,7 +89,7 @@ The tab displays a table view with:
 
 ### Adding or Removing Users
 
-* To **add a new user**, click **`Add user policy`**, enter their details (first name and last name) and select the permissions you want to grant.
+* To **add a new user**, click **`Add user policy`**, enter their details (first name and last name), select the permissions you want to grant, and click the <img src="../../_static/images/save_icon.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to save your user policy.
 
 * To **remove a user policy**, click the <img src="../../_static/images/delete.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon in the action column.
 
