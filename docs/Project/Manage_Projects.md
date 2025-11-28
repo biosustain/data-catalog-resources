@@ -54,7 +54,7 @@ A confirmation box will appear asking you to confirm the action.
 <br/>
 
 ```{note} 
-Archived projects remain visible under the **Archived** section on the Projects Overview page. You can open and view them, but they cannot be edited unless you first click the **`Restore`** button on the project home page.
+Archived projects remain visible under the **Archived** section on the Project List page. You can open and view them, but they cannot be edited unless you first click the **`Restore`** button on the project home page.
 ```
 
 <br/>
@@ -74,7 +74,7 @@ The tab displays a table view with:
     * **Can Edit:** Allows editing project details
     * **Can Add Datasets:** Allows adding datasets to the project
 * **Action column:** Includes the available actions:  
-    * **Save Policy:** Saves chnages when adding a new users
+    * **Save Policy:** Saves changes when adding a new user
     * **Remove Policy:** Revokes a user's access
 
 
