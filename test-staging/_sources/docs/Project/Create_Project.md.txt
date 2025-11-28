@@ -7,21 +7,21 @@ Creating a project is **simple** and **flexible** and all users can create proje
 Keep in mind that you can update the project metadata at **any time**.
 ```
 
-## Step 1: Navigate to the Projects Overview Page 
+## Step 1: Navigate to the Project List Page 
 * Click the **`Projects`** button on the Data Catalog welcome page 
 
     **or** 
     
 * Use the **`Projects`** tab located at the top of any page.
 
-Both options will take you to the Projects overview page, where you can browse, or create a new project.
+Both options will take you to the Project List page, where you can browse, or create a new project.
 
 
 
 
 
 ## Step 2: Add a New Project
-On the Projects overview page, click the **`Add a new project`** button located right below the ***Search*** bar.
+On the Project List page, click the **`Add a new project`** button located right below the ***Search*** bar.
 
 
 

@@ -132,7 +132,7 @@
 <p>➤ <em>Follow the steps below based on the action you want to perform.</em></p>
 <section id="step-1-locate-your-dataset">
 <h2>Step 1: Locate your Dataset<a class="headerlink" href="#step-1-locate-your-dataset" title="Link to this heading">¶</a></h2>
-<p>Use the search bar in the <em><strong>top navigation</strong></em> to find your project.</p>
+<p>Use the search bar in the <em><strong>top navigation</strong></em> to find your dataset.</p>
 </section>
 <section id="step-2-choose-an-action">
 <h2>Step 2: Choose an Action<a class="headerlink" href="#step-2-choose-an-action" title="Link to this heading">¶</a></h2>
@@ -170,15 +170,15 @@
 <br/>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>→ Archived datasets remain visible under the <strong>Archived</strong> section on the Datasets Overview page. You can open and view them, but they cannot be edited unless you first click the <strong><code class="docutils literal notranslate"><span class="pre">Restore</span></code></strong> button on the dataset home page.</p>
+<p>→ Archived datasets remain visible under the <strong>Archived</strong> section on the Dataset List page. You can open and view them, but they cannot be edited unless you first click the <strong><code class="docutils literal notranslate"><span class="pre">Restore</span></code></strong> button on the dataset home page.</p>
 <p>→ They also appear under the <strong>Datasets</strong> tab on the project home page it is linked to. This is indicated by this <img src="../../_static/images/archived_icon.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon displayed next to the dataset name. If you hover over the icon, a note appears explaining that the dataset is archived.<br/></p>
-<p>→ If you unlink the archived dataset from the project, it will only appear on the Datasets Overview page.</p>
+<p>→ If you unlink the archived dataset from the project, it will only appear on the Dataset List page.</p>
 </div>
 </section>
 <hr class="docutils" />
 <section id="manage-dataset-user-permissions">
 <h2>Manage Dataset User Permissions<a class="headerlink" href="#manage-dataset-user-permissions" title="Link to this heading">¶</a></h2>
-<p>Managing dataset user permissions works similarly to managing project user permissions, but with additional options specific to files and pipelines. You can add users and assign permissions through the <strong>Permissions</strong> tab on the dataset page.</p>
+<p>Managing dataset user permissions works similarly to managing project user permissions, but with additional options specific to files and pipelines. You can add users and assign permissions through the <strong>Permissions</strong> tab on the dataset home page.</p>
 <section id="how-the-permissions-tab-works">
 <h3>How the Permissions Tab Works<a class="headerlink" href="#how-the-permissions-tab-works" title="Link to this heading">¶</a></h3>
 <p>The tab displays a table view with:</p>
@@ -186,14 +186,16 @@
 <li><p><strong>User column:</strong> Lists all users who have access to the dataset</p></li>
 <li><p><strong>Permissions columns:</strong> Show the available permissions:</p>
 <ul>
-<li><p><strong>Can Edit Files:</strong> Allows editing files within the dataset</p></li>
-<li><p><strong>Can List Files:</strong> Allows listing all files in the dataset</p></li>
+<li><p><strong>Can Edit:</strong> Allows editing dataset details</p></li>
+<li><p><strong>Can Edit Files:</strong> Allows uploading or deleting files in the dataset</p></li>
+<li><p><strong>Can List Files:</strong> Allows viewing all files in the dataset</p></li>
 <li><p><strong>Can Download Files:</strong> Allows downloading files</p></li>
-<li><p><strong>Can Run Pipelines:</strong> Allows running analysis pipelines on the dataset’s files</p></li>
+<li><p><span style="color:#999999"> <strong>Can Run Pipelines:</strong> Allows running analysis pipelines on the dataset’s files (coming soon)</span></p></li>
 </ul>
 </li>
 <li><p><strong>Actions column:</strong> Includes:</p>
 <ul>
+<li><p><strong>Save Policy:</strong> Saves changes when adding a new user</p></li>
 <li><p><strong>Remove Policy:</strong> Revokes a user’s access to the dataset</p></li>
 </ul>
 </li>
@@ -202,8 +204,8 @@
 <section id="adding-or-removing-users">
 <h3>Adding or Removing Users<a class="headerlink" href="#adding-or-removing-users" title="Link to this heading">¶</a></h3>
 <ul class="simple">
-<li><p>To <strong>add a new user</strong>, click <strong><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">user</span> <span class="pre">policy</span></code></strong>, enter their details (first name and last name), select the permissions you want to grant, and click <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Policy</span></code>.</p></li>
-<li><p>To <strong>remove a user</strong>, click <strong><code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">Policy</span></code></strong> in the Actions column.</p></li>
+<li><p>To <strong>add a new user</strong>, click <strong><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">user</span> <span class="pre">policy</span></code></strong>, enter their details (first name and last name), select the permissions you want to grant, and click the <img src="../../_static/images/save_icon.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to save your user policy.</p></li>
+<li><p>To <strong>remove a user policy</strong>, click the <img src="../../_static/images/delete.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon in the action column.</p></li>
 </ul>
 </section>
 </section>
