@@ -79,10 +79,11 @@ The tab displays a table view with:
 
 * **User column:** Lists all users who have access to the dataset
 * **Permissions columns:** Show the available permissions:
-    * **Can Edit Files:** Allows editing files within the dataset
-    * **Can List Files:** Allows listing all files in the dataset
+    * **Can Edit:** Allows editing dataset details
+    * **Can Edit Files:** Allows uploading or deleting files in the dataset
+    * **Can List Files:** Allows viewing all files in the dataset
     * **Can Download Files:** Allows downloading files
-    * **Can Run Pipelines:** Allows running analysis pipelines on the dataset's files
+    * <span style="color:#999999"> **Can Run Pipelines:** Allows running analysis pipelines on the dataset's files (coming soon)</span>
 * **Actions column:** Includes:
     * **Remove Policy:** Revokes a user's access to the dataset
 
