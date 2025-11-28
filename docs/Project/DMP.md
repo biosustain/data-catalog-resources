@@ -35,7 +35,7 @@ This section provides general information about the project:
 
    * **Funding information**: Funding source and grant details
 
-   * **LIMS (Benchling) project**: Indicate if there is a Benchling project to link
+   * <span style="color:#999999">**LIMS (Benchling) project**: Indicate if there is a Benchling project to link (coming soon)</span>
 
 ### 2. Data Collection
 
@@ -87,7 +87,7 @@ This section covers questions about how and where your data will be stored and b
    * **Backup solutions**: Describe any other backup solution (e.g., *Additional backups on my personal laptop are stored on an external hard drive*).
 
 
-```{note}
+```{warning}
 Be aware that if you store data in **DTU M-drive** or **DTU personal OneDrive**, your data **WILL BE DELETED** after your employment ends.
 ```
 
