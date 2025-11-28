@@ -85,6 +85,7 @@ The tab displays a table view with:
     * **Can Download Files:** Allows downloading files
     * <span style="color:#999999"> **Can Run Pipelines:** Allows running analysis pipelines on the dataset's files (coming soon)</span>
 * **Actions column:** Includes:
+    * **Save Policy:** Saves changes when adding a new user
     * **Remove Policy:** Revokes a user's access to the dataset
 
 ### Adding or Removing Users
