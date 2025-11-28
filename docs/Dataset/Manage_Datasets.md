@@ -6,7 +6,7 @@ Managing Datasets in the Data Catalog is similar to managing Projects: you can *
 
 
 ## Step 1: Locate your Dataset
-Use the search bar in the ***top navigation*** to find your project.
+Use the search bar in the ***top navigation*** to find your dataset.
 
 
 ## Step 2: Choose an Action
@@ -58,11 +58,11 @@ A confirmation box will appear asking you to confirm the action.
  
 ```{note} 
 
-→ Archived datasets remain visible under the **Archived** section on the Datasets Overview page. You can open and view them, but they cannot be edited unless you first click the **`Restore`** button on the dataset home page.
+→ Archived datasets remain visible under the **Archived** section on the Dataset List page. You can open and view them, but they cannot be edited unless you first click the **`Restore`** button on the dataset home page.
 
 → They also appear under the **Datasets** tab on the project home page it is linked to. This is indicated by this <img src="../../_static/images/archived_icon.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon displayed next to the dataset name. If you hover over the icon, a note appears explaining that the dataset is archived.<br/>
 
-→ If you unlink the archived dataset from the project, it will only appear on the Datasets Overview page.
+→ If you unlink the archived dataset from the project, it will only appear on the Dataset List page.
 
 ```
 
@@ -72,7 +72,7 @@ A confirmation box will appear asking you to confirm the action.
 
 ## Manage Dataset User Permissions
 
-Managing dataset user permissions works similarly to managing project user permissions, but with additional options specific to files and pipelines. You can add users and assign permissions through the **Permissions** tab on the dataset page.
+Managing dataset user permissions works similarly to managing project user permissions, but with additional options specific to files and pipelines. You can add users and assign permissions through the **Permissions** tab on the dataset home page.
 
 ### How the Permissions Tab Works
 The tab displays a table view with:
@@ -89,9 +89,9 @@ The tab displays a table view with:
 
 ### Adding or Removing Users
 
-* To **add a new user**, click **`Add user policy`**, enter their details (first name and last name), select the permissions you want to grant, and click `Save Policy`.
+* To **add a new user**, click **`Add user policy`**, enter their details (first name and last name) and select the permissions you want to grant.
 
-* To **remove a user**, click **`Remove Policy`** in the Actions column.
+* To **remove a user policy**, click the <img src="../../_static/images/delete.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon in the action column.
 
 
 

@@ -54,7 +54,7 @@ A confirmation box will appear asking you to confirm the action.
 <br/>
 
 ```{note} 
-Archived projects remain visible under the **Archived** section on the Project List page. You can open and view them, but they cannot be edited unless you first click the **`Restore`** button on the project home page.
+Archived projects remain visible under the **Archived** section on the Project List page. You can open and view them, but they cannot be edited unless you first click the **`Restore`** button on the Project Home page.
 ```
 
 <br/>
