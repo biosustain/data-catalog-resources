@@ -134,14 +134,31 @@ git push origin your-working-branch
 
 > **Note:** Pull request will trigger GitHub automatic workflow, and a preview page will be generated. See README on the [test-deploy branch](https://github.com/biosustain/data-catalog-resources/blob/test-deploy/README_test_deploy.md) for more info.
 
-## 5. Technical Details
+**PR Preview Page Cleanup**
+
+A workflow is provided for manual cleanup  of old PR preview directories that accumulate over time on the `gh-pages` branch, in case the automatic cleanup processes were not triggered properly when the pr was merged/closed.
+
+**How to trigger**
+
+1. Go to [GitHub Actions](https://github.com/biosustain/data-catalog-resources/actions)
+2. Select **"Cleanup PR Previews"** workflow
+3. Click the **"Run workflow"** button and select the desired branch, if needed
+4. Configure options:
+   - **max_age_days**: How old directories should be to get deleted (default: 30 days)
+   - **dry_run**: Set to `true` to preview what would be deleted without actually deleting
+
+**What it cleans**
+
+- Removes PR preview directories older than the specified age
+
+## 6. Technical Details
 
 - **Built with**: Sphinx 7.4.7+ with MyST-NB extension
 - **Theme**: Sphinx Wagtail Theme v6.4.0+ with custom modifications
 - **Deployment**: GitHub Actions → GitHub Pages
 - **Python**: 3.9+ required
 
-## 6. Support
+## 7. Support
 
 For questions or issues:
 
@@ -149,7 +166,7 @@ For questions or issues:
 2. Create a new issue with detailed description
 3. Contact the [Research Data Management team](mailto:rdm@biosustain.dtu.dk) or [Ding He](mailto:dinghe@biosustain.dtu.dk) at DTU Biosustain
 
-## 7. License
+## 8. License
 
 Copyright (C) 2025 [DTU Biosustain, Technical University of Denmark]
 
