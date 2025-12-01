@@ -71,8 +71,10 @@ The tab displays a table view with:
 
 * **User column:** Lists all users. Your name appears at the top, followed by any additional users you add.
 * **Permissions columns:** Show the available permissions:
-    * **Can Edit:** Allows editing project details
+    * **Can Archive:** Allows Archiving the project
     * **Can Add Datasets:** Allows adding datasets to the project
+    * **Can Edit Metadata:** Allows editing project details
+    * **Can Edit Permissions:** Allows managing user access and permissions
 * **Actions column:** Includes the available actions:  
     * **Save Policy:** Saves changes when adding a new user
     * **Remove Policy:** Revokes a user's access
