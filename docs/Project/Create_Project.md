@@ -43,7 +43,7 @@ Click **`Create project`** at the ***bottom*** of the page to complete the proce
 
 <br/>
 
-```{figure} ../../_static/images/project_creation_3.gif
+```{figure} ../../_static/images/project-creation-2.gif
 :alt: Project Creation
 :width: 93%
 :align: center
