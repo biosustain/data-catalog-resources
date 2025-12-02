@@ -92,7 +92,7 @@ The tab displays a table view with:
 
 <br/>
 
-```{figure} ../../_static/images/project_user_permissions.gif
+```{figure} ../../_static/images/project-user-permissions-2.gif
 :alt: Project Permissions
 :width: 93%
 :align: center
