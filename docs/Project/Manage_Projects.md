@@ -42,7 +42,7 @@ A confirmation box will appear asking you to confirm the action.
 
 <br/>
 
-```{figure} ../../_static/images/manage-project-2.gif
+```{figure} ../../_static/images/manage-project-3.gif
 :alt: Manage Projects
 :width: 93%
 :align: center

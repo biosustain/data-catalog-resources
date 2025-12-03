@@ -32,7 +32,7 @@ From the Project List Page, you can:
 
 <br/>
 
-```{figure} ../../_static/images/project_overview_page.gif
+```{figure} ../../_static/images/project-list-page-2.gif
 :alt: Project List Page
 :width: 93%
 :align: center
@@ -105,6 +105,23 @@ Just below the description, several key features are displayed:
     * Provides an overview of how data will be handled throughout the project lifecycle.
     * Allows you to document policies for data storage, sharing, and preservation.
 
+
+    <br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/project-home-page-3.gif
+:alt: Project Home Page
+:width: 93%
+:align: center
+
+*Project Home Page*
+```
+----------------------------
+
+<br/>
 
 
 ```{note}
