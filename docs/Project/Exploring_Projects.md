@@ -33,11 +33,11 @@ From the Project List Page, you can:
 <br/>
 
 ```{figure} ../../_static/images/project_overview_page.gif
-:alt: Project Overview Page
+:alt: Project List Page
 :width: 93%
 :align: center
 
-*Project Overview Page*
+*Project List Page*
 ```
 ----------------------------
 
