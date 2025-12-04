@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-content_root="../../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Create a New Project &mdash; Data Catalog User Guide</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=a5c75b7f" />
+            <link rel="index" title="Index" href="../../genindex.html" />
+            <link rel="search" title="Search" href="../../search.html" />
+            <link rel="top" title="Data Catalog User Guide" href="#" />
+            <link rel="up" title="Project" href="index.html" />
+            <link rel="next" title="Manage Projects" href="Manage_Projects.html" />
+            <link rel="prev" title="Project" href="index.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../../_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="../../index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        Data Catalog User Guide (v0.0.0)
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Login.html">Data Catalog Access</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Project  <!-- This is the sidebar title --></a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Create a New Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Manage_Projects.html">Manage Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DMP.html">Data Management Plan</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Dataset/index.html">Dataset  <!-- This is the sidebar title --></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Add_Dataset.html">Create a New Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Manage_Datasets.html">Manage Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Files.html">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Search.html">Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Contact.html">Contact</a></li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../index.html">Docs</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Project  <!-- This is the sidebar title --></a></li>
+        <li class="breadcrumb-item active" aria-current="page">Create a New Project</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+
+
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <section class="tex2jax_ignore mathjax_ignore" id="create-a-new-project">
+<h1>Create a New Project<a class="headerlink" href="#create-a-new-project" title="Link to this heading">¶</a></h1>
+<p>This guide walks you through the essential steps to create a project in the Data Catalog.
+Creating a project is <strong>simple</strong> and <strong>flexible</strong> and all users can create projects.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Keep in mind that you can update the project metadata at <strong>any time</strong>.</p>
+</div>
+<section id="step-1-navigate-to-the-project-list-page">
+<h2>Step 1: Navigate to the Project List Page<a class="headerlink" href="#step-1-navigate-to-the-project-list-page" title="Link to this heading">¶</a></h2>
+<ul>
+<li><p>Click the <strong><code class="docutils literal notranslate"><span class="pre">Projects</span></code></strong> button on the Data Catalog welcome page</p>
+<p><strong>or</strong></p>
+</li>
+<li><p>Use the <strong><code class="docutils literal notranslate"><span class="pre">Projects</span></code></strong> tab located at the top of any page.</p></li>
+</ul>
+<p>Both options will take you to the Project List page, where you can browse, or create a new project.</p>
+</section>
+<section id="step-2-add-a-new-project">
+<h2>Step 2: Add a New Project<a class="headerlink" href="#step-2-add-a-new-project" title="Link to this heading">¶</a></h2>
+<p>On the Project List page, click the <strong><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">project</span></code></strong> button located right below the <em><strong>Search</strong></em> bar.</p>
+</section>
+<section id="step-3-fill-in-project-metadata">
+<h2>Step 3: Fill in Project Metadata<a class="headerlink" href="#step-3-fill-in-project-metadata" title="Link to this heading">¶</a></h2>
+<p>Complete all the required fields marked with <strong><code class="docutils literal notranslate"><span class="pre">*</span></code></strong>:</p>
+<ul class="simple">
+<li><p>Project Title (<strong><code class="docutils literal notranslate"><span class="pre">*</span></code></strong>)</p></li>
+<li><p>Project Description (<strong><code class="docutils literal notranslate"><span class="pre">*</span></code></strong>)</p></li>
+<li><p>Access Rights (<strong><code class="docutils literal notranslate"><span class="pre">*</span></code></strong>)</p></li>
+<li><p>Principal Investigator (PI) (<strong><code class="docutils literal notranslate"><span class="pre">*</span></code></strong>)</p></li>
+</ul>
+</section>
+<section id="final-step-complete-project-creation">
+<h2>Final Step: Complete Project Creation<a class="headerlink" href="#final-step-complete-project-creation" title="Link to this heading">¶</a></h2>
+<p>Click <strong><code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">project</span></code></strong> at the <em><strong>bottom</strong></em> of the page to complete the process.</p>
+<br/>
+<hr class="docutils" />
+<br/>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/project-creation-3.gif"><img alt="Project Creation" src="../../_images/project-creation-3.gif" style="width: 93%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Project Creation</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<br/>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some fields on the project creation page are automatically generated by the system, such as <strong>Project Identifier</strong>, <strong>Date Created</strong>, <strong>Project Creator</strong>, <strong>Project Status</strong>, and <strong>Access Rights</strong>. Some of these fields cannot be edited.</p>
+</div>
+<br/>
+</section>
+<hr class="docutils" />
+<section id="access-rights-and-visibility">
+<h2>Access Rights and Visibility<a class="headerlink" href="#access-rights-and-visibility" title="Link to this heading">¶</a></h2>
+<p>Projects have two access rights settings:</p>
+<ul class="simple">
+<li><p><strong>BRIGHT-visible:</strong></p>
+<ul>
+<li><p>Project metadata is visible (read-only) to all BRIGHT employees. However, visibility of datasets depends on each dataset’s individual access rights.</p></li>
+</ul>
+</li>
+<li><p><strong>Restricted:</strong></p>
+<ul>
+<li><p>The project is only visible to users who have been explicitly granted read access.</p></li>
+</ul>
+</li>
+</ul>
+<p>➣ By default, projects are set to <strong>BRIGHT-visible</strong>, but you can change the access rights when creating or editing a project.</p>
+<p>Understanding how access rights affect visibility is important for collaboration:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Users without assigned permissions follow the project’s access rights:</p>
+<p>→ For <strong>BRIGHT-visible</strong> projects: They can view metadata but cannot see files or upload/download data.</p>
+<p>→ For <strong>Restricted</strong> projects: They cannot see any project information.</p>
+</div>
+</section>
+</section>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="index.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Project  <!-- This is the sidebar title -->
+    </a>
+    <a class="float-right" href="Manage_Projects.html" title="Next">
+        Manage Projects <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Create a New Project</a><ul>
+<li><a class="reference internal" href="#step-1-navigate-to-the-project-list-page">Step 1: Navigate to the Project List Page</a></li>
+<li><a class="reference internal" href="#step-2-add-a-new-project">Step 2: Add a New Project</a></li>
+<li><a class="reference internal" href="#step-3-fill-in-project-metadata">Step 3: Fill in Project Metadata</a></li>
+<li><a class="reference internal" href="#final-step-complete-project-creation">Final Step: Complete Project Creation</a></li>
+<li><a class="reference internal" href="#access-rights-and-visibility">Access Rights and Visibility</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+            <div class="text-center">
+                    &copy; Copyright 2025, Research Data Management, BRIGHT
+            </div>
+            <div class="text-center text-white-50 font-italic mt-3">
+                <small>
+                    Created using
+                    <a class="text-white" href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Sphinx Wagtail Theme 6.5.0
+                    </a>
+                    and
+                    <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
+                        Sphinx 7.4.7
+                    </a>
+                </small>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script src="../../_static/documentation_options.js?v=8b92e751"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../../_static/js/mobile-toc.js?v=28931289"></script>
+        <script type="text/javascript" src="../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
