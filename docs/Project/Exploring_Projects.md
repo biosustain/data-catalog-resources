@@ -28,22 +28,6 @@ From the Project List Page, you can:
 
     <br/>
 
--------------------------------
-
-<br/>
-
-```{figure} ../../_static/images/project-list-page-2.gif
-:alt: Project List Page
-:width: 93%
-:align: center
-
-*Project List Page*
-```
-----------------------------
-
-<br/>
-
-
 
 ```{tip}
 The **Search** bar is available throughout the platform, so you can easily find projects and datasets from different views.

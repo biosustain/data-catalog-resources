@@ -20,26 +20,14 @@ From the Dataset List Page, you can:
 
     * Use the search bar to find specific datasets
 
+* **Create new Dataset**
+
+    * Click the `Add a new dataset` button to start creating a new dataset.
+
 * **View Active & Archived datasets**
 
     * Use the tabs at the top of the page to organize your view
 
-
-
- <br/>
-
--------------------------------
-
-<br/>
-
-```{figure} ../../_static/images/dataset_overview_page.gif
-:alt: Dataset List Page
-:width: 93%
-:align: center
-
-*Dataset List Page*
-```
-----------------------------
 
 <br/>
 
@@ -122,7 +110,7 @@ Just below the description, several key features are displayed:
 
 <br/>
 
-```{figure} ../../_static/images/dataset_home_page.gif
+```{figure} ../../_static/images/exploring-datasets-2.gif
 :alt: Dataset Home Page
 :width: 93%
 :align: center

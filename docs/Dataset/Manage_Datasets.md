@@ -42,7 +42,7 @@ A confirmation box will appear asking you to confirm the action.
 
 <br/>
 
-```{figure} ../../_static/images/manage_dataset.gif
+```{figure} ../../_static/images/manage-dataset.gif
 :alt: Manage Datasets
 :width: 93%
 :align: center
@@ -98,5 +98,20 @@ The tab displays a table view with:
 
 
 
+<br/>
 
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/dataset-user-permissions.gif
+:alt: Dataset Permissions
+:width: 93%
+:align: center
+
+*Dataset Permissions*
+```
+----------------------------
+
+<br/>
 
