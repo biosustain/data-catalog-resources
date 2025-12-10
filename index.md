@@ -1,6 +1,6 @@
 # Welcome
 
-This user guide introduces the **Data Catalog**, a central interface designed to **organize**, **register**, and **discover** research data within DTU BRIGHT.<br/>
+This user guide introduces the **Data Catalog**, a central interface designed to **organize**, **register**, and **discover** research data within BRIGHT.<br/>
 
 It serves as the metadata management layer and gateway to the underlying research data infrastructure, ensuring that all data assets (Projects, Datasets, and Files) are **findable**, **accessible**, **interoperable**, and **reusable** (FAIR).
 <br/>
@@ -8,7 +8,7 @@ It serves as the metadata management layer and gateway to the underlying researc
 
 ## The Purpose of Data Catalog
 
-The Data Catalog provides a secure and structured environment for managing active data, making it **as open as possible and as close as necessary** within DTU BRIGHT. 
+The Data Catalog provides a secure and structured environment for managing active data, making it **as open as possible and as close as necessary** within BRIGHT. 
 
 Specific goals include:
 - Provide a centralized data portal to enhance FAIR data principles throughout the data lifecycle.
@@ -65,7 +65,7 @@ Each File has:
 
 ### Authorization
 
-The Data Catalog is currently **only accessible** by personnel officially employed or associated with DTU BRIGHT. Each dataset can belong to one or more projects and project metadata is visible to all BRIGHT employees with read-only access.
+The Data Catalog is currently **only accessible** by personnel officially employed or associated with BRIGHT. Each dataset can belong to one or more projects and project metadata is visible to all BRIGHT employees with read-only access.
 <br/>
 
 

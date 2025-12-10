@@ -12,7 +12,12 @@ header.bg-primary {
     position: relative !important;
 }
 
-/* Clean layout - hide unnecessary elements */
+/* Clean layout - hide unnecessary elements 
+    This hides the following:
+   - The active breadcrumb item (current page)
+   - The horizontal rule under the row
+   - The first breadcrumb item (usually 'Home' or similar)
+
 .breadcrumb-item.active,
 .row hr.w-100.my-4,
 .breadcrumb-item:first-child {
@@ -21,7 +26,16 @@ header.bg-primary {
 
 .breadcrumb-item:first-child + .breadcrumb-item::before {
     content: none !important;
-}
+}*/
+
+
+ /* Clean layout - hide the whole breadcrumb navigation and removes the space */
+.row hr.w-100.my-4,              
+.breadcrumb-item:first-child,
+.breadcrumb {   
+   display: none !important;      
+}                                   
+
 
 /* Spacing adjustments */
 .col-12.col-lg-9.pt-5 {
