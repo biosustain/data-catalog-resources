@@ -46,7 +46,7 @@ You can perform basic actions on files or directories uploaded to the Data Catal
 
 <br/>
 
-```{figure} ../../_static/images/files.gif
+```{figure} ../../_static/images/add_files.gif
 :alt: Uploading files
 :width: 93%
 :align: center

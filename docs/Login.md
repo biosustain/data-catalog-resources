@@ -2,7 +2,7 @@
 
 This guide explains how to access the **Data Catalog** and log in for the first time using your DTU credentials.
 
-➤ All BRIGHT employees have immediate access to Data Catalog. No prior approval is required.
+➤ All DTU BRIGHT employees have immediate access to Data Catalog. No prior approval is required.
 If you experience issues accessing the platform, please contact **Pasquale Domenico Colaianni** at [**pasdom@biosustain.dtu.dk**](mailto:pasdom@biosustain.dtu.dk) or **Research Data Management** team at [**rdm@biosustain.dtu.dk**](mailto:rdm@biosustain.dtu.dk).
 <br/>
 
@@ -35,3 +35,4 @@ Then, sign in using your ***DTU email and password***.
 
 <br/>
 ➤ Once logged in, you will land on the Data Catalog welcome page, where you can begin exploring its features.
+
