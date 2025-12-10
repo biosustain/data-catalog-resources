@@ -4,30 +4,42 @@ The **Datasets** section in the Data Catalog can help you organize and manage re
 
 Like projects, datasets have two main views:
 
-* **Dataset List Page**, where you can search, and create new dataset.
+* **Datasets Overview Page**, where you can search, and create new dataset.
 * **Dataset Home Page**, where you manage the details of a specific dataset, including metadata, linked projects, and files.
 
 
 
-## ➤ Dataset List Page
+## ➤ Dataset Overview Page
 
 This is the starting point for navigating to all datasets in the Data Catalog.
 
-### ➣ Key Features of the Dataset List Page
-From the Dataset List Page, you can:
+### ➣ Key Features of the Datasets Overview Page
+From the Datasets Overview Page, you can:
 
 * **Search** 
 
     * Use the search bar to find specific datasets
 
-* **Create new Dataset**
-
-    * Click the `Add a new dataset` button to start creating a new dataset.
-
 * **View Active & Archived datasets**
 
     * Use the tabs at the top of the page to organize your view
 
+
+
+ <br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/dataset_overview_page.gif
+:alt: Dataset Overview Page
+:width: 93%
+:align: center
+
+*Dataset Overview Page*
+```
+----------------------------
 
 <br/>
 
@@ -45,16 +57,16 @@ The **Dataset Home Page** in Data Catalog is the central place to view and manag
 
    * Metadata
    * Projects
-   * Permissions
+   * <span style="color:#999999">Permissions (coming soon)</span>
    * <span style="color:#999999">History (coming soon)</span>
-   * Lineage
+   * <span style="color:#999999">Lineage (coming soon)</span>
    * Files 
 
 
 for a specific dataset, into one organized interface.
 
 ```{note}
-The **History** feature is currently visible but not active. It will be available soon, allowing you to view dataset activity.
+The **Permissions**, **History** and **Lineage** features are currently visible but not active. They will be available soon, allowing you to manage dataset users, view dataset activity and track relationships between datasets.
 ```
 
 
@@ -77,25 +89,24 @@ Just below the description, several key features are displayed:
     * Here are listed all projects the dataset is linked to.
     * You can view project details.
 
-* **Permissions**:
-    * This section shows all users who have access to the dataset.
-    * Here dataset creators can manage (add/remove) users and assign permissions:
-        * Can Edit Permissions: Allows managing user access and permissions for the dataset
-        * Can Edit Metadata: Allows editing dataset details
-        * Can Archive: Allows Archiving the dataset
-        * Can List Files: Allows viewing all files in the dataset
-        * Can Edit Files: Allows uploading or deleting files in the dataset
-        * Can Download Files: Allows downloading files
-        * <span style="color:#999999"> Can Run Pipelines: Allows running analysis pipelines on the dataset files (coming soon)</span>
+* <span style="color:#999999">**Permissions**:</span>
+    * <span style="color:#999999">This section shows all users who have access to the dataset.</span>
+    * <span style="color:#999999">Here dataset creators can manage (add/remove) users and assign permissions:</span>
+        * <span style="color:#999999">Can Edit: Update dataset medatada</span>
+        * <span style="color:#999999">Can Edit Files</span>
+        * <span style="color:#999999">Can List Files</span>
+        * <span style="color:#999999">Can Download Files</span>
+        * <span style="color:#999999">Can Run Pipelines</span>
+   
 
 * <span style="color:#999999">**History**:</span>
     * <span style="color:#999999">Shows a log of changes made to the dataset.</span>
     * <span style="color:#999999">Useful for tracking updates.</span>
 
 
-* **Lineage**
-    * This section displays the relationships between datasets across different stages (e.g., raw → processed → results). 
-    * Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility.
+* <span style="color:#999999">**Lineage**:</span>
+    * <span style="color:#999999">This section displays the relationships between datasets across different stages (e.g., raw → processed → results). </span>
+    * <span style="color:#999999">Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility.</span>
   
 
 * **Files**:
@@ -110,7 +121,7 @@ Just below the description, several key features are displayed:
 
 <br/>
 
-```{figure} ../../_static/images/exploring-datasets-2.gif
+```{figure} ../../_static/images/dataset_home_page.gif
 :alt: Dataset Home Page
 :width: 93%
 :align: center

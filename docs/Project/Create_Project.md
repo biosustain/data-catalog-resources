@@ -43,7 +43,7 @@ Click **`Create project`** at the ***bottom*** of the page to complete the proce
 
 <br/>
 
-```{figure} ../../_static/images/project-creation-3.gif
+```{figure} ../../_static/images/project_creation_3.gif
 :alt: Project Creation
 :width: 93%
 :align: center
@@ -79,7 +79,7 @@ Understanding how access rights affect visibility is important for collaboration
 
 ```{note}
 
-Users without assigned permissions follow the project access rights:
+Users without assigned permissions follow the project’s access rights:
 
 → For **BRIGHT-visible** projects: They can view metadata but cannot see files or upload/download data.
 
