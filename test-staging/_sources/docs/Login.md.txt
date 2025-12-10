@@ -35,4 +35,3 @@ Then, sign in using your ***DTU email and password***.
 
 <br/>
 ➤ Once logged in, you will land on the Data Catalog welcome page, where you can begin exploring its features.
-
