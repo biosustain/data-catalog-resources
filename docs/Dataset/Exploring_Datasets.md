@@ -47,14 +47,14 @@ The **Dataset Home Page** in Data Catalog is the central place to view and manag
    * Projects
    * Permissions
    * <span style="color:#999999">History (coming soon)</span>
-   * Lineage
+   * <span style="color:#999999">Lineage (coming soon)</span>
    * Files 
 
 
 for a specific dataset, into one organized interface.
 
 ```{note}
-The **History** feature is currently visible but not active. It will be available soon, allowing you to view dataset activity.
+The **History** and **Lineage** features are currently visible but not active. They will be available soon, allowing you to view dataset activity and track relationships between datasets.
 ```
 
 
@@ -93,9 +93,9 @@ Just below the description, several key features are displayed:
     * <span style="color:#999999">Useful for tracking updates.</span>
 
 
-* **Lineage**
-    * This section displays the relationships between datasets across different stages (e.g., raw → processed → results). 
-    * Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility.
+* <span style="color:#999999">**Lineage**:</span>
+    * <span style="color:#999999">This section displays the relationships between datasets across different stages (e.g., raw → processed → results).</span>
+    * <span style="color:#999999">Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility. </span>
   
 
 * **Files**:
