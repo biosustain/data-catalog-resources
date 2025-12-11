@@ -13,7 +13,7 @@
       <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
       <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=a5c75b7f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=0c5006f7" />
             <link rel="index" title="Index" href="../../genindex.html" />
             <link rel="search" title="Search" href="../../search.html" />
             <link rel="top" title="Data Catalog User Guide" href="#" />
@@ -131,24 +131,19 @@
 <p>The <strong>Datasets</strong> section in the Data Catalog can help you organize and manage research data efficiently. Its structure is similar to the Projects section, so if you have explored projects before, you will find the navigation familiar.</p>
 <p>Like projects, datasets have two main views:</p>
 <ul class="simple">
-<li><p><strong>Dataset List Page</strong>, where you can search, and create new dataset.</p></li>
+<li><p><strong>Datasets Overview Page</strong>, where you can search, and create new dataset.</p></li>
 <li><p><strong>Dataset Home Page</strong>, where you manage the details of a specific dataset, including metadata, linked projects, and files.</p></li>
 </ul>
-<section id="dataset-list-page">
-<h2>➤ Dataset List Page<a class="headerlink" href="#dataset-list-page" title="Link to this heading">¶</a></h2>
+<section id="dataset-overview-page">
+<h2>➤ Dataset Overview Page<a class="headerlink" href="#dataset-overview-page" title="Link to this heading">¶</a></h2>
 <p>This is the starting point for navigating to all datasets in the Data Catalog.</p>
-<section id="key-features-of-the-dataset-list-page">
-<h3>➣ Key Features of the Dataset List Page<a class="headerlink" href="#key-features-of-the-dataset-list-page" title="Link to this heading">¶</a></h3>
-<p>From the Dataset List Page, you can:</p>
+<section id="key-features-of-the-datasets-overview-page">
+<h3>➣ Key Features of the Datasets Overview Page<a class="headerlink" href="#key-features-of-the-datasets-overview-page" title="Link to this heading">¶</a></h3>
+<p>From the Datasets Overview Page, you can:</p>
 <ul class="simple">
 <li><p><strong>Search</strong></p>
 <ul>
 <li><p>Use the search bar to find specific datasets</p></li>
-</ul>
-</li>
-<li><p><strong>Create new Dataset</strong></p>
-<ul>
-<li><p>Click the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">dataset</span></code> button to start creating a new dataset.</p></li>
 </ul>
 </li>
 <li><p><strong>View Active &amp; Archived datasets</strong></p>
@@ -157,6 +152,17 @@
 </ul>
 </li>
 </ul>
+ <br/>
+<hr class="docutils" />
+<br/>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/dataset_overview_page.gif"><img alt="Dataset Overview Page" src="../../_images/dataset_overview_page.gif" style="width: 93%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Dataset Overview Page</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
 <br/>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -171,7 +177,7 @@
 <ul class="simple">
 <li><p>Metadata</p></li>
 <li><p>Projects</p></li>
-<li><p>Permissions</p></li>
+<li><p><span style="color:#999999">Permissions (coming soon)</span></p></li>
 <li><p><span style="color:#999999">History (coming soon)</span></p></li>
 <li><p><span style="color:#999999">Lineage (coming soon)</span></p></li>
 <li><p>Files</p></li>
@@ -203,18 +209,16 @@
 <li><p>You can view project details.</p></li>
 </ul>
 </li>
-<li><p><strong>Permissions</strong>:</p>
+<li><p><span style="color:#999999"><strong>Permissions</strong>:</span></p>
 <ul>
-<li><p>This section shows all users who have access to the dataset.</p></li>
-<li><p>Here dataset creators can manage (add/remove) users and assign permissions:</p>
+<li><p><span style="color:#999999">This section shows all users who have access to the dataset.</span></p></li>
+<li><p><span style="color:#999999">Here dataset creators can manage (add/remove) users and assign permissions:</span></p>
 <ul>
-<li><p>Can Edit Permissions: Allows managing user access and permissions for the dataset</p></li>
-<li><p>Can Edit Metadata: Allows editing dataset details</p></li>
-<li><p>Can Archive: Allows Archiving the dataset</p></li>
-<li><p>Can List Files: Allows viewing all files in the dataset</p></li>
-<li><p>Can Edit Files: Allows uploading or deleting files in the dataset</p></li>
-<li><p>Can Download Files: Allows downloading files</p></li>
-<li><p><span style="color:#999999"> Can Run Pipelines: Allows running analysis pipelines on the dataset files (coming soon)</span></p></li>
+<li><p><span style="color:#999999">Can Edit: Update dataset medatada</span></p></li>
+<li><p><span style="color:#999999">Can Edit Files</span></p></li>
+<li><p><span style="color:#999999">Can List Files</span></p></li>
+<li><p><span style="color:#999999">Can Download Files</span></p></li>
+<li><p><span style="color:#999999">Can Run Pipelines</span></p></li>
 </ul>
 </li>
 </ul>
@@ -241,11 +245,11 @@
  <br/>
 <hr class="docutils" />
 <br/>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../_images/exploring-datasets-2.gif"><img alt="Dataset Home Page" src="../../_images/exploring-datasets-2.gif" style="width: 93%;" />
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/dataset_home_page.gif"><img alt="Dataset Home Page" src="../../_images/dataset_home_page.gif" style="width: 93%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><em>Dataset Home Page</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+<p><span class="caption-text"><em>Dataset Home Page</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -276,8 +280,8 @@
                             <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
                             <ul>
 <li><a class="reference internal" href="#">Exploring Dataset</a><ul>
-<li><a class="reference internal" href="#dataset-list-page">➤ Dataset List Page</a><ul>
-<li><a class="reference internal" href="#key-features-of-the-dataset-list-page">➣ Key Features of the Dataset List Page</a></li>
+<li><a class="reference internal" href="#dataset-overview-page">➤ Dataset Overview Page</a><ul>
+<li><a class="reference internal" href="#key-features-of-the-datasets-overview-page">➣ Key Features of the Datasets Overview Page</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#dataset-home-page">➤ Dataset Home Page</a><ul>
@@ -305,7 +309,7 @@
         <div class="col p-4">
             
             <div class="text-center">
-                    &copy; Copyright 2025, Research Data Management, BRIGHT
+                    &copy; Copyright 2025, Research Data Management, DTU BRIGHT
             </div>
             <div class="text-center text-white-50 font-italic mt-3">
                 <small>
