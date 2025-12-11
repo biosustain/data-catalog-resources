@@ -118,5 +118,6 @@ The tab displays a table view with:
 
 ```{tip}
 To grant or remove permissions for a user, simply click or unclick the options available. Changes apply immediately without a "Save" button.
+
 ```
 
