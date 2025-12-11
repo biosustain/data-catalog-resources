@@ -37,7 +37,7 @@ To make your search more precise, try combining **multiple filters** at once.
 
 <br/>
 
-```{figure} ../_static/images/search-2.gif
+```{figure} ../_static/images/search.gif
 :alt: Search
 :width: 93%
 :align: center
