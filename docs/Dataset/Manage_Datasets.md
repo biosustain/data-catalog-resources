@@ -42,7 +42,7 @@ A confirmation box will appear asking you to confirm the action.
 
 <br/>
 
-```{figure} ../../_static/images/manage_dataset.gif
+```{figure} ../../_static/images/manage-dataset.gif
 :alt: Manage Datasets
 :width: 93%
 :align: center
@@ -79,9 +79,11 @@ The tab displays a table view with:
 
 * **User column:** Lists all users who have access to the dataset
 * **Permissions columns:** Show the available permissions:
-    * **Can Edit:** Allows editing dataset details
-    * **Can Edit Files:** Allows uploading or deleting files in the dataset
+    * **Can Edit Permissions:** Allows managing user access and permissions for the dataset
+    * **Can Edit Metadata:** Allows editing dataset details
+    * **Can Archive:** Allows Archiving the dataset
     * **Can List Files:** Allows viewing all files in the dataset
+    * **Can Edit Files:** Allows uploading or deleting files in the dataset
     * **Can Download Files:** Allows downloading files
     * <span style="color:#999999"> **Can Run Pipelines:** Allows running analysis pipelines on the dataset's files (coming soon)</span>
 * **Actions column:** Includes:
@@ -96,5 +98,20 @@ The tab displays a table view with:
 
 
 
+<br/>
 
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/dataset-user-permissions.gif
+:alt: Dataset Permissions
+:width: 93%
+:align: center
+
+*Dataset Permissions*
+```
+----------------------------
+
+<br/>
 
