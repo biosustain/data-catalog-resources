@@ -82,7 +82,7 @@ Just below the description, several key features are displayed:
     * Here dataset creators can manage (add/remove) users and assign permissions:
         * Can Edit Permissions: Allows managing user access and permissions for the dataset
         * Can Edit Metadata: Allows editing dataset details
-        * Can Archive: Allows Archiving the dataset
+        * Can Archive: Allows archiving the dataset
         * Can List Files: Allows viewing all files in the dataset
         * Can Edit Files: Allows uploading or deleting files in the dataset
         * Can Download Files: Allows downloading files
