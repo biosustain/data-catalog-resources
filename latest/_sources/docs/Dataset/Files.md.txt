@@ -1,6 +1,6 @@
 # Files
 
-**Files** are the smallest data units in the system. Each file belongs to a dataset and represents a single piece of data, such as a sequence file, image, table, or model output in a specific format. Every file has a unique identifier, a defined format (e.g., .fastq, .csv, .tiff, .h5), and metadata that describes its content and origin.
+**Files** are the smallest data units in the system. Each file belongs to a dataset and represents a single piece of data, such as a sequence file, image, table, or model output in a specific format.
 
 
 ## Upload Files
@@ -24,7 +24,7 @@ There are three options available:
 
 
 ```{tip}
-When uploading a **directory**, the folder structure is preserved for better organization (coming soon).
+When uploading a **directory**, the folder structure is preserved for better organization.
 ```
 
 ----------------------------------
@@ -46,7 +46,7 @@ You can perform basic actions on files or directories uploaded to the Data Catal
 
 <br/>
 
-```{figure} ../../_static/images/add_files.gif
+```{figure} ../../_static/images/files.gif
 :alt: Uploading files
 :width: 93%
 :align: center
