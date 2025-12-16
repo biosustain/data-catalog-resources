@@ -42,7 +42,7 @@ A confirmation box will appear asking you to confirm the action.
 
 <br/>
 
-```{figure} ../../_static/images/manage_project_2.gif
+```{figure} ../../_static/images/manage-project-3.gif
 :alt: Manage Projects
 :width: 93%
 :align: center
@@ -71,8 +71,10 @@ The tab displays a table view with:
 
 * **User column:** Lists all users. Your name appears at the top, followed by any additional users you add.
 * **Permissions columns:** Show the available permissions:
-    * **Can Edit:** Allows editing project details
+    * **Can Edit Permissions:** Allows managing user access and permissions
+    * **Can Edit Metadata:** Allows editing project details
     * **Can Add Datasets:** Allows adding datasets to the project
+    * **Can Archive:** Allows archiving the project 
 * **Actions column:** Includes the available actions:  
     * **Save Policy:** Saves changes when adding a new user
     * **Remove Policy:** Revokes a user's access
@@ -90,7 +92,7 @@ The tab displays a table view with:
 
 <br/>
 
-```{figure} ../../_static/images/project_user_permissions.gif
+```{figure} ../../_static/images/project-user-permissions-2.gif
 :alt: Project Permissions
 :width: 93%
 :align: center
@@ -100,6 +102,11 @@ The tab displays a table view with:
 ----------------------------
 
 <br/>
+
+
+```{tip}
+To grant or remove permissions for a user, simply click or unclick the options available. Changes apply immediately without a "Save" button.
+```
 
 
 
