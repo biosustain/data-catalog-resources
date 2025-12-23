@@ -168,7 +168,7 @@ For questions or issues:
 
 ## 7. License
 
-Copyright (C) 2025 [BRIGHT, Technical University of Denmark]
+Copyright (C) 2026 [BRIGHT, Technical University of Denmark]
 
 This documentation is free: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
