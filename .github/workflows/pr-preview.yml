@@ -15,6 +15,10 @@ on:
         required: false
         default: false
         type: boolean
+
+concurrency:
+  group: gh-pages-deployment
+  cancel-in-progress: false
     
 jobs:
   pr-preview:

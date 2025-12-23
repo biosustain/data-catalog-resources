@@ -8,6 +8,10 @@ on:
       - main
   workflow_dispatch:
 
+concurrency:
+  group: gh-pages-deployment
+  cancel-in-progress: false
+
 # This job installs dependencies, builds the website and pushes it to `gh-pages`
 jobs:
   deploy:
@@ -32,6 +36,11 @@ jobs:
 
       # If we've pushed to main, push the book's HTML to github-pages latest directory
       - if: ${{ github.ref == 'refs/heads/main' }}
+        name: Fetch latest gh-pages
+        run: |
+          git fetch origin gh-pages 2>/dev/null || true
+
+      - if: ${{ github.ref == 'refs/heads/main' }}
         name: Save to gh-pages (latest)
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -39,4 +48,5 @@ jobs:
           publish_dir: ./_build
           destination_dir: latest
           keep_files: true
+          force_orphan: false
           # cname: website.com
