@@ -1,11 +1,11 @@
-# Data Catalog Resources at DTU Biosustain
+# Data Catalog Resources at BRIGHT
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://biosustain.github.io/data-catalog-resources/)
 [![Build Status](https://github.com/biosustain/data-catalog-resources/workflows/build-and-save-website/badge.svg)](https://github.com/biosustain/data-catalog-resources/actions)
 
 ## 1. Description
 
-This repository builds a static website containing Data Catalog user guides and relevant resources created at DTU Biosustain.
+This repository builds a static website containing Data Catalog user guides and relevant resources created at BRIGHT.
 
 The website is built using [Sphinx](https://www.sphinx-doc.org/en/master/usage/index.html) with the [Wagtail Theme](https://pypi.org/project/sphinx-wagtail-theme/) and deployed via [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
@@ -164,11 +164,11 @@ For questions or issues:
 
 1. Check existing [Issues](https://github.com/biosustain/data-catalog-resources/issues)
 2. Create a new issue with detailed description
-3. Contact the [Research Data Management team](mailto:rdm@biosustain.dtu.dk) or [Ding He](mailto:dinghe@biosustain.dtu.dk) at DTU Biosustain
+3. Contact the [Research Data Management team](mailto:rdm@bright.dtu.dk) or [Ding He](mailto:dinghe@dtu.dk) at BRIGHT
 
 ## 8. License
 
-Copyright (C) 2025 [DTU Biosustain, Technical University of Denmark]
+Copyright (C) 2025 [BRIGHT, Technical University of Denmark]
 
 This documentation is free: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -186,5 +186,5 @@ along with this documentation. If not, see <https://www.gnu.org/licenses/>.
 ---
 
 **Research Data Management Team**  
-DTU Biosustain  
+BRIGHT  
 Technical University of Denmark
