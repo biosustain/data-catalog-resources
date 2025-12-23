@@ -1,8 +1,8 @@
 #  Data Catalog Access
 
-This guide explains how to access the **Data Catalog** and log in for the first time using your DTU credentials.
+This guide explains how to access the **Data Catalog**.
 
-➤ All BRIGHT employees have immediate access to Data Catalog. No prior approval is required.
+➤ All BRIGHT employees have immediate access to Data Catalog. You just need to log in using your DTU credentials.
 If you experience issues accessing the platform, please contact **Pasquale Domenico Colaianni** at [**pasdom@dtu.dk**](mailto:pasdom@dtu.dk) or **Research Data Management** team at [**rdm@bright.dtu.dk**](mailto:rdm@bright.dtu.dk).
 <br/>
 
