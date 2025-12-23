@@ -103,7 +103,7 @@ python -m http.server 8000 --directory _build
 ```
 Open http://localhost:8000 in your browser.
 
-> **Note:** For more complex and thorough tests, follow the instructions in the [test-deploy branch](https://github.com/biosustain/data-catalog-resources/blob/test-deploy/README_test_deploy.md).
+
 
 ### 4.3 Update your branch to GitHub
 
@@ -132,7 +132,7 @@ git push origin your-working-branch
 2. Click **"Compare & pull request"** for your branch
 3. Fill in details and click **"Create pull request"**
 
-> **Note:** Pull request will trigger GitHub automatic workflow, and a preview page will be generated. See README on the [test-deploy branch](https://github.com/biosustain/data-catalog-resources/blob/test-deploy/README_test_deploy.md) for more info.
+> **Note:** Pull requests automatically generate preview pages. Check the PR comments for the preview URL after the workflow completes.
 
 **PR Preview Page Cleanup**
 
@@ -151,14 +151,14 @@ A workflow is provided for manual cleanup  of old PR preview directories that ac
 
 - Removes PR preview directories older than the specified age
 
-## 6. Technical Details
+## 5. Technical Details
 
 - **Built with**: Sphinx 7.4.7+ with MyST-NB extension
 - **Theme**: Sphinx Wagtail Theme v6.4.0+ with custom modifications
 - **Deployment**: GitHub Actions → GitHub Pages
 - **Python**: 3.9+ required
 
-## 7. Support
+## 6. Support
 
 For questions or issues:
 
@@ -166,7 +166,7 @@ For questions or issues:
 2. Create a new issue with detailed description
 3. Contact the [Research Data Management team](mailto:rdm@bright.dtu.dk) or [Ding He](mailto:dinghe@dtu.dk) at BRIGHT
 
-## 8. License
+## 7. License
 
 Copyright (C) 2025 [BRIGHT, Technical University of Denmark]
 
