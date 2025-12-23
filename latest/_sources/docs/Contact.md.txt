@@ -1,7 +1,7 @@
 # Contact
 
 ## Write an email
-If you have **questions about Data Catalog**, or suggestions to improve the platform, you can contact **Research Data Management** team at [**rdm@biosustain.dtu.dk**](mailto:rdm@biosustain.dtu.dk) or **Pasquale Domenico Colaianni** at [**pasdom@biosustain.dtu.dk**](mailto:pasdom@biosustain.dtu.dk).
+If you have **questions about Data Catalog**, or suggestions to improve the platform, you can contact **Research Data Management** team at [**rdm@dtu.dk**](mailto:rdm@bright.dtu.dk) or **Pasquale Domenico Colaianni** at [**pasdom@dtu.dk**](mailto:pasdom@dtu.dk).
 
 Include:
 * A brief description of your question or suggestion

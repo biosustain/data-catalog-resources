@@ -60,7 +60,7 @@ You can perform basic actions on files or directories uploaded to the Data Catal
 
 
 ```{warning}
-Currently, deleting a file permanently removes it from the Data Catalog. However, files can still be **restored within 7 days** of deletion through the storage account. If you need to restore a file, please contact **Research Data Management** team at [rdm@biosustain.dtu.dk](mailto:rdm@biosustain.dtu.dk) or **Pasquale Domenico Colaianni** at [pasdom@biosustain.dtu.dk](mailto:pasdom@biosustain.dtu.dk). 
+Currently, deleting a file permanently removes it from the Data Catalog. However, files can still be **restored within 7 days** of deletion through the storage account. If you need to restore a file, please contact **Research Data Management** team at [rdm@bright.dtu.dk](mailto:rdm@bright.dtu.dk) or **Pasquale Domenico Colaianni** at [pasdom@dtu.dk](mailto:pasdom@dtu.dk). 
 
 **Keep in mind that this behavior may change in future releases.*
 ```
