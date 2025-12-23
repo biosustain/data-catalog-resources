@@ -186,5 +186,5 @@ along with this documentation. If not, see <https://www.gnu.org/licenses/>.
 ---
 
 **Research Data Management Team**  
-BRIGHT  
+BRIGHT
 Technical University of Denmark
