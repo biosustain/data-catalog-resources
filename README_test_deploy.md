@@ -58,8 +58,8 @@ git push origin test-deploy
 
 1. Check [GitHub Actions logs](https://github.com/biosustain/data-catalog-resources/actions)
 2. Create [new issue](https://github.com/biosustain/data-catalog-resources/issues) with branch/commit details
-3. Contact [Ding He](mailto:dinghe@biosustain.dtu.dk) at DTU Biosustain
+3. Contact [Ding He](mailto:dinghe@bright.dtu.dk) at BRIGHT
 
 ---
 
-**Research Data Management Team** | DTU Biosustain
+**Research Data Management Team** | BRIGHT
