@@ -60,8 +60,8 @@ Archived projects remain visible under the **Archived** section on the Project L
 <br/>
 
 ----------------------------------
-
-## Manage User Permissions
+(manage-project-user-permissions)=
+## Manage Projects User Permissions
 
 As the project creator, you have full control over the project, including its datasets and user access. You can add users and assign permissions through the **Permissions** tab on the project home page.
 
