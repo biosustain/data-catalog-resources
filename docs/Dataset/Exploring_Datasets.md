@@ -93,9 +93,9 @@ Just below the description, several key features are displayed:
     * <span style="color:#999999">Useful for tracking updates.</span>
 
 
-* <span style="color:#999999">**Lineage**:</span>
-    * <span style="color:#999999">This section displays the relationships between datasets across different stages (e.g., raw → processed → results).</span>
-    * <span style="color:#999999">Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility. </span>
+* **Lineage**
+    * This section displays the relationships between datasets across different stages (e.g., raw → processed → results)
+    * Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility.
   
 
 * **Files**:
@@ -110,7 +110,7 @@ Just below the description, several key features are displayed:
 
 <br/>
 
-```{figure} ../../_static/images/exploring-datasets-2.gif
+```{figure} ../../_static/images/exploring-dataset-updated.gif
 :alt: Dataset Home Page
 :width: 93%
 :align: center
