@@ -79,10 +79,83 @@ Click `Create dataset` at the ***bottom*** of the page to complete the process.
 ```
 
 
+-------------------------------------------
+
+
+## Access Rights and Visibility
+Access rights for datasets work similarly to projects. 
+Similar to projects, datasets have two access rights settings:
+
+* **BRIGHT-visible:** 
+    * Dataset metadata is visible (read-only) to all BRIGHT employees.
+
+* **Restricted:** 
+    * The dataset is only visible to users who have been explicitly granted read access.
+
+➣ By default, datasets as well as projects are set to **BRIGHT-visible**, but you can change the access rights when creating or editing a dataset.
+
+
+Understanding how access rights affect visibility is important for collaboration:
+
+```{note}
+
+Users without assigned permissions (see {ref}`manage-dataset-user-permissions`) follow the dataset access rights:
+
+→ For **BRIGHT-visible** dataset: They can view metadata but cannot see files or upload/download data.
+
+→ For **Restricted** datasets: They cannot see any dataset information.
+
+```
 
 
 
+-------------------------------------------
+
+## Dataset Lineage
+
+Once you have created a dataset you can define its **Lineage** by linkinng it to one or more datasets.
+
+➣ Lineage creates a relationship that shows how datasets are related across different stages (e.g., raw → processed → results).
+
+➣ It ensures **data provenance** by identifying source datasets when creating new ones (e.g., pipelines), supporting reproducibility.
+
+### To add a Lineage:
+
+1. Click the `Lineage` tab on the dataset home page
+
+2. Choose the relationship type:
+    * `Add Ancestor`, if the selected dataset is a source of the current dataset
+
+      **or** 
+
+    * `Add Descendant`, if the selected dataset is a result of the current dataset
+
+3. Select the dataset from the list
+
+4. Add a description explaining the relationship (optional)
+
+5. Click the `Add Ancestor` (or `Add Descendant`) button to complete the process
 
 
 
+```{warning}
+Currently, removing Lineage is not available. Be carefull when selecting an **Ancestor** or **Descendant** dataset.
 
+**Keep in mind that this behavior may change in future releases.*
+```
+
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/dataset-lineage-2(BRIGHT).gif
+:alt: Dataset Lineage
+:width: 93%
+:align: center
+
+*Dataset Lineage*
+```
+----------------------------
+
+<br/>
