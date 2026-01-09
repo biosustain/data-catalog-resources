@@ -73,7 +73,7 @@ The tab displays a table view with:
 * **Permissions columns:** Show the available permissions:
     * **Can Edit Permissions:** Allows managing user access and permissions
     * **Can Edit Metadata:** Allows editing project details
-    * **Can Add Datasets:** Allows adding datasets to the project, either by creating new or linking existing ones
+    * **Can Add Datasets:** Allows adding datasets to the project, either by creating new or linking existing ones (see also: {ref}`Datasets-tab`)
     * **Can Archive:** Allows archiving the project 
 * **Actions column:** Includes the available actions:  
     * **Save Policy:** Saves changes when adding a new user
