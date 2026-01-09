@@ -73,13 +73,17 @@ Just below the description, several key features are displayed:
     * Here are listed all datasets linked to the project.
     * You can view dataset details, add new ones, or link to existing datasets.
 
+        (see also: {ref}`Datasets-tab`)
+
 * **Permissions**:
     * This section shows all users who have access to the project.
     * Here project creators can manage (add/remove) users and assign permissions:
         * Can Edit Permissions: Allows managing user access and permissions
         * Can Edit Metadata: Allows editing project details
         * Can Add Datasets: Allows adding datasets to the project
-        * Can Archive: Allows Archiving the project     
+        * Can Archive: Allows Archiving the project 
+
+            (see also: {ref}`manage-project-user-permissions`) 
 
 *   <span style="color:#999999">**History**:</span>
     * <span style="color:#999999">Shows a log of changes made to the project.</span>
