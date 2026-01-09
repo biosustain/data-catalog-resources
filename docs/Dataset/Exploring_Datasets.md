@@ -47,14 +47,14 @@ The **Dataset Home Page** in Data Catalog is the central place to view and manag
    * Projects
    * Permissions
    * <span style="color:#999999">History (coming soon)</span>
-   * <span style="color:#999999">Lineage (coming soon)</span>
+   * Lineage
    * Files 
 
 
 for a specific dataset, into one organized interface.
 
 ```{note}
-The **History** and **Lineage** features are currently visible but not active. They will be available soon, allowing you to view dataset activity and track relationships between datasets.
+The **History** feature is currently visible but not active. iT will be available soon, allowing you to view dataset activity.
 ```
 
 
@@ -77,6 +77,8 @@ Just below the description, several key features are displayed:
     * Here are listed all projects the dataset is linked to.
     * You can view project details.
 
+        (see also: {ref}`projects-tab`)
+
 * **Permissions**:
     * This section shows all users who have access to the dataset.
     * Here dataset creators can manage (add/remove) users and assign permissions:
@@ -88,6 +90,8 @@ Just below the description, several key features are displayed:
         * Can Download Files: Allows downloading files
         * <span style="color:#999999"> Can Run Pipelines: Allows running analysis pipelines on the dataset files (coming soon)</span>
 
+            (see also: {ref}`manage-dataset-user-permissions`)
+
 * <span style="color:#999999">**History**:</span>
     * <span style="color:#999999">Shows a log of changes made to the dataset.</span>
     * <span style="color:#999999">Useful for tracking updates.</span>
@@ -96,6 +100,8 @@ Just below the description, several key features are displayed:
 * **Lineage**
     * This section displays the relationships between datasets across different stages (e.g., raw → processed → results)
     * Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility.
+    
+        (see also: {ref}`dataset-lineage`)
   
 
 * **Files**:
