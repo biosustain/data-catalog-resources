@@ -81,7 +81,7 @@ The tab displays a table view with:
 * **Permissions columns:** Show the available permissions:
     * **Can Edit Permissions:** Allows managing user access and permissions for the dataset
     * **Can Edit Metadata:** Allows editing dataset details
-    * **Can Link To:** Allows linking a dataset to projects and creating lineage relationships (see {ref}`dataset-lineage`) between datasets 
+    * **Can Link To:** Allows linking a dataset to existing projects (see {ref}`projects-tab`) and creating lineage relationships between datasets (see {ref}`dataset-lineage`) 
     * **Can Archive:** Allows archiving the dataset
     * **Can List Files:** Allows viewing all files in the dataset
     * **Can Edit Files:** Allows uploading or deleting files in the dataset
