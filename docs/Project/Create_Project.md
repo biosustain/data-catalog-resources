@@ -90,7 +90,7 @@ Users without assigned permissions (see: {ref}`manage-project-user-permissions`)
 (Datasets-tab)=
 ## Link Datasets to Project
 
-Once you have created the project, you can **create a new dataset** from the **Datasets** tab, and it will be automatically linked to this project. <br/>
+Once you have created the project, you can **create a new dataset** from the **Datasets** tab, and it will be automatically linked to the project. <br/>
 However, you can also **link** the project to additional existing datasets from the same **Datasets** tab on the project home page. This helps you associate the project with other datasets that are relevant to your resaerch.
 
 ### To Link another dataset to a project:
