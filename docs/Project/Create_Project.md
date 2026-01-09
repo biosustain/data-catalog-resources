@@ -69,7 +69,7 @@ Projects have two access rights settings:
     * Project metadata is visible (read-only) to all BRIGHT employees. However, visibility of datasets depends on each dataset's individual access rights.
 
 * **Restricted:** 
-    * The project is only visible to users who have been explicitly granted read access.
+    * The project is completely hidden to all BRIGHT employees, except from users who have been explicitly granted permissions.
 
 ➣ By default, projects are set to **BRIGHT-visible**, but you can change the access rights when creating or editing a project.
 
@@ -80,9 +80,9 @@ Understanding how access rights affect visibility is important for collaboration
 
 Users without assigned permissions (see: {ref}`manage-project-user-permissions`) follow the project access rights:
 
-→ For **BRIGHT-visible** projects: They can only view metadata.
+→ For **BRIGHT-visible** projects: Metadata is visible (read-only) to all BRIGHT employees
 
-→ For **Restricted** projects: They cannot see any project information.
+→ For **Restricted** projects: Project is completely hidden
 
 ```
 
