@@ -80,7 +80,7 @@ Understanding how access rights affect visibility is important for collaboration
 
 Users without assigned permissions (see: {ref}`manage-project-user-permissions`) follow the project access rights:
 
-→ For **BRIGHT-visible** projects: They can view metadata but cannot see files or upload/download data.
+→ For **BRIGHT-visible** projects: They can only view metadata.
 
 → For **Restricted** projects: They cannot see any project information.
 
