@@ -80,7 +80,7 @@ Just below the description, several key features are displayed:
     * Here project creators can manage (add/remove) users and assign permissions:
         * Can Edit Permissions: Allows managing user access and permissions
         * Can Edit Metadata: Allows editing project details
-        * Can Add Datasets: Allows adding datasets to the project
+        * Can Add Datasets: Allows adding datasets to the project, either by creating new or linking existing ones
         * Can Archive: Allows Archiving the project 
 
             (see also: {ref}`manage-project-user-permissions`) 
