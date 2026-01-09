@@ -109,7 +109,7 @@ Users without assigned permissions (see {ref}`manage-dataset-user-permissions`) 
 (projects-tab)=
 ## Link Projects to Dataset
 
-When you created the dataset, you already selected a "Parent project", whcich creates an initial link.
+When you created the dataset, you already selected a "Parent project", which creates an initial link.
 However, you can link the dataset to additional projects from the **Projects** tab on the dataset home page. 
 This helps you associate the dataset with other research contexts.
 
