@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-content_root="../../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Exploring Dataset &mdash; Data Catalog User Guide</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=a5c75b7f" />
+            <link rel="index" title="Index" href="../../genindex.html" />
+            <link rel="search" title="Search" href="../../search.html" />
+            <link rel="top" title="Data Catalog User Guide" href="#" />
+            <link rel="up" title="Dataset" href="index.html" />
+            <link rel="next" title="Search" href="../Search.html" />
+            <link rel="prev" title="Files" href="Files.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../../_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="../../index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        Data Catalog User Guide (v0.0.0)
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Login.html">Data Catalog Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Project/index.html">Project  <!-- This is the sidebar title --></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Project/Create_Project.html">Create a New Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Project/Manage_Projects.html">Manage Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Project/Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Project/DMP.html">Data Management Plan</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Dataset  <!-- This is the sidebar title --></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Add_Dataset.html">Create a New Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Manage_Datasets.html">Manage Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Files.html">Files</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Exploring Dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Search.html">Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Contact.html">Contact</a></li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../index.html">Docs</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Dataset  <!-- This is the sidebar title --></a></li>
+        <li class="breadcrumb-item active" aria-current="page">Exploring Dataset</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+
+
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <section class="tex2jax_ignore mathjax_ignore" id="exploring-dataset">
+<h1>Exploring Dataset<a class="headerlink" href="#exploring-dataset" title="Link to this heading">¶</a></h1>
+<p>The <strong>Datasets</strong> section in the Data Catalog can help you organize and manage research data efficiently. Its structure is similar to the Projects section, so if you have explored projects before, you will find the navigation familiar.</p>
+<p>Like projects, datasets have two main views:</p>
+<ul class="simple">
+<li><p><strong>Dataset List Page</strong>, where you can search, and create new dataset.</p></li>
+<li><p><strong>Dataset Home Page</strong>, where you manage the details of a specific dataset, including metadata, linked projects, and files.</p></li>
+</ul>
+<section id="dataset-list-page">
+<h2>➤ Dataset List Page<a class="headerlink" href="#dataset-list-page" title="Link to this heading">¶</a></h2>
+<p>This is the starting point for navigating to all datasets in the Data Catalog.</p>
+<section id="key-features-of-the-dataset-list-page">
+<h3>➣ Key Features of the Dataset List Page<a class="headerlink" href="#key-features-of-the-dataset-list-page" title="Link to this heading">¶</a></h3>
+<p>From the Dataset List Page, you can:</p>
+<ul class="simple">
+<li><p><strong>Search</strong></p>
+<ul>
+<li><p>Use the search bar to find specific datasets</p></li>
+</ul>
+</li>
+<li><p><strong>Create new Dataset</strong></p>
+<ul>
+<li><p>Click the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">dataset</span></code> button to start creating a new dataset.</p></li>
+</ul>
+</li>
+<li><p><strong>View Active &amp; Archived datasets</strong></p>
+<ul>
+<li><p>Use the tabs at the top of the page to organize your view</p></li>
+</ul>
+</li>
+</ul>
+<br/>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <strong>Search</strong> bar is available throughout the platform, so you can easily find datasets and projects from different views.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="dataset-home-page">
+<h2>➤ Dataset Home Page<a class="headerlink" href="#dataset-home-page" title="Link to this heading">¶</a></h2>
+<p>The <strong>Dataset Home Page</strong> in Data Catalog is the central place to view and manage everything related to a specific dataset. It brings together all the essential components such as:</p>
+<ul class="simple">
+<li><p>Metadata</p></li>
+<li><p>Projects</p></li>
+<li><p>Permissions</p></li>
+<li><p><span style="color:#999999">History (coming soon)</span></p></li>
+<li><p>Lineage</p></li>
+<li><p>Files</p></li>
+</ul>
+<p>for a specific dataset, into one organized interface.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>History</strong> feature is currently visible but not active. iT will be available soon, allowing you to view dataset activity.</p>
+</div>
+<section id="inside-the-dataset-home-page">
+<h3>Inside the Dataset Home Page<a class="headerlink" href="#inside-the-dataset-home-page" title="Link to this heading">¶</a></h3>
+<p>Once you open a dataset, you will land on its home page. This page is structured into several key areas to help you explore and manage dataset details.</p>
+<section id="dataset-title-description">
+<h4>➣ Dataset Title &amp; Description<a class="headerlink" href="#dataset-title-description" title="Link to this heading">¶</a></h4>
+<p>At the top of the page, there is the title and a short description of the dataset to help you quickly understand its purpose or scope.</p>
+</section>
+<section id="key-features-of-the-dataset-home-page">
+<h4>➣ Key Features of the Dataset Home Page<a class="headerlink" href="#key-features-of-the-dataset-home-page" title="Link to this heading">¶</a></h4>
+<p>Just below the description, several key features are displayed:</p>
+<ul>
+<li><p><strong>Metadata</strong>:</p>
+<ul class="simple">
+<li><p>This section includes the list of all the dataset details (metadata) entered during dataset creation.</p></li>
+</ul>
+</li>
+<li><p><strong>Projects</strong>:</p>
+<ul>
+<li><p>Here are listed all projects the dataset is linked to.</p></li>
+<li><p>You can view project details.</p>
+<p>(see also: <a class="reference internal" href="Add_Dataset.html#projects-tab"><span class="std std-ref">Link Projects to Dataset</span></a>)</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Permissions</strong>:</p>
+<ul>
+<li><p>This section shows all users who have access to the dataset.</p></li>
+<li><p>Here dataset creators can manage (add/remove) users and assign permissions:</p>
+<ul>
+<li><p>Can Edit Permissions: Allows managing user access and permissions for the dataset</p></li>
+<li><p>Can Edit Metadata: Allows editing dataset details</p></li>
+<li><p>Can Link To: Allows the current dataset to be linked in the dataset lineage</p></li>
+<li><p>Can Archive: Allows archiving the dataset</p></li>
+<li><p>Can List Files: Allows viewing all files in the dataset</p></li>
+<li><p>Can Edit Files: Allows uploading or deleting files in the dataset</p></li>
+<li><p>Can Download Files: Allows downloading files</p></li>
+<li><p><span style="color:#999999"> Can Run Pipelines: Allows running analysis pipelines on the dataset files (coming soon)</span></p>
+<p>(see also: <a class="reference internal" href="Manage_Datasets.html#manage-dataset-user-permissions"><span class="std std-ref">Manage Dataset User Permissions</span></a>)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><span style="color:#999999"><strong>History</strong>:</span></p>
+<ul class="simple">
+<li><p><span style="color:#999999">Shows a log of changes made to the dataset.</span></p></li>
+<li><p><span style="color:#999999">Useful for tracking updates.</span></p></li>
+</ul>
+</li>
+<li><p><strong>Lineage</strong></p>
+<ul>
+<li><p>This section displays the relationships between datasets across different stages (e.g., raw → processed → results)</p></li>
+<li><p>Provides data provenance by identifying source datasets when creating new ones (e.g., pipelines), ensuring reproducibility.</p>
+<p>(see also: <a class="reference internal" href="Add_Dataset.html#dataset-lineage"><span class="std std-ref">Dataset Lineage</span></a>)</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Files</strong>:</p>
+<ul class="simple">
+<li><p>Here are listed all files or entire directories related to this dataset.</p></li>
+<li><p>You can upload new files or directories, view their details, download to see their content, or delete if no longer needed.</p></li>
+</ul>
+</li>
+</ul>
+ <br/>
+<hr class="docutils" />
+<br/>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/exploring-dataset-updated.gif"><img alt="Dataset Home Page" src="../../_images/exploring-dataset-updated.gif" style="width: 93%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Dataset Home Page</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<br/>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>→ You can edit the dataset details directly in the <strong>Metadata</strong> section. Just click the <strong><code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">metadata</span></code></strong> button located at the <em><strong>top</strong></em> of that section.</p>
+<p>→ If the dataset is no longer needed, you can archive it by clicking the <strong><code class="docutils literal notranslate"><span class="pre">Archive</span></code></strong> button, located on the <em><strong>top-right corner</strong></em> of the dataset home page.</p>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="Files.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Files
+    </a>
+    <a class="float-right" href="../Search.html" title="Next">
+        Search <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Exploring Dataset</a><ul>
+<li><a class="reference internal" href="#dataset-list-page">➤ Dataset List Page</a><ul>
+<li><a class="reference internal" href="#key-features-of-the-dataset-list-page">➣ Key Features of the Dataset List Page</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dataset-home-page">➤ Dataset Home Page</a><ul>
+<li><a class="reference internal" href="#inside-the-dataset-home-page">Inside the Dataset Home Page</a><ul>
+<li><a class="reference internal" href="#dataset-title-description">➣ Dataset Title &amp; Description</a></li>
+<li><a class="reference internal" href="#key-features-of-the-dataset-home-page">➣ Key Features of the Dataset Home Page</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+            <div class="text-center">
+                    &copy; Copyright 2025, Research Data Management, BRIGHT
+            </div>
+            <div class="text-center text-white-50 font-italic mt-3">
+                <small>
+                    Created using
+                    <a class="text-white" href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Sphinx Wagtail Theme 6.5.0
+                    </a>
+                    and
+                    <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
+                        Sphinx 7.4.7
+                    </a>
+                </small>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script src="../../_static/documentation_options.js?v=8b92e751"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../../_static/js/mobile-toc.js?v=28931289"></script>
+        <script type="text/javascript" src="../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
