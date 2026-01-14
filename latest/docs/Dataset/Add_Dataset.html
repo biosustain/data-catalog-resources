@@ -183,11 +183,11 @@
 <br/>
 <hr class="docutils" />
 <br/>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/dataset-creation-3(BRIGHT).gif"><img alt="Dataset Creation" src="../../_images/dataset-creation-3%28BRIGHT%29.gif" style="width: 93%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><em>Dataset Creation</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+<p><span class="caption-text"><em>Dataset Creation</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -198,6 +198,106 @@
 <p>→ Providing more context makes your dataset easier to <strong>understand</strong>, <strong>discover</strong>, and <strong>reuse</strong>, both for you and others.</p>
 <p>→ If you are unsure about some details, you can always <strong>include what you know</strong> and <strong>update the dataset info later</strong> if needed.</p>
 </div>
+</section>
+<hr class="docutils" />
+<section id="access-rights-and-visibility">
+<h2>Access Rights and Visibility<a class="headerlink" href="#access-rights-and-visibility" title="Link to this heading">¶</a></h2>
+<p>Similar to projects, datasets have two access rights settings:</p>
+<ul class="simple">
+<li><p><strong>BRIGHT-visible:</strong></p>
+<ul>
+<li><p>Dataset metadata is visible (read-only) to all BRIGHT employees.</p></li>
+</ul>
+</li>
+<li><p><strong>Restricted:</strong></p>
+<ul>
+<li><p>The dataset is completely hidden to all BRIGHT employees, except from users who have been explicitly granted permissions.</p></li>
+</ul>
+</li>
+</ul>
+<p>➣ By default, datasets as well as projects are set to <strong>BRIGHT-visible</strong>, but you can change the access rights when creating or editing a dataset.</p>
+<p>Understanding how access rights affect visibility is important for collaboration:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Users without assigned permissions (see <a class="reference internal" href="Manage_Datasets.html#manage-dataset-user-permissions"><span class="std std-ref">Manage Dataset User Permissions</span></a>) follow the dataset access rights:</p>
+<p>→ For <strong>BRIGHT-visible</strong> dataset: Metadata is visible (read-only) to all BRIGHT employees</p>
+<p>→ For <strong>Restricted</strong> datasets: Dataset is completely hidden</p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="link-projects-to-dataset">
+<span id="projects-tab"></span><h2>Link Projects to Dataset<a class="headerlink" href="#link-projects-to-dataset" title="Link to this heading">¶</a></h2>
+<p>When you created the dataset, you already selected a “Parent project”, which creates an initial link.
+However, you can link the dataset to additional projects from the <strong>Projects</strong> tab on the dataset home page.
+This helps you associate the dataset with other research contexts.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The ability to link a dataset to a project and vice versa, depends only on the project permission <em><strong>Can Add Datasets</strong></em>. If the user has been granted this permission for the target project, linking is allowed, otherwise the system will not permit it.</p>
+</div>
+<section id="to-link-another-project-to-a-dataset">
+<h3>To Link another project to a dataset:<a class="headerlink" href="#to-link-another-project-to-a-dataset" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the <code class="docutils literal notranslate"><span class="pre">Projects</span></code> tab on the dataset home page</p></li>
+<li><p>Select the project you want to link from the list</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Link</span></code> to complete the process</p></li>
+</ol>
+<p>To remove the connection:</p>
+<ul class="simple">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Unlink</span></code>, and the project will be unlinked</p></li>
+</ul>
+<br/>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/link-project-to-dataset.png"><img alt="Link Projects to Dataset" src="../../_images/link-project-to-dataset.png" style="width: 93%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Link Projects to Dataset</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This connection also appears under the <strong>Datasets</strong> tab on the <strong>project</strong> home page.</p>
+</div>
+<hr class="docutils" />
+</section>
+</section>
+<section id="dataset-lineage">
+<span id="id1"></span><h2>Dataset Lineage<a class="headerlink" href="#dataset-lineage" title="Link to this heading">¶</a></h2>
+<p>Once you have created a dataset you can define its <strong>Lineage</strong> by linkinng it to one or more datasets.</p>
+<p>➣ Lineage creates a relationship that shows how datasets are related across different stages (e.g., raw → processed → results).</p>
+<p>➣ It ensures <strong>data provenance</strong> by identifying source datasets when creating new ones (e.g., pipelines), supporting reproducibility.</p>
+<section id="to-add-a-lineage">
+<h3>To add a Lineage:<a class="headerlink" href="#to-add-a-lineage" title="Link to this heading">¶</a></h3>
+<ol class="arabic">
+<li><p>Click the <code class="docutils literal notranslate"><span class="pre">Lineage</span></code> tab on the dataset home page</p></li>
+<li><p>Choose the relationship type:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Ancestor</span></code>, if the selected dataset creates the current dataset</p>
+<p><strong>or</strong></p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Descendant</span></code>, if the selected dataset is a result of the current dataset</p></li>
+</ul>
+</li>
+<li><p>Select the dataset from the list</p></li>
+<li><p>Add a description explaining the relationship (optional)</p></li>
+<li><p>Click the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Ancestor</span></code> (or <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Descendant</span></code>) button to complete the process</p></li>
+</ol>
+<p>To remove a Lineage:</p>
+<ul class="simple">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">link</span> <span class="pre">from</span> <span class="pre">dataset</span></code></p></li>
+<li><p>Select the link and click <code class="docutils literal notranslate"><span class="pre">Delete</span></code></p></li>
+</ul>
+<br/>
+<hr class="docutils" />
+<br/>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/dataset-lineage-2(BRIGHT).gif"><img alt="Dataset Lineage" src="../../_images/dataset-lineage-2%28BRIGHT%29.gif" style="width: 93%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Dataset Lineage</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<br/></section>
 </section>
 </section>
 
@@ -222,6 +322,15 @@
 <li><a class="reference internal" href="#step-3-choose-a-parent-project">Step 3: Choose a Parent Project</a></li>
 <li><a class="reference internal" href="#step-4-fill-in-dataset-metadata">Step 4: Fill in Dataset Metadata</a></li>
 <li><a class="reference internal" href="#final-step-complete-your-dataset">Final Step: Complete your Dataset</a></li>
+<li><a class="reference internal" href="#access-rights-and-visibility">Access Rights and Visibility</a></li>
+<li><a class="reference internal" href="#link-projects-to-dataset">Link Projects to Dataset</a><ul>
+<li><a class="reference internal" href="#to-link-another-project-to-a-dataset">To Link another project to a dataset:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dataset-lineage">Dataset Lineage</a><ul>
+<li><a class="reference internal" href="#to-add-a-lineage">To add a Lineage:</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

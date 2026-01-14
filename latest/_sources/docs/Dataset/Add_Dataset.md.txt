@@ -79,10 +79,120 @@ Click `Create dataset` at the ***bottom*** of the page to complete the process.
 ```
 
 
+-------------------------------------------
 
 
+## Access Rights and Visibility 
+Similar to projects, datasets have two access rights settings:
+
+* **BRIGHT-visible:** 
+    * Dataset metadata is visible (read-only) to all BRIGHT employees.
+
+* **Restricted:** 
+    * The dataset is completely hidden to all BRIGHT employees, except from users who have been explicitly granted permissions.
+
+➣ By default, datasets as well as projects are set to **BRIGHT-visible**, but you can change the access rights when creating or editing a dataset.
 
 
+Understanding how access rights affect visibility is important for collaboration:
+
+```{note}
+
+Users without assigned permissions (see {ref}`manage-dataset-user-permissions`) follow the dataset access rights:
+
+→ For **BRIGHT-visible** dataset: Metadata is visible (read-only) to all BRIGHT employees
+
+→ For **Restricted** datasets: Dataset is completely hidden
+
+```
+-------------------------------------------
+(projects-tab)=
+## Link Projects to Dataset
+
+When you created the dataset, you already selected a "Parent project", which creates an initial link.
+However, you can link the dataset to additional projects from the **Projects** tab on the dataset home page. 
+This helps you associate the dataset with other research contexts.
 
 
+```{note}
+The ability to link a dataset to a project and vice versa, depends only on the project permission ***Can Add Datasets***. If the user has been granted this permission for the target project, linking is allowed, otherwise the system will not permit it.
+```
 
+
+### To Link another project to a dataset:
+
+1. Click the `Projects` tab on the dataset home page
+
+2. Select the project you want to link from the list
+
+3. Click `Link` to complete the process
+
+
+To remove the connection:
+
+   * Click `Unlink`, and the project will be unlinked
+
+<br/>
+
+```{figure} ../../_static/images/link-project-to-dataset.png
+:alt: Link Projects to Dataset
+:width: 93%
+:align: center
+
+*Link Projects to Dataset*
+```
+
+```{note}
+This connection also appears under the **Datasets** tab on the **project** home page.
+```
+
+
+-------------------------------------------
+(dataset-lineage)=
+## Dataset Lineage
+
+Once you have created a dataset you can define its **Lineage** by linkinng it to one or more datasets.
+
+➣ Lineage creates a relationship that shows how datasets are related across different stages (e.g., raw → processed → results).
+
+➣ It ensures **data provenance** by identifying source datasets when creating new ones (e.g., pipelines), supporting reproducibility.
+
+### To add a Lineage:
+
+1. Click the `Lineage` tab on the dataset home page
+
+2. Choose the relationship type:
+    * `Add Ancestor`, if the selected dataset creates the current dataset
+
+      **or** 
+
+    * `Add Descendant`, if the selected dataset is a result of the current dataset
+
+3. Select the dataset from the list
+
+4. Add a description explaining the relationship (optional)
+
+5. Click the `Add Ancestor` (or `Add Descendant`) button to complete the process
+
+
+To remove a Lineage:
+
+   * Click `Remove link from dataset`
+   * Select the link and click `Delete`
+   
+<br/>
+
+-------------------------------
+
+<br/>
+
+```{figure} ../../_static/images/dataset-lineage-2(BRIGHT).gif
+:alt: Dataset Lineage
+:width: 93%
+:align: center
+
+*Dataset Lineage*
+```
+----------------------------
+
+<br/>

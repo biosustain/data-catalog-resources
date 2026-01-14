@@ -60,8 +60,8 @@ Archived projects remain visible under the **Archived** section on the Project L
 <br/>
 
 ----------------------------------
-
-## Manage User Permissions
+(manage-project-user-permissions)=
+## Manage Projects User Permissions
 
 As the project creator, you have full control over the project, including its datasets and user access. You can add users and assign permissions through the **Permissions** tab on the project home page.
 
@@ -73,11 +73,19 @@ The tab displays a table view with:
 * **Permissions columns:** Show the available permissions:
     * **Can Edit Permissions:** Allows managing user access and permissions
     * **Can Edit Metadata:** Allows editing project details
-    * **Can Add Datasets:** Allows adding datasets to the project
+    * **Can Add Datasets:** Allows adding datasets to the project, either by creating new or linking (and unlinking) existing ones (see also: {ref}`Datasets-tab`)
     * **Can Archive:** Allows archiving the project 
 * **Actions column:** Includes the available actions:  
     * **Save Policy:** Saves changes when adding a new user
     * **Remove Policy:** Revokes a user's access
+
+<br/>
+
+```{note}
+The ability to link a dataset to a project and vice versa, depends only on the project permission ***Can Add Datasets***. If the user has been granted this permission for the target project, linking is allowed, otherwise the system will not permit it.
+```
+
+<br/>
 
 
 ### Adding or Removing Users
@@ -105,7 +113,7 @@ The tab displays a table view with:
 
 
 ```{tip}
-To grant or remove permissions for a user, simply click or unclick the options available. Changes apply immediately without a "Save" button.
+To grant or remove permissions for a user, simply click or unclick the options available. Changes apply immediately.
 ```
 
 

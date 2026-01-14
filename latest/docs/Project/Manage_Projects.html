@@ -173,10 +173,10 @@
 <p>Archived projects remain visible under the <strong>Archived</strong> section on the Project List page. You can open and view them, but they cannot be edited unless you first click the <strong><code class="docutils literal notranslate"><span class="pre">Restore</span></code></strong> button on the Project Home page.</p>
 </div>
 <br/>
-</section>
 <hr class="docutils" />
-<section id="manage-user-permissions">
-<h2>Manage User Permissions<a class="headerlink" href="#manage-user-permissions" title="Link to this heading">¶</a></h2>
+</section>
+<section id="manage-projects-user-permissions">
+<span id="manage-project-user-permissions"></span><h2>Manage Projects User Permissions<a class="headerlink" href="#manage-projects-user-permissions" title="Link to this heading">¶</a></h2>
 <p>As the project creator, you have full control over the project, including its datasets and user access. You can add users and assign permissions through the <strong>Permissions</strong> tab on the project home page.</p>
 <section id="how-the-permissions-tab-works">
 <h3>How the permissions Tab Works<a class="headerlink" href="#how-the-permissions-tab-works" title="Link to this heading">¶</a></h3>
@@ -187,7 +187,7 @@
 <ul>
 <li><p><strong>Can Edit Permissions:</strong> Allows managing user access and permissions</p></li>
 <li><p><strong>Can Edit Metadata:</strong> Allows editing project details</p></li>
-<li><p><strong>Can Add Datasets:</strong> Allows adding datasets to the project</p></li>
+<li><p><strong>Can Add Datasets:</strong> Allows adding datasets to the project, either by creating new or linking (and unlinking) existing ones (see also: <a class="reference internal" href="Create_Project.html#datasets-tab"><span class="std std-ref">Link Datasets to Project</span></a>)</p></li>
 <li><p><strong>Can Archive:</strong> Allows archiving the project</p></li>
 </ul>
 </li>
@@ -198,6 +198,12 @@
 </ul>
 </li>
 </ul>
+<br/>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The ability to link a dataset to a project and vice versa, depends only on the project permission <em><strong>Can Add Datasets</strong></em>. If the user has been granted this permission for the target project, linking is allowed, otherwise the system will not permit it.</p>
+</div>
+<br/>
 </section>
 <section id="adding-or-removing-users">
 <h3>Adding or Removing Users<a class="headerlink" href="#adding-or-removing-users" title="Link to this heading">¶</a></h3>
@@ -219,7 +225,7 @@
 <br/>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>To grant or remove permissions for a user, simply click or unclick the options available. Changes apply immediately without a “Save” button.</p>
+<p>To grant or remove permissions for a user, simply click or unclick the options available. Changes apply immediately.</p>
 </div>
 </section>
 </section>
@@ -244,7 +250,7 @@
 <li><a class="reference internal" href="#step-1-find-the-project">Step 1: Find the Project</a></li>
 <li><a class="reference internal" href="#step-2-choose-an-action">Step 2: Choose an Action</a></li>
 <li><a class="reference internal" href="#step-3-confirm">Step 3: Confirm</a></li>
-<li><a class="reference internal" href="#manage-user-permissions">Manage User Permissions</a><ul>
+<li><a class="reference internal" href="#manage-projects-user-permissions">Manage Projects User Permissions</a><ul>
 <li><a class="reference internal" href="#how-the-permissions-tab-works">How the permissions Tab Works</a></li>
 <li><a class="reference internal" href="#adding-or-removing-users">Adding or Removing Users</a></li>
 </ul>
