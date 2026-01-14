@@ -175,13 +175,12 @@ Once you have created a dataset you can define its **Lineage** by linkinng it to
 5. Click the `Add Ancestor` (or `Add Descendant`) button to complete the process
 
 
+To remove a Lineage:
 
-```{warning}
-Currently, removing Lineage is not available. Be carefull when selecting an **Ancestor** or **Descendant** dataset.
-
-**Keep in mind that this behavior may change in future releases.*
-```
-
+   * Click `Remove link from dataset`
+   * Select the link and click `Delete`
+   
+<br/>
 
 -------------------------------
 
