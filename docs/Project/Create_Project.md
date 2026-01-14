@@ -69,7 +69,7 @@ Projects have two access rights settings:
     * Project metadata is visible (read-only) to all BRIGHT employees. However, visibility of datasets depends on each dataset's individual access rights.
 
 * **Restricted:** 
-    * The project is only visible to users who have been explicitly granted read access.
+    * The project is completely hidden to all BRIGHT employees, except from users who have been explicitly granted permissions.
 
 ➣ By default, projects are set to **BRIGHT-visible**, but you can change the access rights when creating or editing a project.
 
@@ -78,18 +78,46 @@ Understanding how access rights affect visibility is important for collaboration
 
 ```{note}
 
-Users without assigned permissions follow the project access rights:
+Users without assigned permissions (see: {ref}`manage-project-user-permissions`) follow the project access rights:
 
-→ For **BRIGHT-visible** projects: They can view metadata but cannot see files or upload/download data.
+→ For **BRIGHT-visible** projects: Metadata is visible (read-only) to all BRIGHT employees
 
-→ For **Restricted** projects: They cannot see any project information.
+→ For **Restricted** projects: Project is completely hidden
 
 ```
 
+------------------------------------------
+(Datasets-tab)=
+## Link Datasets to Project
+
+Once you have created the project, you can **create a new dataset** from the **Datasets** tab, and it will be automatically linked to the project. <br/>
+However, you can also **link** the project to additional existing datasets from the same **Datasets** tab on the project home page. This helps you associate the project with other datasets that are relevant to your resaerch.
+
+### To Link another dataset to a project:
+
+1. Click the `Datasets` tab on the project home page
+
+2. Select the dataset you want to link from the list
+
+3. Click `Link` to complete the process
 
 
+To remove the connection:
+
+   * Click `Unlink`, and the dataset will be unlinked
 
 
+<br/>
+
+```{figure} ../../_static/images/link-datasets-to-project.png
+:alt: Link Datasets to Project
+:width: 93%
+:align: center
+
+*Link Datasets to Project*
+```
 
 
-
+```{note}
+This connection also appears under the **Projects** tab on the **dataset home page**.
+```

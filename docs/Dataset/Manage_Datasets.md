@@ -69,7 +69,7 @@ A confirmation box will appear asking you to confirm the action.
 
 ---------------------
 
-
+(manage-dataset-user-permissions)=
 ## Manage Dataset User Permissions
 
 Managing dataset user permissions works similarly to managing project user permissions, but with additional options specific to files and pipelines. You can add users and assign permissions through the **Permissions** tab on the dataset home page.
@@ -81,6 +81,7 @@ The tab displays a table view with:
 * **Permissions columns:** Show the available permissions:
     * **Can Edit Permissions:** Allows managing user access and permissions for the dataset
     * **Can Edit Metadata:** Allows editing dataset details
+    * **Can Link To:** Allows the current dataset to be linked in the dataset lineage (see {ref}`dataset-lineage`) 
     * **Can Archive:** Allows archiving the dataset
     * **Can List Files:** Allows viewing all files in the dataset
     * **Can Edit Files:** Allows uploading or deleting files in the dataset
@@ -117,7 +118,7 @@ The tab displays a table view with:
 
 
 ```{tip}
-To grant or remove permissions for a user, simply click or unclick the options available. Changes apply immediately without a "Save" button.
+After the initial save, you can grant or remove additional permissions for a user, by selecting or deselecting the options available. Changes apply immediately.
 
 ```
 
