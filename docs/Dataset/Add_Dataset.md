@@ -113,6 +113,12 @@ When you created the dataset, you already selected a "Parent project", which cre
 However, you can link the dataset to additional projects from the **Projects** tab on the dataset home page. 
 This helps you associate the dataset with other research contexts.
 
+
+```{note}
+The ability to link a dataset to a project and vice versa, depends only on the project permission ***Can Add Datasets***. If the user has been granted this permission for the target project, linking is allowed, otherwise the system will not permit it.
+```
+
+
 ### To Link another project to a dataset:
 
 1. Click the `Projects` tab on the dataset home page
