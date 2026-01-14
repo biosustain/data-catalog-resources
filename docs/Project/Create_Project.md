@@ -104,7 +104,7 @@ However, you can also **link** the project to additional existing datasets from 
 
 To remove the connection:
 
-   * Click `Unlink`, and the dataset will be removed
+   * Click `Unlink`, and the dataset will be unlinked
 
 
 <br/>

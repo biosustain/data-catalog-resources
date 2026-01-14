@@ -124,7 +124,7 @@ This helps you associate the dataset with other research contexts.
 
 To remove the connection:
 
-   * Click `Unlink`, and the project will be removed
+   * Click `Unlink`, and the project will be unlinked
 
 <br/>
 
@@ -156,7 +156,7 @@ Once you have created a dataset you can define its **Lineage** by linkinng it to
 1. Click the `Lineage` tab on the dataset home page
 
 2. Choose the relationship type:
-    * `Add Ancestor`, if the selected dataset is a source of the current dataset
+    * `Add Ancestor`, if the selected dataset creates the current dataset
 
       **or** 
 
