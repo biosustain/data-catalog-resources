@@ -157,6 +157,11 @@ Once you have created a dataset you can define its **Lineage** by linkinng it to
 
 ➣ It ensures **data provenance** by identifying source datasets when creating new ones (e.g., pipelines), supporting reproducibility.
 
+```{important}
+To create (or remove) a Dataset Lineage between datasets you must have the permission ***Can Link To*** on both datasets, otherwise you will not be able to perform this action or see the destination dataset in the linking list.
+```
+
+
 ### To add a Lineage:
 
 1. Click the `Lineage` tab on the dataset home page
