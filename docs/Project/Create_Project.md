@@ -107,6 +107,17 @@ To remove the connection:
    * Click `Unlink`, and the dataset will be unlinked
 
 
+```{important}
+To link a dataset to a project, you need two things:
+
+→ Permission to add datasets to the project (**Can Add Datasets**)
+<br/>
+→ **Access to the dataset** (Bright-visible or through a dataset user permission, if it is restricted)
+
+If one of these conditions is missing, the system will not allow the link.
+```
+
+
 <br/>
 
 ```{figure} ../../_static/images/link-datasets-to-project.png

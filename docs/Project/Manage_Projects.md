@@ -82,7 +82,13 @@ The tab displays a table view with:
 <br/>
 
 ```{note}
-The ability to link a dataset to a project and vice versa, depends only on the project permission ***Can Add Datasets***. If the user has been granted this permission for the target project, linking is allowed, otherwise the system will not permit it.
+To link a dataset to a project, user must have:
+
+→ Permission to add datasets to the project (**Can Add Datasets**)
+<br/>
+→ **Access to the dataset** (Bright-visible or through a dataset user permission, if it is restricted)
+
+If one of these conditions is missing, the system will not allow the link.
 ```
 
 <br/>
