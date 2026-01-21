@@ -88,47 +88,47 @@ Users without assigned permissions (see: {ref}`manage-project-user-permissions`)
 
 ------------------------------------------
 (Datasets-tab)=
-## Link Datasets to Project
+## Add Datasets to Project
 
-Once you have created the project, you can **create a new dataset** from the **Datasets** tab, and it will be automatically linked to the project. <br/>
-However, you can also **link** the project to additional existing datasets from the same **Datasets** tab on the project home page. This helps you associate the project with other datasets that are relevant to your research.
+Once you have created the project, you can **create a new dataset** from the **Datasets** tab, and it will be automatically added to the project. <br/>
+You can also **add** additional existing datasets from the same **Datasets** tab on the project home page. This helps you associate the project with other datasets that are relevant to your research.
 
-### To Link another dataset to a project:
+### To add another dataset to a project:
 
 1. Click the `Datasets` tab on the project home page
 
-2. Select the dataset you want to link from the list
+2. Select the dataset you want to add from the list
 
 3. Click `Link` to complete the process
 
 
-To remove the connection:
+To remove the relationship:
 
-   * Click `Unlink`, and the dataset will be unlinked
+   * Click `Unlink`, and the dataset will be removed
 
 
-```{important}
-To link a dataset to a project, two conditions must be met:
+```{note}
+To add a dataset to a project, two conditions must be met:
 
-→ You must have the **Can Add Datasets** permission on the project you want to link
+→ You must have the **Can Add Datasets** permission on the project you want to add the dataset to
 <br/>
 → You must have **access to the dataset** (either Bright-visible or through a dataset user permission, if it is restricted)
 
-If either of these is missing, the system will not allow the link.
+If either of these is missing, you will not be able to proceed.
 ```
 
 
 <br/>
 
 ```{figure} ../../_static/images/link-datasets-to-project.png
-:alt: Link Datasets to Project
+:alt: Add Datasets to Project
 :width: 93%
 :align: center
 
-*Link Datasets to Project*
+*Add Datasets to Project*
 ```
 
 
 ```{note}
-This connection also appears under the **Projects** tab on the **dataset home page**.
+This relationship also appears under the **Projects** tab on the **dataset home page**.
 ```

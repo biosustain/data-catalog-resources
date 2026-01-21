@@ -107,49 +107,49 @@ Users without assigned permissions (see {ref}`manage-dataset-user-permissions`) 
 ```
 -------------------------------------------
 (projects-tab)=
-## Link Projects to Dataset
+## Add Projects to Dataset
 
-When you created the dataset, you already selected a "Parent project", which creates an initial link.
-However, you can link the dataset to additional projects from the **Projects** tab on the dataset home page. 
+When you created the dataset, you already selected a "Parent project", which creates an initial relationship.
+You can also **add** additional projects from the **Projects** tab on the dataset home page. 
 This helps you associate the dataset with other research contexts.
 
 
 ```{note}
-To link a project to a dataset, two conditions must be met:
+To add a project to a dataset, two conditions must be met:
 
-→ You must have the **Can Add Datasets** permission on the project you want to link
+→ You must have the **Can Add Datasets** permission on the project you want to add the dataset to
 <br/>
 → You must have **access to the dataset** (either Bright-visible or through a dataset user permission, if it is restricted)
 
-If either of these is missing, the system will not allow the link.
+If either of these is missing, you will not be able to proceed.
 ```
 
 
-### To Link another project to a dataset:
+### To add another project to a dataset:
 
 1. Click the `Projects` tab on the dataset home page
 
-2. Select the project you want to link from the list
+2. Select the project you want to add from the list
 
 3. Click `Link` to complete the process
 
 
-To remove the connection:
+To remove the relationship:
 
-   * Click `Unlink`, and the project will be unlinked
+   * Click `Unlink`, and the project will be removed
 
 <br/>
 
 ```{figure} ../../_static/images/link-project-to-dataset.png
-:alt: Link Projects to Dataset
+:alt: Add Projects to Dataset
 :width: 93%
 :align: center
 
-*Link Projects to Dataset*
+*Add Projects to Dataset*
 ```
 
 ```{note}
-This connection also appears under the **Datasets** tab on the **project** home page.
+This relationship also appears under the **Datasets** tab on the **project** home page.
 ```
 
 
