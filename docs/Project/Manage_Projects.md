@@ -79,19 +79,6 @@ The tab displays a table view with:
     * **Save Policy:** Saves changes when adding a new user
     * **Remove Policy:** Revokes a user's access
 
-<br/>
-
-```{note}
-To link a dataset to a project, two conditions must be met:
-
-→ You must have the **Can Add Datasets** permission on the project you want to link
-<br/>
-→ You must have **access to the dataset** (either Bright-visible or through a dataset user permission, if it is restricted)
-
-If either of these is missing, the system will not allow the link.
-```
-
-<br/>
 
 
 ### Adding or Removing Users
