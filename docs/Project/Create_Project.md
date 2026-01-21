@@ -108,13 +108,13 @@ To remove the connection:
 
 
 ```{important}
-To link a dataset to a project, you need two things:
+To link a dataset to a project, two conditions must be met:
 
-→ Permission to add datasets to the project (**Can Add Datasets**)
+→ You must have the **Can Add Datasets** permission on the project you want to link
 <br/>
-→ **Access to the dataset** (Bright-visible or through a dataset user permission, if it is restricted)
+→ You must have **access to the dataset** (either Bright-visible or through a dataset user permission, if it is restricted)
 
-If one of these conditions is missing, the system will not allow the link.
+If either of these is missing, the system will not allow the link.
 ```
 
 

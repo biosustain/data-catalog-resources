@@ -115,7 +115,13 @@ This helps you associate the dataset with other research contexts.
 
 
 ```{note}
-The ability to link a dataset to a project and vice versa, depends only on the project permission ***Can Add Datasets***. If the user has been granted this permission for the target project, linking is allowed, otherwise the system will not permit it.
+To link a project to a dataset, two conditions must be met:
+
+→ You must have the **Can Add Datasets** permission on the project you want to link
+<br/>
+→ You must have **access to the dataset** (either Bright-visible or through a dataset user permission, if it is restricted)
+
+If either of these is missing, the system will not allow the link.
 ```
 
 
