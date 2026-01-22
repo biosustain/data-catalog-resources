@@ -70,8 +70,8 @@ Just below the description, several key features are displayed:
     * This section includes the list of all the project details (metadata) entered during project creation.
 
 * **Datasets**: 
-    * Here are listed all datasets linked to the project.
-    * You can view dataset details, add new ones, or link to existing datasets.
+    * Here are listed all datasets added to the project.
+    * You can view dataset details, create new ones, or add existing datasets.
 
         (see also: {ref}`Datasets-tab`)
 
@@ -80,7 +80,7 @@ Just below the description, several key features are displayed:
     * Here project creators can manage (add/remove) users and assign permissions:
         * Can Edit Permissions: Allows managing user access and permissions
         * Can Edit Metadata: Allows editing project details
-        * Can Add Datasets: Allows adding datasets to the project, either by creating new or linking (and unlinking) existing ones
+        * Can Add Datasets: Allows adding datasets to the project, either by creating new or adding (and removing) existing ones
         * Can Archive: Allows Archiving the project 
 
             (see also: {ref}`manage-project-user-permissions`) 

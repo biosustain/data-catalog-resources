@@ -23,14 +23,27 @@ The website automatically generates versioned documentation for each GitHub rele
 
 ```
 data-catalog-resources/
-├── _static/                    # Static assets (CSS, JS, images, files)
+├── _static/                   # Static assets (CSS, JS, images, files)
 │   ├── css/custom.css         # Custom styling
 │   ├── js/mobile-toc.js       # Mobile navigation & theme toggle
 │   └── images/                # Image assets
-├── _templates/                 # Custom HTML templates
+├── _templates/                # Custom HTML templates
 ├── docs/                      # Main resource content
-│   ├── azure.md              # Azure-related setup guides
-│   └── article_topic.md      # Additional articles
+├── Contact.md                 # Contact/ Report Issues
+├── Dataset                    # Dataset content
+│   ├── Add_Dataset.md         # Dataset Creation / Access Rights / Dataset Lineage
+│   ├── Exploring_Datasets.md  # Overview of Dataset List / Dataset Home page
+│   ├── Files.md               # Upload / Managage Files
+│   ├── index.md               # Dataset section overview
+│   └── Manage_Datasets.md     # Manage Datasets / User Permissions
+├── Login.md                   # Log in
+├── Project                    # Project content
+│   ├── Create_Project.md      # Project Creation / Access Rights / Link Dataset to Project
+│   ├── DMP.md                 # Data Management Plan content (DMP)
+│   ├── Exploring_Projects.md  # Overview of Project List / Project Home page
+│   ├── index.md               # Project section overview
+│   └── Manage_Projects.md     # Manage Projects / User Permissions
+└── Search.md                  # Basic / Advanced Search
 ├── index.md                   # Homepage content
 ├── conf.py                    # Sphinx configuration
 ├── requirements.txt           # Python dependencies
