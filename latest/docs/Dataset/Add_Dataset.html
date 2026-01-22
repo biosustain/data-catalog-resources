@@ -9,10 +9,11 @@
         <title>Create a New Dataset &mdash; Data Catalog User Guide</title>
     
     <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
       <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css?v=310cf088" />
       <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=a5c75b7f" />
             <link rel="index" title="Index" href="../../genindex.html" />
             <link rel="search" title="Search" href="../../search.html" />
@@ -225,37 +226,41 @@
 </div>
 <hr class="docutils" />
 </section>
-<section id="link-projects-to-dataset">
-<span id="projects-tab"></span><h2>Link Projects to Dataset<a class="headerlink" href="#link-projects-to-dataset" title="Link to this heading">¶</a></h2>
-<p>When you created the dataset, you already selected a “Parent project”, which creates an initial link.
-However, you can link the dataset to additional projects from the <strong>Projects</strong> tab on the dataset home page.
+<section id="add-projects-to-dataset">
+<span id="projects-tab"></span><h2>Add Projects to Dataset<a class="headerlink" href="#add-projects-to-dataset" title="Link to this heading">¶</a></h2>
+<p>When you created the dataset, you already selected a “Parent project”, which creates an initial relationship.
+You can also <strong>add</strong> additional projects from the <strong>Projects</strong> tab on the dataset home page.
 This helps you associate the dataset with other research contexts.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The ability to link a dataset to a project and vice versa, depends only on the project permission <em><strong>Can Add Datasets</strong></em>. If the user has been granted this permission for the target project, linking is allowed, otherwise the system will not permit it.</p>
+<p>To add a project to a dataset, two conditions must be met:</p>
+<p>→ You must have the <strong>Can Add Datasets</strong> permission on the project you want to add the dataset to
+<br/>
+→ You must have <strong>access to the dataset</strong> (either Bright-visible or through a dataset user permission, if it is restricted)</p>
+<p>If either of these is missing, you will not be able to proceed.</p>
 </div>
-<section id="to-link-another-project-to-a-dataset">
-<h3>To Link another project to a dataset:<a class="headerlink" href="#to-link-another-project-to-a-dataset" title="Link to this heading">¶</a></h3>
+<section id="to-add-another-project-to-a-dataset">
+<h3>To add another project to a dataset:<a class="headerlink" href="#to-add-another-project-to-a-dataset" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Click the <code class="docutils literal notranslate"><span class="pre">Projects</span></code> tab on the dataset home page</p></li>
-<li><p>Select the project you want to link from the list</p></li>
+<li><p>Select the project you want to add from the list</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Link</span></code> to complete the process</p></li>
 </ol>
-<p>To remove the connection:</p>
+<p>To remove the relationship:</p>
 <ul class="simple">
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Unlink</span></code>, and the project will be unlinked</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Unlink</span></code>, and the project will be removed</p></li>
 </ul>
 <br/>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../../_images/link-project-to-dataset.png"><img alt="Link Projects to Dataset" src="../../_images/link-project-to-dataset.png" style="width: 93%;" />
+<a class="reference internal image-reference" href="../../_images/link-project-to-dataset.png"><img alt="Add Projects to Dataset" src="../../_images/link-project-to-dataset.png" style="width: 93%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><em>Link Projects to Dataset</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+<p><span class="caption-text"><em>Add Projects to Dataset</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This connection also appears under the <strong>Datasets</strong> tab on the <strong>project</strong> home page.</p>
+<p>This relationship also appears under the <strong>Datasets</strong> tab on the <strong>project</strong> home page.</p>
 </div>
 <hr class="docutils" />
 </section>
@@ -265,6 +270,10 @@ This helps you associate the dataset with other research contexts.</p>
 <p>Once you have created a dataset you can define its <strong>Lineage</strong> by linkinng it to one or more datasets.</p>
 <p>➣ Lineage creates a relationship that shows how datasets are related across different stages (e.g., raw → processed → results).</p>
 <p>➣ It ensures <strong>data provenance</strong> by identifying source datasets when creating new ones (e.g., pipelines), supporting reproducibility.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>To create (or remove) a Dataset Lineage between datasets you must have the permission <em><strong>Can Link To</strong></em> on both datasets, otherwise you will not be able to perform this action or see the destination dataset in the linking list.</p>
+</div>
 <section id="to-add-a-lineage">
 <h3>To add a Lineage:<a class="headerlink" href="#to-add-a-lineage" title="Link to this heading">¶</a></h3>
 <ol class="arabic">
@@ -323,8 +332,8 @@ This helps you associate the dataset with other research contexts.</p>
 <li><a class="reference internal" href="#step-4-fill-in-dataset-metadata">Step 4: Fill in Dataset Metadata</a></li>
 <li><a class="reference internal" href="#final-step-complete-your-dataset">Final Step: Complete your Dataset</a></li>
 <li><a class="reference internal" href="#access-rights-and-visibility">Access Rights and Visibility</a></li>
-<li><a class="reference internal" href="#link-projects-to-dataset">Link Projects to Dataset</a><ul>
-<li><a class="reference internal" href="#to-link-another-project-to-a-dataset">To Link another project to a dataset:</a></li>
+<li><a class="reference internal" href="#add-projects-to-dataset">Add Projects to Dataset</a><ul>
+<li><a class="reference internal" href="#to-add-another-project-to-a-dataset">To add another project to a dataset:</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#dataset-lineage">Dataset Lineage</a><ul>
@@ -358,7 +367,7 @@ This helps you associate the dataset with other research contexts.</p>
                     </a>
                     and
                     <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
-                        Sphinx 8.2.3
+                        Sphinx 9.1.0
                     </a>
                 </small>
             </div>
@@ -367,14 +376,14 @@ This helps you associate the dataset with other research contexts.</p>
         </div>
     </footer>
         <script src="../../_static/documentation_options.js?v=8b92e751"></script>
-        <script src="../../_static/doctools.js?v=9bcbadda"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+        <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
         <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
         <script src="../../_static/copybutton.js?v=f281be69"></script>
         <script>let toggleHintShow = 'Click to show';</script>
         <script>let toggleHintHide = 'Click to hide';</script>
         <script>let toggleOpenOnPrint = 'true';</script>
-        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script src="../../_static/js/mobile-toc.js?v=28931289"></script>
