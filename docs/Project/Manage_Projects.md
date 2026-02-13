@@ -71,10 +71,12 @@ The tab displays a table view with:
 
 * **User column:** Lists all users. Your name appears at the top, followed by any additional users you add.
 * **Permissions columns:** Show the available permissions:
+    * **Can Read:** Allows the user to view the project's metadata and associated datasets (view‑only)
     * **Can Edit Permissions:** Allows managing user access and permissions
     * **Can Edit Metadata:** Allows editing project details
     * **Can Add Datasets:** Allows adding datasets to the project, either by creating new or adding (and removing) existing ones (see also: {ref}`Datasets-tab`)
     * **Can Archive:** Allows archiving the project 
+    * <span style="color:#999999"> **Can Setup Workspaces:** Allows running analysis pipelines on dataset's files (coming soon)</span>
 * **Actions column:** Includes the available actions:  
     * **Save Policy:** Saves changes when adding a new user
     * **Remove Policy:** Revokes a user's access
@@ -93,7 +95,7 @@ The tab displays a table view with:
 
 <br/>
 
-```{figure} ../../_static/images/project-user-permissions-2.gif
+```{figure} ../../_static/images/project-user-permissions-updated.gif
 :alt: Project Permissions
 :width: 93%
 :align: center
