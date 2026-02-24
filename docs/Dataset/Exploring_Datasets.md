@@ -67,7 +67,7 @@ At the top of the page, there is the title and a short description of the datase
 
 #### ➣ Setup in Seqera Workspace (comming soon)
 
-Next to the description, there is the **Setup in Seqera Workspace** button. This feature allows you to create a Seqera workspace using this dataset as input for runnig pipelines.
+Next to the description, there is the **Setup in Seqera Workspace** button. This feature allows you to create a Seqera workspace using this dataset as input for runnig **Nextflow** pipelines.
 
 Anyone can click the button, but only users who have the **Can SetUp Workspace** permission on the project this dataset belongs to will be able to proceed. After clicking, you will be prompted to choose a project under which the pipeline costs will be billed.
 
