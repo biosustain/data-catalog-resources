@@ -65,6 +65,14 @@ Once you open a dataset, you will land on its home page. This page is structured
 
 At the top of the page, there is the title and a short description of the dataset to help you quickly understand its purpose or scope.
 
+#### ➣ Setup in Seqera Workspace (comming soon)
+
+Next to the description, there is the **Setup in Seqera Workspace** button. This feature allows you to create a Seqera workspace using this dataset as input for runnig **Nextflow** pipelines.
+
+Anyone can click the button, but only users who have the **Can SetUp Workspace** permission on the project this dataset belongs to will be able to proceed. After clicking, you will be prompted to choose a project under which the pipeline costs will be billed.
+
+(see also: {ref}`manage-project-user-permissions`) 
+
 #### ➣ Key Features of the Dataset Home Page
 
 Just below the description, several key features are displayed:
@@ -82,6 +90,7 @@ Just below the description, several key features are displayed:
 * **Permissions**:
     * This section shows all users who have access to the dataset.
     * Here dataset creators can manage (add/remove) users and assign permissions:
+        * Can Read: Allows the user to view the dataset’s metadata, associated projects, and lineage (view‑only).
         * Can Edit Permissions: Allows managing user access and permissions for the dataset
         * Can Edit Metadata: Allows editing dataset details
         * Can Link To: Allows the current dataset to be linked in the dataset lineage
@@ -89,7 +98,6 @@ Just below the description, several key features are displayed:
         * Can List Files: Allows viewing all files in the dataset
         * Can Edit Files: Allows uploading or deleting files in the dataset
         * Can Download Files: Allows downloading files
-        * <span style="color:#999999"> Can Run Pipelines: Allows running analysis pipelines on the dataset files (coming soon)</span>
 
             (see also: {ref}`manage-dataset-user-permissions`)
 
