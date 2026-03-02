@@ -32,6 +32,7 @@ Complete all the required fields marked with **`*`**:
 * Project Description (**`*`**)
 * Access Rights (**`*`**)
 * Principal Investigator (PI) (**`*`**)
+* LIMS (Benchling) project url _(must start with **https://bright.benchling.com**)_
 
 
 ## Final Step: Complete Project Creation
