@@ -132,3 +132,12 @@ If either of these is missing, you will not be able to proceed.
 ```{note}
 This relationship also appears under the **Projects** tab on the **dataset home page**.
 ```
+
+-----------------------------------------------
+
+### API Availability
+
+The actions described in this page can also be performed programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
+
+* [**/projects**](https://datacatalog.bright.dtu.dk/api/docs#/projects/create_project_projects_post) 
+* [**/projects-datasets**](https://datacatalog.bright.dtu.dk/api/docs#/projects-datasets)
