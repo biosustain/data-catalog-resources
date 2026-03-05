@@ -32,7 +32,15 @@ Complete all the required fields marked with **`*`**:
 * Project Description (**`*`**)
 * Access Rights (**`*`**)
 * Principal Investigator (PI) (**`*`**)
-* LIMS (Benchling) project url _(must start with **https://bright.benchling.com**)_
+* LIMS (Benchling) project URL _(must start with **https://bright.benchling.com**)_
+
+
+```{tip}
+
+To find the Benchling project URL, log in to Benchling, open the **Projects** section in the left sidebar, and select the project you want.  
+Click the **settings** button (<img src="../../_static/images/settings_button.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">) next to the project name and choose **Copy project link**.
+
+```
 
 
 ## Final Step: Complete Project Creation
@@ -44,7 +52,7 @@ Click **`Create project`** at the ***bottom*** of the page to complete the proce
 
 <br/>
 
-```{figure} ../../_static/images/project-creation-3.gif
+```{figure} ../../_static/images/project-creation-updated2.gif
 :alt: Project Creation
 :width: 93%
 :align: center
@@ -134,9 +142,9 @@ If either of these is missing, you will not be able to proceed.
 This relationship also appears under the **Projects** tab on the **dataset home page**.
 ```
 
------------------------------------------------
+-------------------------------- 
 
-### API Availability
+## API Availability
 
 The actions described in this page can also be performed programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
 
