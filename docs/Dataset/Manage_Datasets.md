@@ -127,5 +127,5 @@ After the initial save, you can grant or remove additional permissions for a use
 
 The actions described above can also be performed programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
 
-* [**/datasets**](https://staging.datacatalog.bright.dtu.dk/api/docs#/datasets)
+* [**/datasets**](https://datacatalog.bright.dtu.dk/api/docs#/datasets)
 * [**/policies/datasets**](https://datacatalog.bright.dtu.dk/api/docs#/policies)
