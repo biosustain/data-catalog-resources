@@ -211,5 +211,5 @@ To remove a Lineage:
 The actions described in this page can also be performed programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
 
 * [**/datasets**](https://datacatalog.bright.dtu.dk/api/docs#/datasets/create_dataset_datasets_post) 
-* [**/projects-datasets**](https://datacatalog.bright.dtu.dk/api/docs#/projects-datasets) 
+* [**/projects-datasets**](https://datacatalog.bright.dtu.dk/api/docs#/projects-datasets)
 * [**/lineage**](https://datacatalog.bright.dtu.dk/api/docs#/lineage)
