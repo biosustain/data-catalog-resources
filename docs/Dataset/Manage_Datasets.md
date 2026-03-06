@@ -121,4 +121,11 @@ The tab displays a table view with:
 After the initial save, you can grant or remove additional permissions for a user, by selecting or deselecting the options available. Changes apply immediately.
 
 ```
+-------------------------------
 
+## API Availability
+
+The actions described above can also be performed programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
+
+* [**/datasets**](https://datacatalog.bright.dtu.dk/api/docs#/datasets)
+* [**/policies/datasets**](https://datacatalog.bright.dtu.dk/api/docs#/policies)

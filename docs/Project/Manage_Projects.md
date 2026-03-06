@@ -111,6 +111,13 @@ The tab displays a table view with:
 To grant or remove permissions for a user, simply click or unclick the options available. Changes apply immediately.
 ```
 
+----------------------------
 
+## API Availability
+
+The actions described above can also be performed programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
+
+* [**/projects**](https://datacatalog.bright.dtu.dk/api/docs#/projects)
+* [**/policies/projects**](https://datacatalog.bright.dtu.dk/api/docs#/policies)
 
 
