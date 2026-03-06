@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
       <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css?v=310cf088" />
-      <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
       <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=a5c75b7f" />
@@ -157,7 +157,13 @@ Creating a project is <strong>simple</strong> and <strong>flexible</strong> and 
 <li><p>Project Description (<strong><code class="docutils literal notranslate"><span class="pre">*</span></code></strong>)</p></li>
 <li><p>Access Rights (<strong><code class="docutils literal notranslate"><span class="pre">*</span></code></strong>)</p></li>
 <li><p>Principal Investigator (PI) (<strong><code class="docutils literal notranslate"><span class="pre">*</span></code></strong>)</p></li>
+<li><p>LIMS (Benchling) project URL <em>(must start with <strong>https://bright.benchling.com</strong>)</em></p></li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To find the Benchling project URL, log in to Benchling, open the <strong>Projects</strong> section in the left sidebar, and select the project you want.<br />
+Click the <strong>settings</strong> button (<img src="../../_static/images/settings_button.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">) next to the project name and choose <strong>Copy project link</strong>.</p>
+</div>
 </section>
 <section id="final-step-complete-project-creation">
 <h2>Final Step: Complete Project Creation<a class="headerlink" href="#final-step-complete-project-creation" title="Link to this heading">¶</a></h2>
@@ -166,7 +172,7 @@ Creating a project is <strong>simple</strong> and <strong>flexible</strong> and 
 <hr class="docutils" />
 <br/>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../_images/project-creation-3.gif"><img alt="Project Creation" src="../../_images/project-creation-3.gif" style="width: 93%;" />
+<a class="reference internal image-reference" href="../../_images/project-creation-updated2.gif"><img alt="Project Creation" src="../../_images/project-creation-updated2.gif" style="width: 93%;" />
 </a>
 <figcaption>
 <p><span class="caption-text"><em>Project Creation</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
@@ -243,6 +249,15 @@ You can also <strong>add</strong> additional existing datasets from the same <st
 </div>
 </section>
 </section>
+<hr class="docutils" />
+<section id="api-availability">
+<h2>API Availability<a class="headerlink" href="#api-availability" title="Link to this heading">¶</a></h2>
+<p>The actions described in this page can also be performed programmatically using our <strong>FastAPI</strong>. For more details, see the following endpoints in our API Reference:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://datacatalog.bright.dtu.dk/api/docs#/projects/create_project_projects_post" rel="noreferrer" target="_blank"><strong>/projects</strong></a></p></li>
+<li><p><a class="reference external" href="https://datacatalog.bright.dtu.dk/api/docs#/projects-datasets" rel="noreferrer" target="_blank"><strong>/projects-datasets</strong></a></p></li>
+</ul>
+</section>
 </section>
 
 </main>
@@ -270,6 +285,7 @@ You can also <strong>add</strong> additional existing datasets from the same <st
 <li><a class="reference internal" href="#to-add-another-dataset-to-a-project">To add another dataset to a project:</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#api-availability">API Availability</a></li>
 </ul>
 </li>
 </ul>

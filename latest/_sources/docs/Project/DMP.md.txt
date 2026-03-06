@@ -127,6 +127,11 @@ This section includes questions about compliance and data sharing:
 → **BRIGHT-visible**: READ-ONLY access for project and dataset metadata is granted to all BRIGHT employees. Access to files in Microsoft Azure Storage account remains restricted to project members and collaborators.
 ```
 
+----------------------------
 
+## API Availability
 
+Some of the fields used when creating a DMP can also be set programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
+
+* [**/dmp**](https://datacatalog.bright.dtu.dk/api/docs#/dmp)
 
