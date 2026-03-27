@@ -21,7 +21,7 @@ There are three options available:
 ➤ Once uploaded, files will appear in the list with details such as **name**, and **upload date**, making it easy to keep track of its content.
 
 ```{note}
-The system queues files upon upload, meaning they are uploaded sequentially rather than in parallel. Because of this, the total upload time depends almost entirely on the network upload speed during the transfer. For large uploads (5–10 GB up to 50 GB), avoid Wi‑Fi and use a **wired internet connection** for much faster and more stable upload speeds.
+Files are queued on upload, meaning they transfer sequentially rather than in parallel. Total upload time depends entirely on your network's upload speed. For large transfers (5+ GB), use a **wired connection** instead of Wi-Fi to achieve faster and more stable uploads.
 ```
 
 ```{tip}
