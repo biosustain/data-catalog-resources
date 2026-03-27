@@ -20,8 +20,9 @@ There are three options available:
 
 ➤ Once uploaded, files will appear in the list with details such as **name**, and **upload date**, making it easy to keep track of its content.
 
-
-
+```{note}
+Files are queued on upload, meaning they transfer sequentially rather than in parallel. Total upload time depends entirely on your network's upload speed. For large transfers (5+ GB), use a **wired connection** instead of Wi-Fi to achieve faster and more stable uploads.
+```
 
 ```{tip}
 When uploading a **directory**, the folder structure is preserved for better organization.
@@ -31,11 +32,13 @@ When uploading a **directory**, the folder structure is preserved for better org
 
 ## Manage Files
 
-You can perform basic actions on files or directories uploaded to the Data Catalog:
+You can perform basic actions on files or directories in the Data Catalog:
 
 * **Download**: Click the <img src="../../_static/images/download.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to save a file locally and view its details.
 
 * **Delete**: Click the <img src="../../_static/images/delete.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to remove files that are no longer needed.
+
+* **Cancel Upload**: While a file is uploading, a **Cancel** button appears next to it. Click to stop and remove the in-progress upload in case you selected the wrong files.
 
 **Please review files before deleting to avoid accidental data loss.*
 
@@ -46,7 +49,7 @@ You can perform basic actions on files or directories uploaded to the Data Catal
 
 <br/>
 
-```{figure} ../../_static/images/files.gif
+```{figure} ../../_static/images/files-updated2.gif
 :alt: Uploading files
 :width: 93%
 :align: center
