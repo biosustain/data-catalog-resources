@@ -205,6 +205,36 @@ To remove a Lineage:
 *Dataset Lineage*
 ```
 ----------------------------
+(Seqera Workspace)=
+### Setup a Dataset in Seqera Workspace (WIP- work in progress)
+
+In the Seqera section you can set up a Dataset as input for running Nextflow pipelines in Seqera Workspace. Once the analysis is complete, you can copy the results back to Data Catalog as a new dataset under the project of your choice. Follow the steps below to get started:
+
+1. Open the dataset you want to use as input for your pipeline
+
+2. Click the `Seqera` tab on the dataset home page
+
+2. From the dropdown list, select the project under which the pipeline costs will be billed
+
+   > Only projects where you have the **Can Set Up Workspace** permission will appear in the list.
+
+3. Click `Create a new setup`
+
+4. Go to Seqera, select your pipeline, and run your analysis as usual
+
+5. Once the analysis is complete, return to Data Catalog and refresh the page. A NEW button will appear in the **Seqera** tab of the same dataset.
+
+6. Click `Copy Back` button. A new dataset containing the analysis results will be created and will be visible alongside other datasets under the "Datasets" tab on the project home page you selected in step 2.
+
+
+```{note}
+Please note that this functionality is still under development and may not work as expected at the moment.
+```
+
+<br/>
+
+-------------------------------
+
 
 ## API Availability
 
