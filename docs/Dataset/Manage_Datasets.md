@@ -105,7 +105,7 @@ The tab displays a table view with:
 
 <br/>
 
-```{figure} ../../_static/images/dataset-user-permissions.gif
+```{figure} ../../_static/images/dataset-user-permissions-updated.gif
 :alt: Dataset Permissions
 :width: 93%
 :align: center
