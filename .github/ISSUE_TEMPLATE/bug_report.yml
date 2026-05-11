@@ -1,5 +1,5 @@
 name: Report an Issue 
-description: Report something that is not working as expected in the Data Catalog. | Please fill out the template below with as much information as possible to help us understand and fix the issue.
+description: Report something that is not working as expected in the Data Catalog. Please fill out the template below with as much information as possible to help us understand and fix the issue.
 title: "[Issue]: "
 labels: ["bug"]
 projects: ["biosustain/12"]
@@ -13,7 +13,7 @@ body:
       placeholder: e.g. When I click on the search button, nothing happens.
     validations:
       required: true
-  - type: texterea
+  - type: textarea
     id: steps-to-reproduce
     attributes:
       label: Steps to reproduce
