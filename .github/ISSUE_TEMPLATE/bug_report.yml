@@ -1,10 +1,14 @@
 name: Report an Issue 
-description: Report something that is not working as expected in the Data Catalog. Please fill out the template below with as much information as possible to help us understand and fix the issue.
+description: Something not working as expected in the Data Catalog?
 title: "[Issue]: "
 labels: ["bug"]
 projects: ["biosustain/12"]
 type: bug
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the form below with as much detail as you can about the issue you are experiencing in the Data Catalog. This will help us understand the problem and resolve it faster. Thank you for taking the time to report this issue!
   - type: textarea
     id: description
     attributes:
