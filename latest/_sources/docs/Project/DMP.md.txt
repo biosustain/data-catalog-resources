@@ -93,6 +93,31 @@ This section includes a series of questions about compliance and data sharing. M
 → **BRIGHT-visible**: READ-ONLY access for project and dataset metadata is granted to all BRIGHT employees. Access to files in Microsoft Azure Storage account remains restricted to project members and collaborators.
 ```
 
+## DMP Progress Overview
+
+The DMP page provides an overview of your progress. You can track how many questions you have already completed and how many are still left to complete.
+
+
+## Export DMP
+
+Once the DMP is completed, you can export it for sharing or documentation purposes.
+
+You can export the DMP as:
+* **PDF**
+* **JSON**
+
+
+<br/>
+
+```{figure} ../../_static/images/DMP.png
+:alt: DMP Export & Progress Overview
+:width: 93%
+:align: center
+
+*DMP Export & Progress Overview*
+```
+
+
 ----------------------------
 
 ## API Availability

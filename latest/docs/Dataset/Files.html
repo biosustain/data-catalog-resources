@@ -130,9 +130,9 @@
     <section class="tex2jax_ignore mathjax_ignore" id="files">
 <h1>Files<a class="headerlink" href="#files" title="Link to this heading">¶</a></h1>
 <p><strong>Files</strong> are the smallest data units in the system. Each file belongs to a dataset and represents a single piece of data, such as a sequence file, image, table, or model output in a specific format.</p>
-<section id="upload-files">
-<h2>Upload Files<a class="headerlink" href="#upload-files" title="Link to this heading">¶</a></h2>
-<p>Once your dataset has been successfully created in Data Catalog, you can start adding files or directories directly from the dataset’s home page. The upload section is located on the <strong>Files</strong> tab and it supports multiple upload options for flexibility.</p>
+<section id="standard-upload">
+<h2>Standard Upload<a class="headerlink" href="#standard-upload" title="Link to this heading">¶</a></h2>
+<p>Once your dataset has been successfully created in Data Catalog, you can start adding files or directories directly from the dataset’s home page. The <strong>standard upload</strong> section is located on the <strong>Files</strong> tab and it supports multiple upload options for flexibility.</p>
 <p>There are three options available:</p>
 <ul>
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">Drag</span> <span class="pre">&amp;</span> <span class="pre">Drop</span></code></strong> files from your computer into the upload area</p></li>
@@ -151,6 +151,98 @@
 <p>When uploading a <strong>directory</strong>, the folder structure is preserved for better organization.</p>
 </div>
 </section>
+<section id="advanced-upload">
+<h2>Advanced upload<a class="headerlink" href="#advanced-upload" title="Link to this heading">¶</a></h2>
+<p>If you have a lot of large data to upload, we recommend that you use the <strong>advanced upload</strong> option. This creates a temporary upload folder in the dataset’s storage location, where you can upload your files using one of the following external tools:</p>
+<ul class="simple">
+<li><p>AzCopy</p></li>
+<li><p>Azure Storage Explorer</p></li>
+</ul>
+<p>Let’s see how to use each tool in more details:</p>
+<section id="azcopy">
+<h3>AzCopy<a class="headerlink" href="#azcopy" title="Link to this heading">¶</a></h3>
+<p>AzCopy is a command-line utility that allows you to transfer files and directories directly to the dataset’s storage location.</p>
+<p>Before you start, make sure you have AzCopy downloaded and saved on your computer. For more detailed installation instructions, see <a class="reference external" href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10" rel="noreferrer" target="_blank"><strong>here</strong></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The commands below use Windows-style paths. If you are on Mac, replace backslashes <code class="docutils literal notranslate"><span class="pre">&quot;\&quot;</span></code> with forward slashes <code class="docutils literal notranslate"><span class="pre">&quot;/&quot;</span></code> and adjust the path accordingly (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;/Users/YOUR_USERNAME/&quot;</span></code> instead of <code class="docutils literal notranslate"><span class="pre">&quot;C:\Users\YOUR_USERNAME\&quot;</span></code>).</p>
+</div>
+<ol class="arabic simple">
+<li><p>Open Command Prompt (Windows) or Terminal (Mac)</p></li>
+<li><p>Navigate to where AzCopy is saved on your computer</p></li>
+<li><p>Log in to AzCopy:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>azcopy<span class="w"> </span>login
+</pre></div>
+</div>
+<p>A link and a code will appear. Open the link in your browser, enter the code, and sign in with your Microsoft account.</p>
+<ol class="arabic simple" start="4">
+<li><p>Request a URL from the Data Catalog</p></li>
+<li><p>Upload files or folder using one of the following commands:</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Specific files from the same folder:</strong></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">azcopy</span> <span class="n">copy</span> <span class="s2">&quot;C:\Users\YOUR_USERNAME\Documents&quot;</span> <span class="s2">&quot;UPLOAD_URL&quot;</span> <span class="o">--</span><span class="n">include</span><span class="o">-</span><span class="n">pattern</span> <span class="s2">&quot;file1.csv;file2.xlsx&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Entire folder:</strong></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">azcopy</span> <span class="n">copy</span> <span class="s2">&quot;C:\Users\YOUR_USERNAME\Documents\my-data-folder&quot;</span> <span class="s2">&quot;UPLOAD_URL&quot;</span> <span class="o">--</span><span class="n">recursive</span>
+</pre></div>
+</div>
+<p>After the command finishes, AzCopy displays a summary. Make sure <strong>Final Job Status: Completed</strong> and the number of completed transfers matches your files.</p>
+<ol class="arabic simple" start="6">
+<li><p>Once the upload is complete, go back to the Data Catalog and click <strong><code class="docutils literal notranslate"><span class="pre">Finalize</span> <span class="pre">Upload</span></code></strong>. This will transfer the files back to the dataset and make them visible in the file list.</p></li>
+</ol>
+</section>
+<section id="azure-storage-explorer">
+<h3>Azure Storage Explorer<a class="headerlink" href="#azure-storage-explorer" title="Link to this heading">¶</a></h3>
+<p>Azure Storage Explorer is a free desktop application by Microsoft. It is an alternative to AzCopy for users who prefer not to use the command line.
+For more information on how to install see <a class="reference external" href="https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows" rel="noreferrer" target="_blank"><strong>here</strong></a>.</p>
+<ol class="arabic simple">
+<li><p>Request a URL from the Data Catalog</p></li>
+<li><p>Open Azure Storage Explorer and log in with your Microsoft account</p></li>
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">plug</span> <span class="pre">icon</span></code></strong> on the left side bar to open the Connect dialog</p></li>
+<li><p>Select <strong><code class="docutils literal notranslate"><span class="pre">ADLS</span> <span class="pre">Gen2</span> <span class="pre">container</span> <span class="pre">or</span> <span class="pre">directory</span></code></strong></p></li>
+<li><p>Select <strong><code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">in</span> <span class="pre">using</span> <span class="pre">OAuth</span></code></strong> and click <code class="docutils literal notranslate"><span class="pre">next</span></code></p></li>
+<li><p>Select your Azure account and click <code class="docutils literal notranslate"><span class="pre">next</span></code></p></li>
+<li><p>Optionally give the connection a display name and paste the upload URL provided from the  Data Catalog, then click <code class="docutils literal notranslate"><span class="pre">next</span></code></p></li>
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Connect</span></code></strong></p></li>
+<li><p>Upload your files or folders to the temporary storage location. Check the <strong>Activities</strong> panel at the bottom to make sure all transfers completed successfully.</p></li>
+<li><p>Go back to the Data Catalog and click <strong><code class="docutils literal notranslate"><span class="pre">Finalize</span> <span class="pre">Upload</span></code></strong> to move the files into the dataset and make them visible in the files list.</p></li>
+</ol>
+<p>The screenshots below illustrate steps 3 to 9:</p>
+<div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
+  <img id="carousel-img" src="../../_static/images/plug_in.png" style="width:100%; border-radius:6px; border:1px solid #ddd;">
+  <p id="carousel-caption" style="color:#555; font-size:0.9em; margin-top:8px;">Step 2</p>
+  <div style="margin-top:10px;">
+    <button onclick="moveSlide(-1)" style="margin-right:10px; cursor:pointer;"><</button>
+    <span id="carousel-counter" style="font-size:0.9em; color:#555;">1 / 7</span>
+    <button onclick="moveSlide(1)" style="margin-left:10px; cursor:pointer;">></button>
+  </div>
+</div>
+
+<script>
+  const slides = [
+    { src: "../../_static/images/plug_in.png", caption: "Step 3" },
+    { src: "../../_static/images/ADLS.png", caption: "Step 4"},
+    { src: "../../_static/images/OAuth.png", caption: "Step 5"},
+    { src: "../../_static/images/account.png", caption: "Step 6"},
+    { src: "../../_static/images/url.png", caption: "Step 7"},
+    { src: "../../_static/images/connect.png", caption: "Step 8"},
+    { src: "../../_static/images/transfer_files.png", caption: "Step 9"},
+  ];
+    let current = 0;
+ function moveSlide(dir) {
+    current = (current + dir + slides.length) % slides.length;
+    document.getElementById('carousel-img').src = slides[current].src;
+    document.getElementById('carousel-caption').textContent = slides[current].caption;
+    document.getElementById('carousel-counter').textContent = (current + 1) + ' / ' + slides.length;
+  }
+</script></section>
+</section>
 <hr class="docutils" />
 <section id="manage-files">
 <h2>Manage Files<a class="headerlink" href="#manage-files" title="Link to this heading">¶</a></h2>
@@ -165,10 +257,10 @@
 <hr class="docutils" />
 <br/>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../_images/files-updated2.gif"><img alt="Uploading files" src="../../_images/files-updated2.gif" style="width: 93%;" />
+<a class="reference internal image-reference" href="../../_images/manage-files.gif"><img alt="Manage files" src="../../_images/manage-files.gif" style="width: 93%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><em>Uploading files</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+<p><span class="caption-text"><em>Manage files</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -197,7 +289,12 @@
                             <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
                             <ul>
 <li><a class="reference internal" href="#">Files</a><ul>
-<li><a class="reference internal" href="#upload-files">Upload Files</a></li>
+<li><a class="reference internal" href="#standard-upload">Standard Upload</a></li>
+<li><a class="reference internal" href="#advanced-upload">Advanced upload</a><ul>
+<li><a class="reference internal" href="#azcopy">AzCopy</a></li>
+<li><a class="reference internal" href="#azure-storage-explorer">Azure Storage Explorer</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#manage-files">Manage Files</a></li>
 </ul>
 </li>
@@ -242,7 +339,7 @@
         <script>let toggleHintShow = 'Click to show';</script>
         <script>let toggleHintHide = 'Click to hide';</script>
         <script>let toggleOpenOnPrint = 'true';</script>
-        <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
+        <script src="../../_static/togglebutton.js?v=b8b12719"></script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script src="../../_static/js/mobile-toc.js?v=28931289"></script>

@@ -83,7 +83,7 @@ Just below the description, several key features are displayed:
         * Can Edit Metadata: Allows editing project details
         * Can Add Datasets: Allows adding datasets to the project, either by creating new or adding (and removing) existing ones
         * Can Archive: Allows Archiving the project 
-         * <span style="color:#999999"> Can Setup Workspaces: Allows running analysis pipelines on the dataset's files (coming soon)</span>
+        * Can Setup Workspaces: Allows running analysis pipelines on the dataset's files
 
             (see also: {ref}`manage-project-user-permissions`) 
 

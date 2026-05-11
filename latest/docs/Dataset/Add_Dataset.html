@@ -305,6 +305,29 @@ This helps you associate the dataset with other research contexts.</p>
 <p><span class="caption-text"><em>Dataset Lineage</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
+<hr class="docutils" />
+</section>
+<section id="setup-a-dataset-in-seqera-workspace-wip-work-in-progress">
+<span id="seqera-workspace"></span><h3>Setup a Dataset in Seqera Workspace (WIP- work in progress)<a class="headerlink" href="#setup-a-dataset-in-seqera-workspace-wip-work-in-progress" title="Link to this heading">¶</a></h3>
+<p>In the Seqera section you can set up a Dataset as input for running Nextflow pipelines in Seqera Workspace. Once the analysis is complete, you can copy the results back to Data Catalog as a new dataset under the project of your choice. Follow the steps below to get started:</p>
+<ol class="arabic">
+<li><p>Open the dataset you want to use as input for your pipeline</p></li>
+<li><p>Click the <code class="docutils literal notranslate"><span class="pre">Seqera</span></code> tab on the dataset home page</p></li>
+<li><p>From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.</p>
+<blockquote>
+<div><p>Only projects where you have the <strong>Can Set Up Workspace</strong> permission will appear in the list.</p>
+</div></blockquote>
+</li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">setup</span></code></p></li>
+<li><p>Go to Seqera, select your pipeline, and run your analysis as usual</p></li>
+<li><p>Once the analysis is complete, return to Data Catalog and refresh the page. A NEW button will appear in the <strong>Seqera</strong> tab of the same dataset.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">Back</span></code> button. A new dataset containing the analysis results will be created and will be visible alongside other datasets under the “Datasets” tab on the project home page you selected in step 2.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that this functionality is still under development and may not work as expected at the moment.</p>
+</div>
+<br/>
 </section>
 </section>
 <hr class="docutils" />
@@ -347,6 +370,7 @@ This helps you associate the dataset with other research contexts.</p>
 </li>
 <li><a class="reference internal" href="#dataset-lineage">Dataset Lineage</a><ul>
 <li><a class="reference internal" href="#to-add-a-lineage">To add a Lineage:</a></li>
+<li><a class="reference internal" href="#setup-a-dataset-in-seqera-workspace-wip-work-in-progress">Setup a Dataset in Seqera Workspace (WIP- work in progress)</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#api-availability">API Availability</a></li>
@@ -393,7 +417,7 @@ This helps you associate the dataset with other research contexts.</p>
         <script>let toggleHintShow = 'Click to show';</script>
         <script>let toggleHintHide = 'Click to hide';</script>
         <script>let toggleOpenOnPrint = 'true';</script>
-        <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
+        <script src="../../_static/togglebutton.js?v=b8b12719"></script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script src="../../_static/js/mobile-toc.js?v=28931289"></script>

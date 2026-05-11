@@ -44,17 +44,20 @@ The **Search** bar is available throughout the platform, so you can easily find 
 The **Dataset Home Page** in Data Catalog is the central place to view and manage everything related to a specific dataset. It brings together all the essential components such as:
 
    * Metadata
+   * Files 
    * Projects
    * Permissions
    * <span style="color:#999999">History (coming soon)</span>
    * Lineage
-   * Files 
+   * Seqera (WIP - work in progress)
 
 
 for a specific dataset, into one organized interface.
 
 ```{note}
-The **History** feature is currently visible but not active. iT will be available soon, allowing you to view dataset activity.
+The **History** feature is currently visible but not active. It will be available soon, allowing you to view dataset activity.
+
+The **Seqera** section is available in the Data Catalog, but the functionality is still under development and may not work as expected.
 ```
 
 
@@ -65,14 +68,6 @@ Once you open a dataset, you will land on its home page. This page is structured
 
 At the top of the page, there is the title and a short description of the dataset to help you quickly understand its purpose or scope.
 
-#### ➣ Setup in Seqera Workspace (comming soon)
-
-Next to the description, there is the **Setup in Seqera Workspace** button. This feature allows you to create a Seqera workspace using this dataset as input for runnig **Nextflow** pipelines.
-
-Anyone can click the button, but only users who have the **Can SetUp Workspace** permission on the project this dataset belongs to will be able to proceed. After clicking, you will be prompted to choose a project under which the pipeline costs will be billed.
-
-(see also: {ref}`manage-project-user-permissions`) 
-
 #### ➣ Key Features of the Dataset Home Page
 
 Just below the description, several key features are displayed:
@@ -80,6 +75,10 @@ Just below the description, several key features are displayed:
 
 * **Metadata**: 
     * This section includes the list of all the dataset details (metadata) entered during dataset creation.
+
+* **Files**:
+    * Here are listed all files or entire directories related to this dataset.
+    * You can upload new files or directories, view their details, download to see their content, or delete if no longer needed.
 
 * **Projects**: 
     * Here are listed all projects the dataset is linked to.
@@ -113,9 +112,14 @@ Just below the description, several key features are displayed:
         (see also: {ref}`dataset-lineage`)
   
 
-* **Files**:
-    * Here are listed all files or entire directories related to this dataset.
-    * You can upload new files or directories, view their details, download to see their content, or delete if no longer needed.
+* **Seqera (WIP - work in progress)**
+
+    * In this section, you can automatically set up a Dataset in Seqera Workspace as input for runnig **Nextflow** pipelines.
+    * Select the project under which the pipeline costs will be billed, and click `Create a new setup`.
+    * Only projects where you have the **Can Set Up Workspace** permission will appear in the list.
+
+
+(see also: {ref}`Seqera Workspace`) 
 
 
 
@@ -125,7 +129,7 @@ Just below the description, several key features are displayed:
 
 <br/>
 
-```{figure} ../../_static/images/exploring-dataset-updated.gif
+```{figure} ../../_static/images/exploring-dataset-updated2.gif
 :alt: Dataset Home Page
 :width: 93%
 :align: center

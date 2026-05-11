@@ -76,7 +76,7 @@ The tab displays a table view with:
     * **Can Edit Metadata:** Allows editing project details
     * **Can Add Datasets:** Allows adding datasets to the project, either by creating new or adding (and removing) existing ones (see also: {ref}`Datasets-tab`)
     * **Can Archive:** Allows archiving the project 
-    * <span style="color:#999999"> **Can Setup Workspaces:** Allows running analysis pipelines on dataset's files (coming soon)</span>
+    * **Can Setup Workspaces:** Allows running analysis pipelines on dataset's files
 * **Actions column:** Includes the available actions:  
     * **Save Policy:** Saves changes when adding a new user
     * **Remove Policy:** Revokes a user's access
