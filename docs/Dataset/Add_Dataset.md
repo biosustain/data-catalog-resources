@@ -214,7 +214,7 @@ In the Seqera section you can set up a Dataset as input for running Nextflow pip
 
 2. Click the `Seqera` tab on the dataset home page
 
-2. From the dropdown list, select the project under which the pipeline costs will be billed
+2. From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.
 
    > Only projects where you have the **Can Set Up Workspace** permission will appear in the list.
 
