@@ -17,6 +17,17 @@ body:
       placeholder: e.g. When I click on the search button, nothing happens.
     validations:
       required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: How severe is the issue?
+      options:
+        - 🔴 Blocking - I cannot use the Data Catalog at all
+        - 🟠 High - An important feature is not working
+        - 🟡 Medium - Feature is partially working
+        - 🟢 Low - Minor issue that does not affect my work
+    validations:
+      required: true
   - type: textarea
     id: steps-to-reproduce
     attributes:
