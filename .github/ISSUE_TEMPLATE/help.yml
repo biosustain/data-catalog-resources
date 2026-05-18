@@ -1,0 +1,27 @@
+name: 💬I Need Help
+description: Not sure how to do something in the Data Catalog? We are here to help!
+title: "[Help]: "
+labels: ["question"]
+projects: ["biosustain/12"]
+type: task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Not sure how to do something in the Data Catalog? We are here to help! Please fill out the form below with as much detail as you can so we can point you in the right direction.
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+      description: Please describe what you are trying to do and where are you getting stuck.
+      placeholder: e.g. I am trying to find all datasets related to a specific project but I am not sure how to search for them.
+    validations:
+      required: true
+  - type: textarea
+    id: additional  
+    attributes:
+      label: Additional Context
+      description: Add any screenshots or additional information that might help us understand your question better.
+      placeholder: Drag and drop screenshots here or add any additional information.
+    validations:
+      required: false
