@@ -1,0 +1,114 @@
+name: Cleanup gh-pages Old Versions
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_versions_to_keep:
+        description: 'Number of recent version to keep'
+        required: false
+        default: '3'
+        type: string
+      dry_run:
+        description: 'Dry run - only show what would be deleted without actually deleting'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    - name: Clean up old release versions
+      run: |
+        set -e
+        
+
+        RELEASE_VERSIONS_TO_KEEP="${{ github.event.inputs.release_versions_to_keep || '3' }}"
+        DRY_RUN="${{ github.event.inputs.dry_run || 'false' }}"
+        
+        echo "🧹 Starting cleanup of old release versions..."
+        echo "Number of recent release versions: ${RELEASE_VERSIONS_TO_KEEP} to keep"
+        echo "Dry run: ${DRY_RUN}"
+        echo "Current time: $(date)"
+        
+        # Ensure we're on the gh-pages branch
+        git checkout gh-pages
+        git pull origin gh-pages || echo "⚠️ Warning: Could not pull latest changes"
+        
+        # Find all release versions directories
+        echo "Looking for release versions..."
+        VERSION_DIRS=$(find . -maxdepth 1 -type d -name "v[0-9]*.[0-9]*" 2>/dev/null | sort || true)
+
+        if [ -n "$VERSION_DIRS" ] && [ "$VERSION_DIRS" != "" ]; then
+            echo "Found Version directories:"
+            echo "$VERSION_DIRS"
+            echo ""
+            DELETED_COUNT=0
+
+            # Sort directories by version number using sort -V and get the ones to delete
+            SORTED_DIRS=$(echo "$VERSION_DIRS" | sort -V)
+            TOTAL=$(echo $SORTED_DIRS | wc -l)
+
+            echo "Total version directories found: $TOTAL"
+            echo "Sorted versions directories: $SORTED_DIRS"
+            echo ""
+
+            # Get the directores to keep and to delete based on the number of versions to keep
+            # The head gets all but the last N versions to delete, and the tail gets the last N versions to keep
+            DIRS_TO_DELETE=$(echo "$SORTED_DIRS" | head -n -${RELEASE_VERSIONS_TO_KEEP})
+            DIRS_TO_KEEP=$(echo "$SORTED_DIRS" | tail -n ${RELEASE_VERSIONS_TO_KEEP})
+
+            echo "Directories to keep (the last ${RELEASE_VERSIONS_TO_KEEP}  most recent): $DIRS_TO_KEEP"
+            echo "Directories to delete: $DIRS_TO_DELETE"
+            echo ""
+
+            # Process each directory to delete
+            for dir in $DIRS_TO_DELETE; do
+                if [ -d "$dir" ]; then
+                    echo "Deleting directory: $dir"
+                if [ "$DRY_RUN" == "true" ]; then
+                    echo "Dry run enabled - not actually deleting $dir"
+                    DELETED_COUNT=$((DELETED_COUNT + 1))
+                else
+                    rm -rf "$dir"
+                    echo "Deleted $dir"
+                    DELETED_COUNT=$((DELETED_COUNT + 1))
+                fi
+                fi
+            done
+
+            # Configure git
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+
+            # Add all changes and commit
+            git add -A
+            # Commit and push only if it is not dry run and at least one folder was actually deleted 
+            if [ "$DRY_RUN" == "false" ] && [ "$DELETED_COUNT" -gt 0 ]; then
+            if ! git diff --cached --quiet; then
+              git commit -m "cleanup: remove ${DELETED_COUNT} old release version directories, keeping the most recent ${RELEASE_VERSIONS_TO_KEEP} versions"
+              git push origin gh-pages
+              echo "✅ Successfully removed ${DELETED_COUNT} old release versions directories"
+            else
+              echo "ℹ️ No changes to commit - directories may have been already removed"
+            fi
+            elif [ "$DRY_RUN" == "true" ] && [ "$DELETED_COUNT" -gt 0 ]; then
+                echo "✅  Dry run completed - would delete ${DELETED_COUNT} folders, keeping the most recent ${RELEASE_VERSIONS_TO_KEEP} versions"
+            else
+                echo "ℹ️ No directories to delete - already have ${RELEASE_VERSIONS_TO_KEEP} or fewer versions"
+            fi
+        
+            echo ""
+            echo "🎉 Cleanup completed!"
+        else
+          echo "No release version directories found to clean up."
+        fi
+
+
