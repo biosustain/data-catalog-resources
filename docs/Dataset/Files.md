@@ -130,6 +130,10 @@ The screenshots below illustrate steps 3 to 9:
 
 You can perform basic actions on files or directories in the Data Catalog:
 
+* **Move to**: Click the <img src="../../_static/images/move_to.png" alt="move_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to move a file or folder to a different destination folder. You can move individual files between folders, or move an entire folder (along with its contents) into another folder.
+
+* **Rename**: Click the <img src="../../_static/images/rename.png" alt="rename_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to rename a file or folder.
+
 * **Download**: Click the <img src="../../_static/images/download.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to save a file locally and view its details.
 
 * **Delete**: Click the <img src="../../_static/images/delete.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to remove files that are no longer needed.
@@ -148,7 +152,7 @@ You can perform basic actions on files or directories in the Data Catalog:
 ```{raw} html
 <div style="text-align: center;">
   <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../../_static/images/manage-files.mp4" type="video/mp4">
+    <source src="../../_static/images/manage_files_updated.mp4" type="video/mp4">
   </video>
   <p><em>Manage files</em></p>
 </div>
