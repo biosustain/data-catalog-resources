@@ -37,12 +37,13 @@ To make your search more precise, try combining **multiple filters** at once.
 
 <br/>
 
-```{figure} ../_static/images/search-2.gif
-:alt: Search
-:width: 93%
-:align: center
-
-*Search*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/search-2.mp4" type="video/mp4">
+  </video>
+  <p><em>Search</em></p>
+</div>
 ```
 ----------------------------
 

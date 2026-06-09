@@ -129,12 +129,13 @@ Just below the description, several key features are displayed:
 
 <br/>
 
-```{figure} ../../_static/images/exploring-dataset-updated2.gif
-:alt: Dataset Home Page
-:width: 93%
-:align: center
-
-*Dataset Home Page*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/exploring-dataset-updated2.mp4" type="video/mp4">
+  </video>
+  <p><em>Dataset Home Page</em></p>
+</div>
 ```
 ----------------------------
 

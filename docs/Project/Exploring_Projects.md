@@ -102,12 +102,13 @@ Just below the description, several key features are displayed:
 
 <br/>
 
-```{figure} ../../_static/images/project-home-page-3.gif
-:alt: Project Home Page
-:width: 93%
-:align: center
-
-*Project Home Page*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/project-home-page-3.mp4" type="video/mp4">
+  </video>
+  <p><em>Project Home Page</em></p>
+</div>
 ```
 ----------------------------
 

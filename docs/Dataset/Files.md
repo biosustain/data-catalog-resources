@@ -145,12 +145,13 @@ You can perform basic actions on files or directories in the Data Catalog:
 
 <br/>
 
-```{figure} ../../_static/images/manage-files.gif
-:alt: Manage files
-:width: 93%
-:align: center
-
-*Manage files*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/manage-files.mp4" type="video/mp4">
+  </video>
+  <p><em>Manage files</em></p>
+</div>
 ```
 ----------------------------
 
