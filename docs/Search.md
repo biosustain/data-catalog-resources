@@ -54,14 +54,14 @@ The Favorite feature allows you to mark frequently used projects and datasets fo
 ### Adding and removing favorites
 
 1. Navigate to the **Projects** or **Datasets** list page
-2. Click the **<img src="../../_static/images/star.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon next to its name to mark it as a favorite
+2. Click the **<img src="../_static/images/star.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon next to its name to mark it as a favorite
 3. To remove a favorite, click the star icon again
 
 The screenshots below show how to mark a dataset as favorite. The same applies to projects.
 
 ```{raw} html
 <div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
-  <img id="carousel-img" src="../../_static/images/favorite-icon-ds.png" style="width:100%; border-radius:6px; border:1px solid #ddd;">
+  <img id="carousel-img" src="../_static/images/favorite-icon-ds.png" style="width:100%; border-radius:6px; border:1px solid #ddd;">
   <p id="carousel-caption" style="color:#555; font-size:0.9em; margin-top:8px;">The star icon on the dataset list page</p>
   <div style="margin-top:10px;">
     <button onclick="moveSlide(-1)" style="margin-right:10px; cursor:pointer;"><</button>
@@ -72,8 +72,8 @@ The screenshots below show how to mark a dataset as favorite. The same applies t
 
 <script>
   const slides = [
-    { src: "../../_static/images/favorite-icon-ds.png", caption: "The star icon on the dataset list page"},
-    { src: "../../_static/images/favorites-tab.png", caption: "The Favorites section for datasets"},
+    { src: "../_static/images/favorite-icon-ds.png", caption: "The star icon on the dataset list page"},
+    { src: "../_static/images/favorites-tab.png", caption: "The Favorites section for datasets"},
   ];
     let current = 0;
  function moveSlide(dir) {
