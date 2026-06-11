@@ -42,12 +42,13 @@ A confirmation box will appear asking you to confirm the action.
 
 <br/>
 
-```{figure} ../../_static/images/manage-dataset.gif
-:alt: Manage Datasets
-:width: 93%
-:align: center
-
-*Manage Datasets*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/manage-dataset.mp4" type="video/mp4">
+  </video>
+  <p><em>Manage Datasets</em></p>
+</div>
 ```
 ----------------------------
 
@@ -105,12 +106,13 @@ The tab displays a table view with:
 
 <br/>
 
-```{figure} ../../_static/images/dataset-user-permissions-updated.gif
-:alt: Dataset Permissions
-:width: 93%
-:align: center
-
-*Dataset Permissions*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/dataset-user-permissions-updated.mp4" type="video/mp4">
+  </video>
+  <p><em>Dataset Permissions</em></p>
+</div>
 ```
 ----------------------------
 

@@ -52,13 +52,15 @@ Click **`Create project`** at the ***bottom*** of the page to complete the proce
 
 <br/>
 
-```{figure} ../../_static/images/project-creation-updated2.gif
-:alt: Project Creation
-:width: 93%
-:align: center
-
-*Project Creation*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/project-creation-updated2.mp4" type="video/mp4">
+  </video>
+  <p><em>Project Creation</em></p>
+</div>
 ```
+
 ----------------------------
 
 <br/>
