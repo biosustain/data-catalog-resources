@@ -6,11 +6,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-        <title>Search &mdash; Data Catalog User Guide</title>
+        <title>Search &amp; Favorites &mdash; Data Catalog User Guide</title>
     
     <link rel="stylesheet" type="text/css" href="../_static/dist/fontawesome.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
-      <link rel="stylesheet" type="text/css" href="../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../_static/dist/theme.css?v=9cdaa676" />
       <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
       <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
@@ -78,7 +77,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Search</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Search &amp; Favorites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Contact.html">Contact</a></li>
 </ul>
 
@@ -100,21 +99,23 @@
                         <nav aria-label="breadcrumb">
     <ol class="breadcrumb m-0 p-0 bg-transparent">
         <li class="breadcrumb-item"><a href="../index.html">Docs</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Search</li>
+        <li class="breadcrumb-item active" aria-current="page">Search &amp; Favorites</li>
     </ol>
 </nav>
                     </div>
                     <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
-                        <noscript>
-                            <p>JavaScript is required to toggle light/dark mode..</p>
-                        </noscript>
-                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
-                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
-                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
-                        </button>
+                        <div class="d-flex flex-wrap gap-2">
+                            <noscript>
+                                <p>JavaScript is required to toggle light/dark mode..</p>
+                            </noscript>
+                            <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                                <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                                <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                            </button>
 
 
-                        
+                            
+                        </div>
                     </div>
                 </header>
                 <div class="row" >
@@ -125,9 +126,9 @@
                 <div class="row">
                     <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
                         <main role="main" id="main">
-    <section class="tex2jax_ignore mathjax_ignore" id="search">
-<h1>Search<a class="headerlink" href="#search" title="Link to this heading">¶</a></h1>
-<p>The Data Catalog makes it easy to find projects and datasets quickly using keywords and filters. This guide explains the search options available.</p>
+    <section class="tex2jax_ignore mathjax_ignore" id="search-favorites">
+<h1>Search &amp; Favorites<a class="headerlink" href="#search-favorites" title="Link to this heading">¶</a></h1>
+<p>The Data Catalog makes it easy to find projects and datasets quickly using keywords, filters and favorites. This guide explains the available search options and how to use favorites.</p>
 <section id="basic-search">
 <h2>➤  Basic Search<a class="headerlink" href="#basic-search" title="Link to this heading">¶</a></h2>
 <p>At the top of the page, you will find the <strong><code class="docutils literal notranslate"><span class="pre">Search</span> <span class="pre">bar</span></code></strong>. Simply type any relevant keyword such as the project or dataset name, and the Data Catalog will display matching results.</p>
@@ -157,13 +158,47 @@ You can change the sorting order using the <strong><code class="docutils literal
 <br/>
 <hr class="docutils" />
 <br/>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../_images/search-2.gif"><img alt="Search" src="../_images/search-2.gif" style="width: 93%;" />
-</a>
-<figcaption>
-<p><span class="caption-text"><em>Search</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
-</figcaption>
-</figure>
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../_static/images/search-2.mp4" type="video/mp4">
+  </video>
+  <p><em>Search</em></p>
+</div></section>
+<hr class="docutils" />
+<section id="favorites">
+<h2>Favorites<a class="headerlink" href="#favorites" title="Link to this heading">¶</a></h2>
+<p>The Favorite feature allows you to mark frequently used projects and datasets for quick access. Favorite items appear under the <strong>Favorites</strong> section at the top of the Projects and Datasets list pages respectively.</p>
+<section id="adding-and-removing-favorites">
+<h3>Adding and removing favorites<a class="headerlink" href="#adding-and-removing-favorites" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to the <strong>Projects</strong> or <strong>Datasets</strong> list page</p></li>
+<li><p>Click the <strong><img src="../_static/images/star.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"></strong> icon next to its name to mark it as a favorite</p></li>
+<li><p>To remove a favorite, click the star icon again</p></li>
+</ol>
+<p>The screenshots below show how to mark a dataset as favorite. The same applies to projects.</p>
+<div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
+  <img id="carousel-img" src="../_static/images/favorite-icon-ds.png" style="width:100%; border-radius:6px; border:1px solid #ddd;">
+  <p id="carousel-caption" style="color:#555; font-size:0.9em; margin-top:8px;">The star icon on the dataset list page</p>
+  <div style="margin-top:10px;">
+    <button onclick="moveSlide(-1)" style="margin-right:10px; cursor:pointer;"><</button>
+    <span id="carousel-counter" style="font-size:0.9em; color:#555;">1 / 2</span>
+    <button onclick="moveSlide(1)" style="margin-left:10px; cursor:pointer;">></button>
+  </div>
+</div>
+
+<script>
+  const slides = [
+    { src: "../_static/images/favorite-icon-ds.png", caption: "The star icon on the dataset list page"},
+    { src: "../_static/images/favorites-tab.png", caption: "The Favorites section for datasets"},
+  ];
+    let current = 0;
+ function moveSlide(dir) {
+    current = (current + dir + slides.length) % slides.length;
+    document.getElementById('carousel-img').src = slides[current].src;
+    document.getElementById('carousel-caption').textContent = slides[current].caption;
+    document.getElementById('carousel-counter').textContent = (current + 1) + ' / ' + slides.length;
+  }
+</script></section>
 </section>
 <hr class="docutils" />
 <section id="api-availability">
@@ -190,9 +225,13 @@ You can change the sorting order using the <strong><code class="docutils literal
                         <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
                             <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
                             <ul>
-<li><a class="reference internal" href="#">Search</a><ul>
+<li><a class="reference internal" href="#">Search &amp; Favorites</a><ul>
 <li><a class="reference internal" href="#basic-search">➤  Basic Search</a></li>
 <li><a class="reference internal" href="#advanced-search">➤  Advanced Search</a></li>
+<li><a class="reference internal" href="#favorites">Favorites</a><ul>
+<li><a class="reference internal" href="#adding-and-removing-favorites">Adding and removing favorites</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#api-availability">API Availability</a></li>
 </ul>
 </li>
@@ -217,7 +256,7 @@ You can change the sorting order using the <strong><code class="docutils literal
                 <small>
                     Created using
                     <a class="text-white" href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
-                        Sphinx Wagtail Theme 6.5.0
+                        Sphinx Wagtail Theme 6.6.0
                     </a>
                     and
                     <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">

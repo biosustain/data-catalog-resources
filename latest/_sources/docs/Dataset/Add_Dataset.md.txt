@@ -58,12 +58,13 @@ Click `Create dataset` at the ***bottom*** of the page to complete the process.
 
 <br/>
 
-```{figure} ../../_static/images/dataset-creation-3(BRIGHT).gif
-:alt: Dataset Creation
-:width: 93%
-:align: center
-
-*Dataset Creation*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/dataset-creation-3(BRIGHT).mp4" type="video/mp4">
+  </video>
+  <p><em>Dataset Creation</em></p>
+</div>
 ```
 ----------------------------
 
@@ -197,12 +198,13 @@ To remove a Lineage:
 
 <br/>
 
-```{figure} ../../_static/images/dataset-lineage-2(BRIGHT).gif
-:alt: Dataset Lineage
-:width: 93%
-:align: center
-
-*Dataset Lineage*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/dataset-lineage-2(BRIGHT).mp4" type="video/mp4">
+  </video>
+  <p><em>Dataset Lineage</em></p>
+</div>
 ```
 ----------------------------
 (Seqera Workspace)=

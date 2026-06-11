@@ -42,12 +42,13 @@ A confirmation box will appear asking you to confirm the action.
 
 <br/>
 
-```{figure} ../../_static/images/manage-project-3.gif
-:alt: Manage Projects
-:width: 93%
-:align: center
-
-*Manage Projects*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/manage-project-3.mp4" type="video/mp4">
+  </video>
+  <p><em>Manage Projects</em></p>
+</div>
 ```
 ----------------------------
 
@@ -95,13 +96,15 @@ The tab displays a table view with:
 
 <br/>
 
-```{figure} ../../_static/images/project-user-permissions-updated.gif
-:alt: Project Permissions
-:width: 93%
-:align: center
-
-*Project Permissions*
+```{raw} html
+<div style="text-align: center;">
+  <video width="93%" controls autoplay loop muted playsinline>
+    <source src="../../_static/images/project-user-permissions-updated.mp4" type="video/mp4">
+  </video>
+  <p><em>Project Permissions</em></p>
+</div>
 ```
+
 ----------------------------
 
 <br/>
