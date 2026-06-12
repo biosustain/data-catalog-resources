@@ -83,7 +83,7 @@ The tab displays a table view with:
     * **Can Read:** Allows the user to view the dataset’s metadata, associated projects, and lineage (view‑only).
     * **Can Edit Permissions:** Allows managing user access and permissions for the dataset
     * **Can Edit Metadata:** Allows editing dataset details
-    * **Can Link To:** Allows the current dataset to be linked in the dataset lineage (see {ref}`dataset-lineage`) 
+    * **Can Link To:** Allows the current dataset to be linked to as the destination (**descendant**) in the dataset lineage (see {ref}`dataset-lineage`) 
     * **Can Archive:** Allows archiving the dataset
     * **Can List Files:** Allows viewing all files in the dataset
     * **Can Edit Files:** Allows uploading or deleting files in the dataset
