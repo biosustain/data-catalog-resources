@@ -267,7 +267,7 @@ Please note that this functionality is still under development and may not work 
   }
 </script>
 ```
-
+(Manage Seqera Workspace)=
 ### Viewing and Managing Seqera Workspaces
 
 The same workspace and its information is also accessible from:
@@ -278,6 +278,9 @@ From these locations you can also manage the workspace by using the following ac
 * **Overwrite:** replaces the existing data registry in Seqera with new data
 * **Copy into new dataset:** creates a new dataset from the Seqera data registry
 * **Delete:** removes the workspace entirely
+
+<br/>
+
 
 ```{warning}
 Both **Overwrite** and **Delete** are irreversible actions.
