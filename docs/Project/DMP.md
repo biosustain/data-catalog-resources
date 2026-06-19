@@ -16,7 +16,19 @@ Let's look at each group in detail:
 
 In this section you select the expected project end date. You can edit it later if needed.
 
-### 2. Funding 
+### 2. Contact Person
+
+In this section you add one or more contact persons for the project. Each entry includes the following fields:
+
+* Role (e.g., Project Creator, Principal Investigator)
+* Name 
+* Email
+* ORCID (your unique researcher identifier)
+* Long-term data responsible person 
+
+If you are the **Project Creator**, your name and email will be pre-filled automatically. You only need to add your **ORCID** and indicate whether you are the **long-term data responsible person**.
+
+### 3. Funding 
 
 Here you can enter the funding details:
 
@@ -30,7 +42,7 @@ Here you can enter the funding details:
      * Rejected
 
 
-### 2. Data Collection
+### 4. Data Collection
 
 This section focuses on whether this project uses external data.
 
@@ -38,7 +50,7 @@ If **yes**, you can add information about each external data source by providing
 You can add as many entries as needed.
 
 
-### 3. Data Storage & Backup
+### 5. Data Storage & Backup
 
 This section covers questions about how and where your data will be stored and backed up during and after the project is finished:
 
@@ -58,7 +70,7 @@ Be aware that if you store data in **DTU M-drive** or **DTU personal OneDrive**,
 ```
 
 
-### 4. Documentation 
+### 6. Documentation 
 
 Provide details about project documentation:
 
@@ -67,7 +79,7 @@ Provide details about project documentation:
  **Example**: All electronic lab notebooks (ELNs) will be stored in Benchling project folder 'Microbial_soil_community'. Whenever applicable, a README file will be created for each dataset, detailing the data collection methods, processing steps, and any relevant metadata.
 
 
-### 5. Data Sharing, Access & Compliance
+### 7. Data Sharing, Access & Compliance
 
 This section includes a series of questions about compliance and data sharing. Most questions are answered by choosing **Yes**, **No**, **Uncertain**, or **Not applicable** (dependig on the field):
 
