@@ -218,21 +218,73 @@ In the Seqera section you can set up a Dataset as input for running Nextflow pip
 
 2. Click the `Seqera` tab on the dataset home page
 
-2. From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.
+3. From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.
 
    > Only projects where you have the **Can Set Up Workspace** permission will appear in the list.
 
-3. Click `Create a new setup`
+4. Click `Create`
 
-4. Go to Seqera, select your pipeline, and run your analysis as usual
+5. After the workspace is created, click the **<img src="../../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** next to the data registry name to view more details, and then click `View in Seqera Workspace` button to open the workspace directly in Seqera.
 
-5. Once the analysis is complete, return to Data Catalog and refresh the page. A NEW button will appear in the **Seqera** tab of the same dataset.
+6. In Seqera, select your pipeline, and run your analysis as usual
 
-6. Click `Copy Back` button. A new dataset containing the analysis results will be created and will be visible alongside other datasets under the "Datasets" tab on the project home page you selected in step 2.
+7. Once the analysis is complete, return to Data Catalog and click `Copy into a new dataset` button. A dialog window will appear where you can:
+    * Select or manually enter a **folder path**
+    * Provide **metadata** for the new dataset
+    * Click `Create dataset and copy` to finalize the process
 
+  A new dataset containing the analysis results will be created and will be visible alongside other datasets under the "Datasets" tab on the project home page you selected in step 3.
 
 ```{note}
 Please note that this functionality is still under development and may not work as expected at the moment.
+```
+
+```{raw} html
+<div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
+<img id="carousel-img" src="../../_static/images/seqera-steps-2-3-4.png" style="width:100%; border-radius:6px; border:1px solid #ddd;">
+  <p id="carousel-caption" style="color:#555; font-size:0.9em; margin-top:8px;">Steps: 1-4</p>
+  <div style="margin-top:10px;">
+    <button onclick="moveSlide(-1)" style="margin-right:10px; cursor:pointer;"><</button>
+    <span id="carousel-counter" style="font-size:0.9em; color:#555;">1 / 5</span>
+    <button onclick="moveSlide(1)" style="margin-left:10px; cursor:pointer;">></button>
+  </div>
+</div>
+
+<script>
+  const slides = [
+    { src: "../../_static/images/seqera-steps-2-3-4.png", caption: "Steps: 1-4" },
+    { src: "../../_static/images/seqera-step-5.png", caption: "Step 5"},
+    { src: "../../_static/images/seqera-step-5a.png", caption: "Step 5"},
+    { src: "../../_static/images/seqera-step-7.png", caption: "Step 7"},
+    { src: "../../_static/images/seqera-new-dataset.png", caption: "Step 7"},
+  ];
+    let current = 0;
+ function moveSlide(dir) {
+    current = (current + dir + slides.length) % slides.length;
+    document.getElementById('carousel-img').src = slides[current].src;
+    document.getElementById('carousel-caption').textContent = slides[current].caption;
+    document.getElementById('carousel-counter').textContent = (current + 1) + ' / ' + slides.length;
+  }
+</script>
+```
+
+### Viewing and Managing Seqera Workspaces
+
+The same workspace and its information is also accessible from:
+* The **Seqera** section on the project home page
+* The **Pipelines** tab on the navigation bar
+
+From these locations you can also manage the workspace by using the following actions:
+* **Overwrite:** replaces the existing data registry in Seqera with new data
+* **Copy into new dataset:** creates a new dataset from the Seqera data registry
+* **Delete:** removes the workspace entirely
+
+```{warning}
+Both **Overwrite** and **Delete** are irreversible actions.
+```
+
+```{note}
+To create a new workspace setup, always navigate to the **Seqera** tab on the dataset home page.
 ```
 
 <br/>
