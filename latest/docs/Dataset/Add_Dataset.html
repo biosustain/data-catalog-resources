@@ -316,14 +316,69 @@ This helps you associate the dataset with other research contexts.</p>
 <div><p>Only projects where you have the <strong>Can Set Up Workspace</strong> permission will appear in the list.</p>
 </div></blockquote>
 </li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">setup</span></code></p></li>
-<li><p>Go to Seqera, select your pipeline, and run your analysis as usual</p></li>
-<li><p>Once the analysis is complete, return to Data Catalog and refresh the page. A NEW button will appear in the <strong>Seqera</strong> tab of the same dataset.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">Back</span></code> button. A new dataset containing the analysis results will be created and will be visible alongside other datasets under the “Datasets” tab on the project home page you selected in step 2.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Create</span></code></p></li>
+<li><p>After the workspace is created, click the <strong><img src="../../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"></strong> next to the data registry name to view more details, and then click <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">in</span> <span class="pre">Seqera</span> <span class="pre">Workspace</span></code> button to open the workspace directly in Seqera.</p></li>
+<li><p>In Seqera, select your pipeline, and run your analysis as usual</p></li>
+<li><p>Once the analysis is complete, return to Data Catalog and click <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">dataset</span></code> button. A dialog window will appear where you can:</p>
+<ul class="simple">
+<li><p>Select or manually enter a <strong>folder path</strong></p></li>
+<li><p>Provide <strong>metadata</strong> for the new dataset</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">dataset</span> <span class="pre">and</span> <span class="pre">copy</span></code> to finalize the process</p></li>
+</ul>
+</li>
 </ol>
+<p>A new dataset containing the analysis results will be created and will be visible alongside other datasets under the “Datasets” tab on the project home page you selected in step 3.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please note that this functionality is still under development and may not work as expected at the moment.</p>
+</div>
+<div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
+<img id="carousel-img" src="../../_static/images/seqera-steps-2-3-4.png" style="width:100%; border-radius:6px; border:1px solid #ddd;">
+  <p id="carousel-caption" style="color:#555; font-size:0.9em; margin-top:8px;">Steps: 1-4</p>
+  <div style="margin-top:10px;">
+    <button onclick="moveSlide(-1)" style="margin-right:10px; cursor:pointer;"><</button>
+    <span id="carousel-counter" style="font-size:0.9em; color:#555;">1 / 5</span>
+    <button onclick="moveSlide(1)" style="margin-left:10px; cursor:pointer;">></button>
+  </div>
+</div>
+
+<script>
+  const slides = [
+    { src: "../../_static/images/seqera-steps-2-3-4.png", caption: "Steps: 1-4" },
+    { src: "../../_static/images/seqera-step-5.png", caption: "Step 5"},
+    { src: "../../_static/images/seqera-step-5a.png", caption: "Step 5"},
+    { src: "../../_static/images/seqera-step-7.png", caption: "Step 7"},
+    { src: "../../_static/images/seqera-new-dataset.png", caption: "Step 7"},
+  ];
+    let current = 0;
+ function moveSlide(dir) {
+    current = (current + dir + slides.length) % slides.length;
+    document.getElementById('carousel-img').src = slides[current].src;
+    document.getElementById('carousel-caption').textContent = slides[current].caption;
+    document.getElementById('carousel-counter').textContent = (current + 1) + ' / ' + slides.length;
+  }
+</script></section>
+<section id="viewing-and-managing-seqera-workspaces">
+<span id="manage-seqera-workspace"></span><h3>Viewing and Managing Seqera Workspaces<a class="headerlink" href="#viewing-and-managing-seqera-workspaces" title="Link to this heading">¶</a></h3>
+<p>The same workspace and its information is also accessible from:</p>
+<ul class="simple">
+<li><p>The <strong>Seqera</strong> section on the project home page</p></li>
+<li><p>The <strong>Pipelines</strong> tab on the navigation bar</p></li>
+</ul>
+<p>From these locations you can also manage the workspace by using the following actions:</p>
+<ul class="simple">
+<li><p><strong>Overwrite:</strong> replaces the existing data registry in Seqera with new data</p></li>
+<li><p><strong>Copy into new dataset:</strong> creates a new dataset from the Seqera data registry</p></li>
+<li><p><strong>Delete:</strong> removes the workspace entirely</p></li>
+</ul>
+<br/>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Both <strong>Overwrite</strong> and <strong>Delete</strong> are irreversible actions.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To create a new workspace setup, always navigate to the <strong>Seqera</strong> tab on the dataset home page.</p>
 </div>
 <br/>
 </section>
@@ -369,6 +424,7 @@ This helps you associate the dataset with other research contexts.</p>
 <li><a class="reference internal" href="#dataset-lineage">Dataset Lineage</a><ul>
 <li><a class="reference internal" href="#to-add-a-lineage">To add a Lineage:</a></li>
 <li><a class="reference internal" href="#setup-a-dataset-in-seqera-workspace-wip-work-in-progress">Setup a Dataset in Seqera Workspace (WIP- work in progress)</a></li>
+<li><a class="reference internal" href="#viewing-and-managing-seqera-workspaces">Viewing and Managing Seqera Workspaces</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#api-availability">API Availability</a></li>
