@@ -45,6 +45,7 @@ The **Project Home Page** in Data Catalog is the central place to view and manag
    * Permissions
    * <span style="color:#999999">History (coming soon)</span>
    * Data Management Plan (DMP)
+   * Seqera (WIP - work in progress)
 
 for a specific project, into one organized interface.
 
@@ -94,6 +95,12 @@ Just below the description, several key features are displayed:
 * **Data Management Plan (DMP)**:
     * Provides an overview of how data will be handled throughout the project lifecycle.
     * Allows you to document policies for data storage, sharing, and preservation.
+
+* * **Seqera (WIP)**:
+    * Displays all Seqera workspaces created from datasets linked to this project.
+    * From here you can manage existing workspaces.
+
+        (see also: {ref}`Manage Seqera Workspace`)
 
 
     <br/>
