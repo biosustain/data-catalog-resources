@@ -64,6 +64,7 @@
     <nav class="toc mt-3" aria-label="Main menu">
         <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Login.html">Data Catalog Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Authentication_via_API_keys.html">Authentication via API keys</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Project/index.html">Project  <!-- This is the sidebar title --></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Project/Create_Project.html">Create a New Project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Project/Manage_Projects.html">Manage Projects</a></li>
@@ -154,7 +155,7 @@
 </section>
 <section id="advanced-upload">
 <h2>Advanced upload<a class="headerlink" href="#advanced-upload" title="Link to this heading">¶</a></h2>
-<p>If you have a lot of large data to upload, we recommend that you use the <strong>advanced upload</strong> option. This creates a temporary upload folder in the dataset’s storage location, where you can upload your files using one of the following external tools:</p>
+<p>If you have a lot of large data to upload, we recommend that you use the <strong>advanced upload</strong> option. This creates an upload location, where you can upload your files using one of the following external tools:</p>
 <ul class="simple">
 <li><p>AzCopy</p></li>
 <li><p>Azure Storage Explorer</p></li>
@@ -211,7 +212,7 @@ For more information on how to install see <a class="reference external" href="h
 <li><p>Select your Azure account and click <code class="docutils literal notranslate"><span class="pre">next</span></code></p></li>
 <li><p>Optionally give the connection a display name and paste the upload URL provided from the  Data Catalog, then click <code class="docutils literal notranslate"><span class="pre">next</span></code></p></li>
 <li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Connect</span></code></strong></p></li>
-<li><p>Upload your files or folders to the temporary storage location. Check the <strong>Activities</strong> panel at the bottom to make sure all transfers completed successfully.</p></li>
+<li><p>Upload your files or folders to the upload location. Check the <strong>Activities</strong> panel at the bottom to make sure all transfers completed successfully.</p></li>
 <li><p>Go back to the Data Catalog and click <strong><code class="docutils literal notranslate"><span class="pre">Finalize</span> <span class="pre">Upload</span></code></strong> to move the files into the dataset and make them visible in the files list.</p></li>
 </ol>
 <p>The screenshots below illustrate steps 3 to 9:</p>
@@ -271,6 +272,15 @@ For more information on how to install see <a class="reference external" href="h
 <p>Currently, deleting a file permanently removes it from the Data Catalog. However, files can still be <strong>restored within 7 days</strong> of deletion through the storage account. If you need to restore a file, please contact <strong>Research Data Management</strong> team at <a class="reference external" href="mailto:rdm&#37;&#52;&#48;bright&#46;dtu&#46;dk" rel="noreferrer" target="_blank">rdm<span>&#64;</span>bright<span>&#46;</span>dtu<span>&#46;</span>dk</a> or <strong>Pasquale Domenico Colaianni</strong> at <a class="reference external" href="mailto:pasdom&#37;&#52;&#48;dtu&#46;dk" rel="noreferrer" target="_blank">pasdom<span>&#64;</span>dtu<span>&#46;</span>dk</a>.</p>
 <p>*<em>Keep in mind that this behavior may change in future releases.</em></p>
 </div>
+<br/>
+</section>
+<hr class="docutils" />
+<section id="api-availability">
+<h2>API Availability<a class="headerlink" href="#api-availability" title="Link to this heading">¶</a></h2>
+<p>Some of the actions described in this page can also be performed programmatically. For more details, see the following endpoints in the API Reference:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://datacatalog.bright.dtu.dk/api/docs#/files" rel="noreferrer" target="_blank"><strong>/files</strong></a></p></li>
+</ul>
 </section>
 </section>
 
@@ -297,6 +307,7 @@ For more information on how to install see <a class="reference external" href="h
 </ul>
 </li>
 <li><a class="reference internal" href="#manage-files">Manage Files</a></li>
+<li><a class="reference internal" href="#api-availability">API Availability</a></li>
 </ul>
 </li>
 </ul>

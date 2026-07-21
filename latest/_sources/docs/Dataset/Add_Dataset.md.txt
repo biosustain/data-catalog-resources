@@ -297,7 +297,7 @@ To create a new workspace setup, always navigate to the **Seqera** tab on the da
 
 ## API Availability
 
-The actions described in this page can also be performed programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
+The actions described in this page can also be performed programmatically. For more details, see the following endpoints in the API Reference:
 
 * [**/datasets**](https://datacatalog.bright.dtu.dk/api/docs#/datasets/create_dataset_datasets_post) 
 * [**/projects-datasets**](https://datacatalog.bright.dtu.dk/api/docs#/projects-datasets)
