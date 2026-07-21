@@ -134,7 +134,7 @@ You can export the DMP as:
 
 ## API Availability
 
-Some of the fields used when creating a DMP can also be set programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
+Some of the fields used when creating a DMP can also be set programmatically. For more details, see the following endpoints in the API Reference:
 
 * [**/dmp**](https://datacatalog.bright.dtu.dk/api/docs#/dmp)
 

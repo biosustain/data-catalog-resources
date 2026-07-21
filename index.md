@@ -77,6 +77,7 @@ The Data Catalog is currently **only accessible** by personnel officially employ
 :titlesonly:
 
 docs/Login
+docs/Authentication_via_API_keys
 docs/Project/index
 docs/Dataset/index
 docs/Search
