@@ -29,7 +29,7 @@ When uploading a **directory**, the folder structure is preserved for better org
 ```
 
 ## Advanced upload
-If you have a lot of large data to upload, we recommend that you use the **advanced upload** option. This creates a temporary upload folder in the dataset's storage location, where you can upload your files using one of the following external tools:
+If you have a lot of large data to upload, we recommend that you use the **advanced upload** option. This creates an upload location, where you can upload your files using one of the following external tools:
 
 * AzCopy
 * Azure Storage Explorer
@@ -87,7 +87,7 @@ For more information on how to install see [**here**](https://learn.microsoft.co
 6. Select your Azure account and click `next`
 7. Optionally give the connection a display name and paste the upload URL provided from the  Data Catalog, then click `next`
 8. Click **`Connect`**
-9. Upload your files or folders to the temporary storage location. Check the **Activities** panel at the bottom to make sure all transfers completed successfully.
+9. Upload your files or folders to the upload location. Check the **Activities** panel at the bottom to make sure all transfers completed successfully.
 10. Go back to the Data Catalog and click **`Finalize Upload`** to move the files into the dataset and make them visible in the files list.
 
 The screenshots below illustrate steps 3 to 9:
