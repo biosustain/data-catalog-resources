@@ -91,6 +91,6 @@ The screenshots below show how to mark a dataset as favorite. The same applies t
 
 ## API Availability
 
-The search can also be performed programmatically using our **FastAPI**. For more details, see the following endpoint in our API Reference:
+The search can also be performed programmatically. For more details, see the following endpoint in the API Reference:
 
 * [**/search**](https://datacatalog.bright.dtu.dk/api/docs#/search/search_search_post)

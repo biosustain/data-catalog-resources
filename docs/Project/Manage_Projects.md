@@ -118,7 +118,7 @@ To grant or remove permissions for a user, simply click or unclick the options a
 
 ## API Availability
 
-The actions described above can also be performed programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
+The actions described above can also be performed programmatically. For more details, see the following endpoints in the API Reference:
 
 * [**/projects**](https://datacatalog.bright.dtu.dk/api/docs#/projects)
 * [**/policies/projects**](https://datacatalog.bright.dtu.dk/api/docs#/policies)

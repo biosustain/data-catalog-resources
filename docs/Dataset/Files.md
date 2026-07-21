@@ -177,6 +177,6 @@ Currently, deleting a file permanently removes it from the Data Catalog. However
 
 ## API Availability
 
-Some of the actions described in this page can also be performed programmatically using our **FastAPI**. For more details, see the following endpoints in our API Reference:
+Some of the actions described in this page can also be performed programmatically. For more details, see the following endpoints in the API Reference:
 
 * [**/files**](https://datacatalog.bright.dtu.dk/api/docs#/files) 
