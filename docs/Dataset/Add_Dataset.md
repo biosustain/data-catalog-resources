@@ -141,18 +141,29 @@ To remove the relationship:
 
 <br/>
 
-```{figure} ../../_static/images/link-project-to-dataset.png
-:alt: Add Projects to Dataset
-:width: 93%
-:align: center
 
-*Add Projects to Dataset*
+
+```{raw} html
+<div style="text-align: center;">
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/KU8-4D6ltck"
+    title="Add Project to Dataset and Dataset to Project"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Add Projects to Dataset</em></p>
+</div>
 ```
+-------------------------------------------
+
+<br/>
 
 ```{note}
 This relationship also appears under the **Datasets** tab on the **project** home page.
 ```
-
 
 -------------------------------------------
 (dataset-lineage)=
@@ -202,9 +213,15 @@ To remove a Lineage:
 
 ```{raw} html
 <div style="text-align: center;">
-  <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../../_static/images/dataset-lineage-2(BRIGHT).mp4" type="video/mp4">
-  </video>
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/CHymgLBZsWg"
+    title="Dataset Lineage"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
   <p><em>Dataset Lineage</em></p>
 </div>
 ```

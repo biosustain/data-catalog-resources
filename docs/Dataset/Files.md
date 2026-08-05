@@ -75,6 +75,26 @@ After the command finishes, AzCopy displays a summary. Make sure **Final Job Sta
 6. Once the upload is complete, go back to the Data Catalog and click **`Finalize Upload`**. This will transfer the files back to the dataset and make them visible in the file list.
 
 
+
+<br/>
+
+```{raw} html
+<div style="text-align: center;">
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/x6FZLUmom_I"
+    title="Advanced Upload using AzCopy"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Advanced Upload Using AzCopy</em></p>
+</div>
+```
+----------------------------
+
+
 ### Azure Storage Explorer
 Azure Storage Explorer is a free desktop application by Microsoft. It is an alternative to AzCopy for users who prefer not to use the command line.
 For more information on how to install see [**here**](https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows).

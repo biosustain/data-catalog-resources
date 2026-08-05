@@ -81,7 +81,7 @@ Just below the description, several key features are displayed:
     * Here project creators can manage (add/remove) users and assign permissions:
         * Can Read: Allows the user to view the project's metadata and associated datasets (view‑only)
         * Can Edit Permissions: Allows managing user access and permissions
-        * Can Edit Metadata: Allows editing project details
+        * Can Edit Metadata: Allows editing project details and the project's DMP (Data Management Plan)
         * Can Add Datasets: Allows adding datasets to the project, either by creating new or adding (and removing) existing ones
         * Can Archive: Allows Archiving the project 
         * Can Setup Workspaces: Allows running analysis pipelines on the dataset's files
