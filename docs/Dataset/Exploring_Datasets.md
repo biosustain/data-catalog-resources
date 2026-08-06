@@ -1,6 +1,6 @@
 # Exploring Dataset
 
-The **Datasets** section in the Data Catalog can help you organize and manage research data efficiently. Its structure is similar to the Projects section, so if you have explored projects before, you will find the navigation familiar. 
+The **Datasets** section in Data Catalog can help you organize and manage research data efficiently. Its structure is similar to the Projects section, so if you have explored projects before, you will find the navigation familiar. 
 
 Like projects, datasets have two main views:
 
@@ -11,7 +11,7 @@ Like projects, datasets have two main views:
 
 ## ➤ Dataset List Page
 
-This is the starting point for navigating to all datasets in the Data Catalog.
+This is the starting point for navigating to all datasets in Data Catalog.
 
 ### ➣ Key Features of the Dataset List Page
 From the Dataset List Page, you can:
@@ -57,7 +57,7 @@ for a specific dataset, into one organized interface.
 ```{note}
 The **History** feature is currently visible but not active. It will be available soon, allowing you to view dataset activity.
 
-The **Seqera** section is available in the Data Catalog, but the functionality is still under development and may not work as expected.
+The **Seqera** section is available in Data Catalog, but the functionality is still under development and may not work as expected.
 ```
 
 

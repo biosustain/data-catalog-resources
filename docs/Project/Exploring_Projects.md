@@ -1,6 +1,6 @@
 # Exploring Projects
 
-The **Projects** section in the Data Catalog is designed to help you manage research projects efficiently. It includes two main views:
+The **Projects** section in Data Catalog is designed to help you manage research projects efficiently. It includes two main views:
 
 * **Project List Page**, where you can search, and create new projects.
 * **Project Home Page**, where you manage the details of a specific project, including metadata, linked datasets, and the Data Management Plan (DMP).
