@@ -1,6 +1,6 @@
 # Exploring Projects
 
-The **Projects** section in Data Catalog is designed to help you manage research projects efficiently. It includes two main views:
+The **Projects** section in the Data Catalog is designed to help you manage research projects efficiently. It includes two main views:
 
 * **Project List Page**, where you can search, and create new projects.
 * **Project Home Page**, where you manage the details of a specific project, including metadata, linked datasets, and the Data Management Plan (DMP).
@@ -81,7 +81,7 @@ Just below the description, several key features are displayed:
     * Here project creators can manage (add/remove) users and assign permissions:
         * Can Read: Allows the user to view the project's metadata and associated datasets (view‑only)
         * Can Edit Permissions: Allows managing user access and permissions
-        * Can Edit Metadata: Allows editing project details and the project's DMP (Data Management Plan)
+        * Can Edit Metadata: Allows editing project details
         * Can Add Datasets: Allows adding datasets to the project, either by creating new or adding (and removing) existing ones
         * Can Archive: Allows Archiving the project 
         * Can Setup Workspaces: Allows running analysis pipelines on the dataset's files
