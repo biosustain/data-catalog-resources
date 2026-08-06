@@ -143,6 +143,23 @@ The screenshots below illustrate steps 3 to 9:
 </script>
 ```
 
+<br/>
+
+```{raw} html
+<div style="text-align: center;">
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/bSUHLbymZEw"
+    title="Advanced Upload using Azure Storage Explorer"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Advanced Upload Using Azure Storage Explorer</em></p>
+</div>
+```
+
 
 ----------------------------------
 
