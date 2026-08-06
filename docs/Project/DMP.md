@@ -93,7 +93,7 @@ This section includes a series of questions about compliance and data sharing. M
 
 * **Personal Data (GDPR)**: State if any personal or sensitive data is involved in the project, such as age, DNA, RNA, biometrics, etc.
 
-* **Access Controlled Inside and Outside the Data Catalog**: Describe how access to the data is controlled both inside and outside BRIGHT Data Catalog.
+* **Access Controlled Inside and Outside Data Catalog**: Describe how access to the data is controlled both inside and outside BRIGHT Data Catalog.
 
 * **Sharing After Project Ends**: Explain what will happen to the data once the project is complete. For example, whether it will be deposited in DTU Data, shared on GitHub, or restricted due to NDA/GDPR.
 

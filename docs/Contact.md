@@ -1,6 +1,6 @@
 # Contact
 
-If you have **questions** about Data Catalog, encounter **issues**, or have **suggestions** for improvements and new features, please contact **Pasquale Domenico Colaianni** at [**pasdom@dtu.dk**](mailto:pasdom@dtu.dk).
+If you have questions about **Data Catalog**, encounter issues, or have suggestions for improvements and new features, you can contact us <a href="mailto:dinghe@dtu.dk?cc=pasdom@dtu.dk&subject=Data%20Catalog%20-%20Question%2FIssue%2FSuggestion&body=Type%3A%20%28Question%20%2F%20Issue%20%2F%20Suggestion%29%0A%0ADescription%3A%0A%0ASteps%20to%20reproduce%20(if%20applicable)%3A%0A%0AScreenshots%2Ferror%20messages%20(if%20applicable)%3A%0A"><strong>here</strong></a>. 
 
 Include:
 * A brief description of your question, issue, or suggestion

@@ -1,6 +1,6 @@
 #  Create a New Project
 
-This guide walks you through the essential steps to create a project in the Data Catalog. 
+This guide walks you through the essential steps to create a project in Data Catalog. 
 Creating a project is **simple** and **flexible** and all users can create projects.
 
 ```{tip}

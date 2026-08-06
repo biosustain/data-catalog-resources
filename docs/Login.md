@@ -16,7 +16,7 @@ When working remotely (i.e. you are not connected to the DTU network), **connect
 ### Step 1: Open your browser
 Open your preferred browser (e.g., Edge, Chrome, Firefox) on your computer.
 
-### Step 2: Visit the Data Catalog
+### Step 2: Visit Data Catalog
 Go to [**Data Catalog**](https://datacatalog.bright.dtu.dk/).
 
 ### Step 3: Click "Log in"

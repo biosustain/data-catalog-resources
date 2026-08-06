@@ -1,11 +1,11 @@
 # Search & Favorites
 
-The Data Catalog makes it easy to find projects and datasets quickly using keywords, filters and favorites. This guide explains the available search options and how to use favorites.
+Data Catalog makes it easy to find projects and datasets quickly using keywords, filters and favorites. This guide explains the available search options and how to use favorites.
 
 ## ➤  Basic Search
-At the top of the page, you will find the **`Search bar`**. Simply type any relevant keyword such as the project or dataset name, and the Data Catalog will display matching results.
+At the top of the page, you will find the **`Search bar`**. Simply type any relevant keyword such as the project or dataset name, and Data Catalog will display matching results.
 
-→ The **search** is designed to handle typos and partial matches. Even if you enter an incorrect or incomplete term, the Data Catalog will still try to return the **most relevant results** based on what you intended to search for.
+→ The **search** is designed to handle typos and partial matches. Even if you enter an incorrect or incomplete term, Data Catalog will still try to return the **most relevant results** based on what you intended to search for.
 
 ```{note} 
 Results are ranked by **relevance** by default, so the most likely matches appear first. 
