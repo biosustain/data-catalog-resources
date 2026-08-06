@@ -1,6 +1,6 @@
 # Manage Datasets
 
-Managing Datasets in the Data Catalog is similar to managing Projects: you can **edit** details of metadata or **archive** datasets when they are no longer needed. The steps are almost the same, but here we focus more on the dataset aspect.
+Managing Datasets in Data Catalog is similar to managing Projects: you can **edit** details of metadata or **archive** datasets when they are no longer needed. The steps are almost the same, but here we focus more on the dataset aspect.
 
 ➤ *Follow the steps below based on the action you want to perform.*
 
@@ -108,9 +108,15 @@ The tab displays a table view with:
 
 ```{raw} html
 <div style="text-align: center;">
-  <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../../_static/images/dataset-user-permissions-updated.mp4" type="video/mp4">
-  </video>
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/7iP34_Lguts"
+    title="Dataset Permissions"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
   <p><em>Dataset Permissions</em></p>
 </div>
 ```

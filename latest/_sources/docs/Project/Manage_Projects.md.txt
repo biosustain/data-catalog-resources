@@ -74,7 +74,7 @@ The tab displays a table view with:
 * **Permissions columns:** Show the available permissions:
     * **Can Read:** Allows the user to view the project's metadata and associated datasets (view‑only)
     * **Can Edit Permissions:** Allows managing user access and permissions
-    * **Can Edit Metadata:** Allows editing project details
+    * **Can Edit Metadata:** Allows editing project details and the project's DMP (Data Management Plan)
     * **Can Add Datasets:** Allows adding datasets to the project, either by creating new or adding (and removing) existing ones (see also: {ref}`Datasets-tab`)
     * **Can Archive:** Allows archiving the project 
     * **Can Setup Workspaces:** Allows running analysis pipelines on dataset's files
@@ -98,9 +98,15 @@ The tab displays a table view with:
 
 ```{raw} html
 <div style="text-align: center;">
-  <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../../_static/images/project-user-permissions-updated.mp4" type="video/mp4">
-  </video>
+  <iframe 
+      width="93%" 
+      height="500" 
+      src="https://youtube.com/embed/gWkbCJqNazw"
+      title="Project Permissions"
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+   </iframe>
   <p><em>Project Permissions</em></p>
 </div>
 ```
