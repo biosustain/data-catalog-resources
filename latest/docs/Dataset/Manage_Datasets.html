@@ -64,6 +64,7 @@
     <nav class="toc mt-3" aria-label="Main menu">
         <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Login.html">Data Catalog Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Authentication_via_API_keys.html">Authentication via API keys</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Project/index.html">Project  <!-- This is the sidebar title --></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Project/Create_Project.html">Create a New Project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Project/Manage_Projects.html">Manage Projects</a></li>
@@ -130,7 +131,7 @@
                         <main role="main" id="main">
     <section class="tex2jax_ignore mathjax_ignore" id="manage-datasets">
 <h1>Manage Datasets<a class="headerlink" href="#manage-datasets" title="Link to this heading">¶</a></h1>
-<p>Managing Datasets in the Data Catalog is similar to managing Projects: you can <strong>edit</strong> details of metadata or <strong>archive</strong> datasets when they are no longer needed. The steps are almost the same, but here we focus more on the dataset aspect.</p>
+<p>Managing Datasets in Data Catalog is similar to managing Projects: you can <strong>edit</strong> details of metadata or <strong>archive</strong> datasets when they are no longer needed. The steps are almost the same, but here we focus more on the dataset aspect.</p>
 <p>➤ <em>Follow the steps below based on the action you want to perform.</em></p>
 <section id="step-1-locate-your-dataset">
 <h2>Step 1: Locate your Dataset<a class="headerlink" href="#step-1-locate-your-dataset" title="Link to this heading">¶</a></h2>
@@ -214,9 +215,15 @@
 <hr class="docutils" />
 <br/>
 <div style="text-align: center;">
-  <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../../_static/images/dataset-user-permissions-updated.mp4" type="video/mp4">
-  </video>
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/7iP34_Lguts"
+    title="Dataset Permissions"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
   <p><em>Dataset Permissions</em></p>
 </div><hr class="docutils" />
 <br/>
@@ -229,7 +236,7 @@
 <hr class="docutils" />
 <section id="api-availability">
 <h2>API Availability<a class="headerlink" href="#api-availability" title="Link to this heading">¶</a></h2>
-<p>The actions described above can also be performed programmatically using our <strong>FastAPI</strong>. For more details, see the following endpoints in our API Reference:</p>
+<p>The actions described above can also be performed programmatically. For more details, see the following endpoints in the API Reference:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://datacatalog.bright.dtu.dk/api/docs#/datasets" rel="noreferrer" target="_blank"><strong>/datasets</strong></a></p></li>
 <li><p><a class="reference external" href="https://datacatalog.bright.dtu.dk/api/docs#/policies" rel="noreferrer" target="_blank"><strong>/policies/datasets</strong></a></p></li>

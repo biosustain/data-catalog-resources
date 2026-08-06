@@ -64,6 +64,7 @@
     <nav class="toc mt-3" aria-label="Main menu">
         <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Login.html">Data Catalog Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Authentication_via_API_keys.html">Authentication via API keys</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Project/index.html">Project  <!-- This is the sidebar title --></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Project/Create_Project.html">Create a New Project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Project/Manage_Projects.html">Manage Projects</a></li>
@@ -154,7 +155,7 @@
 </section>
 <section id="advanced-upload">
 <h2>Advanced upload<a class="headerlink" href="#advanced-upload" title="Link to this heading">¶</a></h2>
-<p>If you have a lot of large data to upload, we recommend that you use the <strong>advanced upload</strong> option. This creates a temporary upload folder in the dataset’s storage location, where you can upload your files using one of the following external tools:</p>
+<p>If you have a lot of large data to upload, we recommend that you use the <strong>advanced upload</strong> option. This creates an upload location, where you can upload your files using one of the following external tools:</p>
 <ul class="simple">
 <li><p>AzCopy</p></li>
 <li><p>Azure Storage Explorer</p></li>
@@ -178,7 +179,7 @@
 </div>
 <p>A link and a code will appear. Open the link in your browser, enter the code, and sign in with your Microsoft account.</p>
 <ol class="arabic simple" start="4">
-<li><p>Request a URL from the Data Catalog</p></li>
+<li><p>Request a URL from Data Catalog</p></li>
 <li><p>Upload files or folder using one of the following commands:</p></li>
 </ol>
 <ul class="simple">
@@ -195,15 +196,28 @@
 </div>
 <p>After the command finishes, AzCopy displays a summary. Make sure <strong>Final Job Status: Completed</strong> and the number of completed transfers matches your files.</p>
 <ol class="arabic simple" start="6">
-<li><p>Once the upload is complete, go back to the Data Catalog and click <strong><code class="docutils literal notranslate"><span class="pre">Finalize</span> <span class="pre">Upload</span></code></strong>. This will transfer the files back to the dataset and make them visible in the file list.</p></li>
+<li><p>Once the upload is complete, go back to Data Catalog and click <strong><code class="docutils literal notranslate"><span class="pre">Finalize</span> <span class="pre">Upload</span></code></strong>. This will transfer the files back to the dataset and make them visible in the file list.</p></li>
 </ol>
-</section>
+<br/>
+<div style="text-align: center;">
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/x6FZLUmom_I"
+    title="Advanced Upload using AzCopy"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Advanced Upload Using AzCopy</em></p>
+</div></section>
+<hr class="docutils" />
 <section id="azure-storage-explorer">
 <h3>Azure Storage Explorer<a class="headerlink" href="#azure-storage-explorer" title="Link to this heading">¶</a></h3>
 <p>Azure Storage Explorer is a free desktop application by Microsoft. It is an alternative to AzCopy for users who prefer not to use the command line.
 For more information on how to install see <a class="reference external" href="https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows" rel="noreferrer" target="_blank"><strong>here</strong></a>.</p>
 <ol class="arabic simple">
-<li><p>Request a URL from the Data Catalog</p></li>
+<li><p>Request a URL from Data Catalog</p></li>
 <li><p>Open Azure Storage Explorer and log in with your Microsoft account</p></li>
 <li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">plug</span> <span class="pre">icon</span></code></strong> on the left side bar to open the Connect dialog</p></li>
 <li><p>Select <strong><code class="docutils literal notranslate"><span class="pre">ADLS</span> <span class="pre">Gen2</span> <span class="pre">container</span> <span class="pre">or</span> <span class="pre">directory</span></code></strong></p></li>
@@ -211,43 +225,27 @@ For more information on how to install see <a class="reference external" href="h
 <li><p>Select your Azure account and click <code class="docutils literal notranslate"><span class="pre">next</span></code></p></li>
 <li><p>Optionally give the connection a display name and paste the upload URL provided from the  Data Catalog, then click <code class="docutils literal notranslate"><span class="pre">next</span></code></p></li>
 <li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Connect</span></code></strong></p></li>
-<li><p>Upload your files or folders to the temporary storage location. Check the <strong>Activities</strong> panel at the bottom to make sure all transfers completed successfully.</p></li>
-<li><p>Go back to the Data Catalog and click <strong><code class="docutils literal notranslate"><span class="pre">Finalize</span> <span class="pre">Upload</span></code></strong> to move the files into the dataset and make them visible in the files list.</p></li>
+<li><p>Upload your files or folders to the upload location. Check the <strong>Activities</strong> panel at the bottom to make sure all transfers completed successfully.</p></li>
+<li><p>Go back to Data Catalog and click <strong><code class="docutils literal notranslate"><span class="pre">Finalize</span> <span class="pre">Upload</span></code></strong> to move the files into the dataset and make them visible in the files list.</p></li>
 </ol>
-<p>The screenshots below illustrate steps 3 to 9:</p>
-<div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
-  <img id="carousel-img" src="../../_static/images/plug_in.png" style="width:100%; border-radius:6px; border:1px solid #ddd;">
-  <p id="carousel-caption" style="color:#555; font-size:0.9em; margin-top:8px;">Step 2</p>
-  <div style="margin-top:10px;">
-    <button onclick="moveSlide(-1)" style="margin-right:10px; cursor:pointer;"><</button>
-    <span id="carousel-counter" style="font-size:0.9em; color:#555;">1 / 7</span>
-    <button onclick="moveSlide(1)" style="margin-left:10px; cursor:pointer;">></button>
-  </div>
-</div>
-
-<script>
-  const slides = [
-    { src: "../../_static/images/plug_in.png", caption: "Step 3" },
-    { src: "../../_static/images/ADLS.png", caption: "Step 4"},
-    { src: "../../_static/images/OAuth.png", caption: "Step 5"},
-    { src: "../../_static/images/account.png", caption: "Step 6"},
-    { src: "../../_static/images/url.png", caption: "Step 7"},
-    { src: "../../_static/images/connect.png", caption: "Step 8"},
-    { src: "../../_static/images/transfer_files.png", caption: "Step 9"},
-  ];
-    let current = 0;
- function moveSlide(dir) {
-    current = (current + dir + slides.length) % slides.length;
-    document.getElementById('carousel-img').src = slides[current].src;
-    document.getElementById('carousel-caption').textContent = slides[current].caption;
-    document.getElementById('carousel-counter').textContent = (current + 1) + ' / ' + slides.length;
-  }
-</script></section>
+<br/>
+<div style="text-align: center;">
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/bSUHLbymZEw"
+    title="Advanced Upload using Azure Storage Explorer"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Advanced Upload Using Azure Storage Explorer</em></p>
+</div></section>
 </section>
 <hr class="docutils" />
 <section id="manage-files">
 <h2>Manage Files<a class="headerlink" href="#manage-files" title="Link to this heading">¶</a></h2>
-<p>You can perform basic actions on files or directories in the Data Catalog:</p>
+<p>You can perform basic actions on files or directories in Data Catalog:</p>
 <ul class="simple">
 <li><p><strong>Move to</strong>: Click the <img src="../../_static/images/move_to.png" alt="move_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to move a file or folder to a different destination folder. You can move individual files between folders, or move an entire folder (along with its contents) into another folder.</p></li>
 <li><p><strong>Rename</strong>: Click the <img src="../../_static/images/rename.png" alt="rename_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to rename a file or folder.</p></li>
@@ -268,9 +266,18 @@ For more information on how to install see <a class="reference external" href="h
 <br/>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Currently, deleting a file permanently removes it from the Data Catalog. However, files can still be <strong>restored within 7 days</strong> of deletion through the storage account. If you need to restore a file, please contact <strong>Research Data Management</strong> team at <a class="reference external" href="mailto:rdm&#37;&#52;&#48;bright&#46;dtu&#46;dk" rel="noreferrer" target="_blank">rdm<span>&#64;</span>bright<span>&#46;</span>dtu<span>&#46;</span>dk</a> or <strong>Pasquale Domenico Colaianni</strong> at <a class="reference external" href="mailto:pasdom&#37;&#52;&#48;dtu&#46;dk" rel="noreferrer" target="_blank">pasdom<span>&#64;</span>dtu<span>&#46;</span>dk</a>.</p>
+<p>Currently, deleting a file permanently removes it from Data Catalog. However, files can still be <strong>restored within 7 days</strong> of deletion through the storage account. If you need to restore a file, please contact us <a href="mailto:dinghe@dtu.dk?cc=pasdom@dtu.dk&subject=Data%20Catalog%20-%20File%20Restore%20Request&body=Project%2FDataset%20name%3A%0A%0AFile%20name%3A%0A%0ADate%20deleted%3A%0A"><strong>here</strong></a>.</p>
 <p>*<em>Keep in mind that this behavior may change in future releases.</em></p>
 </div>
+<br/>
+</section>
+<hr class="docutils" />
+<section id="api-availability">
+<h2>API Availability<a class="headerlink" href="#api-availability" title="Link to this heading">¶</a></h2>
+<p>Some of the actions described in this page can also be performed programmatically. For more details, see the following endpoints in the API Reference:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://datacatalog.bright.dtu.dk/api/docs#/files" rel="noreferrer" target="_blank"><strong>/files</strong></a></p></li>
+</ul>
 </section>
 </section>
 
@@ -297,6 +304,7 @@ For more information on how to install see <a class="reference external" href="h
 </ul>
 </li>
 <li><a class="reference internal" href="#manage-files">Manage Files</a></li>
+<li><a class="reference internal" href="#api-availability">API Availability</a></li>
 </ul>
 </li>
 </ul>

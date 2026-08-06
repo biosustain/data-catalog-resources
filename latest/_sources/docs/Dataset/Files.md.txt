@@ -29,7 +29,7 @@ When uploading a **directory**, the folder structure is preserved for better org
 ```
 
 ## Advanced upload
-If you have a lot of large data to upload, we recommend that you use the **advanced upload** option. This creates a temporary upload folder in the dataset's storage location, where you can upload your files using one of the following external tools:
+If you have a lot of large data to upload, we recommend that you use the **advanced upload** option. This creates an upload location, where you can upload your files using one of the following external tools:
 
 * AzCopy
 * Azure Storage Explorer
@@ -55,7 +55,7 @@ azcopy login
 
 A link and a code will appear. Open the link in your browser, enter the code, and sign in with your Microsoft account.
 
-4. Request a URL from the Data Catalog
+4. Request a URL from Data Catalog
 5. Upload files or folder using one of the following commands:
 
 * **Specific files from the same folder:**
@@ -72,14 +72,34 @@ azcopy copy "C:\Users\YOUR_USERNAME\Documents\my-data-folder" "UPLOAD_URL" --rec
 
 After the command finishes, AzCopy displays a summary. Make sure **Final Job Status: Completed** and the number of completed transfers matches your files.
 
-6. Once the upload is complete, go back to the Data Catalog and click **`Finalize Upload`**. This will transfer the files back to the dataset and make them visible in the file list.
+6. Once the upload is complete, go back to Data Catalog and click **`Finalize Upload`**. This will transfer the files back to the dataset and make them visible in the file list.
+
+
+
+<br/>
+
+```{raw} html
+<div style="text-align: center;">
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/x6FZLUmom_I"
+    title="Advanced Upload using AzCopy"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Advanced Upload Using AzCopy</em></p>
+</div>
+```
+----------------------------
 
 
 ### Azure Storage Explorer
 Azure Storage Explorer is a free desktop application by Microsoft. It is an alternative to AzCopy for users who prefer not to use the command line.
 For more information on how to install see [**here**](https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows).
 
-1. Request a URL from the Data Catalog
+1. Request a URL from Data Catalog
 2. Open Azure Storage Explorer and log in with your Microsoft account
 3. Click **`plug icon`** on the left side bar to open the Connect dialog
 4. Select **`ADLS Gen2 container or directory`**
@@ -87,40 +107,24 @@ For more information on how to install see [**here**](https://learn.microsoft.co
 6. Select your Azure account and click `next`
 7. Optionally give the connection a display name and paste the upload URL provided from the  Data Catalog, then click `next`
 8. Click **`Connect`**
-9. Upload your files or folders to the temporary storage location. Check the **Activities** panel at the bottom to make sure all transfers completed successfully.
-10. Go back to the Data Catalog and click **`Finalize Upload`** to move the files into the dataset and make them visible in the files list.
+9. Upload your files or folders to the upload location. Check the **Activities** panel at the bottom to make sure all transfers completed successfully.
+10. Go back to Data Catalog and click **`Finalize Upload`** to move the files into the dataset and make them visible in the files list.
 
-The screenshots below illustrate steps 3 to 9:
+<br/>
 
 ```{raw} html
-<div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
-  <img id="carousel-img" src="../../_static/images/plug_in.png" style="width:100%; border-radius:6px; border:1px solid #ddd;">
-  <p id="carousel-caption" style="color:#555; font-size:0.9em; margin-top:8px;">Step 2</p>
-  <div style="margin-top:10px;">
-    <button onclick="moveSlide(-1)" style="margin-right:10px; cursor:pointer;"><</button>
-    <span id="carousel-counter" style="font-size:0.9em; color:#555;">1 / 7</span>
-    <button onclick="moveSlide(1)" style="margin-left:10px; cursor:pointer;">></button>
-  </div>
+<div style="text-align: center;">
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/bSUHLbymZEw"
+    title="Advanced Upload using Azure Storage Explorer"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Advanced Upload Using Azure Storage Explorer</em></p>
 </div>
-
-<script>
-  const slides = [
-    { src: "../../_static/images/plug_in.png", caption: "Step 3" },
-    { src: "../../_static/images/ADLS.png", caption: "Step 4"},
-    { src: "../../_static/images/OAuth.png", caption: "Step 5"},
-    { src: "../../_static/images/account.png", caption: "Step 6"},
-    { src: "../../_static/images/url.png", caption: "Step 7"},
-    { src: "../../_static/images/connect.png", caption: "Step 8"},
-    { src: "../../_static/images/transfer_files.png", caption: "Step 9"},
-  ];
-    let current = 0;
- function moveSlide(dir) {
-    current = (current + dir + slides.length) % slides.length;
-    document.getElementById('carousel-img').src = slides[current].src;
-    document.getElementById('carousel-caption').textContent = slides[current].caption;
-    document.getElementById('carousel-counter').textContent = (current + 1) + ' / ' + slides.length;
-  }
-</script>
 ```
 
 
@@ -128,7 +132,7 @@ The screenshots below illustrate steps 3 to 9:
 
 ## Manage Files
 
-You can perform basic actions on files or directories in the Data Catalog:
+You can perform basic actions on files or directories in Data Catalog:
 
 * **Move to**: Click the <img src="../../_static/images/move_to.png" alt="move_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to move a file or folder to a different destination folder. You can move individual files between folders, or move an entire folder (along with its contents) into another folder.
 
@@ -164,8 +168,19 @@ You can perform basic actions on files or directories in the Data Catalog:
 
 
 ```{warning}
-Currently, deleting a file permanently removes it from the Data Catalog. However, files can still be **restored within 7 days** of deletion through the storage account. If you need to restore a file, please contact **Research Data Management** team at [rdm@bright.dtu.dk](mailto:rdm@bright.dtu.dk) or **Pasquale Domenico Colaianni** at [pasdom@dtu.dk](mailto:pasdom@dtu.dk). 
+Currently, deleting a file permanently removes it from Data Catalog. However, files can still be **restored within 7 days** of deletion through the storage account. If you need to restore a file, please contact us <a href="mailto:dinghe@dtu.dk?cc=pasdom@dtu.dk&subject=Data%20Catalog%20-%20File%20Restore%20Request&body=Project%2FDataset%20name%3A%0A%0AFile%20name%3A%0A%0ADate%20deleted%3A%0A"><strong>here</strong></a>.
 
 **Keep in mind that this behavior may change in future releases.*
 ```
 
+
+<br/>
+
+-------------------------------
+
+
+## API Availability
+
+Some of the actions described in this page can also be performed programmatically. For more details, see the following endpoints in the API Reference:
+
+* [**/files**](https://datacatalog.bright.dtu.dk/api/docs#/files) 
