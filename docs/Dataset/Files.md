@@ -168,7 +168,7 @@ You can perform basic actions on files or directories in Data Catalog:
 
 
 ```{warning}
-Currently, deleting a file permanently removes it from Data Catalog. However, files can still be **restored within 7 days** of deletion through the storage account. If you need to restore a file, please contact us <a href="mailto:dinghe@dtu.dk?cc=pasdom@dtu.dk&subject=Data%20Catalog%20-%20File%20Restore%20Request&body=Project%2FDataset%20name%3A%0A%0AFile%20name%3A%0A%0ADate%20deleted%3A%0A"><strong>here</strong></a>.
+Currently, deleting a file permanently removes it from Data Catalog. However, files can still be **restored within 7 days** of deletion through the storage account. If you need to restore a file, please contact us [here](mailto:dinghe@dtu.dk?cc=pasdom@dtu.dk&subject=Data%20Catalog%20-%20File%20Restore%20Request&body=Project%2FDataset%20name%3A%0D%0A%0D%0AFile%20name%3A%0D%0A%0D%0ADate%20deleted%3A%0D).
 
 **Keep in mind that this behavior may change in future releases.*
 ```
