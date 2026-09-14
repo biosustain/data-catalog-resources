@@ -85,7 +85,7 @@ After the command finishes, AzCopy displays a summary. Make sure **Final Job Sta
   <iframe 
     width="93%" 
     height="500" 
-    src="https://youtube.com/embed/x6FZLUmom_I"
+    src="https://youtube.com/embed/P3ogN7lXOK8"
     title="Advanced Upload using AzCopy"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -119,7 +119,7 @@ For more information on how to install see [**here**](https://learn.microsoft.co
   <iframe 
     width="93%" 
     height="500" 
-    src="https://youtube.com/embed/bSUHLbymZEw"
+    src="https://youtube.com/embed/ASXulkJTnuE"
     title="Advanced Upload using Azure Storage Explorer"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -136,12 +136,12 @@ For more information on how to install see [**here**](https://learn.microsoft.co
 
 You can perform basic actions on files or directories in Data Catalog. Select one or more items to use **Download**, **Move**, or **Delete** from the toolbar, or click the ( **⁝** ) icon on an individual file or folder for more options:
 
-* **`Preview`**: view the file without downloading it
+* **`Preview`** — view the file without downloading it
 * **`Download`**
 * **`Rename`**
-* **`Cut`**: select the item, then right-click the destination folder and select **`Paste`**
-* **`Copy`**: *under development*
-* **`Move`**: move a file or folder to a different destination folder. You can move individual files between folders, or move an entire folder (along with its contents) into another folder.
+* **`Cut`** — select the item, then right-click the destination folder and select **`Paste`**
+* **`Copy`** — *under development*
+* **`Move`** — move a file or folder to a different destination folder. You can move individual files between folders, or move an entire folder (along with its contents) into another folder.
 * **`Delete`**
 
 **Please review files before deleting to avoid accidental data loss.*
@@ -161,10 +161,16 @@ If you move a file into a destination that already has a file with the same name
 
 ```{raw} html
 <div style="text-align: center;">
-  <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../../_static/images/manage_files_updated.mp4" type="video/mp4">
-  </video>
-  <p><em>Manage files</em></p>
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/ocZYh5tAWLw"
+    title="Manage Files"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Manage Files</em></p>
 </div>
 ```
 ----------------------------
