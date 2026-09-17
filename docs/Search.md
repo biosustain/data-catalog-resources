@@ -39,9 +39,15 @@ To make your search more precise, try combining **multiple filters** at once.
 
 ```{raw} html
 <div style="text-align: center;">
-  <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../_static/images/search-2.mp4" type="video/mp4">
-  </video>
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/AbcN9G92dWs"
+    title="Search"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
   <p><em>Search</em></p>
 </div>
 ```
