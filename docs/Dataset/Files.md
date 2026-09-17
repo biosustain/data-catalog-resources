@@ -5,29 +5,31 @@
 
 ## Standard Upload
 
-Once your dataset has been successfully created in Data Catalog, you can start adding files or directories directly from the dataset's home page. The **standard upload** section is located on the **Files** tab and it supports multiple upload options for flexibility.
+Once your dataset has been successfully created in Data Catalog, you can start adding files or directories directly from the dataset's home page. The upload options are located on the **Files** tab.
 
+There are two ways to upload:
 
-There are three options available:
+* **`Drag & Drop`** files or folders from your computer directly into the upload area
 
-* **`Drag & Drop`** files from your computer into the upload area
+* Click **`New`** button to open a menu with the following options:
+    * **`Create folder`** — create a new empty folder within the current directory
+    * **`Upload files`** — select individual files from your local storage
+    * **`Upload folder`** — upload an entire folder (ideal for keeping related files together)
+    * **`Advanced upload`** — for large data uploads (see [Advanced Upload](advanced-upload))
 
-* Click **`Choose files`** to select individual files from your local storage
+➤ Once uploaded, files will appear in the list with details such as **name**, and **upload date**, making it easy to keep track of their content. You can switch between **grid view** <img src="../../_static/images/grid-view.png" alt="grid-view" style="height:1.2em; vertical-align:text-bottom;"> and **list view** <img src="../../_static/images/list-view.png" alt="list-view" style="height:1.2em; vertical-align:text-bottom;"> in the top-right corner of the files section.
 
-    **or**
-
-* Click **`Choose directory`** to upload an entire folder (ideal for keeping related files together)
-
-➤ Once uploaded, files will appear in the list with details such as **name**, and **upload date**, making it easy to keep track of its content.
 
 ```{note}
+If a file with the same name already exists, a `File conflict` dialog appears — choose **`Cancel upload`** or **`Upload as copy`** to keep both files.
+```
+
+
+```{tip}
 Files are queued on upload, meaning they transfer sequentially rather than in parallel. Total upload time depends entirely on your network's upload speed. For large transfers (5+ GB), use a **wired connection** instead of Wi-Fi to achieve faster and more stable uploads.
 ```
 
-```{tip}
-When uploading a **directory**, the folder structure is preserved for better organization.
-```
-
+(advanced-upload)=
 ## Advanced upload
 If you have a lot of large data to upload, we recommend that you use the **advanced upload** option. This creates an upload location, where you can upload your files using one of the following external tools:
 
@@ -83,7 +85,7 @@ After the command finishes, AzCopy displays a summary. Make sure **Final Job Sta
   <iframe 
     width="93%" 
     height="500" 
-    src="https://youtube.com/embed/x6FZLUmom_I"
+    src="https://youtube.com/embed/P3ogN7lXOK8"
     title="Advanced Upload using AzCopy"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -117,7 +119,7 @@ For more information on how to install see [**here**](https://learn.microsoft.co
   <iframe 
     width="93%" 
     height="500" 
-    src="https://youtube.com/embed/bSUHLbymZEw"
+    src="https://youtube.com/embed/ASXulkJTnuE"
     title="Advanced Upload using Azure Storage Explorer"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -132,19 +134,23 @@ For more information on how to install see [**here**](https://learn.microsoft.co
 
 ## Manage Files
 
-You can perform basic actions on files or directories in Data Catalog:
+You can perform basic actions on files or directories in Data Catalog. Select one or more items to use **Download**, **Move**, or **Delete** from the toolbar, or click the ( **⁝** ) icon on an individual file or folder for more options:
 
-* **Move to**: Click the <img src="../../_static/images/move_to.png" alt="move_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to move a file or folder to a different destination folder. You can move individual files between folders, or move an entire folder (along with its contents) into another folder.
-
-* **Rename**: Click the <img src="../../_static/images/rename.png" alt="rename_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to rename a file or folder.
-
-* **Download**: Click the <img src="../../_static/images/download.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to save a file locally and view its details.
-
-* **Delete**: Click the <img src="../../_static/images/delete.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon to remove files that are no longer needed.
-
-* **Cancel Upload**: While a file is uploading, a **Cancel** button appears next to it. Click to stop and remove the in-progress upload in case you selected the wrong files.
+* **`Preview`** — view the file without downloading it
+* **`Download`**
+* **`Rename`**
+* **`Cut`** — select the item, then right-click the destination folder and select **`Paste`**
+* **`Copy`** — *under development*
+* **`Move`** — move a file or folder to a different destination folder. You can move individual files between folders, or move an entire folder (along with its contents) into another folder.
+* **`Delete`**
 
 **Please review files before deleting to avoid accidental data loss.*
+
+```{note}
+
+If you move a file into a destination that already has a file with the same name, you'll be prompted to either **`Cancel`** or **`Rename and move`**, which lets you enter a new name for the incoming file before it's moved.
+
+```
 
 
 <br/>
@@ -155,10 +161,16 @@ You can perform basic actions on files or directories in Data Catalog:
 
 ```{raw} html
 <div style="text-align: center;">
-  <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../../_static/images/manage_files_updated.mp4" type="video/mp4">
-  </video>
-  <p><em>Manage files</em></p>
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/ocZYh5tAWLw"
+    title="Manage Files"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Manage Files</em></p>
 </div>
 ```
 ----------------------------

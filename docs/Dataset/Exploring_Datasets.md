@@ -131,10 +131,16 @@ Just below the description, several key features are displayed:
 
 ```{raw} html
 <div style="text-align: center;">
-  <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../../_static/images/exploring-dataset-updated2.mp4" type="video/mp4">
-  </video>
-  <p><em>Dataset Home Page</em></p>
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/f4fxyUkOQdo"
+    title="Exploring Dataset home page"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Exploring Dataset home page</em></p>
 </div>
 ```
 ----------------------------
