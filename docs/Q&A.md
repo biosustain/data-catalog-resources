@@ -18,14 +18,14 @@ In practice it means:
 <details>
 <summary><strong>What is the difference between "Data Lake" and "Data Catalog"?</strong></summary>
 
-The **Data Lake** is where your files are stored. **Data Catalog** is the web app you work in, and the gateway to that storage.
+**Data Lake** is an Azure solution for storing files in the cloud. **Data Catalog** is an in-house data management solution that uses its own managed instance of Data Lake.
 
 Data Catalog does not store your files itself. It works with two storage locations:
 
 * A **metadata database**, holding the information about your data — your projects, datasets, and files, with their descriptions, permissions, and relationships.
-* The **Azure Data Lake**, holding the files themselves.
+* The **Azure Data Lake**, a cloud storage holding the files themselves.
 
-Each file entry in Data Catalog points to the matching file in the Data Lake. So when you open a dataset, the metadata you see comes from the database, while the file you download comes from the Data Lake.
+Each file entry in Data Catalog points to the matching file in its underlying Data Lake instance. So when you open a dataset, the metadata you see comes from the database, while the file you download comes from the Data Lake.
 
 This is also why the Advanced upload uses AzCopy or Azure Storage Explorer: those tools write your files straight to the Data Lake, and `Finalize upload` tells Data Catalog to register them.
 
@@ -38,12 +38,12 @@ This is also why the Advanced upload uses AzCopy or Azure Storage Explorer: thos
 
 Each platform covers a different part of the data lifecycle:
 
-* **Benchling** is the LIMS, where experiments are designed and recorded.
-* **Azure Data Lake** is the storage where research data files live.
-* **Seqera** runs Nextflow pipelines on that data.
-* **Data Catalog** is where your data is registered, described, and made findable — and the gateway to the storage and compute above.
+* **Benchling** is the LIMS (Laboratory Information Management System), where experiments are designed and recorded.
+* **Azure Data Lake** is the cloud storage service where research data files live.
+* **Seqera** is a web app that runs Nextflow pipelines on connected Azure cloud resources (e.g. virtual machine, storage).
+* **Data Catalog** is where your data is registered, described, and made findable.
 
-You link a Benchling project when creating a project in Data Catalog, and you set up a Seqera workspace from a dataset. So Data Catalog is the layer that connects them, rather than a replacement for any of them.
+You link a Benchling project when creating a project in Data Catalog, the files themselves are stored in its underlying Azure Data Lake instance, and you set up a Seqera workspace from a dataset. So Data Catalog is the layer that connects these platforms, not a replacement for any of them.
 
 </details>
 
@@ -54,9 +54,9 @@ You link a Benchling project when creating a project in Data Catalog, and you se
 
 Yes. The two serve different purposes.
 
-**Benchling** is your electronic lab notebook. It records your experiments — protocols, samples, and results as you work.
+**Benchling** is your lab data and metadata management system. It has electronic lab notebook to record your experiments, protocols and results as well as other custom-made metadata standards to register your experimental entities such as samples, plasmids, microbial strains.
 
-**Data Catalog** is where the research data from that work is registered and described, so it can be found, shared, and analysed later — also by people who were not involved in the experiment.
+**Data Catalog** is usually where the "complementary" research data from experimental work is registered and described — for example, large sequencing datasets and downstream analytical data. It improves data provenance from your wet-lab work through to your dry-lab data, and makes the data findable and reusable later, also by people who were not involved in the experiment.
 
 When you create a project in Data Catalog, you can link it to the matching Benchling project, so the experimental record and the data stay connected.
 
@@ -71,11 +71,11 @@ Pipelines run through Seqera and must be written in **Nextflow**.
 
 You can run:
 
-* **Predefined pipelines** available in your Seqera workspace
+* **Predefined pipelines** available in your **Seqera workspace** (an organizational unit that contains the resources, compute environments, and data required to run data analyses and manage your computing infrastructure)
 * **Pipelines built by the Informatics Platform**
 * **Your own Nextflow pipeline**, added to your workspace
 
-If you have a pipeline that is not written in Nextflow, get in touch with us — depending on the case, it may be possible to help you move it to Nextflow so it can run in Seqera.
+If you have a pipeline or script that is not written in Nextflow, that doesn't mean you have to start over. A script can often be wrapped in a Nextflow process rather than rewritten. Get in touch with us — depending on the case, we may be able to help you move it to Nextflow so it can run in Seqera.
 
 </details>
 

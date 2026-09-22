@@ -26,7 +26,7 @@ If a file with the same name already exists, a `File conflict` dialog appears �
 
 
 ```{tip}
-Files are queued on upload, meaning they transfer sequentially rather than in parallel. Total upload time depends entirely on your network's upload speed. For large transfers (5+ GB), use a **wired connection** instead of Wi-Fi to achieve faster and more stable uploads.
+Total upload time depends entirely on your network's upload speed. For large transfers (5+ GB), use a **wired connection** instead of Wi-Fi to achieve faster and more stable uploads.
 ```
 
 (advanced-upload)=
@@ -136,7 +136,7 @@ For more information on how to install see [**here**](https://learn.microsoft.co
 
 You can perform basic actions on files or directories in Data Catalog. Select one or more items to use **Download**, **Move**, or **Delete** from the toolbar, or click the ( **⁝** ) icon on an individual file or folder for more options:
 
-* **`Preview`** — view the file without downloading it
+* **`Preview` (or double-click)** — view the file without downloading it
 * **`Download`**
 * **`Rename`**
 * **`Cut`** — select the item, then right-click the destination folder and select **`Paste`**
