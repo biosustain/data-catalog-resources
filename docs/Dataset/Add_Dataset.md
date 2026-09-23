@@ -60,9 +60,15 @@ Click `Create dataset` at the ***bottom*** of the page to complete the process.
 
 ```{raw} html
 <div style="text-align: center;">
-  <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../../_static/images/dataset-creation-3(BRIGHT).mp4" type="video/mp4">
-  </video>
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/rF0PV_vUTKM"
+    title="Dataset Creation"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
   <p><em>Dataset Creation</em></p>
 </div>
 ```
