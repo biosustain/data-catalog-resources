@@ -96,7 +96,7 @@ Just below the description, several key features are displayed:
     * Provides an overview of how data will be handled throughout the project lifecycle.
     * Allows you to document policies for data storage, sharing, and preservation.
 
-* * **Seqera (WIP)**:
+* **Seqera (WIP)**:
     * Displays all Seqera workspaces created from datasets linked to this project.
     * From here you can manage existing workspaces.
 
@@ -111,10 +111,16 @@ Just below the description, several key features are displayed:
 
 ```{raw} html
 <div style="text-align: center;">
-  <video width="93%" controls autoplay loop muted playsinline>
-    <source src="../../_static/images/project-home-page-3.mp4" type="video/mp4">
-  </video>
-  <p><em>Project Home Page</em></p>
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/UTjEH8SOLUo"
+    title="Exploring Project home page"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Exploring Project home page</em></p>
 </div>
 ```
 ----------------------------
