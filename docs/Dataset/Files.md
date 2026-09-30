@@ -44,14 +44,25 @@ AzCopy is a command-line utility that allows you to transfer files and directori
 Before you start, make sure you have AzCopy downloaded and saved on your computer. For more detailed installation instructions, see [**here**](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
 
 ```{note}
-The commands below use Windows-style paths. If you are on Mac, replace backslashes `"\"` with forward slashes `"/"` and adjust the path accordingly (e.g. `"/Users/YOUR_USERNAME/"` instead of `"C:\Users\YOUR_USERNAME\"`).
+On Windows, the commands below are for Command Prompt. If you use PowerShell, start every AzCopy command with `.\azcopy` instead of `azcopy`
+  (e.g. `.\azcopy login`).
 ```
+```{note}
+  On Mac, start every AzCopy command with `./azcopy` instead of `azcopy` (e.g. `./azcopy login`), and use forward slashes `"/"` in paths (e.g.
+  `"/Users/YOUR_USERNAME/"` instead of `"C:\Users\YOUR_USERNAME\"`).
+  ```
+
 
 1. Open Command Prompt (Windows) or Terminal (Mac)
-2. Navigate to where AzCopy is saved on your computer
+2. Navigate to where AzCopy is saved on your computer, e.g.: 
+
+```cd "C:\Users\YOUR_USERNAME\Downloads\azcopy_windows_amd64_10.32.1" ```
+
+Keep the quotes if the folder path contains spaces (e.g. OneDrive folders).
+
 3. Log in to AzCopy: 
 
-```bash
+```{code-block}
 azcopy login
 ```
 
