@@ -173,14 +173,24 @@
 <p>Before you start, make sure you have AzCopy downloaded and saved on your computer. For more detailed installation instructions, see <a class="reference external" href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10" rel="noreferrer" target="_blank"><strong>here</strong></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The commands below use Windows-style paths. If you are on Mac, replace backslashes <code class="docutils literal notranslate"><span class="pre">&quot;\&quot;</span></code> with forward slashes <code class="docutils literal notranslate"><span class="pre">&quot;/&quot;</span></code> and adjust the path accordingly (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;/Users/YOUR_USERNAME/&quot;</span></code> instead of <code class="docutils literal notranslate"><span class="pre">&quot;C:\Users\YOUR_USERNAME\&quot;</span></code>).</p>
+<p>On Windows, the commands below are for Command Prompt. If you use PowerShell, start every AzCopy command with <code class="docutils literal notranslate"><span class="pre">.\azcopy</span></code> instead of <code class="docutils literal notranslate"><span class="pre">azcopy</span></code>
+(e.g. <code class="docutils literal notranslate"><span class="pre">.\azcopy</span> <span class="pre">login</span></code>).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On Mac, start every AzCopy command with <code class="docutils literal notranslate"><span class="pre">./azcopy</span></code> instead of <code class="docutils literal notranslate"><span class="pre">azcopy</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">./azcopy</span> <span class="pre">login</span></code>), and use forward slashes <code class="docutils literal notranslate"><span class="pre">&quot;/&quot;</span></code> in paths (e.g.
+<code class="docutils literal notranslate"><span class="pre">&quot;/Users/YOUR_USERNAME/&quot;</span></code> instead of <code class="docutils literal notranslate"><span class="pre">&quot;C:\Users\YOUR_USERNAME\&quot;</span></code>).</p>
 </div>
 <ol class="arabic simple">
 <li><p>Open Command Prompt (Windows) or Terminal (Mac)</p></li>
-<li><p>Navigate to where AzCopy is saved on your computer</p></li>
+<li><p>Navigate to where AzCopy is saved on your computer, e.g.:</p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">&quot;C:\Users\YOUR_USERNAME\Downloads\azcopy_windows_amd64_10.32.1&quot;</span> </code></p>
+<p>Keep the quotes if the folder path contains spaces (e.g. OneDrive folders).</p>
+<ol class="arabic simple" start="3">
 <li><p>Log in to AzCopy:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>azcopy<span class="w"> </span>login
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">azcopy</span> <span class="n">login</span>
 </pre></div>
 </div>
 <p>A link and a code will appear. Open the link in your browser, enter the code, and sign in with your Microsoft account.</p>
