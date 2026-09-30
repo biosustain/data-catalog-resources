@@ -11,7 +11,7 @@ The website is built using [Sphinx](https://www.sphinx-doc.org/en/master/usage/i
 
 🌐 **Visit the live site**: [https://biosustain.github.io/data-catalog-resources/](https://biosustain.github.io/data-catalog-resources/)
 
-## Versions
+### Versions
 
 - **[Latest](https://biosustain.github.io/data-catalog-resources/latest/)** - Documentation from main branch
 - **[Stable](https://biosustain.github.io/data-catalog-resources/stable/)** - Latest release documentation
@@ -23,39 +23,44 @@ The website automatically generates versioned documentation for each GitHub rele
 
 ```
 data-catalog-resources/
-├── _static/                   # Static assets (CSS, JS, images, files)
-│   ├── css/custom.css         # Custom styling
-│   ├── js/mobile-toc.js       # Mobile navigation & theme toggle
-│   └── images/                # Image assets
-├── _templates/                # Custom HTML templates
-├── docs/                      # Main resource content
-├── Contact.md                 # Contact/ Report Issues
-├── Dataset                    # Dataset content
-│   ├── Add_Dataset.md         # Dataset Creation / Access Rights / Dataset Lineage
-│   ├── Exploring_Datasets.md  # Overview of Dataset List / Dataset Home page
-│   ├── Files.md               # Upload / Managage Files
-│   ├── index.md               # Dataset section overview
-│   └── Manage_Datasets.md     # Manage Datasets / User Permissions
-├── Login.md                   # Log in
-├── Project                    # Project content
-│   ├── Create_Project.md      # Project Creation / Access Rights / Link Dataset to Project
-│   ├── DMP.md                 # Data Management Plan content (DMP)
-│   ├── Exploring_Projects.md  # Overview of Project List / Project Home page
-│   ├── index.md               # Project section overview
-│   └── Manage_Projects.md     # Manage Projects / User Permissions
-└── Search.md                  # Basic / Advanced Search
-├── index.md                   # Homepage content
-├── conf.py                    # Sphinx configuration
-├── requirements.txt           # Python dependencies
-└── README.md                  # This file
+├── .github/
+│   ├── ISSUE_TEMPLATE/              # Bug report / Feature request / Help templates
+│   └── workflows/                   # Build, PR preview, release and cleanup workflows
+├── _static/                         # Static assets
+│   ├── css/custom.css               # Custom styling
+│   ├── js/mobile-toc.js             # Mobile navigation & theme toggle
+│   └── images/                      # Images and videos used in the docs
+├── _templates/                      # Custom HTML templates
+├── docs/                            # Main resource content
+│   ├── Authentication_via_API_keys.md  # API keys
+│   ├── Contact.md                   # Contact / Report Issues
+│   ├── Dataset/                     # Dataset content
+│   │   ├── Add_Dataset.md           # Dataset Creation / Access Rights / Dataset Lineage
+│   │   ├── Exploring_Datasets.md    # Overview of Dataset List / Dataset Home page
+│   │   ├── Files.md                 # Upload / Manage Files
+│   │   ├── index.md                 # Dataset section overview
+│   │   └── Manage_Datasets.md       # Manage Datasets / User Permissions
+│   ├── Login.md                     # Log in
+│   ├── Project/                     # Project content
+│   │   ├── Create_Project.md        # Project Creation / Access Rights / Link Dataset to Project
+│   │   ├── DMP.md                   # Data Management Plan content (DMP)
+│   │   ├── Exploring_Projects.md    # Overview of Project List / Project Home page
+│   │   ├── index.md                 # Project section overview
+│   │   └── Manage_Projects.md       # Manage Projects / User Permissions
+│   ├── Q&A.md                       # Frequently asked questions
+│   └── Search.md                    # Basic / Advanced Search
+├── index.md                         # Homepage content
+├── conf.py                          # Sphinx configuration
+├── requirements.txt                 # Python dependencies
+└── README.md                        # This file
 ```
 
 ## 3. Contributing
 
 We welcome contributions! Please:
 
-1. Follow the branching workflow described below
-2. Write clear commit messages
+1. Follow the branching workflow described in [section 4.1](#41-create-and-work-on-your-branch-locally)
+2. Write clear commit messages (e.g. `docs: ...`, `docs(search): ...`, `chore: ...`)
 3. Test your changes locally before pushing
 4. Request reviews from relevant team members
 5. Use [MyST Markdown](https://myst-parser.readthedocs.io/) syntax for enhanced formatting
@@ -95,8 +100,7 @@ git checkout -b your-working-branch
 #### Content Guidelines
 - Add articles in `docs/` folder (markdown format)
 - Update `index.md` for homepage content
-- Add images to `_static/images/` directory
-- Add downloadable files to `_static/files/` directory
+- Add images and other files (e.g. videos) to the `_static/images/` directory
 
 ### 4.2 Build and Test Locally
 
@@ -116,8 +120,6 @@ python -m http.server 8000 --directory _build
 ```
 Open http://localhost:8000 in your browser.
 
-
-
 ### 4.3 Update your branch to GitHub
 
 #### Stage and Commit Changes
@@ -130,7 +132,7 @@ Open http://localhost:8000 in your browser.
 **Using Terminal**:
 ```bash
 git add .
-git commit -m "Add new data catalog documentation"
+git commit -m "docs: add new data catalog documentation"
 git push origin your-working-branch
 ```
 
@@ -149,7 +151,7 @@ git push origin your-working-branch
 
 **PR Preview Page Cleanup**
 
-A workflow is provided for manual cleanup  of old PR preview directories that accumulate over time on the `gh-pages` branch, in case the automatic cleanup processes were not triggered properly when the pr was merged/closed.
+A workflow is provided for manual cleanup of old PR preview directories that accumulate over time on the `gh-pages` branch, in case the automatic cleanup processes were not triggered properly when the PR was merged/closed.
 
 **How to trigger**
 
