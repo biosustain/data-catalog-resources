@@ -1,30 +1,28 @@
-# Search & Favorites
+# Search & Favourites
 
-Data Catalog makes it easy to find projects and datasets quickly using keywords, filters and favorites. This guide explains the available search options and how to use favorites.
+Data Catalog makes it easy to find projects and datasets quickly using keywords, filters and favourites. This guide explains the available search options and how to use favourites.
 
 ## ➤  Basic Search
 At the top of the page, you will find the **`Search bar`**. Simply type any relevant keyword such as the project or dataset name, and Data Catalog will display matching results.
 
-→ The **search** is designed to handle typos and partial matches. Even if you enter an incorrect or incomplete term, Data Catalog will still try to return the **most relevant results** based on what you intended to search for.
-
-```{note} 
-Results are ranked by **relevance** by default, so the most likely matches appear first. 
-You can change the sorting order using the **`Order by`** dropdown located on the top right corner of that section. For example, sort by ***name*** (ascending or descending) or by ***last modified***.
-
-**This feature is still under development and might not work as expected yet!*
-```
+→ The **search** looks for your keyword in the **name** and **description** of projects and datasets. Partial words also work, but typos are not 
+corrected, so check the spelling if you don't find what you are looking for.
 
 ## ➤  Advanced Search
 
-For more precise results, you can use the Advanced search. It helps you narrow down your results by applying filters, making it easier to find what you are looking for.
+For more precise results, you can use the Advanced search. It helps you narrow down your results by applying filters, making it easier to find what you are looking for. To open it, click the **gear** button next to the search bar, set your filters and click **`Apply & Search`**.
 
 Available filters include:
 
-* **Archive Status:** Choose from ***Active***, ***Archived*** or ***All***
+* **Archive Status:** Choose from ***Active only*** (default), ***Archived only*** or ***All***
 * **Entity Type:** Select whether you want ***Projects & Datasets***, ***Projects only*** or ***Datasets only***
-* **Entity Name:** If you know the exact name you can type it here
-* **Owner:** Filter by the owner of the project or dataset
-* **Metadata:** Use metadata tags for more precise filtering
+* **Project or Dataset filters:** Appear when you choose ***Projects only*** or ***Datasets only*** in Entity Type:
+    * Projects: Principal Investigator (PI), LIMS (Benchling) project
+    * Datasets: Data type, Resource type, Instrument, Data acquisition method, Data acquisition facility
+* **Entity Name:** You can type the full name or just part of it
+* **Created by:** Filter by the full name of the person who created the project or dataset
+* **Description:** Search only in the description
+* **Access rights:** Choose from ***All***, ***Restricted*** or ***BRIGHT-visible***
 
 ```{tip} 
 To make your search more precise, try combining **multiple filters** at once.
@@ -53,17 +51,17 @@ To make your search more precise, try combining **multiple filters** at once.
 ```
 ----------------------------
 
-## Favorites
+## Favourites
 
-The Favorite feature allows you to mark frequently used projects and datasets for quick access. Favorite items appear under the **Favorites** section at the top of the Projects and Datasets list pages respectively.
+The Favourite feature allows you to mark frequently used projects and datasets for quick access. Favourite items appear under the **Favourites** tab, next to the Active and Archived tabs, on the Projects and Datasets list pages.
 
-### Adding and removing favorites
+### Adding and removing favourites
 
 1. Navigate to the **Projects** or **Datasets** list page
-2. Click the **<img src="../_static/images/star.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon next to its name to mark it as a favorite
-3. To remove a favorite, click the star icon again
+2. Click the **<img src="../_static/images/star.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon next to its name to mark it as a favourite
+3. To remove a favourite, click the star icon again
 
-The screenshots below show how to mark a dataset as favorite. The same applies to projects.
+The screenshots below show how to mark a dataset as favourite. The same applies to projects.
 
 ```{raw} html
 <div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
