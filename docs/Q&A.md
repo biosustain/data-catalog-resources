@@ -6,7 +6,7 @@ Data Catalog gives you one place to keep your research data and everything that 
 
 In practice it means:
 
-* **You can find things again.** Projects and datasets are searchable by name, owner, and metadata — including data from colleagues you were given access to.
+* **You can find things again.** Projects and datasets are searchable by name, description, creator, and metadata — including data from colleagues you were given access to.
 * **Your data has context.** A file on its own says little. A dataset in Data Catalog records what it is, how it was generated, and which instrument produced it.
 * **You control who sees what.** Permissions are set per project and per dataset, so you decide what stays restricted and what is visible to BRIGHT.
 * **You can trace where results came from.** Lineage links raw data to processed data to results, which is what makes an analysis reproducible later.
@@ -84,9 +84,9 @@ If you have a pipeline or script that is not written in Nextflow, that doesn't m
 <details>
 <summary><strong>What does it cost to run a pipeline?</strong></summary>
 
-Pipelines run on Azure compute, so a run has a cost. The estimated hourly cost of your workspace is shown on the Seqera setup in Data Catalog.
+Pipelines run on Azure compute, so a run has a cost. The estimated hourly cost of your workspace is shown on the project's Seqera tab and on the Pipelines page in Data Catalog.
 
-The project you select when creating the setup is the one charged for the run, and it is also where the results dataset is created.
+The project you select when creating the data registry for a dataset is the one charged for the run, and it is also where the results dataset is created.
 
 </details>
 
@@ -97,7 +97,7 @@ The project you select when creating the setup is the one charged for the run, a
 
 Results do not come back to Data Catalog automatically — they stay in the Seqera data registry until you copy them back.
 
-In Data Catalog, open the Seqera setup and choose `Copy into new dataset`. You select the folder to copy back and fill in the metadata for the new dataset. You can also use `Overwrite` to copy the results into the existing dataset instead.
+In Data Catalog, open the Seqera setup and choose `Copy into new dataset`. You select the folder to copy back and fill in the metadata for the new dataset. You can also use `Overwrite` to replace the data registry in Seqera with the files from this dataset (This action cannot be undone).
 
 See {ref}`Seqera Workspace` for the full steps.
 
@@ -110,7 +110,7 @@ See {ref}`Seqera Workspace` for the full steps.
 
 Yes. A dataset is created under a parent project, but it can be linked/added to other projects as well.
 
-You do this from the **Projects** tab on the dataset home page. Only projects where you have the `Can Add Datasets` permission will appear in the list.
+You do this from the **Projects** tab on the dataset home page. Only projects where you have the `Add Datasets` permission will appear in the list.
 
 This is useful when the same data is relevant to more than one project — you link/add it instead of uploading a second copy.
 

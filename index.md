@@ -65,7 +65,7 @@ Each File has:
 
 ### Authorization
 
-Data Catalog is currently **only accessible** by personnel officially employed or associated with BRIGHT. Each dataset can belong to one or more projects and project metadata is visible to all BRIGHT employees with read-only access.
+Data Catalog is currently **only accessible** by personnel officially employed or associated with BRIGHT. Each dataset can belong to one or more projects and the metadata of BRIGHT-visible projects is visible to all BRIGHT employees with read-only access, while Restricted projects are only visible to users who have been given access.
 <br/>
 
 

@@ -32,7 +32,7 @@ If you are the **Project Creator**, your name and email will be pre-filled autom
 
 Here you can enter the funding details:
 
-   * **Funding Identifier** (e.g.,https://ror.org/027754r66)
+   * **Funder Identifier** (e.g.,https://ror.org/027754r66)
    * **Funder Name** (e.g., Novo Nordisk Foundation)
    * **Funding Status** which can be:
 
@@ -81,7 +81,7 @@ Provide details about project documentation:
 
 ### 7. Data Sharing, Access & Compliance
 
-This section includes a series of questions about compliance and data sharing. Most questions are answered by choosing **Yes**, **No**, **Uncertain**, or **Not applicable** (dependig on the field):
+This section includes a series of questions about compliance and data sharing. Most questions are answered by choosing **Yes**, **No**, **Uncertain**, or **Not applicable** (depending on the field):
 
 * **Biological Material**: State whether the project uses biological material such as microorganisms or material of animal, plant, or human origin.
 
@@ -89,7 +89,7 @@ This section includes a series of questions about compliance and data sharing. M
 
 * **Toxic Substances**: Answer whether toxic chemicals or naturally produced toxins are used.
 
-* **Nanoscale Practicles**: Specify how nanoscale materials are handled.
+* **Nanoscale Particles**: Specify how nanoscale materials are handled.
 
 * **Personal Data (GDPR)**: State if any personal or sensitive data is involved in the project, such as age, DNA, RNA, biometrics, etc.
 
