@@ -110,7 +110,7 @@ See {ref}`Seqera Workspace` for the full steps.
 
 Yes. A dataset is created under a parent project, but it can be linked/added to other projects as well.
 
-You do this from the **Projects** tab on the dataset home page. Only projects where you have the `Can Add Datasets` permission will appear in the list.
+You do this from the **Projects** tab on the dataset home page. Only projects where you have the `Add Datasets` permission will appear in the list.
 
 This is useful when the same data is relevant to more than one project — you link/add it instead of uploading a second copy.
 
