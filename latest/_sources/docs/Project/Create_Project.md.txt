@@ -121,7 +121,7 @@ To remove the relationship:
 ```{note}
 To add a dataset to a project, two conditions must be met:
 
-→ You must have the **Can Add Datasets** permission on the project you want to add the dataset to
+→ You must have the **Add Datasets** permission on the project you want to add the dataset to
 <br/>
 → You must have **access to the dataset** (either Bright-visible or through a dataset user permission, if it is restricted)
 

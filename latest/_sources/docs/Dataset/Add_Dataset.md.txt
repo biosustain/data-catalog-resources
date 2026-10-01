@@ -124,7 +124,7 @@ This helps you associate the dataset with other research contexts.
 ```{note}
 To add a project to a dataset, two conditions must be met:
 
-→ You must have the **Can Add Datasets** permission on the project you want to add the dataset to
+→ You must have the **Add Datasets** permission on the project you want to add the dataset to
 <br/>
 → You must have **access to the dataset** (either Bright-visible or through a dataset user permission, if it is restricted)
 
@@ -182,7 +182,7 @@ Once you have created a dataset you can define its **Lineage** by linkinng it to
 ➣ It ensures **data provenance** by identifying source datasets when creating new ones (e.g., pipelines), supporting reproducibility.
 
 ```{important}
-To create (or remove) a Dataset Lineage between datasets you must have the permission ***Can Link To*** on the **destination dataset**. Without this permission you will not be able to perform this action or see the destination dataset in the linking list.
+To create (or remove) a Dataset Lineage between datasets you must have the permission ***Link To*** on the **destination dataset**. Without this permission you will not be able to perform this action or see the destination dataset in the linking list.
 
 The destination dataset is always the **descendant**.
 ```
@@ -203,7 +203,7 @@ The destination dataset is always the **descendant**.
 
 4. Add a description explaining the relationship (optional)
 
-5. Click the `Add Ancestor` (or `Add Descendant`) button to complete the process
+5. Click the `Link as Ancestor` (or `Link as Descendant`) button to complete the process
 
 
 To remove a Lineage:
@@ -251,7 +251,7 @@ In the Seqera section you can set up a Dataset as input for running Nextflow pip
 
 6. In Seqera, select your pipeline, and run your analysis as usual
 
-7. Once the analysis is complete, return to Data Catalog and click `Copy into a new dataset` button. A dialog window will appear where you can:
+7. Once the analysis is complete, return to Data Catalog and click `Copy into new dataset` button. A dialog window will appear where you can:
     * Select or manually enter a **folder path**
     * Provide **metadata** for the new dataset
     * Click `Create dataset and copy` to finalize the process

@@ -80,17 +80,17 @@ The tab displays a table view with:
 
 * **User column:** Lists all users who have access to the dataset
 * **Permissions columns:** Show the available permissions:
-    * **Can Read:** Allows the user to view the dataset’s metadata, associated projects, and lineage (view‑only).
-    * **Can Edit Permissions:** Allows managing user access and permissions for the dataset
-    * **Can Edit Metadata:** Allows editing dataset details
-    * **Can Link To:** Allows the current dataset to be linked to as the destination (**descendant**) in the dataset lineage (see {ref}`dataset-lineage`) 
-    * **Can Archive:** Allows archiving the dataset
-    * **Can List Files:** Allows viewing all files in the dataset
-    * **Can Edit Files:** Allows uploading or deleting files in the dataset
-    * **Can Download Files:** Allows downloading files
+    * **Read:** Allows the user to view the dataset’s metadata, associated projects, and lineage (view‑only).
+    * **Edit Permissions:** Allows managing user access and permissions for the dataset
+    * **Edit Metadata:** Allows editing dataset details
+    * **Link To:** Allows the current dataset to be linked to as the destination (**descendant**) in the dataset lineage (see {ref}`dataset-lineage`) 
+    * **Archive:** Allows archiving the dataset
+    * **List Files:** Allows viewing all files in the dataset
+    * **Edit Files:** Allows uploading or deleting files in the dataset
+    * **Download Files:** Allows downloading files
 * **Actions column:** Includes:
-    * **Save Policy:** Saves changes when adding a new user
-    * **Remove Policy:** Revokes a user's access to the dataset
+    * **Add policy:** Saves changes when adding a new user
+    * **Remove policy:** Revokes a user's access to the dataset
 
 ### Adding or Removing Users
 
