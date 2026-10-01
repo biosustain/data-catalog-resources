@@ -14,7 +14,7 @@ For more precise results, you can use the Advanced search. It helps you narrow d
 
 Available filters include:
 
-* **Archive Status:** Choose from ***Active only*** (default), ***Archived*** or ***All***
+* **Archive Status:** Choose from ***Active only*** (default), ***Archived only*** or ***All***
 * **Entity Type:** Select whether you want ***Projects & Datasets***, ***Projects only*** or ***Datasets only***
 * **Project or Dataset filters:** Appear when you choose ***Projects only*** or ***Datasets only*** in Entity Type:
     * Projects: Principal Investigator (PI), LIMS (Benchling) project
