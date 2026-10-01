@@ -150,7 +150,7 @@ You can perform basic actions on files or directories in Data Catalog. Select on
 * **`Preview` (or double-click)** — view the file without downloading it
 * **`Download`**
 * **`Rename`**
-* **`Cut`** — select the item, then right-click the destination folder and select **`Paste`**
+* **`Cut`** — select the item and choose `Cut`. Then open the destination folder, then right-click an empty area on the destination folder and select **`Paste`**
 * **`Copy`** — *under development*
 * **`Move`** — move a file or folder to a different destination folder. You can move individual files between folders, or move an entire folder (along with its contents) into another folder.
 * **`Delete`**
