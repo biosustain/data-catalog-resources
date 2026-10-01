@@ -76,5 +76,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./gh-pages-content
-          keep_files: true
+          # gh-pages-content is already a full copy of the branch, so publish it as-is.
+          # keep_files: true would keep files deleted above (e.g. old stable/ files) forever.
+          keep_files: false
           commit_message: 'Release documentation for ${{ steps.get_version.outputs.version }}'
