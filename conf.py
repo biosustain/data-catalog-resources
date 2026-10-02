@@ -49,62 +49,35 @@ release = version
 
 
 extensions = [
-    "myst_nb",
+    "myst_parser",
     # "sphinx_design", # https://sphinx-design.readthedocs.io/en/sbt-theme/
     # "sphinx_copybutton", # https://sphinx-copybutton.readthedocs.io/
     "sphinx_new_tab_link",
     "sphinx_wagtail_theme",
-    "sphinx.ext.autodoc",  # For search functionality
     "sphinx_togglebutton",  # For collapsible content
 ]
 
 templates_path = ["_templates"]
-# As we can use percent notebooks and markdowns files, we need to exclude some files
-# additionally to the default ones (add to the list if needed)
+# Files to exclude from the build, in addition to the default ones (add to the list if needed)
 exclude_patterns = [
     "_build",
     "Thumbs.db",
     ".DS_Store",
-    "**/pandoc_ipynb/inputs/*",
-    ".nox/*",
     "README.md",
     "README_original_template.md",
-    "README_test_deploy.md",  # exclude test-deploy specific README
-    "**/.ipynb_checkpoints/*",
-    "jupyter_execute",
     "conf.py",
     ".venv" # exclude virtual environment
 ]
 
 
-# -- Notebook related settings -----------------------------------------------
-
-# add notebooks
-#  https://myst-nb.readthedocs.io/en/latest/computation/execute.html
-nb_execution_mode = "auto"
-
-myst_enable_extensions = ["dollarmath", "amsmath"]
+# -- MyST settings -----------------------------------------------------------
 
 # Enable frontmatter parsing for MyST
 myst_title_to_header = False  # Prevent MyST from converting titles to headers
 
-# Plolty support through require javascript library
-# https://myst-nb.readthedocs.io/en/latest/render/interactive.html#plotly
 html_js_files = [
-    "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js",
     "js/mobile-toc.js"
 ]
-
-# https://myst-nb.readthedocs.io/en/latest/configuration.html
-# Execution
-nb_execution_raise_on_error = True
-# Rendering
-nb_merge_streams = True
-
-# https://myst-nb.readthedocs.io/en/latest/authoring/custom-formats.html#write-custom-formats
-nb_custom_formats = {
-    ".py": ["jupytext.reads", {"fmt": "py:percent"}]
-}
 
 
 # -- Options for HTML output -------------------------------------------------
