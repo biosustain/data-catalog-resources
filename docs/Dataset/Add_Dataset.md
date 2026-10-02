@@ -241,30 +241,58 @@ To remove a Lineage:
 ```
 ----------------------------
 (Seqera Workspace)=
-### Setup a Dataset in Seqera Workspace (WIP- work in progress)
+### Analyze Datasets with Seqera (WIP- work in progress)
 
-In the Seqera section you can set up a Dataset as input for running Nextflow pipelines in Seqera Workspace. Once the analysis is complete, you can copy the results back to Data Catalog as a new dataset under the project of your choice. Follow the steps below to get started:
+In the Seqera section you can set up a Dataset as input for running Nextflow pipelines in Seqera. This works in two parts:
 
-1. Open the dataset you want to use as input for your pipeline
+* Each **project** has one Seqera workspace
+* Each **dataset** you want to analyse gets its own **data registry** inside the workspace
 
-2. Click the `Seqera` tab on the dataset home page
+Once the analysis is complete, you can copy the results back to Data Catalog as a new dataset. Follow the steps below to get started:
 
-3. From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.
+#### Part 1: Set up the project's Seqera workspace
+
+You only need to do this once per project. If a project already has a workspace, skip to Part 2.
+
+1. Open the project you want to set up the Seqera workspace for
+
+2. Click the `Seqera` tab on the project home page
+
+3. Click `Set up Seqera workspace`. A progress bar will appear while the workspace is being set up.
+
+When the workspace is ready, you will see its name, the estimated cost per hour of computation. The data registries you create in Part 2 will also be listed here.
+
+```{note}
+You must have the **Seqera workspace** permission on the project to set up a workspace.
+```
+
+#### Part 2: Create a Data Registry for a Dataset
+
+1. Open the dataset with the files you want to use as input for running Nextflow pipelines
+
+2. From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.
 
    > Only projects where you have the **Set Up Workspace** permission will appear in the list.
 
 4. Click `Create`
 
-5. After the workspace is created, click the **<img src="../../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** next to the data registry name to view more details, and then click `View in Seqera Workspace` button to open the workspace directly in Seqera.
+If the `Create` button is disabled, the project has no Seqera workspace yet (see Part 1)
 
-6. In Seqera, select your pipeline, and run your analysis as usual
+5. After the data registry is created, click the **<img src="../../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** next to the data registry name to view more details, and then click `View in Seqera Workspace` button to open the workspace directly in Seqera.
+
+6. In Seqera, select the pipeline you want to run and start your analysis as usual
 
 7. Once the analysis is complete, return to Data Catalog and click `Copy into new dataset` button. A dialog window will appear where you can:
     * Select or manually enter a **folder path**
-    * Provide **metadata** for the new dataset
+    * Provide **metadata** for the new dataset. The name is pre-filled as "*data registry name* copy" and the Data type is set to **Results**, but you can change both.
     * Click `Create dataset and copy` to finalize the process
+    * Click `Open new dataset` to go to the new dataset
 
   A new dataset containing the analysis results will be created and will be visible alongside other datasets under the "Datasets" tab on the project home page you selected in step 3.
+
+```{note}
+You must have the **Add Datasets** permission on the project to use `Copy into new dataset`.
+```
 
 ```{note}
 Please note that this functionality is still under development and may not work as expected at the moment.
