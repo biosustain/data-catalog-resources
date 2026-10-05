@@ -260,19 +260,21 @@ You only need to do this once per project. If a project already has a workspace,
 
 3. Click `Set up Seqera workspace`. A progress bar will appear while the workspace is being set up.
 
-When the workspace is ready, you will see its name, the estimated cost per hour of computation. The data registries you create in Part 2 will also be listed here.
+When the workspace is ready, you will see its name and the estimated cost of computation per hour. The data registries you create in Part 2 will also be listed here.
 
 ```{note}
-You must have the **Seqera workspace** permission on the project to set up a workspace.
+You must have the **Setup Workspaces** permission on the project to set up a workspace.
 ```
 
 #### Part 2: Create a Data Registry for a Dataset
 
 1. Open the dataset with the files you want to use as input for running Nextflow pipelines
 
-2. From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.
+2. Click the `Seqera` tab on the dataset home page
 
-   > Only projects where you have the **Set Up Workspace** permission will appear in the list.
+3. From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.
+
+   > Only projects where you have the **Setup Workspaces** permission will appear in the list.
 
 4. Click `Create`
 

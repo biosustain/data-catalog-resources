@@ -116,7 +116,7 @@ Just below the description, several key features are displayed:
 
     * In this section, you can automatically set up a Dataset in Seqera Workspace as input for runnig **Nextflow** pipelines.
     * Select the project under which the pipeline costs will be billed, and click `Create a new setup`.
-    * Only projects where you have the **Can Set Up Workspace** permission will appear in the list.
+    * Only projects where you have the **Setup Workspaces** permission will appear in the list.
 
 
 (see also: {ref}`Seqera Workspace`) 
