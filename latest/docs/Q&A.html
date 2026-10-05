@@ -151,7 +151,7 @@ Data Catalog gives you one place to keep your research data and everything that 
 <li><p>The <strong>Azure Data Lake</strong>, a cloud storage holding the files themselves.</p></li>
 </ul>
 <p>Each file entry in Data Catalog points to the matching file in its underlying Data Lake instance. So when you open a dataset, the metadata you see comes from the database, while the file you download comes from the Data Lake.</p>
-<p>This is also why the Advanced upload uses AzCopy or Azure Storage Explorer: those tools write your files straight to the Data Lake, and <code class="docutils literal notranslate"><span class="pre">Finalize</span> <span class="pre">upload</span></code> tells Data Catalog to register them.</p>
+<p>This is also why the Advanced upload uses AzCopy or Azure Storage Explorer: those tools write your files straight to the Data Lake, and <strong><code class="docutils literal notranslate"><span class="pre">Finalize</span> <span class="pre">upload</span></code></strong> tells Data Catalog to register them.</p>
 </details>
 <br/>
 <details>
@@ -163,7 +163,7 @@ Data Catalog gives you one place to keep your research data and everything that 
 <li><p><strong>Seqera</strong> is a web app that runs Nextflow pipelines on connected Azure cloud resources (e.g. virtual machine, storage).</p></li>
 <li><p><strong>Data Catalog</strong> is where your data is registered, described, and made findable.</p></li>
 </ul>
-<p>You link a Benchling project when creating a project in Data Catalog, the files themselves are stored in its underlying Azure Data Lake instance, and you set up a Seqera workspace from a dataset. So Data Catalog is the layer that connects these platforms, not a replacement for any of them.</p>
+<p>You link a Benchling project when creating a project in Data Catalog, the files themselves are stored in its underlying Azure Data Lake instance, and you set up a Seqera workspace for the project and create a data registry for each dataset you want to analyze. So Data Catalog is the layer that connects these platforms, not a replacement for any of them.</p>
 </details>
 <br/>
 <details>
@@ -195,14 +195,14 @@ Data Catalog gives you one place to keep your research data and everything that 
 <details>
 <summary><strong>My pipeline finished — what do I do now?</strong></summary>
 <p>Results do not come back to Data Catalog automatically — they stay in the Seqera data registry until you copy them back.</p>
-<p>In Data Catalog, open the Seqera setup and choose <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code>. You select the folder to copy back and fill in the metadata for the new dataset. You can also use <code class="docutils literal notranslate"><span class="pre">Overwrite</span></code> to replace the data registry in Seqera with the files from this dataset (This action cannot be undone).</p>
-<p>See <a class="reference internal" href="Dataset/Add_Dataset.html#seqera-workspace"><span class="std std-ref">Setup a Dataset in Seqera Workspace (WIP- work in progress)</span></a> for the full steps.</p>
+<p>In Data Catalog, open the <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the dataset home page and choose <strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code></strong>. You select the folder to copy back and fill in the metadata for the new dataset. You can also use <strong><code class="docutils literal notranslate"><span class="pre">Overwrite</span></code></strong> to replace the data registry in Seqera with the files from this dataset (this action cannot be undone).</p>
+<p>See <a class="reference internal" href="Dataset/Add_Dataset.html#seqera-workspace"><span class="std std-ref">Analyze Datasets with Seqera (WIP- work in progress)</span></a> for the full steps.</p>
 </details>
 <br/>
 <details>
 <summary><strong>Can a dataset belong to more than one project?</strong></summary>
 <p>Yes. A dataset is created under a parent project, but it can be linked/added to other projects as well.</p>
-<p>You do this from the <strong>Projects</strong> tab on the dataset home page. Only projects where you have the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Datasets</span></code> permission will appear in the list.</p>
+<p>You do this from the <strong>Projects</strong> tab on the dataset home page. Only projects where you have the <strong>Add Datasets</strong> permission will appear in the list.</p>
 <p>This is useful when the same data is relevant to more than one project — you link/add it instead of uploading a second copy.</p>
 </details>
 <br/>

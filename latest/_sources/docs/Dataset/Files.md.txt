@@ -21,7 +21,7 @@ There are two ways to upload:
 
 
 ```{note}
-If a file with the same name already exists, a `File conflict` dialog appears — choose **`Cancel upload`** or **`Upload as copy`** to keep both files.
+If a file with the same name already exists, a **`File conflict`** dialog appears — choose **`Cancel upload`** or **`Upload as copy`** to keep both files.
 ```
 
 
@@ -116,9 +116,9 @@ For more information on how to install see [**here**](https://learn.microsoft.co
 2. Open Azure Storage Explorer and log in with your Microsoft account
 3. Click **`plug icon`** on the left side bar to open the Connect dialog
 4. Select **`ADLS Gen2 container or directory`**
-5. Select **`Sign in using OAuth`** and click `next`
-6. Select your Azure account and click `next`
-7. Optionally give the connection a display name and paste the upload URL provided from the  Data Catalog, then click `next`
+5. Select **`Sign in using OAuth`** and click **`next`**
+6. Select your Azure account and click **`next`**
+7. Optionally give the connection a display name and paste the upload URL provided from the  Data Catalog, then click **`next`**
 8. Click **`Connect`**
 9. Upload your files or folders to the upload location. Check the **Activities** panel at the bottom to make sure all transfers completed successfully.
 10. Go back to Data Catalog and click **`Finalize Upload`** to move the files into the dataset and make them visible in the files list.
@@ -145,12 +145,12 @@ For more information on how to install see [**here**](https://learn.microsoft.co
 
 ## Manage Files
 
-You can perform basic actions on files or directories in Data Catalog. Select one or more items to use **Download**, **Move**, or **Delete** from the toolbar, or click the ( **⁝** ) icon on an individual file or folder for more options:
+You can perform basic actions on files or directories in Data Catalog. Select one or more items to use **`Download`**, **`Move`**, or **`Delete`** from the toolbar, or click the ( **⁝** ) icon on an individual file or folder for more options:
 
 * **`Preview` (or double-click)** — view the file without downloading it
 * **`Download`**
 * **`Rename`**
-* **`Cut`** — select the item and choose `Cut`. Then open the destination folder, then right-click an empty area and select **`Paste`**
+* **`Cut`** — select the item and choose **`Cut`**. Then open the destination folder, then right-click an empty area and select **`Paste`**
 * **`Copy`** — *under development*
 * **`Move`** — move a file or folder to a different destination folder. You can move individual files between folders, or move an entire folder (along with its contents) into another folder.
 * **`Delete`**

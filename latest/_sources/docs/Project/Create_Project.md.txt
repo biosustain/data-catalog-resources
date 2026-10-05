@@ -107,16 +107,16 @@ You can also **add** additional existing datasets from the same **Datasets** tab
 
 ### To add another dataset to a project:
 
-1. Click the `Datasets` tab on the project home page
+1. Click the **`Datasets`** tab on the project home page
 
 2. Select the dataset you want to add from the list
 
-3. Click `Link` to complete the process
+3. Click **`Link`** to complete the process
 
 
 To remove the relationship:
 
-   * Click `Unlink`, and the dataset will be removed. Datasets created in this project cannot be unlinked.
+   * Click **`Unlink`**, and the dataset will be removed. Datasets created in this project cannot be unlinked.
 
 
 ```{note}

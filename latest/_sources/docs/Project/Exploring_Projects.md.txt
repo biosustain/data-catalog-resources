@@ -20,7 +20,7 @@ From the Project List Page, you can:
 
 * **Create new Project**
 
-    * Click the `Add a new project` button to start creating a new research project.
+    * Click the **`Add a new project`** button to start creating a new research project.
 
 * **View Active & Archived Projects**
 
@@ -84,7 +84,7 @@ Just below the description, several key features are displayed:
         * Edit Metadata: Allows editing project details and the project's DMP (Data Management Plan)
         * Add Datasets: Allows adding datasets to the project, either by creating new or adding (and removing) existing ones
         * Archive: Allows Archiving the project 
-        * Setup Workspaces: Allows running analysis pipelines on the dataset's files
+        * Setup Workspaces: Allows setting up and managing the project's Seqera workspace and its data registries
 
             (see also: {ref}`manage-project-user-permissions`) 
 
@@ -97,9 +97,8 @@ Just below the description, several key features are displayed:
     * Allows you to document policies for data storage, sharing, and preservation.
 
 * **Seqera (WIP)**:
-    * Displays all Seqera workspaces created from datasets linked to this project.
-    * From here you can manage existing workspaces.
-
+    * Here you can set up the project's Seqera workspace, or see it if it already exists.
+    * The workspace shows all data registries created for datasets in this project, and from here you can manage them.
         (see also: {ref}`Manage Seqera Workspace`)
 
 
