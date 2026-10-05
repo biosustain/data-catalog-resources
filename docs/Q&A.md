@@ -43,7 +43,7 @@ Each platform covers a different part of the data lifecycle:
 * **Seqera** is a web app that runs Nextflow pipelines on connected Azure cloud resources (e.g. virtual machine, storage).
 * **Data Catalog** is where your data is registered, described, and made findable.
 
-You link a Benchling project when creating a project in Data Catalog, the files themselves are stored in its underlying Azure Data Lake instance, and you set up a Seqera workspace from a dataset. So Data Catalog is the layer that connects these platforms, not a replacement for any of them.
+You link a Benchling project when creating a project in Data Catalog, the files themselves are stored in its underlying Azure Data Lake instance, and you set up a Seqera workspace for the project and create a data registry for each dataset you want to analyze. So Data Catalog is the layer that connects these platforms, not a replacement for any of them.
 
 </details>
 
@@ -97,7 +97,7 @@ The project you select when creating the data registry for a dataset is the one 
 
 Results do not come back to Data Catalog automatically — they stay in the Seqera data registry until you copy them back.
 
-In Data Catalog, open the Seqera setup and choose **`Copy into new dataset`**. You select the folder to copy back and fill in the metadata for the new dataset. You can also use **`Overwrite`** to replace the data registry in Seqera with the files from this dataset (This action cannot be undone).
+In Data Catalog, open the **`Seqera`** tab on the dataset home page and choose **`Copy into new dataset`**. You select the folder to copy back and fill in the metadata for the new dataset. You can also use **`Overwrite`** to replace the data registry in Seqera with the files from this dataset (this action cannot be undone).
 
 See {ref}`Seqera Workspace` for the full steps.
 

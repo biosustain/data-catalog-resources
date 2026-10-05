@@ -114,9 +114,9 @@ Just below the description, several key features are displayed:
 
 * **Seqera (WIP - work in progress)**
 
-    * In this section, you can automatically set up a Dataset in Seqera Workspace as input for runnig **Nextflow** pipelines.
+    * In this section, you can create a **data registry** for the dataset, so its files can be used as input for running **Nextflow** pipelines in Seqera.
     * Select the project under which the pipeline costs will be billed, and click **`Create`**.
-    * Only projects where you have the **Setup Workspaces** permission will appear in the list.
+    * Only projects where you have the **Setup Workspaces** permission will appear in the list. The project must already have a Seqera workspace.
 
 
 (see also: {ref}`Seqera Workspace`) 

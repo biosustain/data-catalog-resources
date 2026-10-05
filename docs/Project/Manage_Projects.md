@@ -77,7 +77,7 @@ The tab displays a table view with:
     * **Edit Metadata:** Allows editing project details and the project's DMP (Data Management Plan)
     * **Add Datasets:** Allows adding datasets to the project, either by creating new or adding (and removing) existing ones (see also: {ref}`Datasets-tab`)
     * **Archive:** Allows archiving the project 
-    * **Setup Workspaces:** Allows running analysis pipelines on dataset's files
+    * **Setup Workspaces:** Allows setting up and managing the project's Seqera workspace and its data registries
 * **Actions column:** Includes the available actions:  
     * **Add policy:** Saves changes when adding a new user
     * **Remove policy:** Revokes a user's access

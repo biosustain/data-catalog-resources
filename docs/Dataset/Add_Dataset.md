@@ -286,7 +286,7 @@ You must have the **Setup Workspaces** permission on the project to set up a wor
 
 4. Click **`Create`** 
 
-If the **`Create`** button is disabled, the project has no Seqera workspace yet (see Part 1).
+   > If the **`Create`** button is disabled, the project has no Seqera workspace yet (see Part 1).
 
 5. After the data registry is created, click the **<img src="../../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** next to the data registry name to view more details, and then click the **`View in Seqera Workspace`** button to open the workspace directly in Seqera.
 
