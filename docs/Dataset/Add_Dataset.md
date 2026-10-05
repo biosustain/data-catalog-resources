@@ -344,14 +344,14 @@ The project's Seqera workspace and all its data registries are shown in:
 * The **`Pipelines`** tab on the navigation bar (all workspaces you have access to)
 
 For the **workspace** you can:
-* **Open** it directly in Seqera, using the **<img src="../../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon
-* **Delete** it
+* **`Open`** it directly in Seqera, using the **<img src="../../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon
+* **`Delete`** it
 
 From each **data registry** you can:
-* **Overwrite:** updates the data registry in Seqera with the latest files from the dataset. Use this if you have added or changed files in the dataset after creating the
+* **`Overwrite`:** updates the data registry in Seqera with the latest files from the dataset. Use this if you have added or changed files in the dataset after creating the
   data registry
-* **Copy into new dataset:** creates a new dataset from the Seqera data registry
-* **Delete:** removes the data registry entirely
+* **`Copy into new dataset`:** creates a new dataset from the Seqera data registry
+* **`Delete`:** removes the data registry entirely
 
 The data registries of a dataset are also shown in the **`Seqera`** tab on the dataset home page.
 
