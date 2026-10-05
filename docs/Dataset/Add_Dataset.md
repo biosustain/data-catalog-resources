@@ -282,7 +282,7 @@ You must have the **Setup Workspaces** permission on the project to set up a wor
 
 3. From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.
 
-   > Only projects where you have the **Setup Workspaces** permission will appear in the list.
+   > Only projects where you have the **Setup Workspaces** permission will appear in the list. The dataset's primary project is selected by default and shown first.
 
 4. Click **`Create`** 
 
@@ -363,7 +363,7 @@ The data registries of a dataset are also shown in the **`Seqera`** tab on the d
 ```
 
 ```{note}
-To set up a **workspace**, go to **`Seqera`** tab on the **project home page** (see part 1). To create a **data registry**, go to **`Seqera`** tab on the **dataset home page** (see part 2).
+To set up a **workspace**, go to the **`Seqera`** tab on the **project home page** (see part 1). To create a **data registry**, go to **`Seqera`** tab on the **dataset home page** (see part 2).
 ```
 
 <br/>
