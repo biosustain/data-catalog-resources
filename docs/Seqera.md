@@ -5,20 +5,23 @@
 We are still improving how Data Catalog works with Seqera. If something doesn't work as expected, please let us know (see {ref}`contact`).
 ```
 
-With Seqera, you can use your datasets as input for running Nextflow pipelines. This works in two parts:
+Seqera (Seqera Platform) is a website where you can run Nextflow pipelines and follow their progress. Data Catalog lets you make your datasets available in Seqera, so you
+can use them as input for these pipelines, and copy the results back afterwards. It is set up in two parts:
 
 * Each **project** has one Seqera **workspace**
 * Each **dataset** you want to analyze gets its own **data registry** inside the workspace
 
 ```{tip}
-  → **Seqera workspace**: your project's space in Seqera, where pipelines run.
+  → **Seqera workspace**: your project's space in Seqera, where you choose and run pipelines. The pipelines run on Azure (Microsoft's cloud).
 
-  → **Data registry**: a copy of a dataset's files inside the workspace, so your pipeline can read them.
+  → **Data registry**: a copy of a dataset's files inside the workspace, so your pipeline can read them. The results of your pipeline also stay here until you copy them back
+  to Data Catalog.
 
-  → **Nextflow**: the language the pipelines are written in. 
+  → **Nextflow**: a workflow system for writing and running pipelines. It makes sure an analysis runs the same way every time. You don't need to know Nextflow to run an
+  existing pipeline. 
 ```
 
-Once the analysis is complete, you can copy the results back to Data Catalog as a new dataset. Follow the steps below to get started:
+Follow the steps below to get started:
 
 ## Part 1: Set Up the Project's Seqera Workspace
 
@@ -50,7 +53,8 @@ You must have the **Setup Workspaces** permission on the project to set up a wor
 
    > If the **`Create`** button is disabled, the project has no Seqera workspace yet (see Part 1).
 
-5. After the data registry is created, click the **<img src="../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** next to the data registry name to view more details, and then click the **`View in Seqera Workspace`** button to open the workspace directly in Seqera.
+5. After the data registry is created, click the <img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon next
+  to its name to open it in Seqera. You can also click the **<img src="../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** to see more details, and then click the **`View in Seqera Workspace`** button.
 
 6. In Seqera, select the pipeline you want to run and start your analysis as usual
 
@@ -96,24 +100,32 @@ You must have the **Add Datasets** permission on the project to use **`Copy into
   }
 </script>
 ```
-(Manage Seqera Workspace)=
-## Viewing and Managing Seqera Workspaces
 
-The project's Seqera workspace and all its data registries are shown in:
-* The **`Seqera`** tab on the project home page
-* The **`Pipelines`** tab on the navigation bar (all workspaces you have access to)
+----------------------------------------------------------------------------------------
+
+(Manage Seqera Workspace)=
+## Viewing and Managing Seqera Workspaces and Data Registries
+
+To view your workspace and data registries, go to:
+* The **`Seqera`** tab on the **project** home page: the project's workspace and all its data registries
+* The **`Seqera`** tab on the **dataset** home page: the data registries created for that dataset
+* The **`Pipelines`** tab on the **navigation** bar: all Seqera workspaces in one place. For each workspace, you can see the project it belongs to, the estimated cost per hour, and its data registries
+
+```{note}
+On the **Pipelines** page you may also see workspaces with the message ***"This workspace's details are redacted due to insufficient permissions"***. These belong to projects where you don't have the **Setup Workspaces** permission, so their details are hidden from you.
+```
 
 For the **workspace** you can:
 * **`Open`** it directly in Seqera, using the **<img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon
 * **`Delete`** it
 
 From each **data registry** you can:
+* **`Open`** it directly in Seqera, using the **<img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon
 * **`Overwrite`:** updates the data registry in Seqera with the latest files from the dataset. Use this if you have added or changed files in the dataset after creating the
   data registry
 * **`Copy into new dataset`:** creates a new dataset from the Seqera data registry
 * **`Delete`:** removes the data registry entirely
 
-The data registries of a dataset are also shown in the **`Seqera`** tab on the dataset home page.
 
 <br/>
 
