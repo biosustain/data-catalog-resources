@@ -59,7 +59,7 @@ Depending on the data type, more fields appear:
 ```
 
 ## Final Step: Complete your Dataset
-Click `Create dataset` at the ***bottom*** of the page to complete the process.
+Click **`Create dataset`** at the ***bottom*** of the page to complete the process.
 
 
 <br/>
@@ -142,16 +142,16 @@ If either of these is missing, you will not be able to proceed.
 
 ### To add another project to a dataset:
 
-1. Click the `Projects` tab on the dataset home page
+1. Click the **`Projects`** tab on the dataset home page
 
 2. Select the project you want to add from the list
 
-3. Click `Link` to complete the process
+3. Click **`Link`** to complete the process
 
 
 To remove the relationship:
 
-   * Click `Unlink`, and the project will be removed. The parent project cannot be unlinked.
+   * Click **`Unlink`**, and the project will be removed. The parent project cannot be unlinked.
 
 <br/>
 
@@ -198,26 +198,26 @@ The destination dataset is always the **descendant**.
 
 ### To add a Lineage:
 
-1. Click the `Lineage` tab on the dataset home page
+1. Click the **`Lineage`** tab on the dataset home page
 
 2. Choose the relationship type:
-    * `Add Ancestor`, if the selected dataset creates the current dataset
+    * **`Add Ancestor`**, if the selected dataset creates the current dataset
 
       **or** 
 
-    * `Add Descendant`, if the selected dataset is a result of the current dataset
+    * **`Add Descendant`**, if the selected dataset is a result of the current dataset
 
 3. Select the dataset from the list
 
 4. Add a description explaining the relationship (optional)
 
-5. Click the `Link as Ancestor` (or `Link as Descendant`) button to complete the process
+5. Click the **`Link as Ancestor`** (or **`Link as Descendant`**) button to complete the process
 
 
 To remove a Lineage:
 
-   * Click `Remove link from dataset`
-   * Select the link and click `Delete`
+   * Click **`Remove link from dataset`**
+   * Select the link and click **`Delete`**
    
 <br/>
 
@@ -243,22 +243,30 @@ To remove a Lineage:
 (Seqera Workspace)=
 ### Analyze Datasets with Seqera (WIP- work in progress)
 
-In the Seqera section you can set up a Dataset as input for running Nextflow pipelines in Seqera. This works in two parts:
+In the Seqera tab, you can set up a dataset as input for running Nextflow pipelines in Seqera. This works in two parts:
 
-* Each **project** has one Seqera workspace
-* Each **dataset** you want to analyse gets its own **data registry** inside the workspace
+* Each **project** has one Seqera **workspace**
+* Each **dataset** you want to analyze gets its own **data registry** inside the workspace
+
+```{tip}
+  → **Seqera workspace**: your project's space in Seqera, where pipelines run.
+
+  → **Data registry**: a copy of a dataset's files inside the workspace, so your pipeline can read them.
+
+  → **Nextflow**: the language the pipelines are written in. 
+```
 
 Once the analysis is complete, you can copy the results back to Data Catalog as a new dataset. Follow the steps below to get started:
 
-#### Part 1: Set up the project's Seqera workspace
+#### Part 1: Set up the Project's Seqera workspace
 
 You only need to do this once per project. If a project already has a workspace, skip to Part 2.
 
 1. Open the project you want to set up the Seqera workspace for
 
-2. Click the `Seqera` tab on the project home page
+2. Click the **`Seqera`** tab on the project home page
 
-3. Click `Set up Seqera workspace`. A progress bar will appear while the workspace is being set up.
+3. Click **`Set up Seqera workspace`**. A progress bar will appear while the workspace is being set up.
 
 When the workspace is ready, you will see its name and the estimated cost of computation per hour. The data registries you create in Part 2 will also be listed here.
 
@@ -270,30 +278,30 @@ You must have the **Setup Workspaces** permission on the project to set up a wor
 
 1. Open the dataset with the files you want to use as input for running Nextflow pipelines
 
-2. Click the `Seqera` tab on the dataset home page
+2. Click the **`Seqera`** tab on the dataset home page
 
 3. From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.
 
    > Only projects where you have the **Setup Workspaces** permission will appear in the list.
 
-4. Click `Create`
+4. Click **`Create`** 
 
-If the `Create` button is disabled, the project has no Seqera workspace yet (see Part 1)
+If the **`Create`** button is disabled, the project has no Seqera workspace yet (see Part 1).
 
-5. After the data registry is created, click the **<img src="../../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** next to the data registry name to view more details, and then click `View in Seqera Workspace` button to open the workspace directly in Seqera.
+5. After the data registry is created, click the **<img src="../../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** next to the data registry name to view more details, and then click the **`View in Seqera Workspace`** button to open the workspace directly in Seqera.
 
 6. In Seqera, select the pipeline you want to run and start your analysis as usual
 
-7. Once the analysis is complete, return to Data Catalog and click `Copy into new dataset` button. A dialog window will appear where you can:
+7. Once the analysis is complete, return to Data Catalog and click the **`Copy into new dataset`** button. A dialog window will appear where you can:
     * Select or manually enter a **folder path**
     * Provide **metadata** for the new dataset. The name is pre-filled as "*data registry name* copy" and the Data type is set to **Results**, but you can change both.
-    * Click `Create dataset and copy` to finalize the process
-    * Click `Open new dataset` to go to the new dataset
+    * Click **`Create dataset and copy`** to finalize the process
+    * Click **`Open new dataset`** to go to the new dataset
 
   A new dataset containing the analysis results will be created and will be visible alongside other datasets under the "Datasets" tab on the project home page you selected in step 3.
 
 ```{note}
-You must have the **Add Datasets** permission on the project to use `Copy into new dataset`.
+You must have the **Add Datasets** permission on the project to use **`Copy into new dataset`**.
 ```
 
 ```{note}
@@ -331,24 +339,31 @@ Please note that this functionality is still under development and may not work 
 (Manage Seqera Workspace)=
 ### Viewing and Managing Seqera Workspaces
 
-The same workspace and its information is also accessible from:
-* The **Seqera** section on the project home page
-* The **Pipelines** tab on the navigation bar
+The project's Seqera workspace and all its data registries are shown in:
+* The **`Seqera`** tab on the project home page
+* The **`Pipelines`** tab on the navigation bar (all workspaces you have access to)
 
-From these locations you can also manage the workspace by using the following actions:
-* **Overwrite:** replaces the existing data registry in Seqera with new data
+For the **workspace** you can:
+* **Open** it directly in Seqera, using the **<img src="../../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon
+* **Delete** it
+
+From each **data registry** you can:
+* **Overwrite:** updates the data registry in Seqera with the latest files from the dataset. Use this if you have added or changed files in the dataset after creating the
+  data registry
 * **Copy into new dataset:** creates a new dataset from the Seqera data registry
-* **Delete:** removes the workspace entirely
+* **Delete:** removes the data registry entirely
+
+The data registries of a dataset are also shown in the **`Seqera`** tab on the dataset home page.
 
 <br/>
 
 
 ```{warning}
-Both **Overwrite** and **Delete** are irreversible actions.
+**Overwrite** and **Delete** cannot be undone.
 ```
 
 ```{note}
-To create a new workspace setup, always navigate to the **Seqera** tab on the dataset home page.
+To set up a **workspace**, go to **`Seqera`** tab on the **project home page** (see part 1). To create a **data registry**, go to **`Seqera`** tab on the **dataset home page** (see part 2).
 ```
 
 <br/>

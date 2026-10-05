@@ -20,7 +20,7 @@ From the Project List Page, you can:
 
 * **Create new Project**
 
-    * Click the `Add a new project` button to start creating a new research project.
+    * Click the **`Add a new project`** button to start creating a new research project.
 
 * **View Active & Archived Projects**
 

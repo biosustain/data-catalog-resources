@@ -22,7 +22,7 @@ From the Dataset List Page, you can:
 
 * **Create new Dataset**
 
-    * Click the `Add a new dataset` button to start creating a new dataset.
+    * Click the **`Add a new dataset`** button to start creating a new dataset.
 
 * **View Active & Archived datasets**
 
@@ -115,7 +115,7 @@ Just below the description, several key features are displayed:
 * **Seqera (WIP - work in progress)**
 
     * In this section, you can automatically set up a Dataset in Seqera Workspace as input for runnig **Nextflow** pipelines.
-    * Select the project under which the pipeline costs will be billed, and click `Create a new setup`.
+    * Select the project under which the pipeline costs will be billed, and click **`Create`**.
     * Only projects where you have the **Setup Workspaces** permission will appear in the list.
 
 

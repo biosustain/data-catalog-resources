@@ -27,7 +27,7 @@ Data Catalog does not store your files itself. It works with two storage locatio
 
 Each file entry in Data Catalog points to the matching file in its underlying Data Lake instance. So when you open a dataset, the metadata you see comes from the database, while the file you download comes from the Data Lake.
 
-This is also why the Advanced upload uses AzCopy or Azure Storage Explorer: those tools write your files straight to the Data Lake, and `Finalize upload` tells Data Catalog to register them.
+This is also why the Advanced upload uses AzCopy or Azure Storage Explorer: those tools write your files straight to the Data Lake, and **`Finalize upload`** tells Data Catalog to register them.
 
 </details>
 
@@ -97,7 +97,7 @@ The project you select when creating the data registry for a dataset is the one 
 
 Results do not come back to Data Catalog automatically — they stay in the Seqera data registry until you copy them back.
 
-In Data Catalog, open the Seqera setup and choose `Copy into new dataset`. You select the folder to copy back and fill in the metadata for the new dataset. You can also use `Overwrite` to replace the data registry in Seqera with the files from this dataset (This action cannot be undone).
+In Data Catalog, open the Seqera setup and choose **`Copy into new dataset`**. You select the folder to copy back and fill in the metadata for the new dataset. You can also use **`Overwrite`** to replace the data registry in Seqera with the files from this dataset (This action cannot be undone).
 
 See {ref}`Seqera Workspace` for the full steps.
 
@@ -110,7 +110,7 @@ See {ref}`Seqera Workspace` for the full steps.
 
 Yes. A dataset is created under a parent project, but it can be linked/added to other projects as well.
 
-You do this from the **Projects** tab on the dataset home page. Only projects where you have the `Add Datasets` permission will appear in the list.
+You do this from the **Projects** tab on the dataset home page. Only projects where you have the **Add Datasets** permission will appear in the list.
 
 This is useful when the same data is relevant to more than one project — you link/add it instead of uploading a second copy.
 
