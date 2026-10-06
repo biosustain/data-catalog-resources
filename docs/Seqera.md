@@ -54,12 +54,12 @@ You must have the **Setup Workspaces** permission on the project to set up a wor
    > If the **`Create`** button is disabled, the project has no Seqera workspace yet (see Part 1).
 
 5. After the data registry is created, click the <img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon next
-  to its name to open it in Seqera. You can also click the **<img src="../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** to see more details, and then click the **`View in Seqera Workspace`** button.
+  to its name to open it in Seqera. You can also click the **<img src="../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon to see more details, and then click the **`View in Seqera Workspace`** button.
 
-6. In Seqera, select the pipeline you want to run and start your analysis as usual
+6. In Seqera, select the pipeline you want to run and start your analysis. You can use the pipelines already in your workspace, pipelines built by the Informatics Platform, or add your own Nextflow pipeline.
 
 7. Once the analysis is complete, return to Data Catalog and click the **`Copy into new dataset`** button. A dialog window will appear where you can:
-    * Select or manually enter a **folder path**
+    * Select the **folder** you want to copy into the new dataset, or enter its path manually
     * Provide **metadata** for the new dataset. The name is pre-filled as "*data registry name* copy" and the Data type is set to **Results**, but you can change both.
     * Click **`Create dataset and copy`** to finalize the process
     * Click **`Open new dataset`** to go to the new dataset
@@ -74,7 +74,9 @@ You must have the **Add Datasets** permission on the project to use **`Copy into
 
 ```{raw} html
 <div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
-<img id="carousel-img" src="../_static/images/seqera-steps-2-3-4.png" style="width:100%; border-radius:6px; border:1px solid #ddd;">
+<a id="carousel-link" href="../_static/images/seqera-steps-2-3-4.png" target="_blank">
+<img id="carousel-img" src="../_static/images/seqera-steps-2-3-4.png" style="width:100%; border-radius:6px; border:1px solid #ddd; cursor:zoom-in;">
+</a>
   <p id="carousel-caption" style="color:#555; font-size:0.9em; margin-top:8px;">Steps: 1-4</p>
   <div style="margin-top:10px;">
     <button onclick="moveSlide(-1)" style="margin-right:10px; cursor:pointer;"><</button>
@@ -95,6 +97,7 @@ You must have the **Add Datasets** permission on the project to use **`Copy into
  function moveSlide(dir) {
     current = (current + dir + slides.length) % slides.length;
     document.getElementById('carousel-img').src = slides[current].src;
+    document.getElementById('carousel-link').href = slides[current].src;
     document.getElementById('carousel-caption').textContent = slides[current].caption;
     document.getElementById('carousel-counter').textContent = (current + 1) + ' / ' + slides.length;
   }
@@ -110,6 +113,37 @@ To view your workspace and data registries, go to:
 * The **`Seqera`** tab on the **project** home page: the project's workspace and all its data registries
 * The **`Seqera`** tab on the **dataset** home page: the data registries created for that dataset
 * The **`Pipelines`** tab on the **navigation** bar: all Seqera workspaces in one place. For each workspace, you can see the project it belongs to, the estimated cost per hour, and its data registries
+
+```{raw} html
+<div id="carousel2" style="text-align:center; max-width:700px; margin:20px auto;">
+<a id="carousel2-link" href="../_static/images/seqera_project.png" target="_blank">
+<img id="carousel2-img" src="../_static/images/seqera_project.png" style="width:100%; border-radius:6px; border:1px solid #ddd; cursor:zoom-in;">
+</a>
+  <p id="carousel2-caption" style="color:#555; font-size:0.9em; margin-top:8px;">Seqera - Project home page</p>
+  <div style="margin-top:10px;">
+    <button onclick="moveSlide2(-1)" style="margin-right:10px; cursor:pointer;"><</button>
+    <span id="carousel2-counter" style="font-size:0.9em; color:#555;">1 / 3</span>
+    <button onclick="moveSlide2(1)" style="margin-left:10px; cursor:pointer;">></button>
+  </div>
+</div>
+
+<script>
+  const slides2 = [
+    { src: "../_static/images/seqera_project.png", caption: "Seqera - Project home page" },
+    { src: "../_static/images/seqera_dataset.png", caption: "Seqera - Dataset home page"},
+    { src: "../_static/images/pipelines_tab.png", caption: "Pipelines tab"},
+  ];
+    let current2 = 0;
+ function moveSlide2(dir) {
+    current2 = (current2 + dir + slides2.length) % slides2.length;
+    document.getElementById('carousel2-img').src = slides2[current2].src;
+    document.getElementById('carousel2-link').href = slides2[current2].src;
+    document.getElementById('carousel2-caption').textContent = slides2[current2].caption;
+    document.getElementById('carousel2-counter').textContent = (current2 + 1) + ' / ' + slides2.length;
+  }
+</script>
+```
+
 
 ```{note}
 On the **Pipelines** page you may also see workspaces with the message ***"This workspace's details are redacted due to insufficient permissions"***. These belong to projects where you don't have the **Setup Workspaces** permission, so their details are hidden from you.
@@ -131,7 +165,7 @@ From each **data registry** you can:
 
 
 ```{warning}
-**Overwrite** and **Delete** cannot be undone.
+**Overwrite** and **Delete** cannot be undone. Overwrite starts as soon as you click it, without asking you to confirm.
 ```
 
 
