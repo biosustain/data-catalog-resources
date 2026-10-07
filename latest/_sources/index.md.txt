@@ -80,6 +80,7 @@ docs/Login
 docs/Authentication_via_API_keys
 docs/Project/index
 docs/Dataset/index
+docs/Seqera
 docs/Search
 docs/Contact
 docs/Q&A

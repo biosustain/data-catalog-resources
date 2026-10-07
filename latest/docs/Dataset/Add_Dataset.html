@@ -79,6 +79,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Exploring_Datasets.html">Exploring Dataset</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../Seqera.html">Seqera (WIP)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Search.html">Search &amp; Favourites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Contact.html">Contact</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Q%26A.html">Q&amp;A</a></li>
@@ -330,128 +331,7 @@ This helps you associate the dataset with other research contexts.</p>
     allowfullscreen>
   </iframe>
   <p><em>Dataset Lineage</em></p>
-</div><hr class="docutils" />
-</section>
-<section id="analyze-datasets-with-seqera-wip-work-in-progress">
-<span id="seqera-workspace"></span><h3>Analyze Datasets with Seqera (WIP- work in progress)<a class="headerlink" href="#analyze-datasets-with-seqera-wip-work-in-progress" title="Link to this heading">¶</a></h3>
-<p>In the Seqera tab, you can set up a dataset as input for running Nextflow pipelines in Seqera. This works in two parts:</p>
-<ul class="simple">
-<li><p>Each <strong>project</strong> has one Seqera <strong>workspace</strong></p></li>
-<li><p>Each <strong>dataset</strong> you want to analyze gets its own <strong>data registry</strong> inside the workspace</p></li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>→ <strong>Seqera workspace</strong>: your project’s space in Seqera, where pipelines run.</p>
-<p>→ <strong>Data registry</strong>: a copy of a dataset’s files inside the workspace, so your pipeline can read them.</p>
-<p>→ <strong>Nextflow</strong>: the language the pipelines are written in.</p>
-</div>
-<p>Once the analysis is complete, you can copy the results back to Data Catalog as a new dataset. Follow the steps below to get started:</p>
-<section id="part-1-set-up-the-project-s-seqera-workspace">
-<h4>Part 1: Set up the Project’s Seqera workspace<a class="headerlink" href="#part-1-set-up-the-project-s-seqera-workspace" title="Link to this heading">¶</a></h4>
-<p>You only need to do this once per project. If a project already has a workspace, skip to Part 2.</p>
-<ol class="arabic simple">
-<li><p>Open the project you want to set up the Seqera workspace for</p></li>
-<li><p>Click the <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the project home page</p></li>
-<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">up</span> <span class="pre">Seqera</span> <span class="pre">workspace</span></code></strong>. A progress bar will appear while the workspace is being set up.</p></li>
-</ol>
-<p>When the workspace is ready, you will see its name and the estimated cost of computation per hour. The data registries you create in Part 2 will also be listed here.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You must have the <strong>Setup Workspaces</strong> permission on the project to set up a workspace.</p>
-</div>
-</section>
-<section id="part-2-create-a-data-registry-for-a-dataset">
-<h4>Part 2: Create a Data Registry for a Dataset<a class="headerlink" href="#part-2-create-a-data-registry-for-a-dataset" title="Link to this heading">¶</a></h4>
-<ol class="arabic">
-<li><p>Open the dataset with the files you want to use as input for running Nextflow pipelines</p></li>
-<li><p>Click the <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the dataset home page</p></li>
-<li><p>From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.</p>
-<blockquote>
-<div><p>Only projects where you have the <strong>Setup Workspaces</strong> permission will appear in the list. The dataset’s primary project is selected by default and shown first.</p>
-</div></blockquote>
-</li>
-<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Create</span></code></strong></p>
-<blockquote>
-<div><p>If the <strong><code class="docutils literal notranslate"><span class="pre">Create</span></code></strong> button is disabled, the project has no Seqera workspace yet (see Part 1).</p>
-</div></blockquote>
-</li>
-<li><p>After the data registry is created, click the <strong><img src="../../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"></strong> next to the data registry name to view more details, and then click the <strong><code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">in</span> <span class="pre">Seqera</span> <span class="pre">Workspace</span></code></strong> button to open the workspace directly in Seqera.</p></li>
-<li><p>In Seqera, select the pipeline you want to run and start your analysis as usual</p></li>
-<li><p>Once the analysis is complete, return to Data Catalog and click the <strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code></strong> button. A dialog window will appear where you can:</p>
-<ul class="simple">
-<li><p>Select or manually enter a <strong>folder path</strong></p></li>
-<li><p>Provide <strong>metadata</strong> for the new dataset. The name is pre-filled as “<em>data registry name</em> copy” and the Data type is set to <strong>Results</strong>, but you can change both.</p></li>
-<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">dataset</span> <span class="pre">and</span> <span class="pre">copy</span></code></strong> to finalize the process</p></li>
-<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">new</span> <span class="pre">dataset</span></code></strong> to go to the new dataset</p></li>
-</ul>
-</li>
-</ol>
-<p>A new dataset containing the analysis results will be created and will be visible alongside other datasets under the “Datasets” tab on the project home page you selected in step 3.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You must have the <strong>Add Datasets</strong> permission on the project to use <strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code></strong>.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Please note that this functionality is still under development and may not work as expected at the moment.</p>
-</div>
-<div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
-<img id="carousel-img" src="../../_static/images/seqera-steps-2-3-4.png" style="width:100%; border-radius:6px; border:1px solid #ddd;">
-  <p id="carousel-caption" style="color:#555; font-size:0.9em; margin-top:8px;">Steps: 1-4</p>
-  <div style="margin-top:10px;">
-    <button onclick="moveSlide(-1)" style="margin-right:10px; cursor:pointer;"><</button>
-    <span id="carousel-counter" style="font-size:0.9em; color:#555;">1 / 5</span>
-    <button onclick="moveSlide(1)" style="margin-left:10px; cursor:pointer;">></button>
-  </div>
-</div>
-
-<script>
-  const slides = [
-    { src: "../../_static/images/seqera-steps-2-3-4.png", caption: "Steps: 1-4" },
-    { src: "../../_static/images/seqera-step-5.png", caption: "Step 5"},
-    { src: "../../_static/images/seqera-step-5a.png", caption: "Step 5"},
-    { src: "../../_static/images/seqera-step-7.png", caption: "Step 7"},
-    { src: "../../_static/images/seqera-new-dataset.png", caption: "Step 7"},
-  ];
-    let current = 0;
- function moveSlide(dir) {
-    current = (current + dir + slides.length) % slides.length;
-    document.getElementById('carousel-img').src = slides[current].src;
-    document.getElementById('carousel-caption').textContent = slides[current].caption;
-    document.getElementById('carousel-counter').textContent = (current + 1) + ' / ' + slides.length;
-  }
-</script></section>
-</section>
-<section id="viewing-and-managing-seqera-workspaces">
-<span id="manage-seqera-workspace"></span><h3>Viewing and Managing Seqera Workspaces<a class="headerlink" href="#viewing-and-managing-seqera-workspaces" title="Link to this heading">¶</a></h3>
-<p>The project’s Seqera workspace and all its data registries are shown in:</p>
-<ul class="simple">
-<li><p>The <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the project home page</p></li>
-<li><p>The <strong><code class="docutils literal notranslate"><span class="pre">Pipelines</span></code></strong> tab on the navigation bar (all workspaces you have access to)</p></li>
-</ul>
-<p>For the <strong>workspace</strong> you can:</p>
-<ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">Open</span></code></strong> it directly in Seqera, using the <strong><img src="../../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"></strong> icon</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">Delete</span></code></strong> it</p></li>
-</ul>
-<p>From each <strong>data registry</strong> you can:</p>
-<ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">Overwrite</span></code>:</strong> updates the data registry in Seqera with the latest files from the dataset. Use this if you have added or changed files in the dataset after creating the
-data registry</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code>:</strong> creates a new dataset from the Seqera data registry</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">Delete</span></code>:</strong> removes the data registry entirely</p></li>
-</ul>
-<p>The data registries of a dataset are also shown in the <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the dataset home page.</p>
-<br/>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Overwrite</strong> and <strong>Delete</strong> cannot be undone.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To set up a <strong>workspace</strong>, go to the <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the <strong>project home page</strong> (see part 1). To create a <strong>data registry</strong>, go to <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the <strong>dataset home page</strong> (see part 2).</p>
-</div>
-<br/>
+</div><br/>
 </section>
 </section>
 <hr class="docutils" />
@@ -494,12 +374,6 @@ data registry</p></li>
 </li>
 <li><a class="reference internal" href="#dataset-lineage">Dataset Lineage</a><ul>
 <li><a class="reference internal" href="#to-add-a-lineage">To add a Lineage:</a></li>
-<li><a class="reference internal" href="#analyze-datasets-with-seqera-wip-work-in-progress">Analyze Datasets with Seqera (WIP- work in progress)</a><ul>
-<li><a class="reference internal" href="#part-1-set-up-the-project-s-seqera-workspace">Part 1: Set up the Project’s Seqera workspace</a></li>
-<li><a class="reference internal" href="#part-2-create-a-data-registry-for-a-dataset">Part 2: Create a Data Registry for a Dataset</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#viewing-and-managing-seqera-workspaces">Viewing and Managing Seqera Workspaces</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#api-availability">API Availability</a></li>
