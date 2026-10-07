@@ -5,20 +5,19 @@
 We are still improving how Data Catalog works with Seqera. If something doesn't work as expected, please let us know (see {ref}`contact`).
 ```
 
-Seqera (Seqera Platform) is a website where you can run Nextflow pipelines and follow their progress. Data Catalog lets you make your datasets available in Seqera, so you
+Seqera ([Seqera Platform Cloud](https://docs.seqera.io/platform-cloud/)) is a website where you can run Nextflow pipelines and follow their progress. Data Catalog lets you make your datasets available in Seqera, so you
 can use them as input for these pipelines, and copy the results back afterwards. It is set up in two parts:
 
 * Each **project** has one Seqera **workspace**
 * Each **dataset** you want to analyze gets its own **data registry** inside the workspace
 
 ```{tip}
-  → **Seqera workspace**: your project's space in Seqera, where you choose and run pipelines. The pipelines run on Azure (Microsoft's cloud).
+  → **Seqera workspace**: your project's space in Seqera, where you choose and run pipelines. The pipelines run on Azure (Microsoft's cloud). [Learn more](https://docs.seqera.io/platform-cloud/orgs-and-teams/workspace-management)
 
   → **Data registry**: a copy of a dataset's files inside the workspace, so your pipeline can read them. The results of your pipeline also stay here until you copy them back
   to Data Catalog.
 
-  → **Nextflow**: a workflow system for writing and running pipelines. It makes sure an analysis runs the same way every time. You don't need to know Nextflow to run an
-  existing pipeline. 
+  → **Nextflow**: a computational workflow orchestrator for running pipelines. It helps an analysis runs the same way every time. [Learn more](https://docs.seqera.io/nextflow/).
 ```
 
 Follow the steps below to get started:
