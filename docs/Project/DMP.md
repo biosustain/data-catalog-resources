@@ -26,9 +26,25 @@ In this section you add one or more contact persons for the project. Each entry 
 * ORCID (your unique researcher identifier)
 * Long-term data responsible person 
 
-If you are the **Project Creator**, your name and email will be pre-filled automatically. You only need to add your **ORCID** and indicate whether you are the **long-term data responsible person**.
+The names of **Project Creator** and **Principal Investigator** will be pre-filled automatically. You only need to add their **emails** (if missing) and **ORCID**, and indicate who is the **long-term data responsible person**. 
 
-### 3. Funding 
+### 3. Compliance 
+
+This section includes a series of questions about compliance. Most questions are answered by choosing **Yes**, **No**, **Uncertain**, or **Not applicable** (depending on the field):
+
+* **Biological Material**: State whether the project uses biological material such as microorganisms or material of animal, plant, or human origin.
+
+* **Material Transfers**: State whether research materials (e.g., biological material, DSI) are shared with or received from an external collaborator.
+
+* **Medicines, Drugs, Radioactive Isotopes**: State if any of these substances are part of the project.
+
+* **Toxic Substances**: Answer whether toxic chemicals or naturally produced toxins are used.
+
+* **Nanoscale Particles**: Specify how nanoscale materials are handled.
+
+* **Personal Data (GDPR)**: State if any personal or sensitive data is involved in the project, such as age, DNA, RNA, biometrics, etc.
+
+### 4. Funding 
 
 Here you can enter the funding details:
 
@@ -41,8 +57,10 @@ Here you can enter the funding details:
      * Granted
      * Rejected
 
+   * **Grant Identifier** (e.g., NNF20CC0035580) 
 
-### 4. Data Collection
+
+### 5. Data Collection
 
 This section focuses on whether this project uses external data.
 
@@ -50,7 +68,7 @@ If **yes**, you can add information about each external data source by providing
 You can add as many entries as needed.
 
 
-### 5. Data Storage & Backup
+### 6. Data Storage & Backup
 
 This section covers questions about how and where your data will be stored and backed up during and after the project is finished:
 
@@ -70,7 +88,7 @@ Be aware that if you store data in **DTU M-drive** or **DTU personal OneDrive**,
 ```
 
 
-### 6. Documentation 
+### 7. Documentation 
 
 Provide details about project documentation:
 
@@ -79,21 +97,13 @@ Provide details about project documentation:
  **Example**: All electronic lab notebooks (ELNs) will be stored in Benchling project folder 'Microbial_soil_community'. Whenever applicable, a README file will be created for each dataset, detailing the data collection methods, processing steps, and any relevant metadata.
 
 
-### 7. Data Sharing, Access & Compliance
+### 8. Data Sharing & Access
 
-This section includes a series of questions about compliance and data sharing. Most questions are answered by choosing **Yes**, **No**, **Uncertain**, or **Not applicable** (depending on the field):
+This section covers how access to your data is controlled and how it will be shared after the project ends:
 
-* **Biological Material**: State whether the project uses biological material such as microorganisms or material of animal, plant, or human origin.
+* **Access Controlled Inside Data Catalog**: Filled in automatically based on the project's access rights (see the note below).
 
-* **Medicines, Drugs, Radioactive Isotopes**: State if any of these substances are part of the project.
-
-* **Toxic Substances**: Answer whether toxic chemicals or naturally produced toxins are used.
-
-* **Nanoscale Particles**: Specify how nanoscale materials are handled.
-
-* **Personal Data (GDPR)**: State if any personal or sensitive data is involved in the project, such as age, DNA, RNA, biometrics, etc.
-
-* **Access Controlled Inside and Outside Data Catalog**: Describe how access to the data is controlled both inside and outside BRIGHT Data Catalog.
+* **Access Controlled Outside Data Catalog**: Describe how access to the data is controlled outside BRIGHT Data Catalog.
 
 * **Sharing After Project Ends**: Explain what will happen to the data once the project is complete. For example, whether it will be deposited in DTU Data, shared on GitHub, or restricted due to NDA/GDPR.
 
