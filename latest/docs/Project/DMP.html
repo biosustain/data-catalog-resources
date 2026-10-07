@@ -152,10 +152,22 @@
 <li><p>ORCID (your unique researcher identifier)</p></li>
 <li><p>Long-term data responsible person</p></li>
 </ul>
-<p>If you are the <strong>Project Creator</strong>, your name and email will be pre-filled automatically. You only need to add your <strong>ORCID</strong> and indicate whether you are the <strong>long-term data responsible person</strong>.</p>
+<p>The names of <strong>Project Creator</strong> and <strong>Principal Investigator</strong> will be pre-filled automatically. You only need to add their <strong>emails</strong> (if missing) and <strong>ORCID</strong>, and indicate who is the <strong>long-term data responsible person</strong>.</p>
+</section>
+<section id="compliance">
+<h3>3. Compliance<a class="headerlink" href="#compliance" title="Link to this heading">¶</a></h3>
+<p>This section includes a series of questions about compliance. Most questions are answered by choosing <strong>Yes</strong>, <strong>No</strong>, <strong>Uncertain</strong>, or <strong>Not applicable</strong> (depending on the field):</p>
+<ul class="simple">
+<li><p><strong>Biological Material</strong>: State whether the project uses biological material such as microorganisms or material of animal, plant, or human origin.</p></li>
+<li><p><strong>Material Transfers</strong>: State whether research materials (e.g., biological material, DSI) are shared with or received from an external collaborator.</p></li>
+<li><p><strong>Medicines, Drugs, Radioactive Isotopes</strong>: State if any of these substances are part of the project.</p></li>
+<li><p><strong>Toxic Substances</strong>: Answer whether toxic chemicals or naturally produced toxins are used.</p></li>
+<li><p><strong>Nanoscale Particles</strong>: Specify how nanoscale materials are handled.</p></li>
+<li><p><strong>Personal Data (GDPR)</strong>: State if any personal or sensitive data is involved in the project, such as age, DNA, RNA, biometrics, etc.</p></li>
+</ul>
 </section>
 <section id="funding">
-<h3>3. Funding<a class="headerlink" href="#funding" title="Link to this heading">¶</a></h3>
+<h3>4. Funding<a class="headerlink" href="#funding" title="Link to this heading">¶</a></h3>
 <p>Here you can enter the funding details:</p>
 <ul class="simple">
 <li><p><strong>Funder Identifier</strong> (e.g.,https://ror.org/027754r66)</p></li>
@@ -168,16 +180,17 @@
 <li><p>Rejected</p></li>
 </ul>
 </li>
+<li><p><strong>Grant Identifier</strong> (e.g., NNF20CC0035580)</p></li>
 </ul>
 </section>
 <section id="data-collection">
-<h3>4. Data Collection<a class="headerlink" href="#data-collection" title="Link to this heading">¶</a></h3>
+<h3>5. Data Collection<a class="headerlink" href="#data-collection" title="Link to this heading">¶</a></h3>
 <p>This section focuses on whether this project uses external data.</p>
 <p>If <strong>yes</strong>, you can add information about each external data source by providing a <strong>Title</strong> and a short <strong>Content</strong> description.
 You can add as many entries as needed.</p>
 </section>
 <section id="data-storage-backup">
-<h3>5. Data Storage &amp; Backup<a class="headerlink" href="#data-storage-backup" title="Link to this heading">¶</a></h3>
+<h3>6. Data Storage &amp; Backup<a class="headerlink" href="#data-storage-backup" title="Link to this heading">¶</a></h3>
 <p>This section covers questions about how and where your data will be stored and backed up during and after the project is finished:</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -194,23 +207,19 @@ You can add as many entries as needed.</p>
 </div>
 </section>
 <section id="documentation">
-<h3>6. Documentation<a class="headerlink" href="#documentation" title="Link to this heading">¶</a></h3>
+<h3>7. Documentation<a class="headerlink" href="#documentation" title="Link to this heading">¶</a></h3>
 <p>Provide details about project documentation:</p>
 <ul class="simple">
 <li><p><strong>Documentation</strong>: List documentation formats</p></li>
 </ul>
 <p><strong>Example</strong>: All electronic lab notebooks (ELNs) will be stored in Benchling project folder ‘Microbial_soil_community’. Whenever applicable, a README file will be created for each dataset, detailing the data collection methods, processing steps, and any relevant metadata.</p>
 </section>
-<section id="data-sharing-access-compliance">
-<h3>7. Data Sharing, Access &amp; Compliance<a class="headerlink" href="#data-sharing-access-compliance" title="Link to this heading">¶</a></h3>
-<p>This section includes a series of questions about compliance and data sharing. Most questions are answered by choosing <strong>Yes</strong>, <strong>No</strong>, <strong>Uncertain</strong>, or <strong>Not applicable</strong> (depending on the field):</p>
+<section id="data-sharing-access">
+<h3>8. Data Sharing &amp; Access<a class="headerlink" href="#data-sharing-access" title="Link to this heading">¶</a></h3>
+<p>This section covers how access to your data is controlled and how it will be shared after the project ends:</p>
 <ul class="simple">
-<li><p><strong>Biological Material</strong>: State whether the project uses biological material such as microorganisms or material of animal, plant, or human origin.</p></li>
-<li><p><strong>Medicines, Drugs, Radioactive Isotopes</strong>: State if any of these substances are part of the project.</p></li>
-<li><p><strong>Toxic Substances</strong>: Answer whether toxic chemicals or naturally produced toxins are used.</p></li>
-<li><p><strong>Nanoscale Particles</strong>: Specify how nanoscale materials are handled.</p></li>
-<li><p><strong>Personal Data (GDPR)</strong>: State if any personal or sensitive data is involved in the project, such as age, DNA, RNA, biometrics, etc.</p></li>
-<li><p><strong>Access Controlled Inside and Outside Data Catalog</strong>: Describe how access to the data is controlled both inside and outside BRIGHT Data Catalog.</p></li>
+<li><p><strong>Access Controlled Inside Data Catalog</strong>: Filled in automatically based on the project’s access rights (see the note below).</p></li>
+<li><p><strong>Access Controlled Outside Data Catalog</strong>: Describe how access to the data is controlled outside BRIGHT Data Catalog.</p></li>
 <li><p><strong>Sharing After Project Ends</strong>: Explain what will happen to the data once the project is complete. For example, whether it will be deposited in DTU Data, shared on GitHub, or restricted due to NDA/GDPR.</p></li>
 </ul>
 <div class="admonition note">
@@ -270,11 +279,12 @@ You can add as many entries as needed.</p>
 <li><a class="reference internal" href="#how-to-complete-the-dmp">How to complete the DMP</a><ul>
 <li><a class="reference internal" href="#project-metadata">1. Project Metadata</a></li>
 <li><a class="reference internal" href="#contact-person">2. Contact Person</a></li>
-<li><a class="reference internal" href="#funding">3. Funding</a></li>
-<li><a class="reference internal" href="#data-collection">4. Data Collection</a></li>
-<li><a class="reference internal" href="#data-storage-backup">5. Data Storage &amp; Backup</a></li>
-<li><a class="reference internal" href="#documentation">6. Documentation</a></li>
-<li><a class="reference internal" href="#data-sharing-access-compliance">7. Data Sharing, Access &amp; Compliance</a></li>
+<li><a class="reference internal" href="#compliance">3. Compliance</a></li>
+<li><a class="reference internal" href="#funding">4. Funding</a></li>
+<li><a class="reference internal" href="#data-collection">5. Data Collection</a></li>
+<li><a class="reference internal" href="#data-storage-backup">6. Data Storage &amp; Backup</a></li>
+<li><a class="reference internal" href="#documentation">7. Documentation</a></li>
+<li><a class="reference internal" href="#data-sharing-access">8. Data Sharing &amp; Access</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#dmp-progress-overview">DMP Progress Overview</a></li>
