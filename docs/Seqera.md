@@ -5,8 +5,11 @@
 We are still improving how Data Catalog works with Seqera. If something doesn't work as expected, please let us know (see {ref}`contact`).
 ```
 
-Seqera ([Seqera Platform Cloud](https://docs.seqera.io/platform-cloud/)) is a website where you can run Nextflow pipelines and follow their progress. Data Catalog lets you make your datasets available in Seqera, so you
-can use them as input for these pipelines, and copy the results back afterwards. It is set up in two parts:
+Seqera ([Seqera Platform Cloud](https://docs.seqera.io/platform-cloud/)) is a website where you can launch Nextflow pipelines and follow their progress. Seqera itself
+  does not run the pipelines. Instead, Data Catalog orchestrates setup for Seqera to run its workloads in our Azure subscription.
+  
+  With Data Catalog, you can also make your datasets available in Seqera, so you can use them as input for these pipelines, and copy the results back afterwards. It is set up
+  in two parts:
 
 * Each **project** has one Seqera **workspace**
 * Each **dataset** you want to analyze gets its own **data registry** inside the workspace
@@ -14,10 +17,10 @@ can use them as input for these pipelines, and copy the results back afterwards.
 ```{tip}
   → **Seqera workspace**: your project's space in Seqera, where you choose and run pipelines. The pipelines run on Azure (Microsoft's cloud). [Learn more](https://docs.seqera.io/platform-cloud/orgs-and-teams/workspace-management)
 
-  → **Data registry**: a copy of a dataset's files inside the workspace, so your pipeline can read them. The results of your pipeline also stay here until you copy them back
-  to Data Catalog.
+  → **Data registry**: a copy of a dataset's files inside the workspace, so your pipeline can read them. When your pipeline finishes, you'll find the results here too.
+  Copying them back to Data Catalog does not remove them from the data registry.
 
-  → **Nextflow**: a computational workflow orchestrator for running pipelines. It helps an analysis runs the same way every time. [Learn more](https://docs.seqera.io/nextflow/).
+  → **Nextflow**: a computational workflow orchestrator for running pipelines. It makes sure an analysis runs the same way every time. [Learn more](https://docs.seqera.io/nextflow/).
 ```
 
 Follow the steps below to get started:
@@ -52,8 +55,10 @@ You must have the **Setup Workspaces** permission on the project to set up a wor
 
    > If the **`Create`** button is disabled, the project has no Seqera workspace yet (see Part 1).
 
-5. After the data registry is created, click the <img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"> icon next
-  to its name to open it in Seqera. You can also click the **<img src="../_static/images/info.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon to see more details, and then click the **`View in Seqera Workspace`** button.
+5. After the data registry is created, click the <img src="../_static/images/info.png" alt="info_icon" style="height:1.2em; vertical-align:text-bottom;"> icon next to
+  its name to see its details, and then click the **`View in Seqera Workspace`** button to open it in Seqera.
+
+   > You can also open it in Seqera directly by clicking the <img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em;vertical-align:text-bottom;"> icon on the right side of the data registry.
 
 6. In Seqera, select the pipeline you want to run and start your analysis. You can use the pipelines already in your workspace, pipelines built by the Informatics Platform, or add your own Nextflow pipeline.
 

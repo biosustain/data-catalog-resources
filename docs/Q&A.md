@@ -95,7 +95,7 @@ The project you select when creating the data registry for a dataset is the one 
 <details>
 <summary><strong>My pipeline finished — what do I do now?</strong></summary>
 
-Results do not come back to Data Catalog automatically — they stay in the Seqera data registry until you copy them back.
+Results do not come back to Data Catalog automatically — you'll find them in the Seqera data registry. Copying them back to Data Catalog does not remove them from the data registry.
 
 In Data Catalog, open the **`Seqera`** tab on the dataset home page and choose **`Copy into new dataset`**. You select the folder to copy back and fill in the metadata for the new dataset. You can also use **`Overwrite`** to replace the data registry in Seqera with the files from this dataset (this action cannot be undone).
 
