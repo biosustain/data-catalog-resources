@@ -21,11 +21,11 @@ On the Dataset List page, click the **`Add a new dataset`** button located right
 
 
 ## Step 3: Choose a Parent Project
-Select a project from the list to link your dataset. Only projects where you have the **Add Datasets** permission will appear in the list.
+Select the project your dataset belongs to. Only projects where you have the **Add Datasets** permission will appear in the list.
 
 
 ```{tip}
-Choosing a Parent Project ***links*** your dataset to the project it belongs to. This ensures your data stays organized, easy to find and correctly associated. The parent project cannot be unlinked later, so make sure you pick the right one.
+Your dataset is ***added*** to the Parent Project you choose. This ensures your data stays organized, easy to find and correctly associated. The parent project cannot be removed later, so make sure you pick the right one.
 ```
 
 
@@ -124,19 +124,20 @@ Users without assigned permissions (see {ref}`manage-dataset-user-permissions`) 
 (projects-tab)=
 ## Add Projects to Dataset
 
-When you created the dataset, you already selected a "Parent project", which creates an initial relationship.
-You can also **add** additional projects from the **Projects** tab on the dataset home page. 
-This helps you associate the dataset with other research contexts.
-
+When you created the dataset, you selected a parent project, so the dataset is already added to it.
+You can also **add** more projects from the **Projects** tab on the dataset home page. 
+This is useful when the same data is relevant to more than one project.
 
 ```{note}
 To add a project to a dataset, two conditions must be met:
 
-→ You must have the **Add Datasets** permission on the project you want to add the dataset to
+→ You must have the **Add Datasets** permission on the project you want to add
 <br/>
-→ You must have **access to the dataset** (either Bright-visible or through a dataset user permission, if it is restricted)
+→ You must have **access to the dataset** (it is BRIGHT-visible, or it is restricted and you have permission on it)
 
-If either of these is missing, you will not be able to proceed.
+If either of these is missing, the project will not appear in the list.
+
+The **Link To** permission is not needed here. It is only used for {ref}`dataset-lineage`.
 ```
 
 
@@ -144,14 +145,23 @@ If either of these is missing, you will not be able to proceed.
 
 1. Click the **`Projects`** tab on the dataset home page
 
-2. Select the project you want to add from the list
+2. Select the project you want to add from the list. Only projects where you have the **Add Datasets** permission are listed.
 
-3. Click **`Link`** to complete the process
+3. Click **`Link`** to add the project
+
+After you add a project:
+
+* the project appears under the **Projects** tab on the dataset home page
+* the dataset appears under the **Datasets** tab on the project home page
+
+The files stay in the dataset, nothing is copied.
+
+> Adding a project does **not** give its users access to a restricted dataset. They still need their own permission on the dataset.
 
 
-To remove the relationship:
+To remove a project:
 
-   * Click **`Unlink`**, and the project will be removed. The parent project cannot be unlinked.
+   * Click **`Unlink`** to remove the project from this dataset. The parent project cannot be removed.
 
 <br/>
 
@@ -171,14 +181,6 @@ To remove the relationship:
   <p><em>Add Projects to Dataset</em></p>
 </div>
 ```
--------------------------------------------
-
-<br/>
-
-```{note}
-This relationship also appears under the **Datasets** tab on the **project** home page.
-```
-
 -------------------------------------------
 (dataset-lineage)=
 ## Dataset Lineage

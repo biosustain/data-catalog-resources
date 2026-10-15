@@ -28,6 +28,23 @@ Data Catalog does not store your files itself. It works with two storage locatio
 Each file entry in Data Catalog points to the matching file in its underlying Data Lake instance. So when you open a dataset, the metadata you see comes from the database, while the file you download comes from the Data Lake.
 
 This is also why the Advanced upload uses AzCopy or Azure Storage Explorer: those tools write your files straight to the Data Lake, and **`Finalize upload`** tells Data Catalog to register them.
+</details>
+
+<br/>
+
+<details>
+<summary><strong>My files are already on the O drive. Why should I start using Data Catalog?</strong></summary>
+
+The O drive keeps your files, but not the information about them. What a file contains, how it was produced and which experiment it belongs to is only known from its name, its folder, or the person who made it. When that person leaves, or after some time has passed, this information is often lost.
+
+In Data Catalog, your files are stored together with this information (metadata). In practice it means you can:
+
+* **Find data.** Search across all projects and datasets you have access to by name, description, creator and metadata.
+* **Share data.** Add users to a project or dataset from the **Permissions** tab and choose what each of them can do (e.g., only read, download files, or edit files).
+* **Trace results.** Lineage connects datasets across stages (e.g., raw → processed → results), so you can always go back to the raw data behind a result.
+* **Analyze data.** Run Nextflow pipelines on your datasets through Seqera.
+
+This way, your data can still be found and understood later, also by people who were not involved in the work.
 
 </details>
 
