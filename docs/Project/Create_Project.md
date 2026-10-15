@@ -103,31 +103,44 @@ Users without assigned permissions (see: {ref}`manage-project-user-permissions`)
 ## Add Datasets to Project
 
 Once you have created the project, you can **create a new dataset** from the **Datasets** tab, and it will be automatically added to the project. <br/>
-You can also **add** additional existing datasets from the same **Datasets** tab on the project home page. This helps you associate the project with other datasets that are relevant to your research.
-
-### To add another dataset to a project:
-
-1. Click the **`Datasets`** tab on the project home page
-
-2. Select the dataset you want to add from the list
-
-3. Click **`Link`** to complete the process
-
-
-To remove the relationship:
-
-   * Click **`Unlink`**, and the dataset will be removed. Datasets created in this project cannot be unlinked.
-
+You can also **add** existing datasets from the same **Datasets** tab on the project home page. This is useful when the same data is relevant to more than one project.
 
 ```{note}
 To add a dataset to a project, two conditions must be met:
 
 → You must have the **Add Datasets** permission on the project you want to add the dataset to
 <br/>
-→ You must have **access to the dataset** (either Bright-visible or through a dataset user permission, if it is restricted)
+→ You must have **access to the dataset** (it is BRIGHT-visible, or it is restricted and you have permission on it)
 
-If either of these is missing, you will not be able to proceed.
+If either of these is missing, the dataset will not appear in the list.
+
+The **Link To** permission is not needed here. It is only used for {ref}`dataset-lineage`.
 ```
+
+
+### To add another dataset to a project:
+
+1. Click the **`Datasets`** tab on the project home page
+
+2. Select the dataset you want to add from the list. Only datasets you have access to are listed.
+
+3. Click **`Link`** to add the dataset
+
+After you add a dataset:
+
+* the dataset appears under the **Datasets** tab on the project home page
+* the project appears under the **Projects** tab on the dataset home page
+
+The files stay in the dataset, nothing is copied.
+
+> Adding a dataset does **not** give project users access to a restricted dataset. They still need their own permission on the dataset.
+
+
+To remove a dataset:
+
+   * Click **`Unlink`** to remove the dataset from this project. A dataset cannot be removed from its parent project (the project it was created in).
+
+
 
 
 <br/>
@@ -141,9 +154,6 @@ If either of these is missing, you will not be able to proceed.
 ```
 
 
-```{note}
-This relationship also appears under the **Projects** tab on the **dataset home page**.
-```
 
 -------------------------------- 
 
