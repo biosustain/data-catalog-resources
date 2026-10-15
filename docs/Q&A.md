@@ -37,7 +37,7 @@ This is also why the Advanced upload uses AzCopy or Azure Storage Explorer: thos
 
 The O drive keeps your files, but not the information about them. What a file contains, how it was produced and which experiment it belongs to is only known from its name, its folder, or the person who made it. When that person leaves, or after some time has passed, this information is often lost.
 
-In Data Catalog, your files are stored together with this information. In practice it means you can:
+In Data Catalog, your files are stored together with this information (metadata). In practice it means you can:
 
 * **Find data.** Search across all projects and datasets you have access to by name, description, creator and metadata.
 * **Share data.** Add users to a project or dataset from the **Permissions** tab and choose what each of them can do (e.g., only read, download files, or edit files).
