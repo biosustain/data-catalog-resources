@@ -34,7 +34,7 @@
                         <img src="../../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
                             class="logo-img"
                         />
-                        Data Catalog User Guide (v0.1.8-beta)
+                        Data Catalog User Guide (v0.1.9-beta)
                     </a>
                 
                 
@@ -154,10 +154,10 @@
 </section>
 <section id="step-3-choose-a-parent-project">
 <h2>Step 3: Choose a Parent Project<a class="headerlink" href="#step-3-choose-a-parent-project" title="Link to this heading">¶</a></h2>
-<p>Select a project from the list to link your dataset. Only projects where you have the <strong>Add Datasets</strong> permission will appear in the list.</p>
+<p>Select the project your dataset belongs to. Only projects where you have the <strong>Add Datasets</strong> permission will appear in the list.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Choosing a Parent Project <em><strong>links</strong></em> your dataset to the project it belongs to. This ensures your data stays organized, easy to find and correctly associated. The parent project cannot be unlinked later, so make sure you pick the right one.</p>
+<p>Your dataset is <em><strong>added</strong></em> to the Parent Project you choose. This ensures your data stays organized, easy to find and correctly associated. The parent project cannot be removed later, so make sure you pick the right one.</p>
 </div>
 </section>
 <section id="step-4-fill-in-dataset-metadata">
@@ -243,27 +243,37 @@
 </section>
 <section id="add-projects-to-dataset">
 <span id="projects-tab"></span><h2>Add Projects to Dataset<a class="headerlink" href="#add-projects-to-dataset" title="Link to this heading">¶</a></h2>
-<p>When you created the dataset, you already selected a “Parent project”, which creates an initial relationship.
-You can also <strong>add</strong> additional projects from the <strong>Projects</strong> tab on the dataset home page.
-This helps you associate the dataset with other research contexts.</p>
+<p>When you created the dataset, you selected a parent project, so the dataset is already added to it.
+You can also <strong>add</strong> more projects from the <strong>Projects</strong> tab on the dataset home page.
+This is useful when the same data is relevant to more than one project.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>To add a project to a dataset, two conditions must be met:</p>
-<p>→ You must have the <strong>Add Datasets</strong> permission on the project you want to add the dataset to
+<p>→ You must have the <strong>Add Datasets</strong> permission on the project you want to add
 <br/>
-→ You must have <strong>access to the dataset</strong> (either Bright-visible or through a dataset user permission, if it is restricted)</p>
-<p>If either of these is missing, you will not be able to proceed.</p>
+→ You must have <strong>access to the dataset</strong> (it is BRIGHT-visible, or it is restricted and you have permission on it)</p>
+<p>If either of these is missing, the project will not appear in the list.</p>
+<p>The <strong>Link To</strong> permission is not needed here. It is only used for <a class="reference internal" href="#dataset-lineage"><span class="std std-ref">Dataset Lineage</span></a>.</p>
 </div>
 <section id="to-add-another-project-to-a-dataset">
 <h3>To add another project to a dataset:<a class="headerlink" href="#to-add-another-project-to-a-dataset" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Click the <strong><code class="docutils literal notranslate"><span class="pre">Projects</span></code></strong> tab on the dataset home page</p></li>
-<li><p>Select the project you want to add from the list</p></li>
-<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Link</span></code></strong> to complete the process</p></li>
+<li><p>Select the project you want to add from the list. Only projects where you have the <strong>Add Datasets</strong> permission are listed.</p></li>
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Link</span></code></strong> to add the project</p></li>
 </ol>
-<p>To remove the relationship:</p>
+<p>After you add a project:</p>
 <ul class="simple">
-<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Unlink</span></code></strong>, and the project will be removed. The parent project cannot be unlinked.</p></li>
+<li><p>the project appears under the <strong>Projects</strong> tab on the dataset home page</p></li>
+<li><p>the dataset appears under the <strong>Datasets</strong> tab on the project home page</p></li>
+</ul>
+<p>The files stay in the dataset, nothing is copied.</p>
+<blockquote>
+<div><p>Adding a project does <strong>not</strong> give its users access to a restricted dataset. They still need their own permission on the dataset.</p>
+</div></blockquote>
+<p>To remove a project:</p>
+<ul class="simple">
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Unlink</span></code></strong> to remove the project from this dataset. The parent project cannot be removed.</p></li>
 </ul>
 <br/>
 <div style="text-align: center;">
@@ -278,12 +288,6 @@ This helps you associate the dataset with other research contexts.</p>
   </iframe>
   <p><em>Add Projects to Dataset</em></p>
 </div><hr class="docutils" />
-<br/>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This relationship also appears under the <strong>Datasets</strong> tab on the <strong>project</strong> home page.</p>
-</div>
-<hr class="docutils" />
 </section>
 </section>
 <section id="dataset-lineage">
@@ -412,7 +416,7 @@ This helps you associate the dataset with other research contexts.</p>
     </div>
         </div>
     </footer>
-        <script src="../../_static/documentation_options.js?v=10a38906"></script>
+        <script src="../../_static/documentation_options.js?v=8fe11d9c"></script>
         <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
         <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
         <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
