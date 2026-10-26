@@ -23,6 +23,18 @@ Seqera ([Seqera Platform Cloud](https://docs.seqera.io/platform-cloud/)) is a we
   → **Nextflow**: a computational workflow orchestrator for running pipelines. It makes sure an analysis runs the same way every time. [Learn more](https://docs.seqera.io/nextflow/).
 ```
 
+## Quick Overview: Data Catalog to Seqera and Back
+
+The image below gives an overview of the whole flow and the permissions you need for each step. The sections that follow explain each step in detail.
+
+```{figure} ../_static/images/seqera-flow-simple.png
+:alt: Overview of the Seqera Flow
+:width: 100%
+:align: center
+
+*Overview of the Seqera Flow*
+```
+
 Follow the steps below to get started:
 
 ## Part 1: Set Up the Project's Seqera Workspace
@@ -53,6 +65,8 @@ You must have the **Setup Workspaces** permission on the project to set up a wor
 
 4. Click **`Create`** 
 
+   > You must have the **Download Files** permission on the dataset to create a data registry, as this copies its files into the Seqera workspace.
+
    > If the **`Create`** button is disabled, the project has no Seqera workspace yet (see Part 1).
 
 5. After the data registry is created, click the <img src="../_static/images/info.png" alt="info_icon" style="height:1.2em; vertical-align:text-bottom;"> icon next to
@@ -68,7 +82,7 @@ You must have the **Setup Workspaces** permission on the project to set up a wor
     * Click **`Create dataset and copy`** to finalize the process
     * Click **`Open new dataset`** to go to the new dataset
 
-  A new dataset containing the analysis results will be created and will be visible alongside other datasets under the **Datasets** tab on the project home page you selected in step 3.
+  A new dataset containing the analysis results will be created and will be visible alongside other datasets under the **Datasets** tab on the project home page you selected in step 3. The new dataset is automatically linked to the original dataset, so you can see in its **lineage** where the results came from.
 
 ```{note}
 You must have the **Add Datasets** permission on the project to use **`Copy into new dataset`**.
@@ -154,15 +168,15 @@ On the **Pipelines** page you may also see workspaces with the message ***"This 
 ```
 
 For the **workspace** you can:
-* **`Open`** it directly in Seqera, using the **<img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon
-* **`Delete`** it
+* **`Open`** it directly in Seqera, using the **<img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon.
+* **`Delete`:** removes the workspace and all its data registries.
 
 From each **data registry** you can:
-* **`Open`** it directly in Seqera, using the **<img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon
+* **`Open`** it directly in Seqera, using the **<img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;">** icon.
 * **`Overwrite`:** updates the data registry in Seqera with the latest files from the dataset. Use this if you have added or changed files in the dataset after creating the
-  data registry
-* **`Copy into new dataset`:** creates a new dataset from the Seqera data registry
-* **`Delete`:** removes the data registry entirely
+  data registry. Pipeline results already in the data registry are kept. You must have the **Download Files** permission on the dataset to use it.
+* **`Copy into new dataset`:** creates a new dataset from the Seqera data registry.
+* **`Delete`:** removes the data registry and all its files in Seqera, including your pipeline results. Use **`Copy into new dataset`** first if you want to keep them.
 
 
 <br/>
