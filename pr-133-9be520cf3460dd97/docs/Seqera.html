@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-content_root="../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Seqera (WIP) &mdash; Data Catalog User Guide</title>
+    
+    <link rel="stylesheet" type="text/css" href="../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/dist/theme.css?v=9cdaa676" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=a5c75b7f" />
+            <link rel="index" title="Index" href="../genindex.html" />
+            <link rel="search" title="Search" href="../search.html" />
+            <link rel="top" title="Data Catalog User Guide" href="#" />
+            <link rel="next" title="Search &amp; Favourites" href="Search.html" />
+            <link rel="prev" title="Exploring Dataset" href="Dataset/Exploring_Datasets.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="../index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        Data Catalog User Guide (v0.0.0)
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Login.html">Data Catalog Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Authentication_via_API_keys.html">Authentication via API keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Project/index.html">Project  <!-- This is the sidebar title --></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Project/Create_Project.html">Create a New Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Project/Manage_Projects.html">Manage Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Project/Exploring_Projects.html">Exploring Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Project/DMP.html">Data Management Plan</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Dataset/index.html">Dataset  <!-- This is the sidebar title --></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Dataset/Add_Dataset.html">Create a New Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Dataset/Manage_Datasets.html">Manage Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Dataset/Files.html">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Seqera (WIP)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Search.html">Search &amp; Favourites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Q%26A.html">Q&amp;A</a></li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../index.html">Docs</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Seqera (WIP)</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <div class="d-flex flex-wrap gap-2">
+                            <noscript>
+                                <p>JavaScript is required to toggle light/dark mode..</p>
+                            </noscript>
+                            <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                                <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                                <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                            </button>
+
+
+                            
+                        </div>
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <section id="seqera-wip">
+<span id="seqera-workspace"></span><h1>Seqera (WIP)<a class="headerlink" href="#seqera-wip" title="Link to this heading">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are still improving how Data Catalog works with Seqera. If something doesn’t work as expected, please let us know (see <a class="reference internal" href="Contact.html#contact"><span class="std std-ref">Contact</span></a>).</p>
+</div>
+<p>Seqera (<a class="reference external" href="https://docs.seqera.io/platform-cloud/" rel="noreferrer" target="_blank">Seqera Platform Cloud</a>) is a website where you can launch Nextflow pipelines and follow their progress. Seqera itself
+does not run the pipelines. Instead, Data Catalog orchestrates setup for Seqera to run its workloads in our Azure subscription.</p>
+<p>With Data Catalog, you can also make your datasets available in Seqera, so you can use them as input for these pipelines, and copy the results back afterwards. It is set up
+in two parts:</p>
+<ul class="simple">
+<li><p>Each <strong>project</strong> has one Seqera <strong>workspace</strong></p></li>
+<li><p>Each <strong>dataset</strong> you want to analyze gets its own <strong>data registry</strong> inside the workspace</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>→ <strong>Seqera workspace</strong>: your project’s space in Seqera, where you choose and run pipelines. The pipelines run on Azure (Microsoft’s cloud). <a class="reference external" href="https://docs.seqera.io/platform-cloud/orgs-and-teams/workspace-management" rel="noreferrer" target="_blank">Learn more</a></p>
+<p>→ <strong>Data registry</strong>: a copy of a dataset’s files inside the workspace, so your pipeline can read them. When your pipeline finishes, you’ll find the results here too.
+Copying them back to Data Catalog does not remove them from the data registry.</p>
+<p>→ <strong>Nextflow</strong>: a computational workflow orchestrator for running pipelines. It makes sure an analysis runs the same way every time. <a class="reference external" href="https://docs.seqera.io/nextflow/" rel="noreferrer" target="_blank">Learn more</a>.</p>
+</div>
+<p>Follow the steps below to get started:</p>
+<section id="part-1-set-up-the-project-s-seqera-workspace">
+<h2>Part 1: Set Up the Project’s Seqera Workspace<a class="headerlink" href="#part-1-set-up-the-project-s-seqera-workspace" title="Link to this heading">¶</a></h2>
+<p>You only need to do this once per project. If a project already has a workspace, skip to Part 2.</p>
+<ol class="arabic simple">
+<li><p>Open the project you want to set up the Seqera workspace for</p></li>
+<li><p>Click the <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the project home page</p></li>
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">up</span> <span class="pre">Seqera</span> <span class="pre">workspace</span></code></strong>. A progress bar will appear while the workspace is being set up.</p></li>
+</ol>
+<p>When the workspace is ready, you will see its name and the estimated cost of computation per hour. The data registries you create in Part 2 will also be listed here.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You must have the <strong>Setup Workspaces</strong> permission on the project to set up a workspace.</p>
+</div>
+</section>
+<section id="part-2-create-a-data-registry-for-a-dataset">
+<h2>Part 2: Create a Data Registry for a Dataset<a class="headerlink" href="#part-2-create-a-data-registry-for-a-dataset" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>Open the dataset with the files you want to use as input for running Nextflow pipelines</p></li>
+<li><p>Click the <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the dataset home page</p></li>
+<li><p>From the dropdown list, select the project under which you want the result dataset to be created and to which the pipeline costs will be billed.</p>
+<blockquote>
+<div><p>Only projects where you have the <strong>Setup Workspaces</strong> permission will appear in the list. The dataset’s primary project is selected by default and shown first.</p>
+</div></blockquote>
+</li>
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Create</span></code></strong></p>
+<blockquote>
+<div><p>If the <strong><code class="docutils literal notranslate"><span class="pre">Create</span></code></strong> button is disabled, the project has no Seqera workspace yet (see Part 1).</p>
+</div></blockquote>
+</li>
+<li><p>After the data registry is created, click the <img src="../_static/images/info.png" alt="info_icon" style="height:1.2em; vertical-align:text-bottom;"> icon next to
+its name to see its details, and then click the <strong><code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">in</span> <span class="pre">Seqera</span> <span class="pre">Workspace</span></code></strong> button to open it in Seqera.</p>
+<blockquote>
+<div><p>You can also open it in Seqera directly by clicking the <img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em;vertical-align:text-bottom;"> icon on the right side of the data registry.</p>
+</div></blockquote>
+</li>
+<li><p>In Seqera, select the pipeline you want to run and start your analysis. You can use the pipelines already in your workspace, pipelines built by the Informatics Platform, or add your own Nextflow pipeline.</p></li>
+<li><p>Once the analysis is complete, return to Data Catalog and click the <strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code></strong> button. A dialog window will appear where you can:</p>
+<ul class="simple">
+<li><p>Select the <strong>folder</strong> you want to copy into the new dataset, or enter its path manually</p></li>
+<li><p>Provide <strong>metadata</strong> for the new dataset. The name is pre-filled as “<em>data registry name</em> copy” and the Data type is set to <strong>Results</strong>, but you can change both.</p></li>
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">dataset</span> <span class="pre">and</span> <span class="pre">copy</span></code></strong> to finalize the process</p></li>
+<li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">new</span> <span class="pre">dataset</span></code></strong> to go to the new dataset</p></li>
+</ul>
+</li>
+</ol>
+<p>A new dataset containing the analysis results will be created and will be visible alongside other datasets under the <strong>Datasets</strong> tab on the project home page you selected in step 3.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You must have the <strong>Add Datasets</strong> permission on the project to use <strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code></strong>.</p>
+</div>
+<br/>
+<div id="carousel" style="text-align:center; max-width:700px; margin:20px auto;">
+<a id="carousel-link" href="../_static/images/seqera-steps-2-3-4.png" target="_blank">
+<img id="carousel-img" src="../_static/images/seqera-steps-2-3-4.png" style="width:100%; border-radius:6px; border:1px solid #ddd; cursor:zoom-in;">
+</a>
+  <p id="carousel-caption" style="color:#555; font-size:0.9em; margin-top:8px;">Steps: 1-4</p>
+  <div style="margin-top:10px;">
+    <button onclick="moveSlide(-1)" style="margin-right:10px; cursor:pointer;"><</button>
+    <span id="carousel-counter" style="font-size:0.9em; color:#555;">1 / 5</span>
+    <button onclick="moveSlide(1)" style="margin-left:10px; cursor:pointer;">></button>
+  </div>
+</div>
+
+<script>
+  const slides = [
+    { src: "../_static/images/seqera-steps-2-3-4.png", caption: "Steps: 1-4" },
+    { src: "../_static/images/seqera-step-5.png", caption: "Step 5"},
+    { src: "../_static/images/seqera-step-5a.png", caption: "Step 5"},
+    { src: "../_static/images/seqera-step-7.png", caption: "Step 7"},
+    { src: "../_static/images/seqera-new-dataset.png", caption: "Step 7"},
+  ];
+    let current = 0;
+ function moveSlide(dir) {
+    current = (current + dir + slides.length) % slides.length;
+    document.getElementById('carousel-img').src = slides[current].src;
+    document.getElementById('carousel-link').href = slides[current].src;
+    document.getElementById('carousel-caption').textContent = slides[current].caption;
+    document.getElementById('carousel-counter').textContent = (current + 1) + ' / ' + slides.length;
+  }
+</script><hr class="docutils" />
+</section>
+<section id="viewing-and-managing-seqera-workspaces-and-data-registries">
+<span id="manage-seqera-workspace"></span><h2>Viewing and Managing Seqera Workspaces and Data Registries<a class="headerlink" href="#viewing-and-managing-seqera-workspaces-and-data-registries" title="Link to this heading">¶</a></h2>
+<p>To view your workspace and data registries, go to:</p>
+<ul class="simple">
+<li><p>The <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the <strong>project</strong> home page: the project’s workspace and all its data registries</p></li>
+<li><p>The <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the <strong>dataset</strong> home page: the data registries created for that dataset</p></li>
+<li><p>The <strong><code class="docutils literal notranslate"><span class="pre">Pipelines</span></code></strong> tab on the <strong>navigation</strong> bar: all Seqera workspaces in one place. For each workspace, you can see the project it belongs to, the estimated cost per hour, and its data registries</p></li>
+</ul>
+<div id="carousel2" style="text-align:center; max-width:700px; margin:20px auto;">
+<a id="carousel2-link" href="../_static/images/seqera_project.png" target="_blank">
+<img id="carousel2-img" src="../_static/images/seqera_project.png" style="width:100%; border-radius:6px; border:1px solid #ddd; cursor:zoom-in;">
+</a>
+  <p id="carousel2-caption" style="color:#555; font-size:0.9em; margin-top:8px;">Seqera - Project home page</p>
+  <div style="margin-top:10px;">
+    <button onclick="moveSlide2(-1)" style="margin-right:10px; cursor:pointer;"><</button>
+    <span id="carousel2-counter" style="font-size:0.9em; color:#555;">1 / 3</span>
+    <button onclick="moveSlide2(1)" style="margin-left:10px; cursor:pointer;">></button>
+  </div>
+</div>
+
+<script>
+  const slides2 = [
+    { src: "../_static/images/seqera_project.png", caption: "Seqera - Project home page" },
+    { src: "../_static/images/seqera_dataset.png", caption: "Seqera - Dataset home page"},
+    { src: "../_static/images/pipelines_tab.png", caption: "Pipelines tab"},
+  ];
+    let current2 = 0;
+ function moveSlide2(dir) {
+    current2 = (current2 + dir + slides2.length) % slides2.length;
+    document.getElementById('carousel2-img').src = slides2[current2].src;
+    document.getElementById('carousel2-link').href = slides2[current2].src;
+    document.getElementById('carousel2-caption').textContent = slides2[current2].caption;
+    document.getElementById('carousel2-counter').textContent = (current2 + 1) + ' / ' + slides2.length;
+  }
+</script><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On the <strong>Pipelines</strong> page you may also see workspaces with the message <em><strong>“This workspace’s details are redacted due to insufficient permissions”</strong></em>. These belong to projects where you don’t have the <strong>Setup Workspaces</strong> permission, so their details are hidden from you.</p>
+</div>
+<p>For the <strong>workspace</strong> you can:</p>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Open</span></code></strong> it directly in Seqera, using the <strong><img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"></strong> icon</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Delete</span></code></strong> it</p></li>
+</ul>
+<p>From each <strong>data registry</strong> you can:</p>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Open</span></code></strong> it directly in Seqera, using the <strong><img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"></strong> icon</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Overwrite</span></code>:</strong> updates the data registry in Seqera with the latest files from the dataset. Use this if you have added or changed files in the dataset after creating the
+data registry</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code>:</strong> creates a new dataset from the Seqera data registry</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Delete</span></code>:</strong> removes the data registry entirely</p></li>
+</ul>
+<br/>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Overwrite</strong> and <strong>Delete</strong> cannot be undone. Overwrite starts as soon as you click it, without asking you to confirm.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="api-availability">
+<h2>API Availability<a class="headerlink" href="#api-availability" title="Link to this heading">¶</a></h2>
+<p>The actions described in this page can also be performed programmatically. For more details, see the following endpoints in the API Reference:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://datacatalog.bright.dtu.dk/api/docs#/pipelines" rel="noreferrer" target="_blank"><strong>/pipelines</strong></a></p></li>
+</ul>
+</section>
+</section>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="Dataset/Exploring_Datasets.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Exploring Dataset
+    </a>
+    <a class="float-right" href="Search.html" title="Next">
+        Search &amp; Favourites <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Seqera (WIP)</a><ul>
+<li><a class="reference internal" href="#part-1-set-up-the-project-s-seqera-workspace">Part 1: Set Up the Project’s Seqera Workspace</a></li>
+<li><a class="reference internal" href="#part-2-create-a-data-registry-for-a-dataset">Part 2: Create a Data Registry for a Dataset</a></li>
+<li><a class="reference internal" href="#viewing-and-managing-seqera-workspaces-and-data-registries">Viewing and Managing Seqera Workspaces and Data Registries</a></li>
+<li><a class="reference internal" href="#api-availability">API Availability</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+            <div class="text-center">
+                    &copy; Copyright 2026, Research Data Management, BRIGHT
+            </div>
+            <div class="text-center text-white-50 font-italic mt-3">
+                <small>
+                    Created using
+                    <a class="text-white" href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Sphinx Wagtail Theme 6.6.0
+                    </a>
+                    and
+                    <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
+                        Sphinx 7.4.7
+                    </a>
+                </small>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script src="../_static/documentation_options.js?v=8b92e751"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js?v=b8b12719"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../_static/js/mobile-toc.js?v=28931289"></script>
+        <script type="text/javascript" src="../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
