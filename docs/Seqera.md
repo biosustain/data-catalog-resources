@@ -35,11 +35,13 @@ The image below gives an overview of the whole flow and the permissions you need
 *Overview of the Seqera Flow*
 ```
 
-Follow the steps below to get started:
-
 ## Part 1: Set Up the Project's Seqera Workspace
 
 You only need to do this once per project. If you already have a workspace for a project, skip to Part 2.
+
+```{important}
+If this is your first time using Seqera with Data Catalog, create a Seqera account with your **@dtu.dk** email at [cloud.seqera.io](https://cloud.seqera.io), and then contact us (see {ref}`contact`) so we can add you to our Seqera organization.
+```
 
 1. Open the project you want to set up the Seqera workspace for
 
