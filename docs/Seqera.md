@@ -11,7 +11,7 @@ Seqera ([Seqera Platform Cloud](https://docs.seqera.io/platform-cloud/)) is a we
   With Data Catalog, you can also make your datasets available in Seqera, so you can use them as input for these pipelines, and copy the results back afterwards. It is set up
   in two parts:
 
-* Each **project** has one Seqera **workspace**
+* Each **project** has one Seqera **workspace** for each user who sets it up
 * Each **dataset** you want to analyze gets its own **data registry** inside the workspace
 
 ```{tip}
@@ -39,7 +39,7 @@ Follow the steps below to get started:
 
 ## Part 1: Set Up the Project's Seqera Workspace
 
-You only need to do this once per project. If a project already has a workspace, skip to Part 2.
+You only need to do this once per project. If you already have a workspace for a project, skip to Part 2.
 
 1. Open the project you want to set up the Seqera workspace for
 
