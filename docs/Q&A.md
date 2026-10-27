@@ -51,7 +51,7 @@ This way, your data can still be found and understood later, also by people who 
 <br/>
 
 <details>
-<summary><strong>Is my data in Data Catalog backed up?</strong></summary>
+<summary><strong>How does Data Catalog protect my data from being lost?</strong></summary>
 
 Data Catalog keeps your data in two places, and each is protected differently:
 
