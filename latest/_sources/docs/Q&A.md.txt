@@ -15,6 +15,7 @@ In practice it means:
 
 <br/>
 
+(data-lake-vs-data-catalog)=
 <details>
 <summary><strong>What is the difference between "Data Lake" and "Data Catalog"?</strong></summary>
 
@@ -45,6 +46,22 @@ In Data Catalog, your files are stored together with this information (metadata)
 * **Analyze data.** Run Nextflow pipelines on your datasets through Seqera.
 
 This way, your data can still be found and understood later, also by people who were not involved in the work.
+
+</details>
+
+<br/>
+
+<details>
+<summary><strong>How does Data Catalog protect my data from being lost?</strong></summary>
+
+Data Catalog stores your metadata and your files separately and protects them in different ways (see {ref}`What is the difference between "Data Lake" and "Data Catalog"? <data-lake-vs-data-catalog>` for more on how this works):
+
+* **Metadata** (the descriptions, permissions and relationships of your projects, datasets and files) is stored in the Data Catalog database, which is backed up daily.
+* **Files** are stored in the Azure Data Lake (Region: West Europe). If a file is deleted, it can be restored within 30 days. Contact us to restore it.
+
+At the moment, the files are stored in one data center only. There is no second copy in another location. Losing data this way is very unlikely, but for important data that cannot be produced again (e.g., raw data), we recommend keeping your own copy as well, for example on the O drive.
+
+To protect files from being deleted by mistake, you can remove the **Edit Files** permission from users in the dataset's **Permissions** tab (see {ref}`manage-dataset-user-permissions`). Without it, users cannot upload, move or delete files.
 
 </details>
 
