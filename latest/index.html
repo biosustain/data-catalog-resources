@@ -130,9 +130,16 @@
                         <main role="main" id="main">
     <section id="welcome">
 <h1>Welcome<a class="headerlink" href="#welcome" title="Link to this heading">¶</a></h1>
-<p>This user guide introduces the <strong>Data Catalog</strong>, a central interface designed to <strong>organize</strong>, <strong>register</strong>, and <strong>discover</strong> research data within BRIGHT.<br/></p>
-<p>It serves as the metadata management layer and gateway to the underlying research data infrastructure, ensuring that all data assets (Projects, Datasets, and Files) are <strong>findable</strong>, <strong>accessible</strong>, <strong>interoperable</strong>, and <strong>reusable</strong> (FAIR).
+<p>This user guide introduces the <strong>Data Catalog</strong>, a central interface designed to <strong>organize</strong>, <strong>register</strong>, and <strong>discover</strong> research data and metadata within BRIGHT.<br/></p>
+<p>You manage your Projects and Datasets in Data Catalog, while the files themselves are securely stored in the <strong>Azure Data Lake</strong> (BRIGHT subscription). Data Catalog is also the gateway to BRIGHT’s research data infrastructure, including cloud storage and compute (e.g., running pipelines in Seqera), and it ensures that all data assets (Projects, Datasets, and Files) are <strong>findable</strong>, <strong>accessible</strong>, <strong>interoperable</strong>, and <strong>reusable</strong> (FAIR).
 <br/></p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/welcome-v12.png"><img alt="Overview of Data Catalog and the connected systems" src="_images/welcome-v12.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Overview of Data Catalog and the connected systems</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
 <section id="the-purpose-of-data-catalog">
 <h2>The Purpose of Data Catalog<a class="headerlink" href="#the-purpose-of-data-catalog" title="Link to this heading">¶</a></h2>
 <p>Data Catalog provides a secure and structured environment for managing active data, making it <strong>as open as possible and as close as necessary</strong> within BRIGHT.</p>
@@ -158,7 +165,8 @@
 </ul>
 <p>Each Project includes:</p>
 <ul class="simple">
-<li><p>Description, contributors, objectives, and methods</p></li>
+<li><p>Description, principal investigator, and (optionally) a Benchling project URL</p></li>
+<li><p>A Data Management Plan (DMP)</p></li>
 <li><p>One or more Datasets, which may include internally generated, externally acquired, or publicly sourced data</p></li>
 <li><p>Access control and data provenance</p></li>
 </ul>
@@ -168,9 +176,9 @@
 <p>A <strong>Dataset</strong> is a logically grouped <strong>collection of related data</strong> files within a Project, representing a structured set of information generated under consistent experimental, computational, or analytical conditions.</p>
 <p>Each Dataset includes:</p>
 <ul class="simple">
-<li><p>Metadata describing its origin/type, purpose, methods, instruments and parameters and relationships to other datasets</p></li>
-<li><p>A defined data stage (Raw, Processed, Results)</p></li>
-<li><p>Versioning and provenance tracking for traceability</p></li>
+<li><p>Metadata describing its type, instruments, how and where the data was acquired, and relationships to other datasets</p></li>
+<li><p>A defined data type (Raw, Processed, Results)</p></li>
+<li><p>Provenance tracking (lineage) for traceability</p></li>
 </ul>
 </section>
 <section id="files">
@@ -179,17 +187,12 @@
 <p>Each File has:</p>
 <ul class="simple">
 <li><p>A unique identifier within the system</p></li>
-<li><p>A defined file format (e.g., .fastq, .csv, .tiff, .h5)</p></li>
-<li><p>Metadata describing its content, origin and checksum for data integrity</p></li>
+<li><p>Its path within the Dataset, size and upload date</p></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><em><strong>Checksum</strong></em> is a unique fingerprint used to verify that the file has not been altered or corrupted.</p>
-</div>
 </section>
 <section id="authorization">
 <h3>Authorization<a class="headerlink" href="#authorization" title="Link to this heading">¶</a></h3>
-<p>Data Catalog is currently <strong>only accessible</strong> by personnel officially employed or associated with BRIGHT. Each dataset can belong to one or more projects and the metadata of BRIGHT-visible projects is visible to all BRIGHT employees with read-only access, while Restricted projects are only visible to users who have been given access.
+<p>Data Catalog is currently <strong>only accessible</strong> by personnel officially employed or associated with BRIGHT. Each dataset can belong to one or more projects and the metadata of BRIGHT-visible projects and datasets is visible to all BRIGHT employees with read-only access, while Restricted projects and datasets are only visible to users who have been given access.
 <br/></p>
 </section>
 </section>
