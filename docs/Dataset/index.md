@@ -10,5 +10,6 @@ To help you get started and make the most out of your datasets, explore the foll
 Add_Dataset
 Manage_Datasets
 Files
+Dataset_Lineage
 Exploring_Datasets
 ```
