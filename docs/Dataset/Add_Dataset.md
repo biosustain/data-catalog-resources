@@ -185,16 +185,26 @@ To remove a project:
 (dataset-lineage)=
 ## Dataset Lineage
 
-Once you have created a dataset you can define its **Lineage** by linkinng it to one or more datasets.
+Once you have created a dataset you can define its **Lineage** by linking it to one or more datasets.
 
 ➣ Lineage creates a relationship that shows how datasets are related across different stages (e.g., raw → processed → results).
 
 ➣ It ensures **data provenance** by identifying source datasets when creating new ones (e.g., pipelines), supporting reproducibility.
 
-```{important}
-To create (or remove) a Dataset Lineage between datasets you must have the permission ***Link To*** on the **destination dataset**. Without this permission you will not be able to perform this action or see the destination dataset in the linking list.
+➣ When you copy results back from Seqera, the new dataset is linked automatically (see {ref}`Seqera Workspace`).
 
-The destination dataset is always the **descendant**.
+```{figure} ../../_static/images/dataset-lineage.png
+:alt: Dataset Lineage overview
+:width: 100%
+:align: center
+
+*Dataset Lineage overview*
+```
+
+```{important}
+To create (or remove) a Dataset Lineage between datasets you must have the permission ***Link To*** on the **destination dataset**. The destination dataset is always the **descendant**.
+
+You also need ***Link To*** on the dataset you are viewing, otherwise the Lineage buttons are greyed out.
 ```
 
 
