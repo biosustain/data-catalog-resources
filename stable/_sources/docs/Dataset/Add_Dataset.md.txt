@@ -181,69 +181,6 @@ To remove a project:
   <p><em>Add Projects to Dataset</em></p>
 </div>
 ```
--------------------------------------------
-(dataset-lineage)=
-## Dataset Lineage
-
-Once you have created a dataset you can define its **Lineage** by linkinng it to one or more datasets.
-
-➣ Lineage creates a relationship that shows how datasets are related across different stages (e.g., raw → processed → results).
-
-➣ It ensures **data provenance** by identifying source datasets when creating new ones (e.g., pipelines), supporting reproducibility.
-
-```{important}
-To create (or remove) a Dataset Lineage between datasets you must have the permission ***Link To*** on the **destination dataset**. Without this permission you will not be able to perform this action or see the destination dataset in the linking list.
-
-The destination dataset is always the **descendant**.
-```
-
-
-### To add a Lineage:
-
-1. Click the **`Lineage`** tab on the dataset home page
-
-2. Choose the relationship type:
-    * **`Add Ancestor`**, if the selected dataset creates the current dataset
-
-      **or** 
-
-    * **`Add Descendant`**, if the selected dataset is a result of the current dataset
-
-3. Select the dataset from the list
-
-4. Add a description explaining the relationship (optional)
-
-5. Click the **`Link as Ancestor`** (or **`Link as Descendant`**) button to complete the process
-
-
-To remove a Lineage:
-
-   * Click **`Remove link from dataset`**
-   * Select the link and click **`Delete`**
-   
-<br/>
-
--------------------------------
-
-<br/>
-
-```{raw} html
-<div style="text-align: center;">
-  <iframe 
-    width="93%" 
-    height="500" 
-    src="https://youtube.com/embed/CHymgLBZsWg"
-    title="Dataset Lineage"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
-  <p><em>Dataset Lineage</em></p>
-</div>
-```
-
-<br/>
-
 -------------------------------
 
 
@@ -253,4 +190,3 @@ The actions described in this page can also be performed programmatically. For m
 
 * [**/datasets**](https://datacatalog.bright.dtu.dk/api/docs#/datasets/create_dataset_datasets_post) 
 * [**/projects-datasets**](https://datacatalog.bright.dtu.dk/api/docs#/projects-datasets)
-* [**/lineage**](https://datacatalog.bright.dtu.dk/api/docs#/lineage)

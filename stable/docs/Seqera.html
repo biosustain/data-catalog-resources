@@ -33,7 +33,7 @@
                         <img src="../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
                             class="logo-img"
                         />
-                        Data Catalog User Guide (v0.1.9-beta)
+                        Data Catalog User Guide (v0.1.10-beta)
                     </a>
                 
                 
@@ -75,6 +75,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Dataset/Add_Dataset.html">Create a New Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset/Manage_Datasets.html">Manage Datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset/Files.html">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Dataset/Dataset_Lineage.html">Dataset Lineage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
 </ul>
 </li>
@@ -140,7 +141,7 @@ does not run the pipelines. Instead, Data Catalog orchestrates setup for Seqera 
 <p>With Data Catalog, you can also make your datasets available in Seqera, so you can use them as input for these pipelines, and copy the results back afterwards. It is set up
 in two parts:</p>
 <ul class="simple">
-<li><p>Each <strong>project</strong> has one Seqera <strong>workspace</strong></p></li>
+<li><p>Each <strong>project</strong> has one Seqera <strong>workspace</strong> for each user who sets it up</p></li>
 <li><p>Each <strong>dataset</strong> you want to analyze gets its own <strong>data registry</strong> inside the workspace</p></li>
 </ul>
 <div class="admonition tip">
@@ -150,10 +151,24 @@ in two parts:</p>
 Copying them back to Data Catalog does not remove them from the data registry.</p>
 <p>→ <strong>Nextflow</strong>: a computational workflow orchestrator for running pipelines. It makes sure an analysis runs the same way every time. <a class="reference external" href="https://docs.seqera.io/nextflow/" rel="noreferrer" target="_blank">Learn more</a>.</p>
 </div>
-<p>Follow the steps below to get started:</p>
+<section id="quick-overview-data-catalog-to-seqera-and-back">
+<h2>Quick Overview: Data Catalog to Seqera and Back<a class="headerlink" href="#quick-overview-data-catalog-to-seqera-and-back" title="Link to this heading">¶</a></h2>
+<p>The image below gives an overview of the whole flow and the permissions you need for each step. The sections that follow explain each step in detail.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/seqera-flow-simple.png"><img alt="Overview of the Seqera Flow" src="../_images/seqera-flow-simple.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Overview of the Seqera Flow</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
 <section id="part-1-set-up-the-project-s-seqera-workspace">
 <h2>Part 1: Set Up the Project’s Seqera Workspace<a class="headerlink" href="#part-1-set-up-the-project-s-seqera-workspace" title="Link to this heading">¶</a></h2>
-<p>You only need to do this once per project. If a project already has a workspace, skip to Part 2.</p>
+<p>You only need to do this once per project. If you already have a workspace for a project, skip to Part 2.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If this is your first time using Seqera with Data Catalog, create a Seqera account with your <strong>&#64;dtu.dk</strong> email at <a class="reference external" href="https://cloud.seqera.io" rel="noreferrer" target="_blank">cloud.seqera.io</a>, and then contact us (see <a class="reference internal" href="Contact.html#contact"><span class="std std-ref">Contact</span></a>) so we can add you to our Seqera organization.</p>
+</div>
 <ol class="arabic simple">
 <li><p>Open the project you want to set up the Seqera workspace for</p></li>
 <li><p>Click the <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the project home page</p></li>
@@ -177,6 +192,9 @@ Copying them back to Data Catalog does not remove them from the data registry.</
 </li>
 <li><p>Click <strong><code class="docutils literal notranslate"><span class="pre">Create</span></code></strong></p>
 <blockquote>
+<div><p>You must have the <strong>Download Files</strong> permission on the dataset to create a data registry, as this copies its files into the Seqera workspace.</p>
+</div></blockquote>
+<blockquote>
 <div><p>If the <strong><code class="docutils literal notranslate"><span class="pre">Create</span></code></strong> button is disabled, the project has no Seqera workspace yet (see Part 1).</p>
 </div></blockquote>
 </li>
@@ -196,7 +214,7 @@ its name to see its details, and then click the <strong><code class="docutils li
 </ul>
 </li>
 </ol>
-<p>A new dataset containing the analysis results will be created and will be visible alongside other datasets under the <strong>Datasets</strong> tab on the project home page you selected in step 3.</p>
+<p>A new dataset containing the analysis results will be created and will be visible alongside other datasets under the <strong>Datasets</strong> tab on the project home page you selected in step 3. The new dataset is automatically linked to the original dataset, so you can see in its <strong>lineage</strong> where the results came from.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You must have the <strong>Add Datasets</strong> permission on the project to use <strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code></strong>.</p>
@@ -272,16 +290,16 @@ its name to see its details, and then click the <strong><code class="docutils li
 </div>
 <p>For the <strong>workspace</strong> you can:</p>
 <ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">Open</span></code></strong> it directly in Seqera, using the <strong><img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"></strong> icon</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">Delete</span></code></strong> it</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Open</span></code></strong> it directly in Seqera, using the <strong><img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"></strong> icon.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Delete</span></code>:</strong> removes the workspace and all its data registries.</p></li>
 </ul>
 <p>From each <strong>data registry</strong> you can:</p>
 <ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">Open</span></code></strong> it directly in Seqera, using the <strong><img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"></strong> icon</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Open</span></code></strong> it directly in Seqera, using the <strong><img src="../_static/images/open-seqera.png" alt="open_icon" style="height:1.2em; vertical-align:text-bottom;"></strong> icon.</p></li>
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">Overwrite</span></code>:</strong> updates the data registry in Seqera with the latest files from the dataset. Use this if you have added or changed files in the dataset after creating the
-data registry</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code>:</strong> creates a new dataset from the Seqera data registry</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">Delete</span></code>:</strong> removes the data registry entirely</p></li>
+data registry. Pipeline results already in the data registry are kept. You must have the <strong>Download Files</strong> permission on the dataset to use it.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code>:</strong> creates a new dataset from the Seqera data registry.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">Delete</span></code>:</strong> removes the data registry and all its files in Seqera, including your pipeline results. Use <strong><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">into</span> <span class="pre">new</span> <span class="pre">dataset</span></code></strong> first if you want to keep them.</p></li>
 </ul>
 <br/>
 <div class="admonition warning">
@@ -315,6 +333,7 @@ data registry</p></li>
                             <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
                             <ul>
 <li><a class="reference internal" href="#">Seqera (WIP)</a><ul>
+<li><a class="reference internal" href="#quick-overview-data-catalog-to-seqera-and-back">Quick Overview: Data Catalog to Seqera and Back</a></li>
 <li><a class="reference internal" href="#part-1-set-up-the-project-s-seqera-workspace">Part 1: Set Up the Project’s Seqera Workspace</a></li>
 <li><a class="reference internal" href="#part-2-create-a-data-registry-for-a-dataset">Part 2: Create a Data Registry for a Dataset</a></li>
 <li><a class="reference internal" href="#viewing-and-managing-seqera-workspaces-and-data-registries">Viewing and Managing Seqera Workspaces and Data Registries</a></li>
@@ -346,7 +365,7 @@ data registry</p></li>
                     </a>
                     and
                     <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
-                        Sphinx 9.1.0
+                        Sphinx 9.1.1
                     </a>
                 </small>
             </div>
@@ -354,7 +373,7 @@ data registry</p></li>
     </div>
         </div>
     </footer>
-        <script src="../_static/documentation_options.js?v=8fe11d9c"></script>
+        <script src="../_static/documentation_options.js?v=934a4432"></script>
         <script src="../_static/doctools.js?v=fd6eb6e6"></script>
         <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>

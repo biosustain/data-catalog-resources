@@ -32,7 +32,7 @@
                         <img src="../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
                             class="logo-img"
                         />
-                        Data Catalog User Guide (v0.1.9-beta)
+                        Data Catalog User Guide (v0.1.10-beta)
                     </a>
                 
                 
@@ -74,6 +74,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Dataset/Add_Dataset.html">Create a New Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset/Manage_Datasets.html">Manage Datasets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset/Files.html">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Dataset/Dataset_Lineage.html">Dataset Lineage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset/Exploring_Datasets.html">Exploring Dataset</a></li>
 </ul>
 </li>
@@ -169,6 +170,17 @@ Data Catalog gives you one place to keep your research data and everything that 
 </details>
 <br/>
 <details>
+<summary><strong>How does Data Catalog protect my data from being lost?</strong></summary>
+<p>Data Catalog stores your metadata and your files separately and protects them in different ways (see <a class="reference internal" href="#data-lake-vs-data-catalog"><span class="std std-ref">What is the difference between “Data Lake” and “Data Catalog”?</span></a> for more on how this works):</p>
+<ul class="simple">
+<li><p><strong>Metadata</strong> (the descriptions, permissions and relationships of your projects, datasets and files) is stored in the Data Catalog database, which is backed up daily.</p></li>
+<li><p><strong>Files</strong> are stored in the Azure Data Lake (Region: West Europe). If a file is deleted, it can be restored within 30 days. Contact us to restore it.</p></li>
+</ul>
+<p>At the moment, the files are stored in one data center only. There is no second copy in another location. Losing data this way is very unlikely, but for important data that cannot be produced again (e.g., raw data), we recommend keeping your own copy as well, for example on the O drive.</p>
+<p>To protect files from being deleted by mistake, you can remove the <strong>Edit Files</strong> permission from users in the dataset’s <strong>Permissions</strong> tab (see <a class="reference internal" href="Dataset/Manage_Datasets.html#manage-dataset-user-permissions"><span class="std std-ref">Manage Dataset User Permissions</span></a>). Without it, users cannot upload, move or delete files.</p>
+</details>
+<br/>
+<details>
 <summary><strong>How does Data Catalog relate to the other platforms at BRIGHT?</strong></summary>
 <p>Each platform covers a different part of the data lifecycle:</p>
 <ul class="simple">
@@ -255,7 +267,7 @@ Data Catalog gives you one place to keep your research data and everything that 
                     </a>
                     and
                     <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
-                        Sphinx 9.1.0
+                        Sphinx 9.1.1
                     </a>
                 </small>
             </div>
@@ -263,7 +275,7 @@ Data Catalog gives you one place to keep your research data and everything that 
     </div>
         </div>
     </footer>
-        <script src="../_static/documentation_options.js?v=8fe11d9c"></script>
+        <script src="../_static/documentation_options.js?v=934a4432"></script>
         <script src="../_static/doctools.js?v=fd6eb6e6"></script>
         <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
