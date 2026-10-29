@@ -1,9 +1,17 @@
 # Welcome
 
-This user guide introduces the **Data Catalog**, a central interface designed to **organize**, **register**, and **discover** research data within BRIGHT.<br/>
+This user guide introduces the **Data Catalog**, a central interface designed to **organize**, **register**, and **discover** research data and metadata within BRIGHT.<br/>
 
-It serves as the metadata management layer and gateway to the underlying research data infrastructure, ensuring that all data assets (Projects, Datasets, and Files) are **findable**, **accessible**, **interoperable**, and **reusable** (FAIR).
+You manage your Projects and Datasets in Data Catalog, while the files themselves are securely stored in the **Azure Data Lake** (BRIGHT subscription). Data Catalog is also the gateway to BRIGHT's research data infrastructure, including cloud storage and compute (e.g., running pipelines in Seqera), and it ensures that all data assets (Projects, Datasets, and Files) are **findable**, **accessible**, **interoperable**, and **reusable** (FAIR).
 <br/>
+
+```{figure} _static/images/welcome-v12.png
+:alt: Overview of Data Catalog and the connected systems
+:width: 100%
+:align: center
+
+*Overview of Data Catalog and the connected systems*
+```
 
 
 ## The Purpose of Data Catalog
@@ -31,7 +39,8 @@ Projects can represent:
 
 Each Project includes:
 
-* Description, contributors, objectives, and methods
+* Description, principal investigator, and (optionally) a Benchling project URL
+* A Data Management Plan (DMP)
 * One or more Datasets, which may include internally generated, externally acquired, or publicly sourced data
 * Access control and data provenance
 
@@ -42,9 +51,9 @@ A **Dataset** is a logically grouped **collection of related data** files within
 
 Each Dataset includes:
 
-* Metadata describing its origin/type, purpose, methods, instruments and parameters and relationships to other datasets
-* A defined data stage (Raw, Processed, Results)
-* Versioning and provenance tracking for traceability
+* Metadata describing its type, instruments, how and where the data was acquired, and relationships to other datasets
+* A defined data type (Raw, Processed, Results)
+* Provenance tracking (lineage) for traceability
 
 
 
@@ -55,17 +64,12 @@ A **File** is the lowest-level data entity managed by the system. It is stored w
 Each File has:
 
 * A unique identifier within the system
-* A defined file format (e.g., .fastq, .csv, .tiff, .h5)
-* Metadata describing its content, origin and checksum for data integrity
-
-```{note}
-***Checksum*** is a unique fingerprint used to verify that the file has not been altered or corrupted.
-```
+* Its path within the Dataset, size and upload date
 
 
 ### Authorization
 
-Data Catalog is currently **only accessible** by personnel officially employed or associated with BRIGHT. Each dataset can belong to one or more projects and the metadata of BRIGHT-visible projects is visible to all BRIGHT employees with read-only access, while Restricted projects are only visible to users who have been given access.
+Data Catalog is currently **only accessible** by personnel officially employed or associated with BRIGHT. Each dataset can belong to one or more projects and the metadata of BRIGHT-visible projects and datasets is visible to all BRIGHT employees with read-only access, while Restricted projects and datasets are only visible to users who have been given access.
 <br/>
 
 
