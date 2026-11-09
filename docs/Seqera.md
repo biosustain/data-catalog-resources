@@ -124,6 +124,8 @@ You must have the **Add Datasets** permission on the project to use **`Copy into
 </script>
 ```
 
+------------------------------------------
+
 <br/>
 
 ```{raw} html
