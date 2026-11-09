@@ -124,6 +124,24 @@ You must have the **Add Datasets** permission on the project to use **`Copy into
 </script>
 ```
 
+<br/>
+
+```{raw} html
+<div style="text-align: center;">
+  <iframe 
+    width="93%" 
+    height="500" 
+    src="https://youtube.com/embed/mCO0ldAj6xA"
+    title="Running pipelines from Data Catalog (Seqera tab)"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Running pipelines from Data Catalog (Seqera tab)</em></p>
+</div>
+```
+
+
 ----------------------------------------------------------------------------------------
 
 (Manage Seqera Workspace)=
