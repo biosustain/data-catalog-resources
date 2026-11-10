@@ -33,7 +33,7 @@
                         <img src="../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
                             class="logo-img"
                         />
-                        Data Catalog User Guide (v0.2.0-beta)
+                        Data Catalog User Guide (v0.2.1-beta)
                     </a>
                 
                 
@@ -133,6 +133,11 @@
     <section id="authentication-via-api-keys">
 <h1>Authentication via API keys<a class="headerlink" href="#authentication-via-api-keys" title="Link to this heading">¶</a></h1>
 <p>Data Catalog can be accessed programmatically via the API.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>An API key has the same permissions as your account. Anyone with your key can access, change or delete your data. Never share it with anyone, including AI agents or
+chatbots. If you think your key has been exposed, delete it and generate a new one.</p>
+</div>
 <p>Steps:</p>
 <ol class="arabic simple">
 <li><p>Generate an API key in Data Catalog.</p>
@@ -143,7 +148,8 @@
 <li><p>When making API requests, use HTTP Basic Authentication. The API key is used as the username and the password is left empty.</p></li>
 </ol>
 <p>Example of an authenticated API request using <em>curl</em>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>curl -u $MY_KEY: https://datacatalog.bright.dtu.dk/api/datasets
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MY_KEY=&quot;one-of-the-generated-api-keys&quot;
+curl -u $MY_KEY: https://datacatalog.bright.dtu.dk/api/datasets
 </pre></div>
 </div>
 <div class="admonition tip">
@@ -152,7 +158,7 @@
 Since no password is required, it is left empty.
 It is important that the colon (:) is included.</p>
 </div>
-<p>Throughout the rest of this user guide, you will find the <strong>API Availability</strong> sections at the end of each page, with links to the API endpoints that related to the actions described.</p>
+<p>Throughout the rest of this user guide, you will find the <strong>API Availability</strong> sections at the end of each page, with links to the API endpoints that relate to the actions described.</p>
 </section>
 
 </main>
@@ -194,7 +200,7 @@ It is important that the colon (:) is included.</p>
     </div>
         </div>
     </footer>
-        <script src="../_static/documentation_options.js?v=b4c4c7c1"></script>
+        <script src="../_static/documentation_options.js?v=2b86535b"></script>
         <script src="../_static/doctools.js?v=fd6eb6e6"></script>
         <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>

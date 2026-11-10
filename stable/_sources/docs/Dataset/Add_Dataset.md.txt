@@ -35,7 +35,7 @@ Complete all the required fields marked with **`*`**:
 
 * Dataset Name (`*`): must be unique, no other dataset can have the same name
 * Dataset Description (`*`)
-* Access rights (`*`): Restricted or BRIGHT-visible (default)
+* Access rights (`*`): Restricted (default) or BRIGHT-visible
 * Dataset Type (`*`):
     * Raw
     * Processed
@@ -106,7 +106,7 @@ Similar to projects, datasets have two access rights settings:
 * **Restricted:** 
     * The dataset is completely hidden to all BRIGHT employees, except from users who have been explicitly granted permissions.
 
-➣ By default, datasets as well as projects are set to **BRIGHT-visible**, but you can change the access rights when creating or editing a dataset.
+➣ By default, datasets are set to **Restricted**, while projects are set to **BRIGHT-visible**. You can change the access rights when creating or editing a dataset.
 
 
 Understanding how access rights affect visibility is important for collaboration:
