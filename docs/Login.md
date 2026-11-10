@@ -34,7 +34,9 @@ Then, sign in using your ***DTU email and password***.
 
 
 <br/>
-➤ Once logged in, you will land on the Data Catalog welcome page, where you can begin exploring its features.
+➤ Once logged in, you will land on the Data Catalog welcome page, where you can begin exploring its features. It also shows a statistical overview of Data Catalog, including the number of projects, datasets and users.
+
+<br/>
 
 -----------------------------------------------------------------------
 
@@ -43,9 +45,9 @@ Then, sign in using your ***DTU email and password***.
 To see your account details, click the user icon (top right) and select **My Profile**. It shows your ID, full name, email and last login.
 
 ```{figure} ../_static/images/my-profile.png
-:alt: User menu
+:alt: User profile
 :width: 40%
 :align: center
 
-  *User menu*
+  *User profile*
 ```
