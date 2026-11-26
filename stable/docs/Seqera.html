@@ -33,7 +33,7 @@
                         <img src="../_static/images/DTU_Logo_Corporate_White_RGB.png" width="35" height="25" alt="Wagtail"
                             class="logo-img"
                         />
-                        Data Catalog User Guide (v0.2.1-beta)
+                        Data Catalog User Guide (v0.2.2-beta)
                     </a>
                 
                 
@@ -130,8 +130,8 @@
                 <div class="row">
                     <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
                         <main role="main" id="main">
-    <section id="seqera-wip">
-<span id="seqera-workspace"></span><h1>Seqera (WIP)<a class="headerlink" href="#seqera-wip" title="Link to this heading">¶</a></h1>
+    <section id="seqera-workspace">
+<span id="seqera-wip"></span><h1>Seqera (WIP)<a class="headerlink" href="#seqera-workspace" title="Link to this heading">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>We are still improving how Data Catalog works with Seqera. If something doesn’t work as expected, please let us know (see <a class="reference internal" href="Contact.html#contact"><span class="std std-ref">Contact</span></a>).</p>
@@ -149,13 +149,13 @@ in two parts:</p>
 <p>→ <strong>Seqera workspace</strong>: your project’s space in Seqera, where you choose and run pipelines. The pipelines run on Azure (Microsoft’s cloud). <a class="reference external" href="https://docs.seqera.io/platform-cloud/orgs-and-teams/workspace-management" rel="noreferrer" target="_blank">Learn more</a></p>
 <p>→ <strong>Data registry</strong>: a copy of a dataset’s files inside the workspace, so your pipeline can read them. When your pipeline finishes, you’ll find the results here too.
 Copying them back to Data Catalog does not remove them from the data registry.</p>
-<p>→ <strong>Nextflow</strong>: a computational workflow orchestrator for running pipelines. It makes sure an analysis runs the same way every time. <a class="reference external" href="https://docs.seqera.io/nextflow/" rel="noreferrer" target="_blank">Learn more</a>.</p>
+<p>→ <strong>Nextflow</strong>: a computational workflow orchestrator and a language to build the workflows (pipelines). It makes sure an analysis runs the same way every time. <a class="reference external" href="https://docs.seqera.io/nextflow/" rel="noreferrer" target="_blank">Learn more</a>.</p>
 </div>
 <section id="quick-overview-data-catalog-to-seqera-and-back">
 <h2>Quick Overview: Data Catalog to Seqera and Back<a class="headerlink" href="#quick-overview-data-catalog-to-seqera-and-back" title="Link to this heading">¶</a></h2>
 <p>The image below gives an overview of the whole flow and the permissions you need for each step. The sections that follow explain each step in detail.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../_images/seqera-flow-simple.png"><img alt="Overview of the Seqera Flow" src="../_images/seqera-flow-simple.png" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/seqera-flow-overview.png"><img alt="Overview of the Seqera Flow" src="../_images/seqera-flow-overview.png" style="width: 100%;" />
 </a>
 <figcaption>
 <p><span class="caption-text"><em>Overview of the Seqera Flow</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
@@ -254,17 +254,17 @@ its name to see its details, and then click the <strong><code class="docutils li
   <iframe 
     width="93%" 
     height="500" 
-    src="https://youtube.com/embed/mCO0ldAj6xA"
-    title="Running pipelines from Data Catalog (Seqera tab)"
+    src="https://youtube.com/embed/qF7kn2TSi8E"
+    title="Using the Seqera Tab in Data Catalog"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
   </iframe>
-  <p><em>Running pipelines from Data Catalog (Seqera tab)</em></p>
-</div><hr class="docutils" />
-</section>
-<section id="viewing-and-managing-seqera-workspaces-and-data-registries">
-<span id="manage-seqera-workspace"></span><h2>Viewing and Managing Seqera Workspaces and Data Registries<a class="headerlink" href="#viewing-and-managing-seqera-workspaces-and-data-registries" title="Link to this heading">¶</a></h2>
+  <p><em>Using the Seqera Tab in Data Catalog</em></p>
+</div></section>
+<hr class="docutils" />
+<section id="manage-seqera-workspace">
+<span id="viewing-and-managing-seqera-workspaces-and-data-registries"></span><h2>Viewing and Managing Seqera Workspaces and Data Registries<a class="headerlink" href="#manage-seqera-workspace" title="Link to this heading">¶</a></h2>
 <p>To view your workspace and data registries, go to:</p>
 <ul class="simple">
 <li><p>The <strong><code class="docutils literal notranslate"><span class="pre">Seqera</span></code></strong> tab on the <strong>project</strong> home page: the project’s workspace and all its data registries</p></li>
@@ -349,7 +349,7 @@ data registry. Pipeline results already in the data registry are kept. You must 
 <li><a class="reference internal" href="#quick-overview-data-catalog-to-seqera-and-back">Quick Overview: Data Catalog to Seqera and Back</a></li>
 <li><a class="reference internal" href="#part-1-set-up-the-project-s-seqera-workspace">Part 1: Set Up the Project’s Seqera Workspace</a></li>
 <li><a class="reference internal" href="#part-2-create-a-data-registry-for-a-dataset">Part 2: Create a Data Registry for a Dataset</a></li>
-<li><a class="reference internal" href="#viewing-and-managing-seqera-workspaces-and-data-registries">Viewing and Managing Seqera Workspaces and Data Registries</a></li>
+<li><a class="reference internal" href="#manage-seqera-workspace">Viewing and Managing Seqera Workspaces and Data Registries</a></li>
 <li><a class="reference internal" href="#api-availability">API Availability</a></li>
 </ul>
 </li>
@@ -378,7 +378,7 @@ data registry. Pipeline results already in the data registry are kept. You must 
                     </a>
                     and
                     <a class="text-white" href="https://www.sphinx-doc.org/" rel="nofollow" target="_blank">
-                        Sphinx 9.1.1
+                        Sphinx 9.2.0
                     </a>
                 </small>
             </div>
@@ -386,7 +386,7 @@ data registry. Pipeline results already in the data registry are kept. You must 
     </div>
         </div>
     </footer>
-        <script src="../_static/documentation_options.js?v=2b86535b"></script>
+        <script src="../_static/documentation_options.js?v=5130e8b4"></script>
         <script src="../_static/doctools.js?v=fd6eb6e6"></script>
         <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
