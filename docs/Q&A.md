@@ -74,7 +74,7 @@ Each platform covers a different part of the data lifecycle:
 
 * **Benchling** is the LIMS (Laboratory Information Management System), where experiments are designed and recorded.
 * **Azure Data Lake** is the cloud storage service where research data files live.
-* **Seqera** is a web app that runs Nextflow pipelines on connected Azure cloud resources (e.g. virtual machine, storage).
+* **Seqera** is a web app where you launch Nextflow pipelines and follow their progress. The pipelines run on Azure cloud resources (e.g. virtual machine, storage).
 * **Data Catalog** is where your data is registered, described, and made findable.
 
 You link a Benchling project when creating a project in Data Catalog, the files themselves are stored in its underlying Azure Data Lake instance, and you set up a Seqera workspace for the project and create a data registry for each dataset you want to analyze. So Data Catalog is the layer that connects these platforms, not a replacement for any of them.

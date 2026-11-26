@@ -20,14 +20,14 @@ Seqera ([Seqera Platform Cloud](https://docs.seqera.io/platform-cloud/)) is a we
   → **Data registry**: a copy of a dataset's files inside the workspace, so your pipeline can read them. When your pipeline finishes, you'll find the results here too.
   Copying them back to Data Catalog does not remove them from the data registry.
 
-  → **Nextflow**: a computational workflow orchestrator for running pipelines. It makes sure an analysis runs the same way every time. [Learn more](https://docs.seqera.io/nextflow/).
+  → **Nextflow**: a computational workflow orchestrator and a language to build the workflows (pipelines). It makes sure an analysis runs the same way every time. [Learn more](https://docs.seqera.io/nextflow/).
 ```
 
 ## Quick Overview: Data Catalog to Seqera and Back
 
 The image below gives an overview of the whole flow and the permissions you need for each step. The sections that follow explain each step in detail.
 
-```{figure} ../_static/images/seqera-flow-simple.png
+```{figure} ../_static/images/seqera-flow-overview.png
 :alt: Overview of the Seqera Flow
 :width: 100%
 :align: center
@@ -133,13 +133,13 @@ You must have the **Add Datasets** permission on the project to use **`Copy into
   <iframe 
     width="93%" 
     height="500" 
-    src="https://youtube.com/embed/mCO0ldAj6xA"
-    title="Running pipelines from Data Catalog (Seqera tab)"
+    src="https://youtube.com/embed/qF7kn2TSi8E"
+    title="Using the Seqera Tab in Data Catalog"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
   </iframe>
-  <p><em>Running pipelines from Data Catalog (Seqera tab)</em></p>
+  <p><em>Using the Seqera Tab in Data Catalog</em></p>
 </div>
 ```
 
