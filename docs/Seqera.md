@@ -27,7 +27,7 @@ Seqera ([Seqera Platform Cloud](https://docs.seqera.io/platform-cloud/)) is a we
 
 The image below gives an overview of the whole flow and the permissions you need for each step. The sections that follow explain each step in detail.
 
-```{figure} ../_static/images/seqera-flow-simple.png
+```{figure} ../_static/images/seqera-flow-overview.png
 :alt: Overview of the Seqera Flow
 :width: 100%
 :align: center
